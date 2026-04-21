@@ -1,0 +1,345 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+usage() {
+  cat <<'USAGE'
+Usage:
+  agent-orchestrator run --provider <claude|codex|cursor> --goal <text> [--model <name>] [--repo <path>] [--budget <label>] [--tests <cmd>]
+  agent-orchestrator review --provider <claude|codex|cursor> [--model <name>] [--repo <path>] [--tests <cmd>]
+  agent-orchestrator post-stop [--repo <path>] [--tests <cmd>]
+
+Notes:
+  - Outputs are written under .apm/runs/<run-id>/
+  - This command is designed to be called from skills and hooks.
+USAGE
+}
+
+json_escape() {
+  local s="${1:-}"
+  s=${s//\\/\\\\}
+  s=${s//\"/\\\"}
+  s=${s//$'\n'/\\n}
+  s=${s//$'\r'/}
+  printf '%s' "$s"
+}
+
+require_arg() {
+  local key="$1"
+  local value="$2"
+  if [[ -z "$value" ]]; then
+    echo "missing required argument: $key" >&2
+    usage
+    exit 2
+  fi
+}
+
+now_utc() {
+  date -u +"%Y-%m-%dT%H:%M:%SZ"
+}
+
+make_run_dir() {
+  local base="$1"
+  local run_id
+  run_id="$(date +%Y%m%d-%H%M%S)-$RANDOM"
+  mkdir -p "$base/.apm/runs/$run_id"
+  printf '%s' "$run_id"
+}
+
+run_provider() {
+  local provider="$1"
+  local goal="$2"
+  local model="$3"
+  local out_file="$4"
+  local err_file="$5"
+
+  case "$provider" in
+    codex)
+      if command -v codex >/dev/null 2>&1; then
+        if [[ -n "$model" ]]; then
+          codex exec --model "$model" "$goal" >"$out_file" 2>"$err_file"
+        else
+          codex exec "$goal" >"$out_file" 2>"$err_file"
+        fi
+      else
+        echo "codex CLI not found. skipped provider execution." >"$out_file"
+      fi
+      ;;
+    claude)
+      if command -v claude >/dev/null 2>&1; then
+        if [[ -n "$model" ]]; then
+          claude -p "$goal" --model "$model" >"$out_file" 2>"$err_file"
+        else
+          claude -p "$goal" >"$out_file" 2>"$err_file"
+        fi
+      else
+        echo "claude CLI not found. skipped provider execution." >"$out_file"
+      fi
+      ;;
+    cursor)
+      if command -v cursor-agent >/dev/null 2>&1; then
+        if [[ -n "$model" ]]; then
+          cursor-agent --model "$model" "$goal" >"$out_file" 2>"$err_file"
+        else
+          cursor-agent "$goal" >"$out_file" 2>"$err_file"
+        fi
+      else
+        echo "cursor-agent CLI not found. skipped provider execution." >"$out_file"
+      fi
+      ;;
+    *)
+      echo "unsupported provider: $provider" >&2
+      exit 2
+      ;;
+  esac
+}
+
+write_result_json() {
+  local path="$1"
+  local run_id="$2"
+  local mode="$3"
+  local provider="$4"
+  local status="$5"
+  local started_at="$6"
+  local finished_at="$7"
+  local repo="$8"
+  local budget="$9"
+  local model="${10}"
+  local tests_cmd="${11}"
+  local summary_file="${12}"
+
+  local summary
+  summary="$(cat "$summary_file")"
+
+  cat > "$path" <<JSON
+{
+  "run_id": "$(json_escape "$run_id")",
+  "mode": "$(json_escape "$mode")",
+  "provider": "$(json_escape "$provider")",
+  "status": "$(json_escape "$status")",
+  "started_at": "$(json_escape "$started_at")",
+  "finished_at": "$(json_escape "$finished_at")",
+  "repo": "$(json_escape "$repo")",
+  "budget": "$(json_escape "$budget")",
+  "model": "$(json_escape "$model")",
+  "tests": "$(json_escape "$tests_cmd")",
+  "summary": "$(json_escape "$summary")",
+  "artifacts": {
+    "stdout": "provider.stdout.log",
+    "stderr": "provider.stderr.log",
+    "tests": "tests.log",
+    "summary": "summary.txt"
+  }
+}
+JSON
+}
+
+run_mode() {
+  local mode="$1"
+  shift
+
+  local provider=""
+  local goal=""
+  local model=""
+  local repo="$(pwd)"
+  local budget="standard"
+  local tests_cmd=""
+
+  while [[ $# -gt 0 ]]; do
+    case "$1" in
+      --provider)
+        provider="$2"
+        shift 2
+        ;;
+      --goal)
+        goal="$2"
+        shift 2
+        ;;
+      --model)
+        model="$2"
+        shift 2
+        ;;
+      --repo)
+        repo="$2"
+        shift 2
+        ;;
+      --budget)
+        budget="$2"
+        shift 2
+        ;;
+      --tests)
+        tests_cmd="$2"
+        shift 2
+        ;;
+      *)
+        echo "unknown arg: $1" >&2
+        usage
+        exit 2
+        ;;
+    esac
+  done
+
+  require_arg "--provider" "$provider"
+
+  if [[ "$mode" == "run" ]]; then
+    require_arg "--goal" "$goal"
+  fi
+
+  if [[ "$mode" == "review" && -z "$goal" ]]; then
+    goal="Review current repository changes. Focus on behavioral risks, regressions, missing tests, and concrete fixes."
+  fi
+
+  local run_id
+  run_id="$(make_run_dir "$repo")"
+  local run_dir="$repo/.apm/runs/$run_id"
+
+  local started_at finished_at status
+  started_at="$(now_utc)"
+  status="ok"
+
+  if ! run_provider "$provider" "$goal" "$model" "$run_dir/provider.stdout.log" "$run_dir/provider.stderr.log"; then
+    status="provider_failed"
+  fi
+
+  if [[ -n "$tests_cmd" ]]; then
+    if ! (cd "$repo" && bash -lc "$tests_cmd") >"$run_dir/tests.log" 2>&1; then
+      status="tests_failed"
+    fi
+  else
+    : > "$run_dir/tests.log"
+  fi
+
+  finished_at="$(now_utc)"
+
+  {
+    echo "mode: $mode"
+    echo "provider: $provider"
+    echo "status: $status"
+    echo "repo: $repo"
+    echo "budget: $budget"
+    if [[ -n "$model" ]]; then
+      echo "model: $model"
+    else
+      echo "model: (default)"
+    fi
+    if [[ -n "$tests_cmd" ]]; then
+      echo "tests: $tests_cmd"
+    else
+      echo "tests: (none)"
+    fi
+    echo "started_at: $started_at"
+    echo "finished_at: $finished_at"
+  } > "$run_dir/summary.txt"
+
+  write_result_json \
+    "$run_dir/result.json" \
+    "$run_id" \
+    "$mode" \
+    "$provider" \
+    "$status" \
+    "$started_at" \
+    "$finished_at" \
+    "$repo" \
+    "$budget" \
+    "$model" \
+    "$tests_cmd" \
+    "$run_dir/summary.txt"
+
+  echo "run_id=$run_id"
+  echo "result=$run_dir/result.json"
+}
+
+post_stop_mode() {
+  local repo="$(pwd)"
+  local tests_cmd="command -v actrun >/dev/null 2>&1 && actrun workflow run .github/workflows/ci.yml 2>&1 | tail -20 || true"
+
+  while [[ $# -gt 0 ]]; do
+    case "$1" in
+      --repo)
+        repo="$2"
+        shift 2
+        ;;
+      --tests)
+        tests_cmd="$2"
+        shift 2
+        ;;
+      *)
+        echo "unknown arg: $1" >&2
+        usage
+        exit 2
+        ;;
+    esac
+  done
+
+  local run_id
+  run_id="$(make_run_dir "$repo")"
+  local run_dir="$repo/.apm/runs/$run_id"
+
+  local started_at finished_at status
+  started_at="$(now_utc)"
+  status="ok"
+
+  if ! (cd "$repo" && bash -lc "$tests_cmd") >"$run_dir/tests.log" 2>&1; then
+    status="tests_failed"
+  fi
+
+  finished_at="$(now_utc)"
+
+  {
+    echo "mode: post-stop"
+    echo "status: $status"
+    echo "repo: $repo"
+    echo "tests: $tests_cmd"
+    echo "started_at: $started_at"
+    echo "finished_at: $finished_at"
+  } > "$run_dir/summary.txt"
+
+  : > "$run_dir/provider.stdout.log"
+  : > "$run_dir/provider.stderr.log"
+
+  write_result_json \
+    "$run_dir/result.json" \
+    "$run_id" \
+    "post-stop" \
+    "none" \
+    "$status" \
+    "$started_at" \
+    "$finished_at" \
+    "$repo" \
+    "standard" \
+    "$tests_cmd" \
+    "$run_dir/summary.txt"
+
+  echo "run_id=$run_id"
+  echo "result=$run_dir/result.json"
+}
+
+main() {
+  local subcommand="${1:-}"
+  if [[ -z "$subcommand" ]]; then
+    usage
+    exit 2
+  fi
+  shift || true
+
+  case "$subcommand" in
+    run)
+      run_mode "run" "$@"
+      ;;
+    review)
+      run_mode "review" "$@"
+      ;;
+    post-stop)
+      post_stop_mode "$@"
+      ;;
+    -h|--help|help)
+      usage
+      ;;
+    *)
+      echo "unknown subcommand: $subcommand" >&2
+      usage
+      exit 2
+      ;;
+  esac
+}
+
+main "$@"
