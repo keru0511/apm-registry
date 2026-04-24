@@ -25,6 +25,22 @@ apm compile
 apm pack
 ```
 
+## Nix dev shell
+
+For a reproducible local toolchain, this repository provides a `flake.nix`.
+
+```bash
+# enter the development shell
+nix develop
+
+# validate JSON indexes and TOON corpus files
+scripts/validate-security-corpus
+```
+
+The dev shell includes the basic CLI utilities used in this repo and a pinned `toon`
+wrapper backed by `@toon-format/cli@2.0.1`. The first `toon` invocation may populate
+the local npm cache.
+
 ## Publish and consume
 
 After pushing this repo to a git host, consumers can install via:

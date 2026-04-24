@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+ref_root="$repo_root/.apm/skills/security-audit-assessor/references"
+
+require_cmd() {
+  local cmd="$1"
+  if ! command -v "$cmd" >/dev/null 2>&1; then
+    echo "missing required command: $cmd" >&2
+    exit 2
+  fi
+}
+
+require_cmd jq
+require_cmd toon
+
+json_files=(
+  "$ref_root/index/documents.json"
+  "$ref_root/index/topics.json"
+  "$ref_root/index/controls.json"
+  "$ref_root/index/aliases.json"
+  "$ref_root/index/security-standards.json"
+  "$ref_root/mappings/system-controls.json"
+  "$ref_root/mappings/governance-controls.json"
+)
+
+for path in "${json_files[@]}"; do
+  jq empty "$path"
+done
+
+tmp_dir="$(mktemp -d)"
+cleanup() {
+  rm -rf "$tmp_dir"
+}
+trap cleanup EXIT
+
+while IFS= read -r -d '' toon_file; do
+  out_json="$tmp_dir/$(basename "$toon_file").json"
+  toon "$toon_file" -o "$out_json" >/dev/null
+  jq empty "$out_json"
+done < <(find "$ref_root/corpus" -type f -name '*.toon' -print0 | sort -z)
+
+echo "security corpus validation passed"
