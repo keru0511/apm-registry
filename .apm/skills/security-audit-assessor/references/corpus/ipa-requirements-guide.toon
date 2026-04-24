@@ -1,0 +1,32 @@
+doc_id: ipa-requirements-guide
+title: 重要情報を扱うシステムの要求策定ガイド
+publisher: IPA
+version: 2023-07-18 公開 / 2024-07-29 最終更新
+publication_date: "2023-07-18"
+canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
+profiles[2]: system,governance
+sections[6]:
+  - section_id: overview
+    title: 概要
+    topics[6]: critical_systems,autonomy,usability,requirements_definition,operational_control,data_protection
+    text: 重要情報を扱うシステムで、自律性と利便性の両立を前提に、管理者が構築、調達、運用時の要求仕様を策定するためのガイド。
+  - section_id: step_1_system_characteristics
+    title: ステップ1 システムの特性評価
+    topics[5]: system_characteristics,prioritization,confidentiality,integrity,availability
+    text: 9つの評価項目でシステム特性を整理し、漏えい、改ざん、停止防止や変化対応のうち、何を優先して守るかを見極める。
+  - section_id: step_2_risk_and_usability
+    title: ステップ2 問題 リスク 利便性要素の選定
+    topics[6]: risk_identification,usability_factors,tree_analysis,control_selection,tradeoffs,operational_risk
+    text: 享受したい内容をもとに、問題、リスク、利便性要素を樹形図で整理し、対策検討の対象を明確化する段階。
+  - section_id: step_3_controls
+    title: ステップ3 必要な対策の選定
+    topics[6]: control_selection,access_control,logging,operational_control,security_requirements,auditability
+    text: 問題や利便性要素にひもづく対策を選び、目的と要求項目を一覧で確認しながら要求仕様に落とし込む段階。
+  - section_id: handbook
+    title: 別冊 活用の手引き
+    topics[4]: adoption_guidance,stakeholder_communication,implementation_support,governance
+    text: 事業者向けに本ガイドの適用効果と使い方を分かりやすく補足し、導入時の説明資料として使える別冊。
+  - section_id: supplemental_notes
+    title: 要求項目への補足説明
+    topics[4]: emerging_controls,industry_readiness,technical_notes,continuous_update
+    text: 発展途上の要求項目や業界で取り組み途上の対策について、継続的に補足説明を提供する更新領域。

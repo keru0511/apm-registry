@@ -1,0 +1,107 @@
+[
+  {
+    "doc_id": "ipa-safe-website",
+    "title": "安全なウェブサイトの作り方",
+    "publisher": "IPA",
+    "version": "改訂第7版第4刷",
+    "publication_date": "2021-03-31",
+    "profiles": ["system"],
+    "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html",
+    "corpus_file": "../corpus/ipa-safe-website.toon",
+    "section_ids": [
+      "purpose_scope",
+      "chapter_1_security_implementation",
+      "chapter_2_site_wide_practices",
+      "chapter_3_failure_examples",
+      "appendix_checklist",
+      "supplement_safe_sql",
+      "supplement_web_health_check"
+    ],
+    "keywords": ["web", "sql injection", "xss", "session", "password", "checklist"],
+    "aliases": ["safe website", "ipa web security", "安全なウェブサイト", "ウェブ健康診断"]
+  },
+  {
+    "doc_id": "ipa-nfr-grade",
+    "title": "非機能要求グレード",
+    "publisher": "IPA",
+    "version": "2018",
+    "publication_date": "2018-06-29",
+    "profiles": ["system", "governance"],
+    "canonical_url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html",
+    "corpus_file": "../corpus/ipa-nfr-grade.toon",
+    "section_ids": [
+      "purpose_and_positioning",
+      "differences_and_challenges",
+      "grade_2018_artifacts",
+      "procedure",
+      "expected_effects",
+      "related_materials"
+    ],
+    "keywords": ["non-functional", "availability", "backup", "monitoring", "operability", "requirements"],
+    "aliases": ["nfr grade", "非機能要求", "非機能要件", "要件定義"]
+  },
+  {
+    "doc_id": "ipa-requirements-guide",
+    "title": "重要情報を扱うシステムの要求策定ガイド",
+    "publisher": "IPA",
+    "version": "2023-07-18 公開 / 2024-07-29 最終更新",
+    "publication_date": "2023-07-18",
+    "profiles": ["system", "governance"],
+    "canonical_url": "https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html",
+    "corpus_file": "../corpus/ipa-requirements-guide.toon",
+    "section_ids": [
+      "overview",
+      "step_1_system_characteristics",
+      "step_2_risk_and_usability",
+      "step_3_controls",
+      "handbook",
+      "supplemental_notes"
+    ],
+    "keywords": ["critical information", "autonomy", "usability", "access control", "logging", "requirements"],
+    "aliases": ["requirements guide", "system youkyu", "重要情報", "要求策定ガイド"]
+  },
+  {
+    "doc_id": "nist-csf-2-0",
+    "title": "The NIST Cybersecurity Framework (CSF) 2.0",
+    "publisher": "NIST",
+    "version": "CSWP 29",
+    "publication_date": "2024-02-26",
+    "profiles": ["system", "governance"],
+    "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final",
+    "corpus_file": "../corpus/nist-csf-2-0.toon",
+    "section_ids": [
+      "overview_and_components",
+      "govern",
+      "identify",
+      "protect",
+      "detect",
+      "respond",
+      "recover",
+      "profiles_and_tiers",
+      "reference_tool_and_quick_starts"
+    ],
+    "keywords": ["csf", "govern", "identify", "protect", "detect", "respond", "recover"],
+    "aliases": ["csf 2.0", "nist csf", "cybersecurity framework"]
+  },
+  {
+    "doc_id": "nist-sp-800-53-r5",
+    "title": "Security and Privacy Controls for Information Systems and Organizations",
+    "publisher": "NIST",
+    "version": "SP 800-53 Rev. 5 Update 1",
+    "publication_date": "2020-09",
+    "profiles": ["system", "governance"],
+    "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "corpus_file": "../corpus/nist-sp-800-53-r5.toon",
+    "section_ids": [
+      "overview",
+      "access_and_identity",
+      "audit_and_configuration",
+      "incident_and_recovery",
+      "data_and_system_protection",
+      "acquisition_and_supply_chain",
+      "risk_and_people"
+    ],
+    "keywords": ["800-53", "control family", "access control", "audit", "incident response", "supply chain"],
+    "aliases": ["sp 800-53", "80053", "nist controls", "rev5"]
+  }
+]

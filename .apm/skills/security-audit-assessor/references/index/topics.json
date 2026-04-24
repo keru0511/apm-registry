@@ -1,0 +1,136 @@
+[
+  {
+    "topic": "authentication_authorization",
+    "aliases": ["auth", "authorization", "認証", "認可", "権限管理"],
+    "sections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation", "title": "第1章 ウェブアプリケーションのセキュリティ実装"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "title": "ステップ3 必要な対策の選定"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect", "title": "Protect Function"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity", "title": "Access and Identity Families"}
+    ]
+  },
+  {
+    "topic": "session_management",
+    "aliases": ["session", "セッション", "logout", "timeout"],
+    "sections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation", "title": "第1章 ウェブアプリケーションのセキュリティ実装"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity", "title": "Access and Identity Families"}
+    ]
+  },
+  {
+    "topic": "input_validation",
+    "aliases": ["validation", "sanitization", "入力値検証", "SQL injection", "XSS"],
+    "sections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation", "title": "第1章 ウェブアプリケーションのセキュリティ実装"},
+      {"doc_id": "ipa-safe-website", "section_id": "supplement_safe_sql", "title": "別冊 安全な SQL の呼び出し方"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "title": "Data and System Protection Families"}
+    ]
+  },
+  {
+    "topic": "secret_management",
+    "aliases": ["secret", "key management", "credential", "シークレット", "鍵管理"],
+    "sections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "title": "ステップ3 必要な対策の選定"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect", "title": "Protect Function"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "title": "Data and System Protection Families"}
+    ]
+  },
+  {
+    "topic": "data_protection",
+    "aliases": ["data security", "privacy", "保存データ", "データ保護", "暗号化"],
+    "sections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "overview", "title": "概要"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics", "title": "ステップ1 システムの特性評価"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect", "title": "Protect Function"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "title": "Data and System Protection Families"}
+    ]
+  },
+  {
+    "topic": "logging_auditability",
+    "aliases": ["logging", "audit", "traceability", "ログ", "監査証跡"],
+    "sections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_2_site_wide_practices", "title": "第2章 ウェブサイトの安全性向上のための取り組み"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "title": "ステップ3 必要な対策の選定"},
+      {"doc_id": "nist-csf-2-0", "section_id": "detect", "title": "Detect Function"},
+      {"doc_id": "nist-csf-2-0", "section_id": "govern", "title": "Govern Function"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "title": "Audit and Configuration Families"}
+    ]
+  },
+  {
+    "topic": "vulnerability_management",
+    "aliases": ["dependency update", "patching", "脆弱性管理", "棚卸", "診断"],
+    "sections": [
+      {"doc_id": "ipa-safe-website", "section_id": "supplement_web_health_check", "title": "別冊 ウェブ健康診断仕様"},
+      {"doc_id": "ipa-nfr-grade", "section_id": "related_materials", "title": "周辺資料と関連情報"},
+      {"doc_id": "nist-csf-2-0", "section_id": "identify", "title": "Identify Function"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "risk_and_people", "title": "Risk and People Families"}
+    ]
+  },
+  {
+    "topic": "configuration_change_control",
+    "aliases": ["configuration", "change control", "IaC", "設定管理", "変更管理"],
+    "sections": [
+      {"doc_id": "ipa-nfr-grade", "section_id": "procedure", "title": "利用手順"},
+      {"doc_id": "nist-csf-2-0", "section_id": "govern", "title": "Govern Function"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "title": "Audit and Configuration Families"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "acquisition_and_supply_chain", "title": "Acquisition and Supply Chain Families"}
+    ]
+  },
+  {
+    "topic": "network_boundary",
+    "aliases": ["network", "perimeter", "WAF", "FW", "ネットワーク境界"],
+    "sections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability", "title": "ステップ2 問題 リスク 利便性要素の選定"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect", "title": "Protect Function"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "title": "Data and System Protection Families"}
+    ]
+  },
+  {
+    "topic": "backup_recovery",
+    "aliases": ["backup", "recovery", "RPO", "RTO", "復旧", "継続計画"],
+    "sections": [
+      {"doc_id": "ipa-nfr-grade", "section_id": "grade_2018_artifacts", "title": "非機能要求グレード 2018 の構成物"},
+      {"doc_id": "ipa-nfr-grade", "section_id": "related_materials", "title": "周辺資料と関連情報"},
+      {"doc_id": "nist-csf-2-0", "section_id": "recover", "title": "Recover Function"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "incident_and_recovery", "title": "Incident and Recovery Families"}
+    ]
+  },
+  {
+    "topic": "monitoring_detection",
+    "aliases": ["monitoring", "detection", "alerting", "監視", "検知"],
+    "sections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_2_site_wide_practices", "title": "第2章 ウェブサイトの安全性向上のための取り組み"},
+      {"doc_id": "ipa-nfr-grade", "section_id": "related_materials", "title": "周辺資料と関連情報"},
+      {"doc_id": "nist-csf-2-0", "section_id": "detect", "title": "Detect Function"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "title": "Audit and Configuration Families"}
+    ]
+  },
+  {
+    "topic": "security_governance",
+    "aliases": ["governance", "policy", "oversight", "方針", "統制"],
+    "sections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "overview", "title": "概要"},
+      {"doc_id": "nist-csf-2-0", "section_id": "govern", "title": "Govern Function"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "acquisition_and_supply_chain", "title": "Acquisition and Supply Chain Families"}
+    ]
+  },
+  {
+    "topic": "third_party_risk",
+    "aliases": ["supplier", "vendor", "outsourcing", "委託先", "サプライチェーン"],
+    "sections": [
+      {"doc_id": "nist-csf-2-0", "section_id": "govern", "title": "Govern Function"},
+      {"doc_id": "nist-csf-2-0", "section_id": "reference_tool_and_quick_starts", "title": "Reference Tool and Quick Start Resources"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "acquisition_and_supply_chain", "title": "Acquisition and Supply Chain Families"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability", "title": "ステップ2 問題 リスク 利便性要素の選定"}
+    ]
+  },
+  {
+    "topic": "incident_response",
+    "aliases": ["incident", "response", "containment", "初動", "インシデント対応"],
+    "sections": [
+      {"doc_id": "nist-csf-2-0", "section_id": "respond", "title": "Respond Function"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "incident_and_recovery", "title": "Incident and Recovery Families"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "title": "ステップ3 必要な対策の選定"}
+    ]
+  }
+]

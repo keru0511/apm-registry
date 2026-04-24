@@ -9,7 +9,13 @@
       "認可漏れや過剰権限を防ぐ実装があるか",
       "特権操作に追加統制があるか"
     ],
-    "related_documents": ["ipa-safe-website", "ipa-requirements-guide", "nist-sp-800-53-r5"],
+    "related_documents": ["ipa-safe-website", "ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "related_sections": [
+      "ipa-safe-website.chapter_1_security_implementation",
+      "ipa-requirements-guide.step_3_controls",
+      "nist-csf-2-0.protect",
+      "nist-sp-800-53-r5.access_and_identity"
+    ],
     "reference_map": {
       "ipa": ["認証認可"],
       "nist_csf": ["PR.AA"],
@@ -27,6 +33,10 @@
       "ログアウト後に再利用できないか"
     ],
     "related_documents": ["ipa-safe-website", "nist-sp-800-53-r5"],
+    "related_sections": [
+      "ipa-safe-website.chapter_1_security_implementation",
+      "nist-sp-800-53-r5.access_and_identity"
+    ],
     "reference_map": {
       "ipa": ["セッション管理"],
       "nist_csf": [],
@@ -44,6 +54,11 @@
       "危険な出力やエラーメッセージ漏えいがないか"
     ],
     "related_documents": ["ipa-safe-website", "nist-sp-800-53-r5"],
+    "related_sections": [
+      "ipa-safe-website.chapter_1_security_implementation",
+      "ipa-safe-website.supplement_safe_sql",
+      "nist-sp-800-53-r5.data_and_system_protection"
+    ],
     "reference_map": {
       "ipa": ["入力値検証"],
       "nist_csf": [],
@@ -60,7 +75,12 @@
       "ローテーションやアクセス制御が設計されているか",
       "CI/CD から安全に参照されるか"
     ],
-    "related_documents": ["ipa-requirements-guide", "nist-sp-800-53-r5"],
+    "related_documents": ["ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "related_sections": [
+      "ipa-requirements-guide.step_3_controls",
+      "nist-csf-2-0.protect",
+      "nist-sp-800-53-r5.data_and_system_protection"
+    ],
     "reference_map": {
       "ipa": ["データ保護"],
       "nist_csf": [],
@@ -78,6 +98,11 @@
       "鍵管理責任が曖昧でないか"
     ],
     "related_documents": ["ipa-requirements-guide", "nist-sp-800-53-r5", "nist-csf-2-0"],
+    "related_sections": [
+      "ipa-requirements-guide.overview",
+      "nist-csf-2-0.protect",
+      "nist-sp-800-53-r5.data_and_system_protection"
+    ],
     "reference_map": {
       "ipa": ["データ保護"],
       "nist_csf": ["PR.DS"],
@@ -94,7 +119,13 @@
       "ログ改ざん防止や保護が考慮されているか",
       "レビューやアラートの運用があるか"
     ],
-    "related_documents": ["ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "related_documents": ["ipa-safe-website", "ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "related_sections": [
+      "ipa-safe-website.chapter_2_site_wide_practices",
+      "ipa-requirements-guide.step_3_controls",
+      "nist-csf-2-0.detect",
+      "nist-sp-800-53-r5.audit_and_configuration"
+    ],
     "reference_map": {
       "ipa": ["ログと追跡性"],
       "nist_csf": ["DE.CM"],
@@ -111,7 +142,12 @@
       "脆弱性検知や棚卸が行われているか",
       "既知脆弱性の放置がないか"
     ],
-    "related_documents": ["ipa-nfr-grade", "nist-sp-800-53-r5"],
+    "related_documents": ["ipa-safe-website", "ipa-nfr-grade", "nist-sp-800-53-r5"],
+    "related_sections": [
+      "ipa-safe-website.supplement_web_health_check",
+      "ipa-nfr-grade.related_materials",
+      "nist-sp-800-53-r5.risk_and_people"
+    ],
     "reference_map": {
       "ipa": ["保守性"],
       "nist_csf": [],
@@ -128,7 +164,12 @@
       "レビューや承認を経て変更されるか",
       "環境差分が追跡できるか"
     ],
-    "related_documents": ["ipa-nfr-grade", "nist-sp-800-53-r5"],
+    "related_documents": ["ipa-safe-website", "ipa-nfr-grade", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "related_sections": [
+      "ipa-nfr-grade.procedure",
+      "nist-csf-2-0.govern",
+      "nist-sp-800-53-r5.audit_and_configuration"
+    ],
     "reference_map": {
       "ipa": ["運用性"],
       "nist_csf": [],
@@ -145,7 +186,12 @@
       "CI/CD シークレットが保護されているか",
       "署名や改ざん検知の考慮があるか"
     ],
-    "related_documents": ["ipa-nfr-grade", "nist-sp-800-53-r5"],
+    "related_documents": ["ipa-nfr-grade", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "related_sections": [
+      "ipa-nfr-grade.procedure",
+      "nist-csf-2-0.protect",
+      "nist-sp-800-53-r5.acquisition_and_supply_chain"
+    ],
     "reference_map": {
       "ipa": ["運用性"],
       "nist_csf": [],
@@ -163,6 +209,11 @@
       "不要な公開ポートや経路が残っていないか"
     ],
     "related_documents": ["ipa-requirements-guide", "nist-sp-800-53-r5", "nist-csf-2-0"],
+    "related_sections": [
+      "ipa-requirements-guide.step_2_risk_and_usability",
+      "nist-csf-2-0.protect",
+      "nist-sp-800-53-r5.data_and_system_protection"
+    ],
     "reference_map": {
       "ipa": ["運用統制"],
       "nist_csf": ["PR.PT"],
@@ -180,6 +231,12 @@
       "権限と利用目的が整合しているか"
     ],
     "related_documents": ["ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "related_sections": [
+      "ipa-requirements-guide.overview",
+      "ipa-requirements-guide.step_1_system_characteristics",
+      "nist-csf-2-0.protect",
+      "nist-sp-800-53-r5.data_and_system_protection"
+    ],
     "reference_map": {
       "ipa": ["データ保護"],
       "nist_csf": ["PR.DS"],
@@ -196,7 +253,12 @@
       "復旧手順や RPO/RTO が定義されているか",
       "復旧試験の証跡があるか"
     ],
-    "related_documents": ["ipa-nfr-grade", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "related_documents": ["ipa-safe-website", "ipa-nfr-grade", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "related_sections": [
+      "ipa-nfr-grade.grade_2018_artifacts",
+      "nist-csf-2-0.recover",
+      "nist-sp-800-53-r5.incident_and_recovery"
+    ],
     "reference_map": {
       "ipa": ["バックアップ/復旧"],
       "nist_csf": ["RC.RP"],
@@ -213,7 +275,13 @@
       "セキュリティイベントの通知があるか",
       "監視対象が重要資産をカバーしているか"
     ],
-    "related_documents": ["ipa-nfr-grade", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "related_documents": ["ipa-safe-website", "ipa-nfr-grade", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "related_sections": [
+      "ipa-safe-website.chapter_2_site_wide_practices",
+      "ipa-nfr-grade.related_materials",
+      "nist-csf-2-0.detect",
+      "nist-sp-800-53-r5.audit_and_configuration"
+    ],
     "reference_map": {
       "ipa": ["監視"],
       "nist_csf": ["DE.CM"],

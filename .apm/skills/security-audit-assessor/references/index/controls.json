@@ -1,0 +1,229 @@
+[
+  {
+    "control_id": "SYS-01",
+    "label": "認証認可",
+    "sections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity"}
+    ]
+  },
+  {
+    "control_id": "SYS-02",
+    "label": "セッション管理",
+    "sections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity"}
+    ]
+  },
+  {
+    "control_id": "SYS-03",
+    "label": "入力検証",
+    "sections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation"},
+      {"doc_id": "ipa-safe-website", "section_id": "supplement_safe_sql"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+    ]
+  },
+  {
+    "control_id": "SYS-04",
+    "label": "シークレット管理",
+    "sections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+    ]
+  },
+  {
+    "control_id": "SYS-05",
+    "label": "暗号化",
+    "sections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "overview"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+    ]
+  },
+  {
+    "control_id": "SYS-06",
+    "label": "ログと監査証跡",
+    "sections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_2_site_wide_practices"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
+      {"doc_id": "nist-csf-2-0", "section_id": "detect"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration"}
+    ]
+  },
+  {
+    "control_id": "SYS-07",
+    "label": "脆弱性管理",
+    "sections": [
+      {"doc_id": "ipa-safe-website", "section_id": "supplement_web_health_check"},
+      {"doc_id": "ipa-nfr-grade", "section_id": "related_materials"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "risk_and_people"}
+    ]
+  },
+  {
+    "control_id": "SYS-08",
+    "label": "設定とIaC管理",
+    "sections": [
+      {"doc_id": "ipa-nfr-grade", "section_id": "procedure"},
+      {"doc_id": "nist-csf-2-0", "section_id": "govern"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration"}
+    ]
+  },
+  {
+    "control_id": "SYS-09",
+    "label": "CI/CD保護",
+    "sections": [
+      {"doc_id": "ipa-nfr-grade", "section_id": "procedure"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "acquisition_and_supply_chain"}
+    ]
+  },
+  {
+    "control_id": "SYS-10",
+    "label": "ネットワーク境界",
+    "sections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+    ]
+  },
+  {
+    "control_id": "SYS-11",
+    "label": "データ保護",
+    "sections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "overview"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+    ]
+  },
+  {
+    "control_id": "SYS-12",
+    "label": "バックアップと復旧",
+    "sections": [
+      {"doc_id": "ipa-nfr-grade", "section_id": "grade_2018_artifacts"},
+      {"doc_id": "nist-csf-2-0", "section_id": "recover"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "incident_and_recovery"}
+    ]
+  },
+  {
+    "control_id": "SYS-13",
+    "label": "監視と検知",
+    "sections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_2_site_wide_practices"},
+      {"doc_id": "ipa-nfr-grade", "section_id": "related_materials"},
+      {"doc_id": "nist-csf-2-0", "section_id": "detect"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration"}
+    ]
+  },
+  {
+    "control_id": "GOV-01",
+    "label": "セキュリティ方針",
+    "sections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "overview"},
+      {"doc_id": "nist-csf-2-0", "section_id": "govern"}
+    ]
+  },
+  {
+    "control_id": "GOV-02",
+    "label": "資産管理",
+    "sections": [
+      {"doc_id": "nist-csf-2-0", "section_id": "identify"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics"}
+    ]
+  },
+  {
+    "control_id": "GOV-03",
+    "label": "権限管理",
+    "sections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity"}
+    ]
+  },
+  {
+    "control_id": "GOV-04",
+    "label": "変更管理",
+    "sections": [
+      {"doc_id": "ipa-nfr-grade", "section_id": "procedure"},
+      {"doc_id": "nist-csf-2-0", "section_id": "govern"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration"}
+    ]
+  },
+  {
+    "control_id": "GOV-05",
+    "label": "インシデント対応",
+    "sections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
+      {"doc_id": "nist-csf-2-0", "section_id": "respond"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "incident_and_recovery"}
+    ]
+  },
+  {
+    "control_id": "GOV-06",
+    "label": "復旧と事業継続",
+    "sections": [
+      {"doc_id": "ipa-nfr-grade", "section_id": "grade_2018_artifacts"},
+      {"doc_id": "nist-csf-2-0", "section_id": "recover"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "incident_and_recovery"}
+    ]
+  },
+  {
+    "control_id": "GOV-07",
+    "label": "ログ保存方針",
+    "sections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
+      {"doc_id": "nist-csf-2-0", "section_id": "govern"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration"}
+    ]
+  },
+  {
+    "control_id": "GOV-08",
+    "label": "委託先管理",
+    "sections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability"},
+      {"doc_id": "nist-csf-2-0", "section_id": "govern"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "acquisition_and_supply_chain"}
+    ]
+  },
+  {
+    "control_id": "GOV-09",
+    "label": "教育と訓練",
+    "sections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_3_failure_examples"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "risk_and_people"}
+    ]
+  },
+  {
+    "control_id": "GOV-10",
+    "label": "リスク評価",
+    "sections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability"},
+      {"doc_id": "nist-csf-2-0", "section_id": "identify"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "risk_and_people"}
+    ]
+  },
+  {
+    "control_id": "GOV-11",
+    "label": "データ管理",
+    "sections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "overview"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+    ]
+  },
+  {
+    "control_id": "GOV-12",
+    "label": "監査可能性",
+    "sections": [
+      {"doc_id": "ipa-nfr-grade", "section_id": "expected_effects"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
+      {"doc_id": "nist-csf-2-0", "section_id": "profiles_and_tiers"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration"}
+    ]
+  }
+]

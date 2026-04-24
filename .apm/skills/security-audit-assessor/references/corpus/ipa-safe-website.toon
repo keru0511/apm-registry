@@ -1,0 +1,36 @@
+doc_id: ipa-safe-website
+title: 安全なウェブサイトの作り方
+publisher: IPA
+version: 改訂第7版第4刷
+publication_date: "2021-03-31"
+canonical_url: https://www.ipa.go.jp/security/vuln/websecurity/about.html
+profiles[1]: system
+sections[7]:
+  - section_id: purpose_scope
+    title: 目的と適用範囲
+    topics[4]: web_security,application_security,developer_guidance,risk_reduction
+    text: IPA の届出情報を基に、影響の大きい脆弱性と対策を整理し、開発者と運営者が安全なウェブサイトを設計し運用するための基礎資料として使う。
+  - section_id: chapter_1_security_implementation
+    title: 第1章 ウェブアプリケーションのセキュリティ実装
+    topics[6]: input_validation,authentication_authorization,session_management,output_encoding,application_security,web_vulnerability_mitigation
+    text: SQL インジェクション、OS コマンドインジェクション、クロスサイトスクリプティングなどの主要脆弱性について、脅威、影響、原因、根本対策、影響低減策を整理する章。
+  - section_id: chapter_2_site_wide_practices
+    title: 第2章 ウェブサイトの安全性向上のための取り組み
+    topics[6]: operational_security,password_management,server_hardening,monitoring,logging,site_operations
+    text: ウェブサーバ運用、パスワード管理、公開運用時の安全性向上策など、サイト全体の安全性を高める運用面の取り組みを扱う章。
+  - section_id: chapter_3_failure_examples
+    title: 第3章 失敗例と修正例
+    topics[4]: secure_coding,anti_patterns,code_review,developer_training
+    text: 代表的な脆弱性を含む実装例、問題の説明、修正例を対比し、設計やコードレビューで見落としやすい失敗パターンを学ぶ章。
+  - section_id: appendix_checklist
+    title: 巻末チェックリスト
+    topics[4]: checklist,implementation_review,assessment,evidence_collection
+    text: ウェブアプリケーションのセキュリティ実装状況を確認するためのチェックリスト。監査時の確認観点と証跡整理に使う。
+  - section_id: supplement_safe_sql
+    title: 別冊 安全な SQL の呼び出し方
+    topics[4]: sql_injection,database_access,parameterization,secure_querying
+    text: SQL インジェクションの原因、安全な SQL 生成の考え方、言語とデータベースの組み合わせごとの安全な呼び出し例を扱う補助資料。
+  - section_id: supplement_web_health_check
+    title: 別冊 ウェブ健康診断仕様
+    topics[4]: vulnerability_assessment,diagnostic_patterns,verification,follow_up_testing
+    text: 危険度の高い脆弱性に関する診断項目と判定基準を示す。限定的な診断であるため、結果確認後の詳細診断や対策実装が前提となる。

@@ -18,7 +18,19 @@
       "認証認可や典型的な脆弱性対策の根拠を補強するとき"
     ],
     "evidence_use": "Web実装上の対策観点を整理し、入力検証や認証認可の判定根拠に使う。",
-    "notes": "逐語引用は必須ではない。通常は観点名だけを使い、必要時だけ原文へ降りる。"
+    "notes": "逐語引用は必須ではない。通常は観点名だけを使い、必要時だけ原文へ降りる。",
+    "corpus_file": "../corpus/ipa-safe-website.toon",
+    "section_ids": [
+      "purpose_scope",
+      "chapter_1_security_implementation",
+      "chapter_2_site_wide_practices",
+      "chapter_3_failure_examples",
+      "appendix_checklist",
+      "supplement_safe_sql",
+      "supplement_web_health_check"
+    ],
+    "keywords": ["web", "sql injection", "xss", "session", "password", "checklist"],
+    "aliases": ["safe website", "ipa web security", "安全なウェブサイト", "ウェブ健康診断"]
   },
   {
     "id": "ipa-nfr-grade",
@@ -40,7 +52,18 @@
       "監査不能リスクや運用継続性を評価するとき"
     ],
     "evidence_use": "可用性、復旧、運用性の抜け漏れ防止に使う。",
-    "notes": "system と governance の両方で参照できる基盤資料として扱う。"
+    "notes": "system と governance の両方で参照できる基盤資料として扱う。",
+    "corpus_file": "../corpus/ipa-nfr-grade.toon",
+    "section_ids": [
+      "purpose_and_positioning",
+      "differences_and_challenges",
+      "grade_2018_artifacts",
+      "procedure",
+      "expected_effects",
+      "related_materials"
+    ],
+    "keywords": ["non-functional", "availability", "backup", "monitoring", "operability", "requirements"],
+    "aliases": ["nfr grade", "非機能要求", "非機能要件", "要件定義"]
   },
   {
     "id": "ipa-requirements-guide",
@@ -61,7 +84,18 @@
       "権限管理、ログ、運用統制の要求根拠を補強するとき"
     ],
     "evidence_use": "重要情報を扱う前提での要求観点を整理し、統制不足の判定に使う。",
-    "notes": "system と governance の橋渡し資料として使う。"
+    "notes": "system と governance の橋渡し資料として使う。",
+    "corpus_file": "../corpus/ipa-requirements-guide.toon",
+    "section_ids": [
+      "overview",
+      "step_1_system_characteristics",
+      "step_2_risk_and_usability",
+      "step_3_controls",
+      "handbook",
+      "supplemental_notes"
+    ],
+    "keywords": ["critical information", "autonomy", "usability", "access control", "logging", "requirements"],
+    "aliases": ["requirements guide", "system youkyu", "重要情報", "要求策定ガイド"]
   },
   {
     "id": "nist-csf-2-0",
@@ -84,7 +118,21 @@
       "system と governance の結果を共通カテゴリに束ねるとき"
     ],
     "evidence_use": "総合評価や統制カテゴリの整理に使う。",
-    "notes": "CSF 2.0 の特定出版物を直接指す URL を使う。原文を毎回読む必要はない。"
+    "notes": "CSF 2.0 の特定出版物を直接指す URL を使う。原文を毎回読む必要はない。",
+    "corpus_file": "../corpus/nist-csf-2-0.toon",
+    "section_ids": [
+      "overview_and_components",
+      "govern",
+      "identify",
+      "protect",
+      "detect",
+      "respond",
+      "recover",
+      "profiles_and_tiers",
+      "reference_tool_and_quick_starts"
+    ],
+    "keywords": ["csf", "govern", "identify", "protect", "detect", "respond", "recover"],
+    "aliases": ["csf 2.0", "nist csf", "cybersecurity framework"]
   },
   {
     "id": "nist-sp-800-53-r5",
@@ -108,6 +156,18 @@
       "Critical/High 指摘に具体的な管理策ファミリを添えるとき"
     ],
     "evidence_use": "コントロールファミリ名を使って監査結果の根拠を補強する。",
-    "notes": "Planning note で後続マイナー更新が案内されていても、既定の根拠版は Update 1 に固定する。"
+    "notes": "Planning note で後続マイナー更新が案内されていても、既定の根拠版は Update 1 に固定する。",
+    "corpus_file": "../corpus/nist-sp-800-53-r5.toon",
+    "section_ids": [
+      "overview",
+      "access_and_identity",
+      "audit_and_configuration",
+      "incident_and_recovery",
+      "data_and_system_protection",
+      "acquisition_and_supply_chain",
+      "risk_and_people"
+    ],
+    "keywords": ["800-53", "control family", "access control", "audit", "incident response", "supply chain"],
+    "aliases": ["sp 800-53", "80053", "nist controls", "rev5"]
   }
 ]

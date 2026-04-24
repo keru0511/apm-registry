@@ -1,0 +1,44 @@
+doc_id: nist-csf-2-0
+title: The NIST Cybersecurity Framework (CSF) 2.0
+publisher: NIST
+version: CSWP 29
+publication_date: "2024-02-26"
+canonical_url: https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final
+profiles[2]: system,governance
+sections[9]:
+  - section_id: overview_and_components
+    title: Overview and Components
+    topics[6]: cybersecurity_framework,risk_management,profiles,tiers,governance,implementation_guidance
+    text: Any organization can use CSF 2.0 to understand, assess, prioritize, and communicate cybersecurity risk. The framework is organized around the CSF Core, Organizational Profiles, and Tiers.
+  - section_id: govern
+    title: Govern Function
+    topics[5]: govern,policy,oversight,risk_management,supply_chain
+    text: The Govern function sets cybersecurity risk strategy, roles, policy, oversight, and supply chain expectations so that cybersecurity is managed as an enterprise risk issue.
+  - section_id: identify
+    title: Identify Function
+    topics[5]: identify,asset_inventory,business_context,risk_assessment,dependencies
+    text: The Identify function focuses on understanding assets, business context, dependencies, and risks so organizations can prioritize what must be protected.
+  - section_id: protect
+    title: Protect Function
+    topics[6]: protect,identity_management,access_control,data_security,platform_security,resilience
+    text: The Protect function covers safeguards that limit or contain impact through identity, access, training, data security, platform protections, and resilient technology infrastructure.
+  - section_id: detect
+    title: Detect Function
+    topics[4]: detect,monitoring,anomalies,continuous_detection
+    text: The Detect function addresses timely discovery of cybersecurity events through monitoring, anomaly detection, and detection processes.
+  - section_id: respond
+    title: Respond Function
+    topics[4]: respond,incident_response,analysis,communications
+    text: The Respond function covers action after detection, including analysis, communications, mitigation, and improvements that contain incident impact.
+  - section_id: recover
+    title: Recover Function
+    topics[4]: recover,resilience,recovery_planning,restoration
+    text: The Recover function focuses on restoring services, maintaining resilience, and improving recovery planning after incidents or disruptions.
+  - section_id: profiles_and_tiers
+    title: Profiles and Tiers
+    topics[5]: profiles,tiers,target_state,current_state,continuous_improvement
+    text: Organizational Profiles describe current and target outcomes, while Tiers characterize how rigorously cybersecurity risk management practices are governed and repeated.
+  - section_id: reference_tool_and_quick_starts
+    title: Reference Tool and Quick Start Resources
+    topics[5]: reference_tool,quick_start_guides,implementation_examples,smb_guidance,supply_chain_guidance
+    text: CSF 2.0 is supported by a reference tool and quick-start resources that help organizations browse outcomes and adapt the framework to specific use cases.

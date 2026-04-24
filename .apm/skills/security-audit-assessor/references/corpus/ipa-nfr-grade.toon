@@ -1,0 +1,32 @@
+doc_id: ipa-nfr-grade
+title: 非機能要求グレード
+publisher: IPA
+version: "2018"
+publication_date: "2018-06-29"
+canonical_url: https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html
+profiles[2]: system,governance
+sections[6]:
+  - section_id: purpose_and_positioning
+    title: 目的と位置付け
+    topics[5]: non_functional_requirements,requirements_definition,stakeholder_alignment,availability,operability
+    text: 非機能要求について、利用者と開発者の認識差を減らし、重要項目から段階的に要求レベルを決めるための共通フレームワーク。
+  - section_id: differences_and_challenges
+    title: 機能要求と非機能要求の相違点と課題
+    topics[4]: requirements_risk,system_complexity,service_stability,upstream_design
+    text: 大規模化、複雑化、利用拡大した情報システムで、安定サービスを支える基盤要件をどのように明確化するかという前提課題を整理する。
+  - section_id: grade_2018_artifacts
+    title: 非機能要求グレード 2018 の構成物
+    topics[6]: guides,grade_tables,item_catalogs,tree_models,customization,project_templates
+    text: 利用ガイド、グレード表、項目一覧、樹系図、活用シートなどを通じて、非機能要求の全体像と具体的な選定材料を提供する。
+  - section_id: procedure
+    title: 利用手順
+    topics[5]: model_selection,prioritization,level_setting,requirements_workshop,decision_flow
+    text: モデルシステムの選定、重要項目のレベル決定、残り項目のレベル決定という順で、要求を段階的に決める手順を示す。
+  - section_id: expected_effects
+    title: 期待される効果
+    topics[5]: cost_explanation,rework_reduction,operational_stability,accountability,governance
+    text: 発注者、受注者、社会全体に対して、手戻り削減、トラブル低減、費用説明の明確化、責任分界の整理などの効果を想定する。
+  - section_id: related_materials
+    title: 周辺資料と関連情報
+    topics[5]: training_materials,case_studies,architecture_guidance,maintenance,continuity
+    text: 活用事例、研修教材、関連ガイドを含み、可用性、復旧、監視、運用保守の観点を補う補助的な参照群として使える。

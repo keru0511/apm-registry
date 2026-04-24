@@ -1,0 +1,36 @@
+doc_id: nist-sp-800-53-r5
+title: Security and Privacy Controls for Information Systems and Organizations
+publisher: NIST
+version: SP 800-53 Rev. 5 Update 1
+publication_date: "2020-09"
+canonical_url: https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final
+profiles[2]: system,governance
+sections[7]:
+  - section_id: overview
+    title: Overview
+    topics[6]: control_catalog,risk_management,security_controls,privacy_controls,assurance,tailoring
+    text: SP 800-53 provides a flexible catalog of security and privacy controls for systems and organizations and is intended to be tailored within an organization-wide risk management process.
+  - section_id: access_and_identity
+    title: Access and Identity Families
+    topics[5]: access_control,identification_authentication,least_privilege,account_management,mfa
+    text: Access Control and Identification and Authentication families cover account management, authentication strength, privileged access, and related identity protections.
+  - section_id: audit_and_configuration
+    title: Audit and Configuration Families
+    topics[5]: audit_and_accountability,configuration_management,assessment_monitoring,change_control,traceability
+    text: Audit and Accountability, Configuration Management, and Assessment Authorization and Monitoring families address logging, evidence preservation, baseline control, and change oversight.
+  - section_id: incident_and_recovery
+    title: Incident and Recovery Families
+    topics[5]: incident_response,contingency_planning,maintenance,recovery_testing,continuity
+    text: Incident Response, Contingency Planning, and Maintenance families support preparation, response, restoration, and operational sustainment during disruptions.
+  - section_id: data_and_system_protection
+    title: Data and System Protection Families
+    topics[6]: media_protection,system_communications_protection,system_information_integrity,confidentiality,integrity,availability
+    text: Media Protection, System and Communications Protection, and System and Information Integrity families address data handling, transmission protection, hardening, and integrity safeguards.
+  - section_id: acquisition_and_supply_chain
+    title: Acquisition and Supply Chain Families
+    topics[5]: system_services_acquisition,supply_chain,third_party_risk,planning,program_management
+    text: System and Services Acquisition, Supply Chain Risk Management, Planning, and Program Management families support secure procurement, supplier controls, and governance.
+  - section_id: risk_and_people
+    title: Risk and People Families
+    topics[6]: risk_assessment,awareness_training,personnel_security,physical_environmental_protection,privacy,organizational_controls
+    text: Risk Assessment, Awareness and Training, Personnel Security, Physical and Environmental Protection, and related families cover organizational risk analysis and supporting people processes.

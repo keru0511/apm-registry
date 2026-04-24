@@ -1,0 +1,38 @@
+[
+  {
+    "query": "認証",
+    "topics": ["authentication_authorization"],
+    "controls": ["SYS-01", "GOV-03"],
+    "documents": ["ipa-safe-website", "ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"]
+  },
+  {
+    "query": "ログ",
+    "topics": ["logging_auditability", "monitoring_detection"],
+    "controls": ["SYS-06", "SYS-13", "GOV-07", "GOV-12"],
+    "documents": ["ipa-safe-website", "ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"]
+  },
+  {
+    "query": "委託先",
+    "topics": ["third_party_risk"],
+    "controls": ["GOV-08"],
+    "documents": ["ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"]
+  },
+  {
+    "query": "復旧",
+    "topics": ["backup_recovery", "incident_response"],
+    "controls": ["SYS-12", "GOV-05", "GOV-06"],
+    "documents": ["ipa-nfr-grade", "ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"]
+  },
+  {
+    "query": "脆弱性",
+    "topics": ["input_validation", "vulnerability_management"],
+    "controls": ["SYS-03", "SYS-07"],
+    "documents": ["ipa-safe-website", "ipa-nfr-grade", "nist-sp-800-53-r5"]
+  },
+  {
+    "query": "方針",
+    "topics": ["security_governance"],
+    "controls": ["GOV-01", "GOV-04", "GOV-10"],
+    "documents": ["ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"]
+  }
+]
