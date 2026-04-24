@@ -16,6 +16,13 @@
       "nist-csf-2-0.protect",
       "nist-sp-800-53-r5.access_and_identity"
     ],
+    "related_subsections": [
+      "ipa-safe-website.chapter_1_security_implementation.chapter_1_security_implementation.auth_and_session",
+      "ipa-requirements-guide.step_3_controls.step_3_controls.tree_mapping",
+      "nist-csf-2-0.protect.protect_identity",
+      "nist-sp-800-53-r5.access_and_identity.access_and_identity.access_control",
+      "nist-sp-800-53-r5.access_and_identity.access_and_identity.identification_authentication"
+    ],
     "reference_map": {
       "ipa": ["認証認可"],
       "nist_csf": ["PR.AA"],
@@ -36,6 +43,10 @@
     "related_sections": [
       "ipa-safe-website.chapter_1_security_implementation",
       "nist-sp-800-53-r5.access_and_identity"
+    ],
+    "related_subsections": [
+      "ipa-safe-website.chapter_1_security_implementation.chapter_1_security_implementation.auth_and_session",
+      "nist-sp-800-53-r5.access_and_identity.access_and_identity.identification_authentication"
     ],
     "reference_map": {
       "ipa": ["セッション管理"],
@@ -59,6 +70,14 @@
       "ipa-safe-website.supplement_safe_sql",
       "nist-sp-800-53-r5.data_and_system_protection"
     ],
+    "related_subsections": [
+      "ipa-safe-website.chapter_1_security_implementation.chapter_1_security_implementation.vulnerability_set",
+      "ipa-safe-website.chapter_1_security_implementation.chapter_1_security_implementation.root_cause_controls",
+      "ipa-safe-website.supplement_safe_sql.supplement_safe_sql.cause_and_building",
+      "ipa-safe-website.supplement_safe_sql.supplement_safe_sql.safe_requirements",
+      "ipa-safe-website.supplement_safe_sql.supplement_safe_sql.language_db_examples",
+      "nist-sp-800-53-r5.data_and_system_protection.data_and_system_protection.integrity"
+    ],
     "reference_map": {
       "ipa": ["入力値検証"],
       "nist_csf": [],
@@ -81,6 +100,11 @@
       "nist-csf-2-0.protect",
       "nist-sp-800-53-r5.data_and_system_protection"
     ],
+    "related_subsections": [
+      "ipa-requirements-guide.step_3_controls.step_3_controls.incident_and_secret",
+      "nist-csf-2-0.protect.protect_data_and_platform",
+      "nist-sp-800-53-r5.data_and_system_protection.data_and_system_protection.communications"
+    ],
     "reference_map": {
       "ipa": ["データ保護"],
       "nist_csf": [],
@@ -100,8 +124,15 @@
     "related_documents": ["ipa-requirements-guide", "nist-sp-800-53-r5", "nist-csf-2-0"],
     "related_sections": [
       "ipa-requirements-guide.overview",
+      "ipa-requirements-guide.step_1_system_characteristics",
       "nist-csf-2-0.protect",
       "nist-sp-800-53-r5.data_and_system_protection"
+    ],
+    "related_subsections": [
+      "ipa-requirements-guide.overview.overview.goal",
+      "ipa-requirements-guide.step_1_system_characteristics.step_1_system_characteristics.cia_priority",
+      "nist-csf-2-0.protect.protect_data_and_platform",
+      "nist-sp-800-53-r5.data_and_system_protection.data_and_system_protection.communications"
     ],
     "reference_map": {
       "ipa": ["データ保護"],
@@ -126,6 +157,14 @@
       "nist-csf-2-0.detect",
       "nist-sp-800-53-r5.audit_and_configuration"
     ],
+    "related_subsections": [
+      "ipa-safe-website.chapter_2_site_wide_practices.chapter_2_site_wide_practices.logging_monitoring",
+      "ipa-requirements-guide.step_3_controls.step_3_controls.requirement_items",
+      "ipa-requirements-guide.step_3_controls.step_3_controls.incident_and_secret",
+      "nist-csf-2-0.detect.detect_monitoring",
+      "nist-csf-2-0.detect.detect_process",
+      "nist-sp-800-53-r5.audit_and_configuration.audit_and_configuration.audit"
+    ],
     "reference_map": {
       "ipa": ["ログと追跡性"],
       "nist_csf": ["DE.CM"],
@@ -142,11 +181,21 @@
       "脆弱性検知や棚卸が行われているか",
       "既知脆弱性の放置がないか"
     ],
-    "related_documents": ["ipa-safe-website", "ipa-nfr-grade", "nist-sp-800-53-r5"],
+    "related_documents": ["ipa-safe-website", "ipa-nfr-grade", "nist-csf-2-0", "nist-sp-800-53-r5"],
     "related_sections": [
       "ipa-safe-website.supplement_web_health_check",
       "ipa-nfr-grade.related_materials",
-      "nist-sp-800-53-r5.risk_and_people"
+      "nist-csf-2-0.identify",
+      "nist-sp-800-53-r5.risk_and_people",
+      "nist-sp-800-53-r5.data_and_system_protection"
+    ],
+    "related_subsections": [
+      "ipa-safe-website.supplement_web_health_check.supplement_web_health_check.diagnostic_items",
+      "ipa-safe-website.supplement_web_health_check.supplement_web_health_check.limitations",
+      "ipa-nfr-grade.related_materials.related_materials.training",
+      "nist-csf-2-0.identify.identify_assets",
+      "nist-sp-800-53-r5.risk_and_people.risk_and_people.risk",
+      "nist-sp-800-53-r5.data_and_system_protection.data_and_system_protection.integrity"
     ],
     "reference_map": {
       "ipa": ["保守性"],
@@ -164,11 +213,17 @@
       "レビューや承認を経て変更されるか",
       "環境差分が追跡できるか"
     ],
-    "related_documents": ["ipa-safe-website", "ipa-nfr-grade", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "related_documents": ["ipa-nfr-grade", "nist-csf-2-0", "nist-sp-800-53-r5"],
     "related_sections": [
       "ipa-nfr-grade.procedure",
       "nist-csf-2-0.govern",
       "nist-sp-800-53-r5.audit_and_configuration"
+    ],
+    "related_subsections": [
+      "ipa-nfr-grade.procedure.procedure.selection",
+      "ipa-nfr-grade.procedure.procedure.remaining_items",
+      "nist-csf-2-0.govern.govern.strategy_and_policy",
+      "nist-sp-800-53-r5.audit_and_configuration.audit_and_configuration.configuration"
     ],
     "reference_map": {
       "ipa": ["運用性"],
@@ -192,6 +247,12 @@
       "nist-csf-2-0.protect",
       "nist-sp-800-53-r5.acquisition_and_supply_chain"
     ],
+    "related_subsections": [
+      "ipa-nfr-grade.procedure.procedure.selection",
+      "nist-csf-2-0.protect.protect_data_and_platform",
+      "nist-sp-800-53-r5.acquisition_and_supply_chain.acquisition_and_supply_chain.procurement",
+      "nist-sp-800-53-r5.acquisition_and_supply_chain.acquisition_and_supply_chain.scrm"
+    ],
     "reference_map": {
       "ipa": ["運用性"],
       "nist_csf": [],
@@ -208,11 +269,19 @@
       "WAF、FW、踏み台など境界防御が適切か",
       "不要な公開ポートや経路が残っていないか"
     ],
-    "related_documents": ["ipa-requirements-guide", "nist-sp-800-53-r5", "nist-csf-2-0"],
+    "related_documents": ["ipa-safe-website", "ipa-requirements-guide", "nist-sp-800-53-r5", "nist-csf-2-0"],
     "related_sections": [
+      "ipa-safe-website.chapter_2_site_wide_practices",
       "ipa-requirements-guide.step_2_risk_and_usability",
       "nist-csf-2-0.protect",
       "nist-sp-800-53-r5.data_and_system_protection"
+    ],
+    "related_subsections": [
+      "ipa-safe-website.chapter_2_site_wide_practices.chapter_2_site_wide_practices.server_ops",
+      "ipa-requirements-guide.step_2_risk_and_usability.step_2_risk_and_usability.problem_risk_tree",
+      "ipa-requirements-guide.step_2_risk_and_usability.step_2_risk_and_usability.third_party_and_boundary",
+      "nist-csf-2-0.protect.protect_data_and_platform",
+      "nist-sp-800-53-r5.data_and_system_protection.data_and_system_protection.communications"
     ],
     "reference_map": {
       "ipa": ["運用統制"],
@@ -237,6 +306,13 @@
       "nist-csf-2-0.protect",
       "nist-sp-800-53-r5.data_and_system_protection"
     ],
+    "related_subsections": [
+      "ipa-requirements-guide.overview.overview.goal",
+      "ipa-requirements-guide.step_1_system_characteristics.step_1_system_characteristics.cia_priority",
+      "nist-csf-2-0.protect.protect_data_and_platform",
+      "nist-sp-800-53-r5.data_and_system_protection.data_and_system_protection.media",
+      "nist-sp-800-53-r5.data_and_system_protection.data_and_system_protection.communications"
+    ],
     "reference_map": {
       "ipa": ["データ保護"],
       "nist_csf": ["PR.DS"],
@@ -253,11 +329,18 @@
       "復旧手順や RPO/RTO が定義されているか",
       "復旧試験の証跡があるか"
     ],
-    "related_documents": ["ipa-safe-website", "ipa-nfr-grade", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "related_documents": ["ipa-nfr-grade", "nist-csf-2-0", "nist-sp-800-53-r5"],
     "related_sections": [
       "ipa-nfr-grade.grade_2018_artifacts",
       "nist-csf-2-0.recover",
       "nist-sp-800-53-r5.incident_and_recovery"
+    ],
+    "related_subsections": [
+      "ipa-nfr-grade.grade_2018_artifacts.grade_2018_artifacts.main_set",
+      "ipa-nfr-grade.grade_2018_artifacts.grade_2018_artifacts.typical_models",
+      "nist-csf-2-0.recover.recover_restoration",
+      "nist-csf-2-0.recover.recover_improvement",
+      "nist-sp-800-53-r5.incident_and_recovery.incident_and_recovery.contingency"
     ],
     "reference_map": {
       "ipa": ["バックアップ/復旧"],
@@ -281,6 +364,15 @@
       "ipa-nfr-grade.related_materials",
       "nist-csf-2-0.detect",
       "nist-sp-800-53-r5.audit_and_configuration"
+    ],
+    "related_subsections": [
+      "ipa-safe-website.chapter_2_site_wide_practices.chapter_2_site_wide_practices.server_ops",
+      "ipa-safe-website.chapter_2_site_wide_practices.chapter_2_site_wide_practices.logging_monitoring",
+      "ipa-nfr-grade.related_materials.related_materials.training",
+      "nist-csf-2-0.detect.detect_monitoring",
+      "nist-csf-2-0.detect.detect_process",
+      "nist-sp-800-53-r5.audit_and_configuration.audit_and_configuration.audit",
+      "nist-sp-800-53-r5.audit_and_configuration.audit_and_configuration.assessment_monitoring"
     ],
     "reference_map": {
       "ipa": ["監視"],

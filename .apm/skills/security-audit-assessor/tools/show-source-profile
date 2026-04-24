@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+profile_file="$script_dir/source-profiles.json"
+
+if [[ ! -f "$profile_file" ]]; then
+  echo "missing source profile manifest: $profile_file" >&2
+  exit 2
+fi
+
+if [[ $# -gt 1 ]]; then
+  echo "usage: show-source-profile [doc_id]" >&2
+  exit 2
+fi
+
+if [[ $# -eq 0 ]]; then
+  jq -r '
+    sort_by(.priority)
+    | .[]
+    | [
+        (.priority | tostring),
+        .doc_id,
+        .handler,
+        .shared_normalizer,
+        .status
+      ]
+    | @tsv
+  ' "$profile_file"
+  exit 0
+fi
+
+doc_id="$1"
+
+jq -e --arg doc_id "$doc_id" '
+  map(select(.doc_id == $doc_id)) | .[0]
+' "$profile_file" >/dev/null || {
+  echo "unknown doc_id: $doc_id" >&2
+  exit 2
+}
+
+jq --arg doc_id "$doc_id" '
+  map(select(.doc_id == $doc_id)) | .[0]
+' "$profile_file"

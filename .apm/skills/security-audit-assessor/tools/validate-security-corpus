@@ -1,0 +1,148 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+skill_root="$(cd "$script_dir/.." && pwd)"
+ref_root="$skill_root/references"
+
+require_cmd() {
+  local cmd="$1"
+  if ! command -v "$cmd" >/dev/null 2>&1; then
+    echo "missing required command: $cmd" >&2
+    exit 2
+  fi
+}
+
+require_cmd jq
+require_cmd toon
+
+json_files=(
+  "$ref_root/index/documents.json"
+  "$ref_root/index/topics.json"
+  "$ref_root/index/controls.json"
+  "$ref_root/index/aliases.json"
+  "$ref_root/index/security-standards.json"
+  "$ref_root/mappings/system-controls.json"
+  "$ref_root/mappings/governance-controls.json"
+)
+
+for path in "${json_files[@]}"; do
+  jq empty "$path"
+done
+
+tmp_dir="$(mktemp -d)"
+cleanup() {
+  rm -rf "$tmp_dir"
+}
+trap cleanup EXIT
+
+while IFS= read -r -d '' toon_file; do
+  out_json="$tmp_dir/$(basename "$toon_file").json"
+  toon "$toon_file" -o "$out_json" >/dev/null
+  jq empty "$out_json"
+done < <(find "$ref_root/corpus" -type f -name '*.toon' -print0 | sort -z)
+
+python3 - <<'PY' "$ref_root" "$tmp_dir"
+import json
+import pathlib
+import sys
+
+ref_root = pathlib.Path(sys.argv[1])
+tmp_dir = pathlib.Path(sys.argv[2])
+
+documents = json.loads((ref_root / "index" / "documents.json").read_text())
+docs_by_id = {doc["doc_id"]: doc for doc in documents}
+corpus_refs = {}
+
+for json_file in sorted(tmp_dir.glob("*.json")):
+    data = json.loads(json_file.read_text())
+    doc_id = data["doc_id"]
+    if doc_id not in docs_by_id:
+        raise SystemExit(f"unknown doc_id in corpus: {doc_id}")
+
+    sections = data.get("sections", [])
+    if not sections:
+        raise SystemExit(f"{doc_id}: sections missing")
+
+    section_ids = set()
+    subsection_ids = set()
+    for section in sections:
+        for key in ("section_id", "section_number", "title", "source_heading", "subsections"):
+            if key not in section:
+                raise SystemExit(f"{doc_id}: missing section key {key}")
+        if section["section_id"] in section_ids:
+            raise SystemExit(f"{doc_id}: duplicate section_id {section['section_id']}")
+        section_ids.add(section["section_id"])
+
+        if not section["subsections"]:
+            raise SystemExit(f"{doc_id}: empty subsections in {section['section_id']}")
+
+        for subsection in section["subsections"]:
+            for key in ("subsection_id", "source_heading", "topics", "controls", "key_points", "source_passages"):
+                if key not in subsection:
+                    raise SystemExit(f"{doc_id}: missing subsection key {key}")
+            if subsection["subsection_id"] in subsection_ids:
+                raise SystemExit(f"{doc_id}: duplicate subsection_id {subsection['subsection_id']}")
+            subsection_ids.add(subsection["subsection_id"])
+            if not subsection["key_points"]:
+                raise SystemExit(f"{doc_id}: empty key_points in {subsection['subsection_id']}")
+            if not subsection["source_passages"]:
+                raise SystemExit(f"{doc_id}: empty source_passages in {subsection['subsection_id']}")
+
+    expected_sections = docs_by_id[doc_id].get("section_count")
+    expected_subsections = docs_by_id[doc_id].get("subsection_count")
+    if expected_sections is not None and expected_sections != len(section_ids):
+        raise SystemExit(f"{doc_id}: section_count mismatch {expected_sections} != {len(section_ids)}")
+    if expected_subsections is not None and expected_subsections != len(subsection_ids):
+        raise SystemExit(f"{doc_id}: subsection_count mismatch {expected_subsections} != {len(subsection_ids)}")
+    corpus_refs[doc_id] = {
+        "sections": section_ids,
+        "subsections": subsection_ids,
+    }
+
+controls = json.loads((ref_root / "index" / "controls.json").read_text())
+topics = json.loads((ref_root / "index" / "topics.json").read_text())
+aliases = json.loads((ref_root / "index" / "aliases.json").read_text())
+
+def require_section_ref(kind, owner, item):
+    doc_id = item["doc_id"]
+    if doc_id not in corpus_refs:
+        raise SystemExit(f"{kind} {owner}: unknown doc_id {doc_id}")
+    if item["section_id"] not in corpus_refs[doc_id]["sections"]:
+        raise SystemExit(f"{kind} {owner}: unknown section {doc_id}.{item['section_id']}")
+
+def require_subsection_ref(kind, owner, item):
+    require_section_ref(kind, owner, item)
+    if item["subsection_id"] not in corpus_refs[item["doc_id"]]["subsections"]:
+        raise SystemExit(f"{kind} {owner}: unknown subsection {item['doc_id']}.{item['subsection_id']}")
+
+for control in controls:
+    for section in control.get("sections", []):
+        require_section_ref("control", control["control_id"], section)
+    for subsection in control.get("subsections", []):
+        require_subsection_ref("control", control["control_id"], subsection)
+
+for topic in topics:
+    for section in topic.get("sections", []):
+        require_section_ref("topic", topic["topic"], section)
+    for subsection in topic.get("subsections", []):
+        require_subsection_ref("topic", topic["topic"], subsection)
+
+for alias in aliases:
+    for subsection in alias.get("subsections", []):
+        require_subsection_ref("alias", alias["query"], subsection)
+
+for mapping_name in ("system-controls.json", "governance-controls.json"):
+    mapping = json.loads((ref_root / "mappings" / mapping_name).read_text())
+    for item in mapping:
+        for ref in item.get("related_sections", []):
+            doc_id, section_id = ref.split(".", 1)
+            require_section_ref("mapping", item["control_id"], {"doc_id": doc_id, "section_id": section_id})
+        for ref in item.get("related_subsections", []):
+            doc_id, section_id, subsection_id = ref.split(".", 2)
+            require_subsection_ref("mapping", item["control_id"], {"doc_id": doc_id, "section_id": section_id, "subsection_id": subsection_id})
+
+print("schema-ok")
+PY
+
+echo "security corpus validation passed"

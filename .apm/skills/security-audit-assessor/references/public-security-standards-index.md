@@ -14,4 +14,5 @@
 - `mappings/governance-controls.json`
 
 通常は Markdown 一覧ではなく、構造化された JSON 索引と TOON corpus を使う。
+TOON corpus は `section/subsection/key_points/source_passages` を持つ本文準拠のローカル正本として扱う。
 原文 HTML はローカル正本ではなく、必要時だけ `security-standards.json` の `canonical_url` から公式サイトを参照する。

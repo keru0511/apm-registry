@@ -7,26 +7,250 @@ canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
 profiles[2]: system,governance
 sections[6]:
   - section_id: overview
+    section_number: intro
     title: 概要
+    source_heading: 重要情報を扱うシステムの要求策定ガイド
     topics[6]: critical_systems,autonomy,usability,requirements_definition,operational_control,data_protection
-    text: 重要情報を扱うシステムで、自律性と利便性の両立を前提に、管理者が構築、調達、運用時の要求仕様を策定するためのガイド。
+    text: 重要情報を扱うシステムに対し、自律性と利便性の両立を前提に要求仕様を策定するためのガイドである。
+    subsections[2]:
+      - subsection_id: overview.goal
+        source_heading: ガイドの目的
+        topics[4]: critical_systems,requirements_definition,data_protection,operational_control
+        controls[3]: SYS-11,GOV-01,GOV-11
+        key_points[3]:
+          - 重要情報を扱うシステムの要求仕様策定を支援することが主目的である。
+          - 構築や調達だけでなく運用時の要求まで視野に入れている。
+          - system と governance を橋渡しする基礎文書として扱える。
+        source_passages[2]:
+          - passage_id: overview.goal.p1
+            text: 重要情報を扱うシステムの要求策定を支援するガイドとして提供されている。
+            source_locator: 概要
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
+          - passage_id: overview.goal.p2
+            text: 管理者が構築、調達、運用時の要求仕様を策定するための資料である。
+            source_locator: 概要
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
+      - subsection_id: overview.autonomy_usability
+        source_heading: 自律性と利便性の両立
+        topics[4]: autonomy,usability,tradeoffs,operational_risk
+        controls[2]: GOV-10,GOV-11
+        key_points[3]:
+          - 強い統制だけではなく、自律性と利便性の両立を前提に対策を選ぶ。
+          - 業務影響や利用者体験とのトレードオフを要求定義で扱う姿勢がある。
+          - 監査では過剰統制や説明不足の指摘整理にも使える。
+        source_passages[1]:
+          - passage_id: overview.autonomy_usability.p1
+            text: 自律性と利便性の両立を前提とした要求策定が強調されている。
+            source_locator: 概要
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
   - section_id: step_1_system_characteristics
+    section_number: step_1
     title: ステップ1 システムの特性評価
+    source_heading: 1. システムの特性評価
     topics[5]: system_characteristics,prioritization,confidentiality,integrity,availability
-    text: 9つの評価項目でシステム特性を整理し、漏えい、改ざん、停止防止や変化対応のうち、何を優先して守るかを見極める。
+    text: システムの特性を整理し、何を優先して守るかを見極める最初のステップ。
+    subsections[2]:
+      - subsection_id: step_1_system_characteristics.nine_axes
+        source_heading: 9つの評価項目
+        topics[4]: system_characteristics,prioritization,asset_inventory,risk_assessment
+        controls[3]: GOV-02,GOV-10,GOV-11
+        key_points[3]:
+          - 9つの評価項目でシステム特性を整理し、優先すべき保護対象を判断する。
+          - 何を守るべきかが曖昧なまま control を並べないための入口である。
+          - 資産管理とリスク評価の両方に接続できる。
+        source_passages[2]:
+          - passage_id: step_1_system_characteristics.nine_axes.p1
+            text: システム特性を評価するための複数項目で整理する前提が置かれている。
+            source_locator: ステップ1
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
+          - passage_id: step_1_system_characteristics.nine_axes.p2
+            text: どの特性を優先して守るかを見極める段階として説明されている。
+            source_locator: ステップ1
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
+      - subsection_id: step_1_system_characteristics.cia_priority
+        source_heading: 機密性 完全性 可用性の優先
+        topics[4]: confidentiality,integrity,availability,data_protection
+        controls[3]: SYS-05,SYS-11,GOV-11
+        key_points[3]:
+          - 漏えい、改ざん、停止のどれを優先して防ぐかを先に決める。
+          - 後続の対策選定やログ設計の前提になる。
+          - 監査では保護対象と対策の整合性確認に使える。
+        source_passages[1]:
+          - passage_id: step_1_system_characteristics.cia_priority.p1
+            text: 漏えい、改ざん、停止防止などの優先を見極める段階である。
+            source_locator: ステップ1
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
   - section_id: step_2_risk_and_usability
+    section_number: step_2
     title: ステップ2 問題 リスク 利便性要素の選定
+    source_heading: 2. 問題 リスク 利便性要素の選定
     topics[6]: risk_identification,usability_factors,tree_analysis,control_selection,tradeoffs,operational_risk
-    text: 享受したい内容をもとに、問題、リスク、利便性要素を樹形図で整理し、対策検討の対象を明確化する段階。
+    text: 問題、リスク、利便性要素を樹形図で整理し、何に対して対策を選ぶかを具体化する段階。
+    subsections[3]:
+      - subsection_id: step_2_risk_and_usability.problem_risk_tree
+        source_heading: 問題とリスクの樹形図
+        topics[4]: risk_identification,tree_analysis,operational_risk,prioritization
+        controls[3]: SYS-10,GOV-08,GOV-10
+        key_points[3]:
+          - 問題とリスクを樹形図で整理して、対策選定の対象を明確にする。
+          - ネットワーク境界、委託先、運用責任分界などの論点に落とし込みやすい。
+          - 監査では想定リスクが文書化されているかを見る根拠になる。
+        source_passages[2]:
+          - passage_id: step_2_risk_and_usability.problem_risk_tree.p1
+            text: 問題とリスクを樹形図で整理する段階として説明されている。
+            source_locator: ステップ2
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
+          - passage_id: step_2_risk_and_usability.problem_risk_tree.p2
+            text: 対策検討の対象を明確化するための作業として位置付けられている。
+            source_locator: ステップ2
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
+      - subsection_id: step_2_risk_and_usability.usability_factors
+        source_heading: 利便性要素との両立
+        topics[4]: usability_factors,tradeoffs,access_control,user_experience
+        controls[2]: SYS-01,GOV-10
+        key_points[3]:
+          - リスクだけでなく利便性要素も整理するため、過度な統制を避けやすい。
+          - 認証や権限制御を業務要件と整合させる際に使える。
+          - 監査では例外運用の合理性確認にも役立つ。
+        source_passages[1]:
+          - passage_id: step_2_risk_and_usability.usability_factors.p1
+            text: 問題やリスクと並んで利便性要素も選定対象に含めている。
+            source_locator: ステップ2
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
+      - subsection_id: step_2_risk_and_usability.third_party_and_boundary
+        source_heading: 外部接続と責任分界に展開する観点
+        topics[4]: network_boundary,third_party_risk,responsibility_split,operational_control
+        controls[2]: SYS-10,GOV-08
+        key_points[3]:
+          - 樹形図整理は委託先、外部サービス、公開範囲の責任分界確認に展開しやすい。
+          - ネットワーク境界や第三者依存の不明確さを監査質問に落とし込める。
+          - code だけでは見えない前提確認の根拠になる。
+        source_passages[1]:
+          - passage_id: step_2_risk_and_usability.third_party_and_boundary.p1
+            text: リスク整理を通じて責任分界や外部依存を明らかにする使い方ができる。
+            source_locator: ステップ2
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
   - section_id: step_3_controls
+    section_number: step_3
     title: ステップ3 必要な対策の選定
+    source_heading: 3. 必要な対策の選定
     topics[6]: control_selection,access_control,logging,operational_control,security_requirements,auditability
-    text: 問題や利便性要素にひもづく対策を選び、目的と要求項目を一覧で確認しながら要求仕様に落とし込む段階。
+    text: 明確化された問題、リスク、利便性要素に紐づく対策を選び、要求項目一覧を用いて仕様に落とし込む段階。
+    subsections[3]:
+      - subsection_id: step_3_controls.tree_mapping
+        source_heading: 樹形図から対策への対応付け
+        topics[4]: control_selection,requirements_traceability,access_control,logging
+        controls[5]: SYS-01,SYS-04,SYS-06,GOV-03,GOV-05
+        key_points[3]:
+          - 問題、リスク、利便性要素に紐づく対策を樹形図で選定する。
+          - access control、logging、incident response などを要求仕様へ接続しやすい。
+          - 監査では要求と実装のトレース根拠になる。
+        source_passages[2]:
+          - passage_id: step_3_controls.tree_mapping.p1
+            text: 明確化された問題や利便性要素に紐づく対策を選定すると説明されている。
+            source_locator: ステップ3
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
+          - passage_id: step_3_controls.tree_mapping.p2
+            text: 対策ごとの目的と詳細内容を一覧で示す構成になっている。
+            source_locator: ステップ3
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
+      - subsection_id: step_3_controls.requirement_items
+        source_heading: 要求項目一覧
+        topics[4]: security_requirements,auditability,logging,operational_control
+        controls[4]: SYS-06,GOV-07,GOV-11,GOV-12
+        key_points[3]:
+          - 対策の目的と要求項目を一覧で示し、選定根拠を明確にしている。
+          - ログ、データ管理、運用統制の要求を並べて確認しやすい。
+          - 監査時には evidence 収集の checklist として扱える。
+        source_passages[2]:
+          - passage_id: step_3_controls.requirement_items.p1
+            text: 対策ごとの目的と詳細内容である要求項目を一覧として示す。
+            source_locator: ステップ3
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
+          - passage_id: step_3_controls.requirement_items.p2
+            text: 目的を理解しながら要求項目を選定できるようにしている。
+            source_locator: ステップ3
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
+      - subsection_id: step_3_controls.incident_and_secret
+        source_heading: シークレット ログ インシデントへの展開
+        topics[4]: secret_management,logging,incident_response,operational_control
+        controls[4]: SYS-04,SYS-06,GOV-05,GOV-07
+        key_points[3]:
+          - 実装と運用をまたぐ control を要求項目として扱える。
+          - シークレット管理やログ保存方針など、コード外の統制確認にも向く。
+          - combined 監査の接着剤になる section である。
+        source_passages[1]:
+          - passage_id: step_3_controls.incident_and_secret.p1
+            text: 対策を要求仕様に落とし込む段階であり、実装と運用の両面に広げやすい。
+            source_locator: ステップ3
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
   - section_id: handbook
+    section_number: supplement
     title: 別冊 活用の手引き
+    source_heading: 活用の手引き
     topics[4]: adoption_guidance,stakeholder_communication,implementation_support,governance
-    text: 事業者向けに本ガイドの適用効果と使い方を分かりやすく補足し、導入時の説明資料として使える別冊。
+    text: ガイドの導入効果と使い方を補足し、関係者への説明資料として使える別冊。
+    subsections[2]:
+      - subsection_id: handbook.adoption
+        source_heading: 導入効果の説明
+        topics[4]: adoption_guidance,stakeholder_communication,governance,change_management
+        controls[2]: GOV-01,GOV-12
+        key_points[3]:
+          - ガイドの適用意義を説明するため、組織導入時の説得材料になる。
+          - 実務手順だけでなく、なぜ必要かを共有する用途がある。
+          - governance 側の方針説明と相性が良い。
+        source_passages[1]:
+          - passage_id: handbook.adoption.p1
+            text: 活用の手引きは導入効果と使い方を補足する別冊として位置付けられている。
+            source_locator: 別冊
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
+      - subsection_id: handbook.communication
+        source_heading: 関係者説明
+        topics[4]: stakeholder_communication,implementation_support,training_materials,documentation
+        controls[2]: GOV-09,GOV-12
+        key_points[3]:
+          - 関係者説明や教育時の補助資料として活用できる。
+          - 要求項目の背景理解を揃える効果がある。
+          - 監査では周知やトレーニング evidence に接続できる。
+        source_passages[1]:
+          - passage_id: handbook.communication.p1
+            text: 活用の手引きは事業者向けに分かりやすい補足資料として使える。
+            source_locator: 別冊
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
   - section_id: supplemental_notes
+    section_number: notes
     title: 要求項目への補足説明
+    source_heading: 本ガイド内の要求項目に対する補足説明
     topics[4]: emerging_controls,industry_readiness,technical_notes,continuous_update
-    text: 発展途上の要求項目や業界で取り組み途上の対策について、継続的に補足説明を提供する更新領域。
+    text: 発展途上の要求項目や業界全体で取り組み途上の内容について、継続的に補足する更新領域。
+    subsections[2]:
+      - subsection_id: supplemental_notes.evolving_items
+        source_heading: 発展途上の要求項目
+        topics[4]: emerging_controls,industry_readiness,continuous_update,risk_management
+        controls[2]: GOV-10,GOV-12
+        key_points[3]:
+          - 一部要求項目は技術的に発展途上であり、固定値ではなく継続見直しが必要である。
+          - 監査では未成熟領域を即不適合にせず、要確認や改善提案に落とし込む材料になる。
+          - 更新追従の仕組み自体が統制観点になる。
+        source_passages[2]:
+          - passage_id: supplemental_notes.evolving_items.p1
+            text: 一部の要求項目は技術的に発展途上のものを含むと説明されている。
+            source_locator: 補足説明
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
+          - passage_id: supplemental_notes.evolving_items.p2
+            text: 取り組み状況を本サイトで共有すると案内されている。
+            source_locator: 補足説明
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html
+      - subsection_id: supplemental_notes.follow_up
+        source_heading: 継続的な補足共有
+        topics[4]: continuous_update,governance,technical_notes,assurance
+        controls[2]: GOV-01,GOV-12
+        key_points[3]:
+          - 要求仕様を一度決めて終わりではなく、補足情報を継続共有する前提がある。
+          - ローカル corpus 更新の必要性を示す section でもある。
+          - 監査では更新管理の有無を確認する根拠になる。
+        source_passages[1]:
+          - passage_id: supplemental_notes.follow_up.p1
+            text: 補足説明をサイトで継続共有する運用が明記されている。
+            source_locator: 補足説明
+            canonical_url: https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html

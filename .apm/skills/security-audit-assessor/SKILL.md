@@ -7,6 +7,8 @@ description: システム全体を公的なセキュリティ基準をベース�
 
 このスキルは、リポジトリや付随文書を対象に、`IPA + NIST` のハイブリッド観点で静的セキュリティ監査を行う。
 通常はローカルの `JSON index + mode別 mapping` だけを読み、根拠補強が必要なときだけ公式 URL に降りる。NIST や IPA の原文を毎回読む前提にはしない。
+参照データを更新・再生成する保守用コマンドは `tools/` 配下にあり、配布先での通常監査フローでは使わない。
+原典ごとの抽出戦略や handler 分類は `tools/source-profiles.json` に寄せる。
 
 ## 監査モード
 
@@ -32,7 +34,7 @@ description: システム全体を公的なセキュリティ基準をベース�
 5. `references/question-triage.md`
 6. 出力直前に `references/report-template.md`
 
-通常は `JSON index` と `mapping` で対象 section を引き、必要な section だけ `references/corpus/*.toon` から読む。`Critical` または `High` の指摘で根拠補強が必要な場合だけ、`security-standards.json` の `canonical_url` を使って公式原文を見に行く。
+通常は `JSON index` と `mapping` で対象 section と `related_subsections` を引き、必要な `section -> subsection -> key_points/source_passages` だけ `references/corpus/*.toon` から読む。`Critical` または `High` の指摘で根拠補強が必要な場合だけ、`security-standards.json` の `canonical_url` を使って公式原文を見に行く。
 
 ## 実行手順
 
@@ -45,7 +47,7 @@ description: システム全体を公的なセキュリティ基準をベース�
 2. 判明している情報だけで仮の前提を置く。
 3. 監査モードを決める。
 4. 対象に応じてコード、設定、IaC、CI/CD、README、運用手順、ポリシー文書を収集する。
-5. 選択したモードの `mapping JSON` から監査項目を読み、`related_sections` を起点に証跡を探す。
+5. 選択したモードの `mapping JSON` から監査項目を読み、`related_subsections` を優先し、必要に応じて `related_sections` から補完して証跡を探す。
 6. 監査項目ごとに `適合` / `要改善` / `不適合` / `要確認` で判定する。
 7. リポジトリや付随文書にない事実で判定に必要なものがあれば、不足情報質問を段階的に出す。
 8. 回答があれば判定を更新し、回答がなくても監査を完了する。

@@ -7,6 +7,13 @@
       {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
       {"doc_id": "nist-csf-2-0", "section_id": "protect"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation", "subsection_id": "chapter_1_security_implementation.auth_and_session"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.tree_mapping"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect", "subsection_id": "protect_identity"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity", "subsection_id": "access_and_identity.access_control"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity", "subsection_id": "access_and_identity.identification_authentication"}
     ]
   },
   {
@@ -15,6 +22,10 @@
     "sections": [
       {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation", "subsection_id": "chapter_1_security_implementation.auth_and_session"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity", "subsection_id": "access_and_identity.identification_authentication"}
     ]
   },
   {
@@ -24,6 +35,14 @@
       {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation"},
       {"doc_id": "ipa-safe-website", "section_id": "supplement_safe_sql"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation", "subsection_id": "chapter_1_security_implementation.vulnerability_set"},
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation", "subsection_id": "chapter_1_security_implementation.root_cause_controls"},
+      {"doc_id": "ipa-safe-website", "section_id": "supplement_safe_sql", "subsection_id": "supplement_safe_sql.cause_and_building"},
+      {"doc_id": "ipa-safe-website", "section_id": "supplement_safe_sql", "subsection_id": "supplement_safe_sql.safe_requirements"},
+      {"doc_id": "ipa-safe-website", "section_id": "supplement_safe_sql", "subsection_id": "supplement_safe_sql.language_db_examples"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "subsection_id": "data_and_system_protection.integrity"}
     ]
   },
   {
@@ -33,6 +52,11 @@
       {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
       {"doc_id": "nist-csf-2-0", "section_id": "protect"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.incident_and_secret"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect", "subsection_id": "protect_data_and_platform"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "subsection_id": "data_and_system_protection.communications"}
     ]
   },
   {
@@ -40,8 +64,15 @@
     "label": "暗号化",
     "sections": [
       {"doc_id": "ipa-requirements-guide", "section_id": "overview"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics"},
       {"doc_id": "nist-csf-2-0", "section_id": "protect"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "overview", "subsection_id": "overview.goal"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics", "subsection_id": "step_1_system_characteristics.cia_priority"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect", "subsection_id": "protect_data_and_platform"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "subsection_id": "data_and_system_protection.communications"}
     ]
   },
   {
@@ -52,6 +83,14 @@
       {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
       {"doc_id": "nist-csf-2-0", "section_id": "detect"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_2_site_wide_practices", "subsection_id": "chapter_2_site_wide_practices.logging_monitoring"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.requirement_items"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.incident_and_secret"},
+      {"doc_id": "nist-csf-2-0", "section_id": "detect", "subsection_id": "detect_monitoring"},
+      {"doc_id": "nist-csf-2-0", "section_id": "detect", "subsection_id": "detect_process"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "subsection_id": "audit_and_configuration.audit"}
     ]
   },
   {
@@ -60,7 +99,17 @@
     "sections": [
       {"doc_id": "ipa-safe-website", "section_id": "supplement_web_health_check"},
       {"doc_id": "ipa-nfr-grade", "section_id": "related_materials"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "risk_and_people"}
+      {"doc_id": "nist-csf-2-0", "section_id": "identify"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "risk_and_people"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-safe-website", "section_id": "supplement_web_health_check", "subsection_id": "supplement_web_health_check.diagnostic_items"},
+      {"doc_id": "ipa-safe-website", "section_id": "supplement_web_health_check", "subsection_id": "supplement_web_health_check.limitations"},
+      {"doc_id": "ipa-nfr-grade", "section_id": "related_materials", "subsection_id": "related_materials.training"},
+      {"doc_id": "nist-csf-2-0", "section_id": "identify", "subsection_id": "identify_assets"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "risk_and_people", "subsection_id": "risk_and_people.risk"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "subsection_id": "data_and_system_protection.integrity"}
     ]
   },
   {
@@ -70,6 +119,12 @@
       {"doc_id": "ipa-nfr-grade", "section_id": "procedure"},
       {"doc_id": "nist-csf-2-0", "section_id": "govern"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-nfr-grade", "section_id": "procedure", "subsection_id": "procedure.selection"},
+      {"doc_id": "ipa-nfr-grade", "section_id": "procedure", "subsection_id": "procedure.remaining_items"},
+      {"doc_id": "nist-csf-2-0", "section_id": "govern", "subsection_id": "govern.strategy_and_policy"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "subsection_id": "audit_and_configuration.configuration"}
     ]
   },
   {
@@ -79,15 +134,29 @@
       {"doc_id": "ipa-nfr-grade", "section_id": "procedure"},
       {"doc_id": "nist-csf-2-0", "section_id": "protect"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "acquisition_and_supply_chain"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-nfr-grade", "section_id": "procedure", "subsection_id": "procedure.selection"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect", "subsection_id": "protect_data_and_platform"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "acquisition_and_supply_chain", "subsection_id": "acquisition_and_supply_chain.procurement"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "acquisition_and_supply_chain", "subsection_id": "acquisition_and_supply_chain.scrm"}
     ]
   },
   {
     "control_id": "SYS-10",
     "label": "ネットワーク境界",
     "sections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_2_site_wide_practices"},
       {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability"},
       {"doc_id": "nist-csf-2-0", "section_id": "protect"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_2_site_wide_practices", "subsection_id": "chapter_2_site_wide_practices.server_ops"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability", "subsection_id": "step_2_risk_and_usability.problem_risk_tree"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability", "subsection_id": "step_2_risk_and_usability.third_party_and_boundary"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect", "subsection_id": "protect_data_and_platform"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "subsection_id": "data_and_system_protection.communications"}
     ]
   },
   {
@@ -98,6 +167,13 @@
       {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics"},
       {"doc_id": "nist-csf-2-0", "section_id": "protect"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "overview", "subsection_id": "overview.goal"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics", "subsection_id": "step_1_system_characteristics.cia_priority"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect", "subsection_id": "protect_data_and_platform"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "subsection_id": "data_and_system_protection.media"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "subsection_id": "data_and_system_protection.communications"}
     ]
   },
   {
@@ -107,6 +183,13 @@
       {"doc_id": "ipa-nfr-grade", "section_id": "grade_2018_artifacts"},
       {"doc_id": "nist-csf-2-0", "section_id": "recover"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "incident_and_recovery"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-nfr-grade", "section_id": "grade_2018_artifacts", "subsection_id": "grade_2018_artifacts.main_set"},
+      {"doc_id": "ipa-nfr-grade", "section_id": "grade_2018_artifacts", "subsection_id": "grade_2018_artifacts.typical_models"},
+      {"doc_id": "nist-csf-2-0", "section_id": "recover", "subsection_id": "recover_restoration"},
+      {"doc_id": "nist-csf-2-0", "section_id": "recover", "subsection_id": "recover_improvement"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "incident_and_recovery", "subsection_id": "incident_and_recovery.contingency"}
     ]
   },
   {
@@ -117,6 +200,15 @@
       {"doc_id": "ipa-nfr-grade", "section_id": "related_materials"},
       {"doc_id": "nist-csf-2-0", "section_id": "detect"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_2_site_wide_practices", "subsection_id": "chapter_2_site_wide_practices.server_ops"},
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_2_site_wide_practices", "subsection_id": "chapter_2_site_wide_practices.logging_monitoring"},
+      {"doc_id": "ipa-nfr-grade", "section_id": "related_materials", "subsection_id": "related_materials.training"},
+      {"doc_id": "nist-csf-2-0", "section_id": "detect", "subsection_id": "detect_monitoring"},
+      {"doc_id": "nist-csf-2-0", "section_id": "detect", "subsection_id": "detect_process"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "subsection_id": "audit_and_configuration.audit"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "subsection_id": "audit_and_configuration.assessment_monitoring"}
     ]
   },
   {
@@ -125,6 +217,11 @@
     "sections": [
       {"doc_id": "ipa-requirements-guide", "section_id": "overview"},
       {"doc_id": "nist-csf-2-0", "section_id": "govern"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "overview", "subsection_id": "overview.goal"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "handbook", "subsection_id": "handbook.adoption"},
+      {"doc_id": "nist-csf-2-0", "section_id": "govern", "subsection_id": "govern.strategy_and_policy"}
     ]
   },
   {
@@ -133,6 +230,10 @@
     "sections": [
       {"doc_id": "nist-csf-2-0", "section_id": "identify"},
       {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics", "subsection_id": "step_1_system_characteristics.nine_axes"},
+      {"doc_id": "nist-csf-2-0", "section_id": "identify", "subsection_id": "identify_assets"}
     ]
   },
   {
@@ -142,6 +243,11 @@
       {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
       {"doc_id": "nist-csf-2-0", "section_id": "protect"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.tree_mapping"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect", "subsection_id": "protect_identity"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity", "subsection_id": "access_and_identity.access_control"}
     ]
   },
   {
@@ -151,6 +257,12 @@
       {"doc_id": "ipa-nfr-grade", "section_id": "procedure"},
       {"doc_id": "nist-csf-2-0", "section_id": "govern"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-nfr-grade", "section_id": "procedure", "subsection_id": "procedure.selection"},
+      {"doc_id": "ipa-nfr-grade", "section_id": "procedure", "subsection_id": "procedure.remaining_items"},
+      {"doc_id": "nist-csf-2-0", "section_id": "govern", "subsection_id": "govern.strategy_and_policy"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "subsection_id": "audit_and_configuration.configuration"}
     ]
   },
   {
@@ -160,6 +272,12 @@
       {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
       {"doc_id": "nist-csf-2-0", "section_id": "respond"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "incident_and_recovery"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.incident_and_secret"},
+      {"doc_id": "nist-csf-2-0", "section_id": "respond", "subsection_id": "respond_analysis"},
+      {"doc_id": "nist-csf-2-0", "section_id": "respond", "subsection_id": "respond_mitigation"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "incident_and_recovery", "subsection_id": "incident_and_recovery.incident"}
     ]
   },
   {
@@ -169,6 +287,12 @@
       {"doc_id": "ipa-nfr-grade", "section_id": "grade_2018_artifacts"},
       {"doc_id": "nist-csf-2-0", "section_id": "recover"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "incident_and_recovery"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-nfr-grade", "section_id": "grade_2018_artifacts", "subsection_id": "grade_2018_artifacts.typical_models"},
+      {"doc_id": "nist-csf-2-0", "section_id": "recover", "subsection_id": "recover_restoration"},
+      {"doc_id": "nist-csf-2-0", "section_id": "recover", "subsection_id": "recover_improvement"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "incident_and_recovery", "subsection_id": "incident_and_recovery.contingency"}
     ]
   },
   {
@@ -178,6 +302,12 @@
       {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
       {"doc_id": "nist-csf-2-0", "section_id": "govern"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.requirement_items"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.incident_and_secret"},
+      {"doc_id": "nist-csf-2-0", "section_id": "govern", "subsection_id": "govern.strategy_and_policy"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "subsection_id": "audit_and_configuration.audit"}
     ]
   },
   {
@@ -187,6 +317,12 @@
       {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability"},
       {"doc_id": "nist-csf-2-0", "section_id": "govern"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "acquisition_and_supply_chain"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability", "subsection_id": "step_2_risk_and_usability.third_party_and_boundary"},
+      {"doc_id": "nist-csf-2-0", "section_id": "govern", "subsection_id": "govern_supply_chain"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "acquisition_and_supply_chain", "subsection_id": "acquisition_and_supply_chain.procurement"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "acquisition_and_supply_chain", "subsection_id": "acquisition_and_supply_chain.scrm"}
     ]
   },
   {
@@ -194,7 +330,14 @@
     "label": "教育と訓練",
     "sections": [
       {"doc_id": "ipa-safe-website", "section_id": "chapter_3_failure_examples"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "handbook"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "risk_and_people"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_3_failure_examples", "subsection_id": "chapter_3_failure_examples.training_usage"},
+      {"doc_id": "ipa-safe-website", "section_id": "chapter_3_failure_examples", "subsection_id": "chapter_3_failure_examples.code_examples"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "handbook", "subsection_id": "handbook.communication"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "risk_and_people", "subsection_id": "risk_and_people.people"}
     ]
   },
   {
@@ -204,6 +347,12 @@
       {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability"},
       {"doc_id": "nist-csf-2-0", "section_id": "identify"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "risk_and_people"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability", "subsection_id": "step_2_risk_and_usability.problem_risk_tree"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability", "subsection_id": "step_2_risk_and_usability.usability_factors"},
+      {"doc_id": "nist-csf-2-0", "section_id": "identify", "subsection_id": "identify_risk"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "risk_and_people", "subsection_id": "risk_and_people.risk"}
     ]
   },
   {
@@ -214,6 +363,12 @@
       {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics"},
       {"doc_id": "nist-csf-2-0", "section_id": "protect"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-requirements-guide", "section_id": "overview", "subsection_id": "overview.goal"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics", "subsection_id": "step_1_system_characteristics.cia_priority"},
+      {"doc_id": "nist-csf-2-0", "section_id": "protect", "subsection_id": "protect_data_and_platform"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "subsection_id": "data_and_system_protection.media"}
     ]
   },
   {
@@ -224,6 +379,15 @@
       {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
       {"doc_id": "nist-csf-2-0", "section_id": "profiles_and_tiers"},
       {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration"}
+    ],
+    "subsections": [
+      {"doc_id": "ipa-nfr-grade", "section_id": "expected_effects", "subsection_id": "expected_effects.accountability"},
+      {"doc_id": "ipa-nfr-grade", "section_id": "expected_effects", "subsection_id": "expected_effects.rework"},
+      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.requirement_items"},
+      {"doc_id": "nist-csf-2-0", "section_id": "profiles_and_tiers", "subsection_id": "profiles_and_tiers.profiles"},
+      {"doc_id": "nist-csf-2-0", "section_id": "profiles_and_tiers", "subsection_id": "profiles_and_tiers.tiers"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "subsection_id": "audit_and_configuration.audit"},
+      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "subsection_id": "audit_and_configuration.assessment_monitoring"}
     ]
   }
 ]

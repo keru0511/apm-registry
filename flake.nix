@@ -48,7 +48,7 @@
               echo "apm-registry dev shell"
               echo "- JSON tooling: jq"
               echo "- TOON tooling: toon (via pinned @toon-format/cli)"
-              echo "- Corpus validation: scripts/validate-security-corpus"
+              echo "- Corpus validation: .apm/skills/security-audit-assessor/tools/validate-security-corpus"
             '';
           };
         }

@@ -8,6 +8,8 @@
     "profiles": ["system"],
     "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html",
     "corpus_file": "../corpus/ipa-safe-website.toon",
+    "section_count": 7,
+    "subsection_count": 17,
     "section_ids": [
       "purpose_scope",
       "chapter_1_security_implementation",
@@ -29,6 +31,8 @@
     "profiles": ["system", "governance"],
     "canonical_url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html",
     "corpus_file": "../corpus/ipa-nfr-grade.toon",
+    "section_count": 6,
+    "subsection_count": 13,
     "section_ids": [
       "purpose_and_positioning",
       "differences_and_challenges",
@@ -49,6 +53,8 @@
     "profiles": ["system", "governance"],
     "canonical_url": "https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html",
     "corpus_file": "../corpus/ipa-requirements-guide.toon",
+    "section_count": 6,
+    "subsection_count": 14,
     "section_ids": [
       "overview",
       "step_1_system_characteristics",
@@ -69,6 +75,8 @@
     "profiles": ["system", "governance"],
     "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final",
     "corpus_file": "../corpus/nist-csf-2-0.toon",
+    "section_count": 9,
+    "subsection_count": 19,
     "section_ids": [
       "overview_and_components",
       "govern",
@@ -92,6 +100,8 @@
     "profiles": ["system", "governance"],
     "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
     "corpus_file": "../corpus/nist-sp-800-53-r5.toon",
+    "section_count": 7,
+    "subsection_count": 16,
     "section_ids": [
       "overview",
       "access_and_identity",

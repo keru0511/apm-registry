@@ -11,6 +11,7 @@ This repository is an APM package source.
 - `.apm/agents/`: agent definitions (`*.agent.md`)
 - `.apm/hooks/`: hook definitions (`*.json`)
 - `scripts/agent-orchestrator`: shared command for provider execution and post-stop checks
+- `.apm/skills/security-audit-assessor/tools/`: security audit reference maintenance tools
 
 ## Basic workflow
 
@@ -33,13 +34,18 @@ For a reproducible local toolchain, this repository provides a `flake.nix`.
 # enter the development shell
 nix develop
 
-# validate JSON indexes and TOON corpus files
-scripts/validate-security-corpus
+# validate security audit references
+.apm/skills/security-audit-assessor/tools/validate-security-corpus
 ```
 
 The dev shell includes the basic CLI utilities used in this repo and a pinned `toon`
 wrapper backed by `@toon-format/cli@2.0.1`. The first `toon` invocation may populate
 the local npm cache.
+
+The root `scripts/` directory is reserved for repo-wide entrypoints. Skill-specific
+reference maintenance commands live under the owning skill, such as
+`.apm/skills/security-audit-assessor/tools/`. A compatibility wrapper remains at
+`scripts/validate-security-corpus`.
 
 ## Publish and consume
 
