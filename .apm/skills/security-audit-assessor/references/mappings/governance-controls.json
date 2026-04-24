@@ -1,0 +1,206 @@
+[
+  {
+    "control_id": "GOV-01",
+    "label": "セキュリティ方針",
+    "priority": "high",
+    "overlap_group": "security-governance-policy",
+    "checkpoints": [
+      "方針と適用範囲が明文化されているか",
+      "責任者と例外承認が定義されているか",
+      "定期見直しの仕組みがあるか"
+    ],
+    "related_documents": ["ipa-requirements-guide", "nist-csf-2-0"],
+    "reference_map": {
+      "ipa": ["運用統制"],
+      "nist_csf": ["GV.OV"],
+      "nist_sp_800_53": []
+    }
+  },
+  {
+    "control_id": "GOV-02",
+    "label": "資産管理",
+    "priority": "medium",
+    "overlap_group": "asset-inventory-management",
+    "checkpoints": [
+      "システム、データ、外部サービスの棚卸があるか",
+      "責任者が割り当てられているか",
+      "更新や廃止の反映手順があるか"
+    ],
+    "related_documents": ["ipa-requirements-guide", "nist-csf-2-0"],
+    "reference_map": {
+      "ipa": ["資産管理"],
+      "nist_csf": ["ID.AM"],
+      "nist_sp_800_53": []
+    }
+  },
+  {
+    "control_id": "GOV-03",
+    "label": "権限管理",
+    "priority": "critical",
+    "overlap_group": "identity-access-control",
+    "checkpoints": [
+      "付与、変更、剥奪の手順があるか",
+      "定期棚卸や特権ID統制があるか",
+      "承認証跡が残るか"
+    ],
+    "related_documents": ["ipa-requirements-guide", "nist-sp-800-53-r5", "nist-csf-2-0"],
+    "reference_map": {
+      "ipa": ["権限管理"],
+      "nist_csf": ["PR.AA"],
+      "nist_sp_800_53": ["Access Control"]
+    }
+  },
+  {
+    "control_id": "GOV-04",
+    "label": "変更管理",
+    "priority": "high",
+    "overlap_group": "configuration-change-control",
+    "checkpoints": [
+      "本番変更に承認手順があるか",
+      "ロールバック計画があるか",
+      "変更履歴とレビュー証跡が残るか"
+    ],
+    "related_documents": ["ipa-nfr-grade", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": ["運用性"],
+      "nist_csf": [],
+      "nist_sp_800_53": ["Configuration Management"]
+    }
+  },
+  {
+    "control_id": "GOV-05",
+    "label": "インシデント対応",
+    "priority": "critical",
+    "overlap_group": "incident-response-management",
+    "checkpoints": [
+      "初動、封じ込め、報告の流れが明確か",
+      "連絡先とエスカレーション経路があるか",
+      "再発防止の振り返りが組み込まれているか"
+    ],
+    "related_documents": ["ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": ["運用統制"],
+      "nist_csf": ["RS.CO"],
+      "nist_sp_800_53": ["Incident Response"]
+    }
+  },
+  {
+    "control_id": "GOV-06",
+    "label": "復旧と事業継続",
+    "priority": "high",
+    "overlap_group": "resilience-recovery",
+    "checkpoints": [
+      "事業継続や復旧の責任が明確か",
+      "代替手段や訓練計画があるか",
+      "復旧要件が関係者に共有されているか"
+    ],
+    "related_documents": ["ipa-nfr-grade", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": ["バックアップ/復旧"],
+      "nist_csf": ["RC.RP"],
+      "nist_sp_800_53": ["Contingency Planning"]
+    }
+  },
+  {
+    "control_id": "GOV-07",
+    "label": "ログ保存方針",
+    "priority": "high",
+    "overlap_group": "logging-auditability",
+    "checkpoints": [
+      "保存期間と保護方針があるか",
+      "参照権限とレビュー責任が明確か",
+      "監査要件を満たす証跡保全ができるか"
+    ],
+    "related_documents": ["ipa-requirements-guide", "nist-sp-800-53-r5", "nist-csf-2-0"],
+    "reference_map": {
+      "ipa": ["ログと追跡性"],
+      "nist_csf": ["DE.CM"],
+      "nist_sp_800_53": ["Audit and Accountability"]
+    }
+  },
+  {
+    "control_id": "GOV-08",
+    "label": "委託先管理",
+    "priority": "high",
+    "overlap_group": "third-party-risk-management",
+    "checkpoints": [
+      "委託先へのセキュリティ要求が契約化されているか",
+      "報告義務や監査権が整理されているか",
+      "責任分界が曖昧でないか"
+    ],
+    "related_documents": ["ipa-requirements-guide", "nist-csf-2-0"],
+    "reference_map": {
+      "ipa": ["運用統制"],
+      "nist_csf": ["GV.SC"],
+      "nist_sp_800_53": []
+    }
+  },
+  {
+    "control_id": "GOV-09",
+    "label": "教育と訓練",
+    "priority": "medium",
+    "overlap_group": "security-awareness-training",
+    "checkpoints": [
+      "定期的なセキュリティ教育があるか",
+      "特権者や運用者向けの追加教育があるか",
+      "実施記録が残るか"
+    ],
+    "related_documents": ["ipa-requirements-guide", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": ["運用統制"],
+      "nist_csf": [],
+      "nist_sp_800_53": ["Awareness and Training"]
+    }
+  },
+  {
+    "control_id": "GOV-10",
+    "label": "リスク評価",
+    "priority": "medium",
+    "overlap_group": "risk-assessment-governance",
+    "checkpoints": [
+      "リスクの識別と優先付けがあるか",
+      "見直し頻度が定義されているか",
+      "結果が施策や例外承認に反映されるか"
+    ],
+    "related_documents": ["ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": ["運用統制"],
+      "nist_csf": ["GV.RM"],
+      "nist_sp_800_53": ["Risk Assessment"]
+    }
+  },
+  {
+    "control_id": "GOV-11",
+    "label": "データ管理",
+    "priority": "high",
+    "overlap_group": "data-protection-governance",
+    "checkpoints": [
+      "分類、保存先、保持期間が定義されているか",
+      "削除や持ち出し管理があるか",
+      "法令や契約要件と整合しているか"
+    ],
+    "related_documents": ["ipa-requirements-guide", "nist-sp-800-53-r5", "nist-csf-2-0"],
+    "reference_map": {
+      "ipa": ["データ保護"],
+      "nist_csf": ["PR.DS"],
+      "nist_sp_800_53": ["Media Protection", "System and Communications Protection"]
+    }
+  },
+  {
+    "control_id": "GOV-12",
+    "label": "監査可能性",
+    "priority": "high",
+    "overlap_group": "logging-auditability",
+    "checkpoints": [
+      "監査に必要な証跡が保存されているか",
+      "監査窓口や手順があるか",
+      "再現可能な説明責任が果たせるか"
+    ],
+    "related_documents": ["ipa-nfr-grade", "ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": ["保守性", "ログと追跡性"],
+      "nist_csf": ["GV.OV", "DE.CM"],
+      "nist_sp_800_53": ["Audit and Accountability"]
+    }
+  }
+]

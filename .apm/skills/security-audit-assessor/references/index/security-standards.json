@@ -1,0 +1,113 @@
+[
+  {
+    "id": "ipa-safe-website",
+    "title": "安全なウェブサイトの作り方",
+    "publisher": "IPA",
+    "version": "改訂第7版第4刷",
+    "publication_date": "2021-03-31",
+    "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html",
+    "profiles": ["system"],
+    "topics": [
+      "input_validation",
+      "session_management",
+      "authentication_authorization",
+      "web_vulnerability_mitigation"
+    ],
+    "read_when": [
+      "WebアプリやAPIの実装レビューで入力検証やセッション管理を確認するとき",
+      "認証認可や典型的な脆弱性対策の根拠を補強するとき"
+    ],
+    "evidence_use": "Web実装上の対策観点を整理し、入力検証や認証認可の判定根拠に使う。",
+    "notes": "逐語引用は必須ではない。通常は観点名だけを使い、必要時だけ原文へ降りる。"
+  },
+  {
+    "id": "ipa-nfr-grade",
+    "title": "非機能要求グレード",
+    "publisher": "IPA",
+    "version": "2018",
+    "publication_date": "2018-06-29",
+    "canonical_url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html",
+    "profiles": ["system", "governance"],
+    "topics": [
+      "availability",
+      "backup_recovery",
+      "monitoring",
+      "operability",
+      "maintainability"
+    ],
+    "read_when": [
+      "可用性、復旧、監視、運用保守の観点を補強するとき",
+      "監査不能リスクや運用継続性を評価するとき"
+    ],
+    "evidence_use": "可用性、復旧、運用性の抜け漏れ防止に使う。",
+    "notes": "system と governance の両方で参照できる基盤資料として扱う。"
+  },
+  {
+    "id": "ipa-requirements-guide",
+    "title": "重要情報を扱うシステムの要求策定ガイド",
+    "publisher": "IPA",
+    "version": "2023-07-18 公開 / 2024-07-29 最終更新",
+    "publication_date": "2023-07-18",
+    "canonical_url": "https://www.ipa.go.jp/digital/kaihatsu/system-youkyu.html",
+    "profiles": ["system", "governance"],
+    "topics": [
+      "data_protection",
+      "access_control",
+      "auditability",
+      "operational_control"
+    ],
+    "read_when": [
+      "重要情報や個人情報の保護要件を確認するとき",
+      "権限管理、ログ、運用統制の要求根拠を補強するとき"
+    ],
+    "evidence_use": "重要情報を扱う前提での要求観点を整理し、統制不足の判定に使う。",
+    "notes": "system と governance の橋渡し資料として使う。"
+  },
+  {
+    "id": "nist-csf-2-0",
+    "title": "The NIST Cybersecurity Framework (CSF) 2.0",
+    "publisher": "NIST",
+    "version": "CSWP 29",
+    "publication_date": "2024-02-26",
+    "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final",
+    "profiles": ["system", "governance"],
+    "topics": [
+      "govern",
+      "identify",
+      "protect",
+      "detect",
+      "respond",
+      "recover"
+    ],
+    "read_when": [
+      "組織横断の統制観点で総評を整理するとき",
+      "system と governance の結果を共通カテゴリに束ねるとき"
+    ],
+    "evidence_use": "総合評価や統制カテゴリの整理に使う。",
+    "notes": "CSF 2.0 の特定出版物を直接指す URL を使う。原文を毎回読む必要はない。"
+  },
+  {
+    "id": "nist-sp-800-53-r5",
+    "title": "Security and Privacy Controls for Information Systems and Organizations",
+    "publisher": "NIST",
+    "version": "SP 800-53 Rev. 5 Update 1",
+    "publication_date": "2020-09",
+    "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "profiles": ["system", "governance"],
+    "topics": [
+      "access_control",
+      "audit_and_accountability",
+      "configuration_management",
+      "incident_response",
+      "system_and_information_integrity",
+      "contingency_planning",
+      "risk_assessment"
+    ],
+    "read_when": [
+      "コントロールファミリ単位で技術統制や管理統制の根拠を補強するとき",
+      "Critical/High 指摘に具体的な管理策ファミリを添えるとき"
+    ],
+    "evidence_use": "コントロールファミリ名を使って監査結果の根拠を補強する。",
+    "notes": "Planning note で後続マイナー更新が案内されていても、既定の根拠版は Update 1 に固定する。"
+  }
+]

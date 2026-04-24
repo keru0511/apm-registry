@@ -1,0 +1,223 @@
+[
+  {
+    "control_id": "SYS-01",
+    "label": "認証認可",
+    "priority": "critical",
+    "overlap_group": "identity-access-control",
+    "checkpoints": [
+      "強固な認証方式が採用されているか",
+      "認可漏れや過剰権限を防ぐ実装があるか",
+      "特権操作に追加統制があるか"
+    ],
+    "related_documents": ["ipa-safe-website", "ipa-requirements-guide", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": ["認証認可"],
+      "nist_csf": ["PR.AA"],
+      "nist_sp_800_53": ["Access Control"]
+    }
+  },
+  {
+    "control_id": "SYS-02",
+    "label": "セッション管理",
+    "priority": "high",
+    "overlap_group": "session-security",
+    "checkpoints": [
+      "セッション固定化防止が考慮されているか",
+      "セッション失効や期限管理が適切か",
+      "ログアウト後に再利用できないか"
+    ],
+    "related_documents": ["ipa-safe-website", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": ["セッション管理"],
+      "nist_csf": [],
+      "nist_sp_800_53": ["Identification and Authentication", "System and Communications Protection"]
+    }
+  },
+  {
+    "control_id": "SYS-03",
+    "label": "入力検証",
+    "priority": "critical",
+    "overlap_group": "application-input-security",
+    "checkpoints": [
+      "SQLi、XSS、コマンド注入などの対策があるか",
+      "入力値の許可リストまたは同等の制御があるか",
+      "危険な出力やエラーメッセージ漏えいがないか"
+    ],
+    "related_documents": ["ipa-safe-website", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": ["入力値検証"],
+      "nist_csf": [],
+      "nist_sp_800_53": ["System and Information Integrity", "System and Communications Protection"]
+    }
+  },
+  {
+    "control_id": "SYS-04",
+    "label": "シークレット管理",
+    "priority": "critical",
+    "overlap_group": "secret-key-management",
+    "checkpoints": [
+      "秘密情報がコードや設定に直書きされていないか",
+      "ローテーションやアクセス制御が設計されているか",
+      "CI/CD から安全に参照されるか"
+    ],
+    "related_documents": ["ipa-requirements-guide", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": ["データ保護"],
+      "nist_csf": [],
+      "nist_sp_800_53": ["Configuration Management", "System and Communications Protection"]
+    }
+  },
+  {
+    "control_id": "SYS-05",
+    "label": "暗号化",
+    "priority": "high",
+    "overlap_group": "data-cryptography",
+    "checkpoints": [
+      "通信経路の暗号化があるか",
+      "保存データの暗号化要件が定義されているか",
+      "鍵管理責任が曖昧でないか"
+    ],
+    "related_documents": ["ipa-requirements-guide", "nist-sp-800-53-r5", "nist-csf-2-0"],
+    "reference_map": {
+      "ipa": ["データ保護"],
+      "nist_csf": ["PR.DS"],
+      "nist_sp_800_53": ["System and Communications Protection"]
+    }
+  },
+  {
+    "control_id": "SYS-06",
+    "label": "ログと監査証跡",
+    "priority": "high",
+    "overlap_group": "logging-auditability",
+    "checkpoints": [
+      "重要操作や認証失敗が記録されるか",
+      "ログ改ざん防止や保護が考慮されているか",
+      "レビューやアラートの運用があるか"
+    ],
+    "related_documents": ["ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": ["ログと追跡性"],
+      "nist_csf": ["DE.CM"],
+      "nist_sp_800_53": ["Audit and Accountability"]
+    }
+  },
+  {
+    "control_id": "SYS-07",
+    "label": "脆弱性管理",
+    "priority": "high",
+    "overlap_group": "vulnerability-management",
+    "checkpoints": [
+      "依存関係やイメージの更新方針があるか",
+      "脆弱性検知や棚卸が行われているか",
+      "既知脆弱性の放置がないか"
+    ],
+    "related_documents": ["ipa-nfr-grade", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": ["保守性"],
+      "nist_csf": [],
+      "nist_sp_800_53": ["Risk Assessment", "System and Information Integrity"]
+    }
+  },
+  {
+    "control_id": "SYS-08",
+    "label": "設定とIaC管理",
+    "priority": "medium",
+    "overlap_group": "configuration-change-control",
+    "checkpoints": [
+      "構成が再現可能に管理されているか",
+      "レビューや承認を経て変更されるか",
+      "環境差分が追跡できるか"
+    ],
+    "related_documents": ["ipa-nfr-grade", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": ["運用性"],
+      "nist_csf": [],
+      "nist_sp_800_53": ["Configuration Management"]
+    }
+  },
+  {
+    "control_id": "SYS-09",
+    "label": "CI/CD保護",
+    "priority": "high",
+    "overlap_group": "build-deploy-integrity",
+    "checkpoints": [
+      "ビルドとデプロイの権限が分離されているか",
+      "CI/CD シークレットが保護されているか",
+      "署名や改ざん検知の考慮があるか"
+    ],
+    "related_documents": ["ipa-nfr-grade", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": ["運用性"],
+      "nist_csf": [],
+      "nist_sp_800_53": ["Configuration Management", "System and Services Acquisition"]
+    }
+  },
+  {
+    "control_id": "SYS-10",
+    "label": "ネットワーク境界",
+    "priority": "critical",
+    "overlap_group": "network-boundary-protection",
+    "checkpoints": [
+      "公開範囲と到達制御が明確か",
+      "WAF、FW、踏み台など境界防御が適切か",
+      "不要な公開ポートや経路が残っていないか"
+    ],
+    "related_documents": ["ipa-requirements-guide", "nist-sp-800-53-r5", "nist-csf-2-0"],
+    "reference_map": {
+      "ipa": ["運用統制"],
+      "nist_csf": ["PR.PT"],
+      "nist_sp_800_53": ["System and Communications Protection"]
+    }
+  },
+  {
+    "control_id": "SYS-11",
+    "label": "データ保護",
+    "priority": "critical",
+    "overlap_group": "data-protection-governance",
+    "checkpoints": [
+      "個人情報や機密情報の分類があるか",
+      "保持、削除、持ち出し制御が整理されているか",
+      "権限と利用目的が整合しているか"
+    ],
+    "related_documents": ["ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": ["データ保護"],
+      "nist_csf": ["PR.DS"],
+      "nist_sp_800_53": ["Media Protection", "System and Communications Protection"]
+    }
+  },
+  {
+    "control_id": "SYS-12",
+    "label": "バックアップと復旧",
+    "priority": "high",
+    "overlap_group": "resilience-recovery",
+    "checkpoints": [
+      "バックアップ方針と取得頻度があるか",
+      "復旧手順や RPO/RTO が定義されているか",
+      "復旧試験の証跡があるか"
+    ],
+    "related_documents": ["ipa-nfr-grade", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": ["バックアップ/復旧"],
+      "nist_csf": ["RC.RP"],
+      "nist_sp_800_53": ["Contingency Planning"]
+    }
+  },
+  {
+    "control_id": "SYS-13",
+    "label": "監視と検知",
+    "priority": "medium",
+    "overlap_group": "monitoring-detection",
+    "checkpoints": [
+      "異常操作や障害を検知できるか",
+      "セキュリティイベントの通知があるか",
+      "監視対象が重要資産をカバーしているか"
+    ],
+    "related_documents": ["ipa-nfr-grade", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": ["監視"],
+      "nist_csf": ["DE.CM"],
+      "nist_sp_800_53": ["System and Information Integrity"]
+    }
+  }
+]
