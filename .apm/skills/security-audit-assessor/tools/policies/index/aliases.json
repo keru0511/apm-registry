@@ -1,0 +1,216 @@
+[
+  {
+    "query": "認証",
+    "topics": [
+      "authentication_authorization"
+    ],
+    "controls": [
+      "SYS-01",
+      "GOV-03"
+    ],
+    "preferred_topics": [
+      "authentication_authorization"
+    ],
+    "preferred_controls": [
+      "SYS-01"
+    ],
+    "preferred_documents": [
+      "ipa-safe-website",
+      "nist-sp-800-53-r5",
+      "nist-csf-2-0",
+      "ipa-requirements-guide"
+    ],
+    "must_have_topics": [
+      "authentication_authorization"
+    ],
+    "excluded_subsections": [
+      "ipa-safe-website.appendix_checklist.appendix_checklist.assessment_usage",
+      "ipa-safe-website.appendix_checklist.appendix_checklist.audit_mapping"
+    ],
+    "max_results": 4,
+    "notes": "まず実装系の認証認可 subsection を見て、必要なら NIST family で補強する。"
+  },
+  {
+    "query": "ログ",
+    "topics": [
+      "logging_auditability",
+      "monitoring_detection"
+    ],
+    "controls": [
+      "SYS-06",
+      "SYS-13",
+      "GOV-07",
+      "GOV-12"
+    ],
+    "preferred_topics": [
+      "logging_auditability",
+      "monitoring_detection"
+    ],
+    "preferred_controls": [
+      "SYS-06",
+      "SYS-13"
+    ],
+    "preferred_documents": [
+      "ipa-safe-website",
+      "nist-csf-2-0",
+      "nist-sp-800-53-r5",
+      "ipa-requirements-guide"
+    ],
+    "must_have_topics": [
+      "logging_auditability",
+      "monitoring_detection"
+    ],
+    "excluded_subsections": [
+      "ipa-safe-website.appendix_checklist.appendix_checklist.assessment_usage",
+      "ipa-safe-website.chapter_3_failure_examples.chapter_3_failure_examples.training_usage",
+      "nist-csf-2-0.overview_and_components.overview_and_components.components",
+      "nist-csf-2-0.govern.govern.strategy_and_policy",
+      "nist-csf-2-0.identify.identify_risk",
+      "nist-csf-2-0.protect.protect_training",
+      "nist-csf-2-0.respond.respond_analysis",
+      "nist-csf-2-0.profiles_and_tiers.profiles_and_tiers.profiles",
+      "nist-csf-2-0.profiles_and_tiers.profiles_and_tiers.tiers",
+      "nist-csf-2-0.reference_tool_and_quick_starts.reference_tool_and_quick_starts.reference_tool",
+      "nist-sp-800-53-r5.overview.overview.assurance",
+      "nist-sp-800-53-r5.risk_and_people.risk_and_people.risk",
+      "nist-sp-800-53-r5.risk_and_people.risk_and_people.people",
+      "ipa-requirements-guide.handbook.handbook.adoption",
+      "ipa-requirements-guide.handbook.handbook.communication",
+      "ipa-requirements-guide.supplemental_notes.supplemental_notes.evolving_items",
+      "ipa-requirements-guide.supplemental_notes.supplemental_notes.follow_up",
+      "ipa-nfr-grade.differences_and_challenges.differences_and_challenges.complexity",
+      "ipa-nfr-grade.grade_2018_artifacts.grade_2018_artifacts.project_customization",
+      "ipa-nfr-grade.procedure.procedure.remaining_items",
+      "ipa-nfr-grade.expected_effects.expected_effects.rework",
+      "ipa-nfr-grade.expected_effects.expected_effects.accountability",
+      "ipa-nfr-grade.related_materials.related_materials.booklet",
+      "ipa-nfr-grade.related_materials.related_materials.training"
+    ],
+    "max_results": 5,
+    "notes": "ログ保存と検知運用を優先し、運用統制は後段で補う。"
+  },
+  {
+    "query": "委託先",
+    "topics": [
+      "third_party_risk"
+    ],
+    "controls": [
+      "GOV-08"
+    ],
+    "preferred_topics": [
+      "third_party_risk"
+    ],
+    "preferred_controls": [
+      "GOV-08"
+    ],
+    "preferred_documents": [
+      "nist-csf-2-0",
+      "nist-sp-800-53-r5",
+      "ipa-requirements-guide"
+    ],
+    "must_have_topics": [
+      "third_party_risk"
+    ],
+    "max_results": 4,
+    "notes": "NIST の third-party / supply chain 根拠を優先し、必要なら IPA の要求定義側で補う。"
+  },
+  {
+    "query": "復旧",
+    "topics": [
+      "backup_recovery",
+      "incident_response"
+    ],
+    "controls": [
+      "SYS-12",
+      "GOV-05",
+      "GOV-06"
+    ],
+    "preferred_topics": [
+      "backup_recovery",
+      "incident_response"
+    ],
+    "preferred_controls": [
+      "SYS-12",
+      "GOV-06"
+    ],
+    "preferred_documents": [
+      "ipa-nfr-grade",
+      "nist-csf-2-0",
+      "nist-sp-800-53-r5",
+      "ipa-requirements-guide"
+    ],
+    "must_have_topics": [
+      "backup_recovery",
+      "incident_response"
+    ],
+    "excluded_subsections": [
+      "ipa-requirements-guide.handbook.handbook.adoption",
+      "ipa-requirements-guide.handbook.handbook.communication",
+      "ipa-requirements-guide.supplemental_notes.supplemental_notes.evolving_items",
+      "ipa-requirements-guide.supplemental_notes.supplemental_notes.follow_up"
+    ],
+    "max_results": 5,
+    "notes": "まず復旧要件と continuity を見て、incident response は必要時に追加で参照する。"
+  },
+  {
+    "query": "脆弱性",
+    "topics": [
+      "input_validation",
+      "vulnerability_management"
+    ],
+    "controls": [
+      "SYS-03",
+      "SYS-07"
+    ],
+    "preferred_topics": [
+      "input_validation",
+      "vulnerability_management"
+    ],
+    "preferred_controls": [
+      "SYS-03",
+      "SYS-07"
+    ],
+    "preferred_documents": [
+      "ipa-safe-website",
+      "nist-sp-800-53-r5",
+      "ipa-requirements-guide"
+    ],
+    "must_have_topics": [
+      "input_validation",
+      "vulnerability_management"
+    ],
+    "max_results": 5,
+    "notes": "IPA の脆弱性対策を優先し、依存性や integrity family は NIST で補強する。"
+  },
+  {
+    "query": "方針",
+    "topics": [
+      "security_governance"
+    ],
+    "controls": [
+      "GOV-01",
+      "GOV-04",
+      "GOV-10"
+    ],
+    "preferred_topics": [
+      "security_governance"
+    ],
+    "preferred_controls": [
+      "GOV-01",
+      "GOV-10"
+    ],
+    "preferred_documents": [
+      "nist-csf-2-0",
+      "ipa-requirements-guide",
+      "ipa-nfr-grade"
+    ],
+    "must_have_topics": [
+      "security_governance"
+    ],
+    "excluded_subsections": [
+      "ipa-nfr-grade.differences_and_challenges.differences_and_challenges.upstream"
+    ],
+    "max_results": 4,
+    "notes": "まず governance 方針と責任分界の根拠を見て、要件定義資料は補助的に使う。"
+  }
+]

@@ -1,72 +1,305 @@
 [
   {
     "query": "認証",
-    "topics": ["authentication_authorization"],
-    "controls": ["SYS-01", "GOV-03"],
-    "documents": ["ipa-safe-website", "ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "topics": [
+      "authentication_authorization"
+    ],
+    "controls": [
+      "SYS-01",
+      "GOV-03"
+    ],
+    "documents": [
+      "ipa-safe-website",
+      "nist-csf-2-0"
+    ],
     "subsections": [
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation", "subsection_id": "chapter_1_security_implementation.auth_and_session"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.tree_mapping"},
-      {"doc_id": "nist-csf-2-0", "section_id": "protect", "subsection_id": "protect_identity"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity", "subsection_id": "access_and_identity.access_control"}
-    ]
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.auth_and_session"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "subsection_id": "chapter_2_site_wide_practices.password_and_accounts"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "subsection_id": "protect_identity"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.auth_and_session"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "subsection_id": "chapter_2_site_wide_practices.password_and_accounts"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "subsection_id": "protect_identity"
+      }
+    ],
+    "max_results": 4,
+    "search_hints": "まず実装系の認証認可 subsection を見て、必要なら NIST family で補強する。"
   },
   {
     "query": "ログ",
-    "topics": ["logging_auditability", "monitoring_detection"],
-    "controls": ["SYS-06", "SYS-13", "GOV-07", "GOV-12"],
-    "documents": ["ipa-safe-website", "ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "topics": [
+      "logging_auditability",
+      "monitoring_detection"
+    ],
+    "controls": [
+      "SYS-06",
+      "SYS-13",
+      "GOV-07",
+      "GOV-12"
+    ],
+    "documents": [
+      "nist-csf-2-0",
+      "nist-sp-800-53-r5"
+    ],
     "subsections": [
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_2_site_wide_practices", "subsection_id": "chapter_2_site_wide_practices.logging_monitoring"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.requirement_items"},
-      {"doc_id": "nist-csf-2-0", "section_id": "detect", "subsection_id": "detect_monitoring"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "subsection_id": "audit_and_configuration.audit"}
-    ]
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "detect",
+        "subsection_id": "detect_monitoring"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "subsection_id": "audit_and_configuration.audit"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "subsection_id": "data_and_system_protection.integrity"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "detect",
+        "subsection_id": "detect_monitoring"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "subsection_id": "audit_and_configuration.audit"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "subsection_id": "data_and_system_protection.integrity"
+      }
+    ],
+    "max_results": 5,
+    "search_hints": "ログ保存と検知運用を優先し、運用統制は後段で補う。"
   },
   {
     "query": "委託先",
-    "topics": ["third_party_risk"],
-    "controls": ["GOV-08"],
-    "documents": ["ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "topics": [
+      "third_party_risk"
+    ],
+    "controls": [
+      "GOV-08"
+    ],
+    "documents": [
+      "nist-csf-2-0",
+      "nist-sp-800-53-r5",
+      "ipa-requirements-guide"
+    ],
     "subsections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability", "subsection_id": "step_2_risk_and_usability.third_party_and_boundary"},
-      {"doc_id": "nist-csf-2-0", "section_id": "govern", "subsection_id": "govern_supply_chain"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "acquisition_and_supply_chain", "subsection_id": "acquisition_and_supply_chain.scrm"}
-    ]
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "govern",
+        "subsection_id": "govern_supply_chain"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "acquisition_and_supply_chain",
+        "subsection_id": "acquisition_and_supply_chain.scrm"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_2_risk_and_usability",
+        "subsection_id": "step_2_risk_and_usability.third_party_and_boundary"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "govern",
+        "subsection_id": "govern_supply_chain"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "acquisition_and_supply_chain",
+        "subsection_id": "acquisition_and_supply_chain.scrm"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_2_risk_and_usability",
+        "subsection_id": "step_2_risk_and_usability.third_party_and_boundary"
+      }
+    ],
+    "max_results": 4,
+    "search_hints": "NIST の third-party / supply chain 根拠を優先し、必要なら IPA の要求定義側で補う。"
   },
   {
     "query": "復旧",
-    "topics": ["backup_recovery", "incident_response"],
-    "controls": ["SYS-12", "GOV-05", "GOV-06"],
-    "documents": ["ipa-nfr-grade", "ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "topics": [
+      "backup_recovery",
+      "incident_response"
+    ],
+    "controls": [
+      "SYS-12",
+      "GOV-05",
+      "GOV-06"
+    ],
+    "documents": [
+      "nist-csf-2-0",
+      "nist-sp-800-53-r5",
+      "ipa-requirements-guide"
+    ],
     "subsections": [
-      {"doc_id": "ipa-nfr-grade", "section_id": "grade_2018_artifacts", "subsection_id": "grade_2018_artifacts.typical_models"},
-      {"doc_id": "nist-csf-2-0", "section_id": "recover", "subsection_id": "recover_restoration"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "incident_and_recovery", "subsection_id": "incident_and_recovery.contingency"},
-      {"doc_id": "nist-csf-2-0", "section_id": "respond", "subsection_id": "respond_analysis"}
-    ]
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "respond",
+        "subsection_id": "respond_analysis"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "respond",
+        "subsection_id": "respond_mitigation"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "incident_and_recovery",
+        "subsection_id": "incident_and_recovery.incident"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.incident_and_secret"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "respond",
+        "subsection_id": "respond_analysis"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "respond",
+        "subsection_id": "respond_mitigation"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "incident_and_recovery",
+        "subsection_id": "incident_and_recovery.incident"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.incident_and_secret"
+      }
+    ],
+    "max_results": 5,
+    "search_hints": "まず復旧要件と continuity を見て、incident response は必要時に追加で参照する。"
   },
   {
     "query": "脆弱性",
-    "topics": ["input_validation", "vulnerability_management"],
-    "controls": ["SYS-03", "SYS-07"],
-    "documents": ["ipa-safe-website", "ipa-nfr-grade", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "topics": [
+      "input_validation",
+      "vulnerability_management"
+    ],
+    "controls": [
+      "SYS-03",
+      "SYS-07"
+    ],
+    "documents": [
+      "ipa-safe-website",
+      "nist-sp-800-53-r5"
+    ],
     "subsections": [
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation", "subsection_id": "chapter_1_security_implementation.vulnerability_set"},
-      {"doc_id": "ipa-safe-website", "section_id": "supplement_web_health_check", "subsection_id": "supplement_web_health_check.diagnostic_items"},
-      {"doc_id": "ipa-nfr-grade", "section_id": "related_materials", "subsection_id": "related_materials.training"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "subsection_id": "data_and_system_protection.integrity"}
-    ]
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.vulnerability_set"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_3_failure_examples",
+        "subsection_id": "chapter_3_failure_examples.code_examples"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "supplement_safe_sql",
+        "subsection_id": "supplement_safe_sql.cause_and_building"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "subsection_id": "data_and_system_protection.integrity"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "risk_and_people",
+        "subsection_id": "risk_and_people.risk"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.vulnerability_set"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_3_failure_examples",
+        "subsection_id": "chapter_3_failure_examples.code_examples"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "supplement_safe_sql",
+        "subsection_id": "supplement_safe_sql.cause_and_building"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "subsection_id": "data_and_system_protection.integrity"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "risk_and_people",
+        "subsection_id": "risk_and_people.risk"
+      }
+    ],
+    "max_results": 5,
+    "search_hints": "IPA の脆弱性対策を優先し、依存性や integrity family は NIST で補強する。"
   },
   {
     "query": "方針",
-    "topics": ["security_governance"],
-    "controls": ["GOV-01", "GOV-04", "GOV-10"],
-    "documents": ["ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
-    "subsections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "overview", "subsection_id": "overview.goal"},
-      {"doc_id": "nist-csf-2-0", "section_id": "govern", "subsection_id": "govern.strategy_and_policy"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "overview", "subsection_id": "overview.assurance"}
-    ]
+    "topics": [
+      "security_governance"
+    ],
+    "controls": [
+      "GOV-01",
+      "GOV-04",
+      "GOV-10"
+    ],
+    "documents": [],
+    "subsections": [],
+    "preferred_subsections": [],
+    "max_results": 4,
+    "search_hints": "まず governance 方針と責任分界の根拠を見て、要件定義資料は補助的に使う。"
   }
 ]

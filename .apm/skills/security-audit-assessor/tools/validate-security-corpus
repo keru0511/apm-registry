@@ -16,6 +16,8 @@ require_cmd() {
 require_cmd jq
 require_cmd toon
 
+python3 "$script_dir/lib/audit_corpus_builder.py" --skill-root "$skill_root" --check
+
 json_files=(
   "$ref_root/index/documents.json"
   "$ref_root/index/topics.json"
@@ -29,6 +31,8 @@ json_files=(
 for path in "${json_files[@]}"; do
   jq empty "$path"
 done
+
+python3 "$script_dir/lib/reference_builder.py" --skill-root "$skill_root" --check
 
 tmp_dir="$(mktemp -d)"
 cleanup() {
@@ -49,6 +53,7 @@ import sys
 
 ref_root = pathlib.Path(sys.argv[1])
 tmp_dir = pathlib.Path(sys.argv[2])
+skill_root = ref_root.parent
 
 documents = json.loads((ref_root / "index" / "documents.json").read_text())
 docs_by_id = {doc["doc_id"]: doc for doc in documents}
@@ -103,6 +108,7 @@ for json_file in sorted(tmp_dir.glob("*.json")):
 controls = json.loads((ref_root / "index" / "controls.json").read_text())
 topics = json.loads((ref_root / "index" / "topics.json").read_text())
 aliases = json.loads((ref_root / "index" / "aliases.json").read_text())
+alias_policies = json.loads((skill_root / "tools" / "policies" / "index" / "aliases.json").read_text())
 
 def require_section_ref(kind, owner, item):
     doc_id = item["doc_id"]
@@ -116,21 +122,78 @@ def require_subsection_ref(kind, owner, item):
     if item["subsection_id"] not in corpus_refs[item["doc_id"]]["subsections"]:
         raise SystemExit(f"{kind} {owner}: unknown subsection {item['doc_id']}.{item['subsection_id']}")
 
+def ref_key(item):
+    return (item["doc_id"], item["section_id"], item["subsection_id"])
+
 for control in controls:
     for section in control.get("sections", []):
         require_section_ref("control", control["control_id"], section)
     for subsection in control.get("subsections", []):
         require_subsection_ref("control", control["control_id"], subsection)
+    preferred = control.get("preferred_subsections", [])
+    seen = set()
+    allowed = {ref_key(item) for item in control.get("subsections", [])}
+    for subsection in preferred:
+        require_subsection_ref("control preferred", control["control_id"], subsection)
+        key = ref_key(subsection)
+        if key not in allowed:
+            raise SystemExit(f"control {control['control_id']}: preferred_subsections must be subset of subsections")
+        if key in seen:
+            raise SystemExit(f"control {control['control_id']}: duplicate preferred_subsection")
+        seen.add(key)
 
 for topic in topics:
     for section in topic.get("sections", []):
         require_section_ref("topic", topic["topic"], section)
     for subsection in topic.get("subsections", []):
         require_subsection_ref("topic", topic["topic"], subsection)
+    preferred = topic.get("preferred_subsections", [])
+    seen = set()
+    allowed = {ref_key(item) for item in topic.get("subsections", [])}
+    for subsection in preferred:
+        require_subsection_ref("topic preferred", topic["topic"], subsection)
+        key = ref_key(subsection)
+        if key not in allowed:
+            raise SystemExit(f"topic {topic['topic']}: preferred_subsections must be subset of subsections")
+        if key in seen:
+            raise SystemExit(f"topic {topic['topic']}: duplicate preferred_subsection")
+        seen.add(key)
 
 for alias in aliases:
     for subsection in alias.get("subsections", []):
         require_subsection_ref("alias", alias["query"], subsection)
+    preferred = alias.get("preferred_subsections", [])
+    seen = set()
+    allowed = {ref_key(item) for item in alias.get("subsections", [])}
+    for subsection in preferred:
+        require_subsection_ref("alias preferred", alias["query"], subsection)
+        key = ref_key(subsection)
+        if key not in allowed:
+            raise SystemExit(f"alias {alias['query']}: preferred_subsections must be subset of subsections")
+        if key in seen:
+            raise SystemExit(f"alias {alias['query']}: duplicate preferred_subsection")
+        seen.add(key)
+    if "max_results" in alias and len(preferred) > alias["max_results"]:
+        raise SystemExit(f"alias {alias['query']}: preferred_subsections exceeds max_results")
+
+known_doc_ids = set(corpus_refs)
+for policy in alias_policies:
+    for doc_id in policy.get("allowed_documents", []):
+        if doc_id not in known_doc_ids:
+            raise SystemExit(f"alias policy {policy['query']}: unknown allowed_document {doc_id}")
+    for doc_id in policy.get("excluded_documents", []):
+        if doc_id not in known_doc_ids:
+            raise SystemExit(f"alias policy {policy['query']}: unknown excluded_document {doc_id}")
+    for subsection in policy.get("excluded_subsections", []):
+        parts = subsection.split(".", 2)
+        if len(parts) != 3:
+            raise SystemExit(f"alias policy {policy['query']}: invalid excluded_subsection {subsection}")
+        doc_id, section_id, subsection_id = parts
+        require_subsection_ref(
+            "alias policy excluded",
+            policy["query"],
+            {"doc_id": doc_id, "section_id": section_id, "subsection_id": subsection_id},
+        )
 
 for mapping_name in ("system-controls.json", "governance-controls.json"):
     mapping = json.loads((ref_root / "mappings" / mapping_name).read_text())
