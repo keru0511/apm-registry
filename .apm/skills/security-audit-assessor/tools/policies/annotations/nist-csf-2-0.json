@@ -1,0 +1,716 @@
+{
+  "doc_id": "nist-csf-2-0",
+  "publisher": "NIST",
+  "version": "CSWP 29",
+  "publication_date": "2024-02-26",
+  "profiles": [
+    "system",
+    "governance"
+  ],
+  "sections": [
+    {
+      "section_id": "overview_and_components",
+      "source_section_ids": [
+        "overview_and_components"
+      ],
+      "section_number": "overview",
+      "title": "Overview and Components",
+      "source_heading": "Overview and Components",
+      "topics": [
+        "cybersecurity_framework",
+        "risk_management",
+        "profiles",
+        "tiers",
+        "governance",
+        "implementation_guidance"
+      ],
+      "text": "CSF 2.0 の全体像として、CSF Core、Organizational Profiles、Tiers によるリスク管理の枠組みを説明する section。",
+      "subsections": [
+        {
+          "subsection_id": "overview_and_components.framework_purpose",
+          "source_heading": "Framework purpose",
+          "topics": [
+            "cybersecurity_framework",
+            "risk_management",
+            "communication",
+            "implementation_guidance"
+          ],
+          "controls": [
+            "GOV-01",
+            "GOV-10"
+          ],
+          "key_points": [
+            "組織がサイバーセキュリティリスクを理解、評価、優先付け、伝達するための共通言語として使える。",
+            "system と governance の結果を束ねる総括フレームとして適している。",
+            "監査報告の総合評価章に転用しやすい。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "overview_and_components.framework_purpose.p1",
+              "text": "組織がリスクを理解、評価、優先付け、伝達するために使えると説明されている。",
+              "source_locator": "Overview",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            },
+            {
+              "passage_id": "overview_and_components.framework_purpose.p2",
+              "text": "CSF Core、Profiles、Tiers が主要構成要素である。",
+              "source_locator": "Overview",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "overview_and_components.components",
+          "source_heading": "Core Profiles Tiers",
+          "topics": [
+            "profiles",
+            "tiers",
+            "current_state",
+            "target_state",
+            "continuous_improvement"
+          ],
+          "controls": [
+            "GOV-10",
+            "GOV-12"
+          ],
+          "key_points": [
+            "Core は outcomes の体系、Profiles は現在と目標状態、Tiers は運用の厳格さを示す。",
+            "監査では現状と目標の差分整理に向く。",
+            "監査可能性や成熟度説明の土台になる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "overview_and_components.components.p1",
+              "text": "Profiles と Tiers により current state と target state を扱える構造になっている。",
+              "source_locator": "Overview",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "govern",
+      "source_section_ids": [
+        "govern"
+      ],
+      "section_number": "govern",
+      "title": "Govern Function",
+      "source_heading": "Govern",
+      "topics": [
+        "govern",
+        "policy",
+        "oversight",
+        "risk_management",
+        "supply_chain"
+      ],
+      "text": "企業リスクとしてサイバーセキュリティを扱うための方針、役割、監督、サプライチェーン期待事項を定義する function。",
+      "subsections": [
+        {
+          "subsection_id": "govern.strategy_and_policy",
+          "source_heading": "Strategy and policy",
+          "topics": [
+            "govern",
+            "policy",
+            "oversight",
+            "risk_management"
+          ],
+          "controls": [
+            "GOV-01",
+            "GOV-04",
+            "GOV-10",
+            "GOV-12"
+          ],
+          "key_points": [
+            "サイバーセキュリティを企業リスクとして統治する前提を置く。",
+            "方針、役割、監督の明確化に使える。",
+            "governance 総評の中心的根拠となる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "govern.strategy_and_policy.p1",
+              "text": "Govern function はリスク戦略、役割、方針、監督を定める機能として説明されている。",
+              "source_locator": "Govern",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            },
+            {
+              "passage_id": "govern.strategy_and_policy.p2",
+              "text": "サイバーセキュリティを enterprise risk issue として扱う前提である。",
+              "source_locator": "Govern",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "govern_supply_chain",
+          "source_heading": "Supply chain expectations",
+          "topics": [
+            "supply_chain",
+            "third_party_risk",
+            "oversight",
+            "governance"
+          ],
+          "controls": [
+            "GOV-08",
+            "SYS-09"
+          ],
+          "key_points": [
+            "サプライチェーンの期待事項と監督を governance の一部として扱う。",
+            "委託先管理や CI/CD 供給経路の統制に広げやすい。",
+            "third-party risk の主要根拠になる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "govern_supply_chain.p1",
+              "text": "supply chain expectations を Govern の範囲として示している。",
+              "source_locator": "Govern",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "identify",
+      "source_section_ids": [
+        "identify"
+      ],
+      "section_number": "identify",
+      "title": "Identify Function",
+      "source_heading": "Identify",
+      "topics": [
+        "identify",
+        "asset_inventory",
+        "business_context",
+        "risk_assessment",
+        "dependencies"
+      ],
+      "text": "資産、業務文脈、依存関係、リスクを理解し、優先保護対象を明確にする function。",
+      "subsections": [
+        {
+          "subsection_id": "identify_assets",
+          "source_heading": "Assets and business context",
+          "topics": [
+            "asset_inventory",
+            "business_context",
+            "dependencies",
+            "prioritization"
+          ],
+          "controls": [
+            "GOV-02",
+            "GOV-10",
+            "SYS-07"
+          ],
+          "key_points": [
+            "資産と依存関係の把握が優先順位付けの前提になる。",
+            "外部サービスや重要資産が未棚卸しなら監査結果に直結する。",
+            "vulnerability management とも接続しやすい。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "identify_assets.p1",
+              "text": "assets、business context、dependencies、risks を理解することが目的とされている。",
+              "source_locator": "Identify",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "identify_risk",
+          "source_heading": "Risk prioritization",
+          "topics": [
+            "risk_assessment",
+            "prioritization",
+            "dependencies",
+            "governance"
+          ],
+          "controls": [
+            "GOV-10",
+            "GOV-12"
+          ],
+          "key_points": [
+            "何を先に守るかを決めるためのリスク把握 function である。",
+            "audit では資産管理の欠落がそのまま優先順位の欠落として扱える。",
+            "system と governance をつなぐ中間機能である。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "identify_risk.p1",
+              "text": "prioritize what must be protected するための function と説明されている。",
+              "source_locator": "Identify",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "protect",
+      "source_section_ids": [
+        "protect"
+      ],
+      "section_number": "protect",
+      "title": "Protect Function",
+      "source_heading": "Protect",
+      "topics": [
+        "protect",
+        "identity_management",
+        "access_control",
+        "data_security",
+        "platform_security",
+        "resilience"
+      ],
+      "text": "identity, access, training, data security, platform protections, resilient infrastructure を扱う保護機能。",
+      "subsections": [
+        {
+          "subsection_id": "protect_identity",
+          "source_heading": "Identity and access",
+          "topics": [
+            "identity_management",
+            "access_control",
+            "authentication_authorization",
+            "least_privilege"
+          ],
+          "controls": [
+            "SYS-01",
+            "GOV-03",
+            "SYS-02"
+          ],
+          "key_points": [
+            "identity と access は Protect の中心であり、認証認可統制の主要根拠になる。",
+            "least privilege や account hygiene に展開しやすい。",
+            "system と governance の両面に効く。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "protect_identity.p1",
+              "text": "identity と access を通じて impact を limit or contain する safeguards を扱う。",
+              "source_locator": "Protect",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "protect_data_and_platform",
+          "source_heading": "Data and platform security",
+          "topics": [
+            "data_security",
+            "platform_security",
+            "secret_management",
+            "resilience"
+          ],
+          "controls": [
+            "SYS-04",
+            "SYS-05",
+            "SYS-10",
+            "SYS-11"
+          ],
+          "key_points": [
+            "data security と platform security は暗号化、秘密情報、境界保護をまとめる根拠になる。",
+            "infrastructure resilience まで含むため、単一 control ではなく横断的に参照できる。",
+            "cloud や platform hardening の説明に使いやすい。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "protect_data_and_platform.p1",
+              "text": "data security、platform protections、resilient technology infrastructure が Protect の範囲に含まれる。",
+              "source_locator": "Protect",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "protect_training",
+          "source_heading": "Training and safeguards",
+          "topics": [
+            "training",
+            "awareness",
+            "defense_in_depth",
+            "operational_control"
+          ],
+          "controls": [
+            "GOV-09",
+            "GOV-12"
+          ],
+          "key_points": [
+            "Protect は技術 safeguards だけでなく training も含む。",
+            "教育や手順を technical control と切り離さず扱える。",
+            "governance 側との接続点になる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "protect_training.p1",
+              "text": "training が Protect function の safeguards に含まれている。",
+              "source_locator": "Protect",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "detect",
+      "source_section_ids": [
+        "overview_and_components"
+      ],
+      "section_number": "detect",
+      "title": "Detect Function",
+      "source_heading": "Detect",
+      "topics": [
+        "detect",
+        "monitoring",
+        "anomalies",
+        "continuous_detection"
+      ],
+      "text": "監視、異常検知、検知プロセスを通じた timely discovery を扱う function。",
+      "subsections": [
+        {
+          "subsection_id": "detect_monitoring",
+          "source_heading": "Monitoring and anomalies",
+          "topics": [
+            "monitoring",
+            "anomalies",
+            "logging_auditability",
+            "continuous_detection"
+          ],
+          "controls": [
+            "SYS-06",
+            "SYS-13",
+            "GOV-07"
+          ],
+          "key_points": [
+            "監視と異常検知が検知機能の中心である。",
+            "ログだけでなく検知プロセスが必要だと整理できる。",
+            "alert と review の運用確認に向く。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "detect_monitoring.p1",
+              "text": "monitoring と anomaly detection を通じた timely discovery を扱う。",
+              "source_locator": "Detect",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "detect_process",
+          "source_heading": "Detection processes",
+          "topics": [
+            "continuous_detection",
+            "process_design",
+            "operational_control",
+            "auditability"
+          ],
+          "controls": [
+            "SYS-13",
+            "GOV-12"
+          ],
+          "key_points": [
+            "検知能力はツールだけでなく detection process の整備に依存する。",
+            "監査では通知、レビュー、エスカレーションの存在確認に使える。",
+            "監視 coverage の議論にもつながる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "detect_process.p1",
+              "text": "detection processes が Detect function の構成要素に含まれている。",
+              "source_locator": "Detect",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "respond",
+      "source_section_ids": [
+        "overview_and_components"
+      ],
+      "section_number": "respond",
+      "title": "Respond Function",
+      "source_heading": "Respond",
+      "topics": [
+        "respond",
+        "incident_response",
+        "analysis",
+        "communications"
+      ],
+      "text": "検知後の分析、連絡、緩和、改善を通じて incident impact を抑える function。",
+      "subsections": [
+        {
+          "subsection_id": "respond_analysis",
+          "source_heading": "Analysis and communications",
+          "topics": [
+            "incident_response",
+            "analysis",
+            "communications",
+            "escalation"
+          ],
+          "controls": [
+            "GOV-05",
+            "GOV-12"
+          ],
+          "key_points": [
+            "分析と連絡経路が response の中心にある。",
+            "初動、報告、外部連携の観点に展開しやすい。",
+            "incident response の基本根拠となる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "respond_analysis.p1",
+              "text": "analysis と communications が Respond function に含まれている。",
+              "source_locator": "Respond",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "respond_mitigation",
+          "source_heading": "Mitigation and improvements",
+          "topics": [
+            "mitigation",
+            "lessons_learned",
+            "continuous_improvement",
+            "incident_response"
+          ],
+          "controls": [
+            "GOV-05",
+            "GOV-10"
+          ],
+          "key_points": [
+            "影響封じ込めと改善まで response の範囲に含まれる。",
+            "再発防止を response から切り離さず扱える。",
+            "振り返り手順の監査に使える。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "respond_mitigation.p1",
+              "text": "mitigation と improvements が incident impact を contain する要素として説明されている。",
+              "source_locator": "Respond",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "recover",
+      "source_section_ids": [
+        "recover"
+      ],
+      "section_number": "recover",
+      "title": "Recover Function",
+      "source_heading": "Recover",
+      "topics": [
+        "recover",
+        "resilience",
+        "recovery_planning",
+        "restoration"
+      ],
+      "text": "サービス復旧、resilience 維持、回復計画の改善を扱う function。",
+      "subsections": [
+        {
+          "subsection_id": "recover_restoration",
+          "source_heading": "Restoration and resilience",
+          "topics": [
+            "recover",
+            "resilience",
+            "recovery_planning",
+            "restoration"
+          ],
+          "controls": [
+            "SYS-12",
+            "GOV-06"
+          ],
+          "key_points": [
+            "サービス復旧と resilience 維持が中心である。",
+            "バックアップだけでなく復旧計画と訓練の議論に接続する。",
+            "business continuity と combined 監査で相性が良い。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "recover_restoration.p1",
+              "text": "restoring services と maintaining resilience を扱う function である。",
+              "source_locator": "Recover",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "recover_improvement",
+          "source_heading": "Recovery planning improvements",
+          "topics": [
+            "recovery_planning",
+            "continuous_improvement",
+            "testing",
+            "governance"
+          ],
+          "controls": [
+            "SYS-12",
+            "GOV-06"
+          ],
+          "key_points": [
+            "復旧後の改善も Recover に含まれる。",
+            "復旧試験や計画更新の evidence を求める根拠になる。",
+            "単発の backup 実装で適合としないために useful である。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "recover_improvement.p1",
+              "text": "improving recovery planning が Recover の説明に含まれている。",
+              "source_locator": "Recover",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "profiles_and_tiers",
+      "source_section_ids": [
+        "profiles_and_tiers"
+      ],
+      "section_number": "profiles_tiers",
+      "title": "Profiles and Tiers",
+      "source_heading": "Profiles and Tiers",
+      "topics": [
+        "profiles",
+        "tiers",
+        "target_state",
+        "current_state",
+        "continuous_improvement"
+      ],
+      "text": "current state と target state を定義し、実践の厳格さを Tiers で位置付ける section。",
+      "subsections": [
+        {
+          "subsection_id": "profiles_and_tiers.profiles",
+          "source_heading": "Current and target profiles",
+          "topics": [
+            "profiles",
+            "current_state",
+            "target_state",
+            "traceability"
+          ],
+          "controls": [
+            "GOV-10",
+            "GOV-12"
+          ],
+          "key_points": [
+            "現在と目標の outcomes を整理できる。",
+            "監査結果を改善計画へつなげる際の型になる。",
+            "gap assessment の整理に向く。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "profiles_and_tiers.profiles.p1",
+              "text": "Organizational Profiles は current と target outcomes を記述する。",
+              "source_locator": "Profiles and Tiers",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "profiles_and_tiers.tiers",
+          "source_heading": "Tiers",
+          "topics": [
+            "tiers",
+            "maturity",
+            "governance",
+            "repeatability"
+          ],
+          "controls": [
+            "GOV-01",
+            "GOV-12"
+          ],
+          "key_points": [
+            "Tiers は厳格さと反復性の説明に使える。",
+            "監査可能性や統制成熟度の記述に向く。",
+            "総評の成熟度表現に流用できる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "profiles_and_tiers.tiers.p1",
+              "text": "Tiers はリスク管理実践の厳格さを特徴付ける。",
+              "source_locator": "Profiles and Tiers",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "reference_tool_and_quick_starts",
+      "source_section_ids": [
+        "reference_tool_and_quick_starts",
+        "protect"
+      ],
+      "section_number": "supplemental",
+      "title": "Reference Tool and Quick Start Resources",
+      "source_heading": "Supplemental Material",
+      "topics": [
+        "reference_tool",
+        "quick_start_guides",
+        "implementation_examples",
+        "smb_guidance",
+        "supply_chain_guidance"
+      ],
+      "text": "reference tool や quick-start guides など、フレームワーク適用を補助する追加資料群。",
+      "subsections": [
+        {
+          "subsection_id": "reference_tool_and_quick_starts.reference_tool",
+          "source_heading": "Reference Tool",
+          "topics": [
+            "reference_tool",
+            "implementation_examples",
+            "browsing",
+            "control_mapping"
+          ],
+          "controls": [
+            "GOV-12",
+            "SYS-08"
+          ],
+          "key_points": [
+            "outcome を参照しやすくする補助ツールとして使える。",
+            "index 設計の参考にもなる。",
+            "control mapping の改善余地を示す section である。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "reference_tool_and_quick_starts.reference_tool.p1",
+              "text": "supplemental material として CSF 2.0 Reference Tool が提供されている。",
+              "source_locator": "Documentation",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "reference_tool_and_quick_starts.quick_start",
+          "source_heading": "Quick Start Guides",
+          "topics": [
+            "quick_start_guides",
+            "implementation_guidance",
+            "smb_guidance",
+            "supply_chain_guidance"
+          ],
+          "controls": [
+            "GOV-08",
+            "GOV-09"
+          ],
+          "key_points": [
+            "quick-start guides はユースケース別の導入補助になる。",
+            "SMB や supply chain guidance への導線として useful である。",
+            "将来の文書拡充候補にもなる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "reference_tool_and_quick_starts.quick_start.p1",
+              "text": "supplemental material として CSF 2.0 Quick-Start Guides が案内されている。",
+              "source_locator": "Documentation",
+              "canonical_url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

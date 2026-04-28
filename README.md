@@ -36,6 +36,12 @@ nix develop
 
 # validate security audit references
 .apm/skills/security-audit-assessor/tools/validate-security-corpus
+
+# rebuild generated security audit indexes and mappings
+.apm/skills/security-audit-assessor/tools/sync-security-references
+
+# promote a single source corpus into references/corpus, then rebuild indexes
+.apm/skills/security-audit-assessor/tools/promote-source-doc ipa-safe-website
 ```
 
 The dev shell includes the basic CLI utilities used in this repo and a pinned `toon`

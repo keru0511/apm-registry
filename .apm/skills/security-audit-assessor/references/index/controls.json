@@ -3,391 +3,2507 @@
     "control_id": "SYS-01",
     "label": "認証認可",
     "sections": [
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
-      {"doc_id": "nist-csf-2-0", "section_id": "protect"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "title": "第1章 ウェブアプリケーションのセキュリティ実装"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "title": "第2章 ウェブサイトの安全性向上のための取り組み"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "appendix_checklist",
+        "title": "巻末チェックリスト"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_2_risk_and_usability",
+        "title": "ステップ2 問題 リスク 利便性要素の選定"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "title": "ステップ3 必要な対策の選定"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "title": "Protect Function"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "access_and_identity",
+        "title": "Access and Identity Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation", "subsection_id": "chapter_1_security_implementation.auth_and_session"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.tree_mapping"},
-      {"doc_id": "nist-csf-2-0", "section_id": "protect", "subsection_id": "protect_identity"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity", "subsection_id": "access_and_identity.access_control"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity", "subsection_id": "access_and_identity.identification_authentication"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.root_cause_controls",
+        "title": "根本対策と影響低減策"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.auth_and_session",
+        "title": "認証認可とセッション管理に使う観点"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "subsection_id": "chapter_2_site_wide_practices.password_and_accounts",
+        "title": "パスワードとアカウントの取扱い"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "appendix_checklist",
+        "subsection_id": "appendix_checklist.assessment_usage",
+        "title": "実施状況確認への利用"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "appendix_checklist",
+        "subsection_id": "appendix_checklist.audit_mapping",
+        "title": "control へのマッピング"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_2_risk_and_usability",
+        "subsection_id": "step_2_risk_and_usability.usability_factors",
+        "title": "利便性要素との両立"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.tree_mapping",
+        "title": "樹形図から対策への対応付け"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "subsection_id": "protect_identity",
+        "title": "Identity and access"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "access_and_identity",
+        "subsection_id": "access_and_identity.access_control",
+        "title": "Access Control family"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "access_and_identity",
+        "subsection_id": "access_and_identity.identification_authentication",
+        "title": "Identification and Authentication family"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.root_cause_controls"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.auth_and_session"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "subsection_id": "chapter_2_site_wide_practices.password_and_accounts"
+      }
     ]
   },
   {
     "control_id": "SYS-02",
     "label": "セッション管理",
     "sections": [
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "title": "第1章 ウェブアプリケーションのセキュリティ実装"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "appendix_checklist",
+        "title": "巻末チェックリスト"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "title": "Protect Function"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "access_and_identity",
+        "title": "Access and Identity Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation", "subsection_id": "chapter_1_security_implementation.auth_and_session"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity", "subsection_id": "access_and_identity.identification_authentication"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.root_cause_controls",
+        "title": "根本対策と影響低減策"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.auth_and_session",
+        "title": "認証認可とセッション管理に使う観点"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "appendix_checklist",
+        "subsection_id": "appendix_checklist.audit_mapping",
+        "title": "control へのマッピング"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "subsection_id": "protect_identity",
+        "title": "Identity and access"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "access_and_identity",
+        "subsection_id": "access_and_identity.access_control",
+        "title": "Access Control family"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "access_and_identity",
+        "subsection_id": "access_and_identity.identification_authentication",
+        "title": "Identification and Authentication family"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.root_cause_controls"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.auth_and_session"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "appendix_checklist",
+        "subsection_id": "appendix_checklist.audit_mapping"
+      }
     ]
   },
   {
     "control_id": "SYS-03",
     "label": "入力検証",
     "sections": [
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation"},
-      {"doc_id": "ipa-safe-website", "section_id": "supplement_safe_sql"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "purpose_scope",
+        "title": "目的と適用範囲"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "title": "第1章 ウェブアプリケーションのセキュリティ実装"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_3_failure_examples",
+        "title": "第3章 失敗例と修正例"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "appendix_checklist",
+        "title": "巻末チェックリスト"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "supplement_safe_sql",
+        "title": "別冊 安全な SQL の呼び出し方"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "title": "Data and System Protection Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation", "subsection_id": "chapter_1_security_implementation.vulnerability_set"},
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_1_security_implementation", "subsection_id": "chapter_1_security_implementation.root_cause_controls"},
-      {"doc_id": "ipa-safe-website", "section_id": "supplement_safe_sql", "subsection_id": "supplement_safe_sql.cause_and_building"},
-      {"doc_id": "ipa-safe-website", "section_id": "supplement_safe_sql", "subsection_id": "supplement_safe_sql.safe_requirements"},
-      {"doc_id": "ipa-safe-website", "section_id": "supplement_safe_sql", "subsection_id": "supplement_safe_sql.language_db_examples"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "subsection_id": "data_and_system_protection.integrity"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "purpose_scope",
+        "subsection_id": "purpose_scope.audience",
+        "title": "資料の対象読者と狙い"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "purpose_scope",
+        "subsection_id": "purpose_scope.structure",
+        "title": "本編と別冊の構成"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.vulnerability_set",
+        "title": "対象脆弱性の範囲"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.root_cause_controls",
+        "title": "根本対策と影響低減策"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_3_failure_examples",
+        "subsection_id": "chapter_3_failure_examples.code_examples",
+        "title": "脆弱性を作り込んだコード例"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "appendix_checklist",
+        "subsection_id": "appendix_checklist.assessment_usage",
+        "title": "実施状況確認への利用"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "appendix_checklist",
+        "subsection_id": "appendix_checklist.audit_mapping",
+        "title": "control へのマッピング"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "supplement_safe_sql",
+        "subsection_id": "supplement_safe_sql.cause_and_building",
+        "title": "原因と SQL 組み立て方式"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "supplement_safe_sql",
+        "subsection_id": "supplement_safe_sql.safe_requirements",
+        "title": "安全な SQL 呼び出しの要件"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "supplement_safe_sql",
+        "subsection_id": "supplement_safe_sql.language_db_examples",
+        "title": "言語とデータベース組み合わせ別の実装例"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "subsection_id": "data_and_system_protection.integrity",
+        "title": "System and Information Integrity"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "purpose_scope",
+        "subsection_id": "purpose_scope.audience"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "purpose_scope",
+        "subsection_id": "purpose_scope.structure"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.vulnerability_set"
+      }
     ]
   },
   {
     "control_id": "SYS-04",
     "label": "シークレット管理",
     "sections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
-      {"doc_id": "nist-csf-2-0", "section_id": "protect"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "title": "ステップ3 必要な対策の選定"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "title": "Protect Function"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "title": "Data and System Protection Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.incident_and_secret"},
-      {"doc_id": "nist-csf-2-0", "section_id": "protect", "subsection_id": "protect_data_and_platform"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "subsection_id": "data_and_system_protection.communications"}
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.tree_mapping",
+        "title": "樹形図から対策への対応付け"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.incident_and_secret",
+        "title": "シークレット ログ インシデントへの展開"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "subsection_id": "protect_data_and_platform",
+        "title": "Data and platform security"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "subsection_id": "data_and_system_protection.communications",
+        "title": "System and Communications Protection"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.tree_mapping"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.incident_and_secret"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "subsection_id": "protect_data_and_platform"
+      }
     ]
   },
   {
     "control_id": "SYS-05",
     "label": "暗号化",
     "sections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "overview"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics"},
-      {"doc_id": "nist-csf-2-0", "section_id": "protect"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "title": "第1章 ウェブアプリケーションのセキュリティ実装"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_1_system_characteristics",
+        "title": "ステップ1 システムの特性評価"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "title": "Protect Function"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "title": "Data and System Protection Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "overview", "subsection_id": "overview.goal"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics", "subsection_id": "step_1_system_characteristics.cia_priority"},
-      {"doc_id": "nist-csf-2-0", "section_id": "protect", "subsection_id": "protect_data_and_platform"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "subsection_id": "data_and_system_protection.communications"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.root_cause_controls",
+        "title": "根本対策と影響低減策"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_1_system_characteristics",
+        "subsection_id": "step_1_system_characteristics.cia_priority",
+        "title": "機密性 完全性 可用性の優先"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "subsection_id": "protect_data_and_platform",
+        "title": "Data and platform security"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "subsection_id": "data_and_system_protection.communications",
+        "title": "System and Communications Protection"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.root_cause_controls"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_1_system_characteristics",
+        "subsection_id": "step_1_system_characteristics.cia_priority"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "subsection_id": "protect_data_and_platform"
+      }
     ]
   },
   {
     "control_id": "SYS-06",
     "label": "ログと監査証跡",
     "sections": [
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_2_site_wide_practices"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
-      {"doc_id": "nist-csf-2-0", "section_id": "detect"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "title": "第2章 ウェブサイトの安全性向上のための取り組み"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "appendix_checklist",
+        "title": "巻末チェックリスト"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "title": "ステップ3 必要な対策の選定"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "detect",
+        "title": "Detect Function"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "title": "Audit and Configuration Families"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "incident_and_recovery",
+        "title": "Incident and Recovery Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_2_site_wide_practices", "subsection_id": "chapter_2_site_wide_practices.logging_monitoring"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.requirement_items"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.incident_and_secret"},
-      {"doc_id": "nist-csf-2-0", "section_id": "detect", "subsection_id": "detect_monitoring"},
-      {"doc_id": "nist-csf-2-0", "section_id": "detect", "subsection_id": "detect_process"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "subsection_id": "audit_and_configuration.audit"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "subsection_id": "chapter_2_site_wide_practices.logging_monitoring",
+        "title": "ログと監視に展開する観点"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "appendix_checklist",
+        "subsection_id": "appendix_checklist.assessment_usage",
+        "title": "実施状況確認への利用"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.tree_mapping",
+        "title": "樹形図から対策への対応付け"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.requirement_items",
+        "title": "要求項目一覧"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.incident_and_secret",
+        "title": "シークレット ログ インシデントへの展開"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "detect",
+        "subsection_id": "detect_monitoring",
+        "title": "Monitoring and anomalies"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "subsection_id": "audit_and_configuration.audit",
+        "title": "Audit and Accountability"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "incident_and_recovery",
+        "subsection_id": "incident_and_recovery.incident",
+        "title": "Incident Response"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "subsection_id": "chapter_2_site_wide_practices.logging_monitoring"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "appendix_checklist",
+        "subsection_id": "appendix_checklist.assessment_usage"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.tree_mapping"
+      }
     ]
   },
   {
     "control_id": "SYS-07",
     "label": "脆弱性管理",
     "sections": [
-      {"doc_id": "ipa-safe-website", "section_id": "supplement_web_health_check"},
-      {"doc_id": "ipa-nfr-grade", "section_id": "related_materials"},
-      {"doc_id": "nist-csf-2-0", "section_id": "identify"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "risk_and_people"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "purpose_scope",
+        "title": "目的と適用範囲"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "supplement_web_health_check",
+        "title": "別冊 ウェブ健康診断仕様"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "related_materials",
+        "title": "周辺資料と関連情報"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "identify",
+        "title": "Identify Function"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "title": "Data and System Protection Families"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "risk_and_people",
+        "title": "Risk and People Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-safe-website", "section_id": "supplement_web_health_check", "subsection_id": "supplement_web_health_check.diagnostic_items"},
-      {"doc_id": "ipa-safe-website", "section_id": "supplement_web_health_check", "subsection_id": "supplement_web_health_check.limitations"},
-      {"doc_id": "ipa-nfr-grade", "section_id": "related_materials", "subsection_id": "related_materials.training"},
-      {"doc_id": "nist-csf-2-0", "section_id": "identify", "subsection_id": "identify_assets"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "risk_and_people", "subsection_id": "risk_and_people.risk"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "subsection_id": "data_and_system_protection.integrity"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "purpose_scope",
+        "subsection_id": "purpose_scope.structure",
+        "title": "本編と別冊の構成"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "supplement_web_health_check",
+        "subsection_id": "supplement_web_health_check.diagnostic_items",
+        "title": "診断項目と検出パターン"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "supplement_web_health_check",
+        "subsection_id": "supplement_web_health_check.limitations",
+        "title": "診断の限界と追加対策"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "related_materials",
+        "subsection_id": "related_materials.training",
+        "title": "研修教材"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "identify",
+        "subsection_id": "identify_assets",
+        "title": "Assets and business context"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "subsection_id": "data_and_system_protection.integrity",
+        "title": "System and Information Integrity"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "risk_and_people",
+        "subsection_id": "risk_and_people.risk",
+        "title": "Risk Assessment"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "purpose_scope",
+        "subsection_id": "purpose_scope.structure"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "supplement_web_health_check",
+        "subsection_id": "supplement_web_health_check.diagnostic_items"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "supplement_web_health_check",
+        "subsection_id": "supplement_web_health_check.limitations"
+      }
     ]
   },
   {
     "control_id": "SYS-08",
     "label": "設定とIaC管理",
     "sections": [
-      {"doc_id": "ipa-nfr-grade", "section_id": "procedure"},
-      {"doc_id": "nist-csf-2-0", "section_id": "govern"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration"}
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "differences_and_challenges",
+        "title": "機能要求と非機能要求の相違点と課題"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "procedure",
+        "title": "利用手順"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "expected_effects",
+        "title": "期待される効果"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "reference_tool_and_quick_starts",
+        "title": "Reference Tool and Quick Start Resources"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "title": "Audit and Configuration Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-nfr-grade", "section_id": "procedure", "subsection_id": "procedure.selection"},
-      {"doc_id": "ipa-nfr-grade", "section_id": "procedure", "subsection_id": "procedure.remaining_items"},
-      {"doc_id": "nist-csf-2-0", "section_id": "govern", "subsection_id": "govern.strategy_and_policy"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "subsection_id": "audit_and_configuration.configuration"}
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "differences_and_challenges",
+        "subsection_id": "differences_and_challenges.complexity",
+        "title": "大規模化 複雑化 利用拡大への対応"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "procedure",
+        "subsection_id": "procedure.selection",
+        "title": "モデル選定と優先順位付け"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "expected_effects",
+        "subsection_id": "expected_effects.rework",
+        "title": "手戻り削減とトラブル低減"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "reference_tool_and_quick_starts",
+        "subsection_id": "reference_tool_and_quick_starts.reference_tool",
+        "title": "Reference Tool"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "subsection_id": "audit_and_configuration.configuration",
+        "title": "Configuration Management"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "differences_and_challenges",
+        "subsection_id": "differences_and_challenges.complexity"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "procedure",
+        "subsection_id": "procedure.selection"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "expected_effects",
+        "subsection_id": "expected_effects.rework"
+      }
     ]
   },
   {
     "control_id": "SYS-09",
     "label": "CI/CD保護",
     "sections": [
-      {"doc_id": "ipa-nfr-grade", "section_id": "procedure"},
-      {"doc_id": "nist-csf-2-0", "section_id": "protect"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "acquisition_and_supply_chain"}
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "procedure",
+        "title": "利用手順"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "govern",
+        "title": "Govern Function"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "title": "Audit and Configuration Families"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "acquisition_and_supply_chain",
+        "title": "Acquisition and Supply Chain Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-nfr-grade", "section_id": "procedure", "subsection_id": "procedure.selection"},
-      {"doc_id": "nist-csf-2-0", "section_id": "protect", "subsection_id": "protect_data_and_platform"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "acquisition_and_supply_chain", "subsection_id": "acquisition_and_supply_chain.procurement"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "acquisition_and_supply_chain", "subsection_id": "acquisition_and_supply_chain.scrm"}
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "procedure",
+        "subsection_id": "procedure.selection",
+        "title": "モデル選定と優先順位付け"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "govern",
+        "subsection_id": "govern_supply_chain",
+        "title": "Supply chain expectations"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "subsection_id": "audit_and_configuration.configuration",
+        "title": "Configuration Management"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "acquisition_and_supply_chain",
+        "subsection_id": "acquisition_and_supply_chain.procurement",
+        "title": "System and Services Acquisition"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "acquisition_and_supply_chain",
+        "subsection_id": "acquisition_and_supply_chain.scrm",
+        "title": "Supply Chain Risk Management"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "procedure",
+        "subsection_id": "procedure.selection"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "govern",
+        "subsection_id": "govern_supply_chain"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "subsection_id": "audit_and_configuration.configuration"
+      }
     ]
   },
   {
     "control_id": "SYS-10",
     "label": "ネットワーク境界",
     "sections": [
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_2_site_wide_practices"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability"},
-      {"doc_id": "nist-csf-2-0", "section_id": "protect"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "purpose_scope",
+        "title": "目的と適用範囲"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "title": "第1章 ウェブアプリケーションのセキュリティ実装"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "title": "第2章 ウェブサイトの安全性向上のための取り組み"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "appendix_checklist",
+        "title": "巻末チェックリスト"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_2_risk_and_usability",
+        "title": "ステップ2 問題 リスク 利便性要素の選定"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "title": "Protect Function"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "title": "Data and System Protection Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_2_site_wide_practices", "subsection_id": "chapter_2_site_wide_practices.server_ops"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability", "subsection_id": "step_2_risk_and_usability.problem_risk_tree"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability", "subsection_id": "step_2_risk_and_usability.third_party_and_boundary"},
-      {"doc_id": "nist-csf-2-0", "section_id": "protect", "subsection_id": "protect_data_and_platform"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "subsection_id": "data_and_system_protection.communications"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "purpose_scope",
+        "subsection_id": "purpose_scope.audience",
+        "title": "資料の対象読者と狙い"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.vulnerability_set",
+        "title": "対象脆弱性の範囲"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "subsection_id": "chapter_2_site_wide_practices.server_ops",
+        "title": "ウェブサーバ運用と公開面管理"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "appendix_checklist",
+        "subsection_id": "appendix_checklist.audit_mapping",
+        "title": "control へのマッピング"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_2_risk_and_usability",
+        "subsection_id": "step_2_risk_and_usability.problem_risk_tree",
+        "title": "問題とリスクの樹形図"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_2_risk_and_usability",
+        "subsection_id": "step_2_risk_and_usability.third_party_and_boundary",
+        "title": "外部接続と責任分界に展開する観点"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "subsection_id": "protect_data_and_platform",
+        "title": "Data and platform security"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "subsection_id": "data_and_system_protection.communications",
+        "title": "System and Communications Protection"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "purpose_scope",
+        "subsection_id": "purpose_scope.audience"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_1_security_implementation",
+        "subsection_id": "chapter_1_security_implementation.vulnerability_set"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "subsection_id": "chapter_2_site_wide_practices.server_ops"
+      }
     ]
   },
   {
     "control_id": "SYS-11",
     "label": "データ保護",
     "sections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "overview"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics"},
-      {"doc_id": "nist-csf-2-0", "section_id": "protect"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "overview",
+        "title": "概要"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_1_system_characteristics",
+        "title": "ステップ1 システムの特性評価"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "title": "Protect Function"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "title": "Data and System Protection Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "overview", "subsection_id": "overview.goal"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics", "subsection_id": "step_1_system_characteristics.cia_priority"},
-      {"doc_id": "nist-csf-2-0", "section_id": "protect", "subsection_id": "protect_data_and_platform"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "subsection_id": "data_and_system_protection.media"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "subsection_id": "data_and_system_protection.communications"}
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "overview",
+        "subsection_id": "overview.goal",
+        "title": "ガイドの目的"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_1_system_characteristics",
+        "subsection_id": "step_1_system_characteristics.cia_priority",
+        "title": "機密性 完全性 可用性の優先"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "subsection_id": "protect_data_and_platform",
+        "title": "Data and platform security"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "subsection_id": "data_and_system_protection.media",
+        "title": "Media Protection"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "subsection_id": "data_and_system_protection.communications",
+        "title": "System and Communications Protection"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "overview",
+        "subsection_id": "overview.goal"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_1_system_characteristics",
+        "subsection_id": "step_1_system_characteristics.cia_priority"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "subsection_id": "protect_data_and_platform"
+      }
     ]
   },
   {
     "control_id": "SYS-12",
     "label": "バックアップと復旧",
     "sections": [
-      {"doc_id": "ipa-nfr-grade", "section_id": "grade_2018_artifacts"},
-      {"doc_id": "nist-csf-2-0", "section_id": "recover"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "incident_and_recovery"}
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "purpose_and_positioning",
+        "title": "目的と位置付け"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "title": "非機能要求グレード 2018 の構成物"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "recover",
+        "title": "Recover Function"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "incident_and_recovery",
+        "title": "Incident and Recovery Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-nfr-grade", "section_id": "grade_2018_artifacts", "subsection_id": "grade_2018_artifacts.main_set"},
-      {"doc_id": "ipa-nfr-grade", "section_id": "grade_2018_artifacts", "subsection_id": "grade_2018_artifacts.typical_models"},
-      {"doc_id": "nist-csf-2-0", "section_id": "recover", "subsection_id": "recover_restoration"},
-      {"doc_id": "nist-csf-2-0", "section_id": "recover", "subsection_id": "recover_improvement"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "incident_and_recovery", "subsection_id": "incident_and_recovery.contingency"}
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "purpose_and_positioning",
+        "subsection_id": "purpose_and_positioning.priority",
+        "title": "重要項目から決める方針"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "subsection_id": "grade_2018_artifacts.main_set",
+        "title": "本体資料の内訳"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "subsection_id": "grade_2018_artifacts.typical_models",
+        "title": "典型モデルシステムと要求レベル"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "recover",
+        "subsection_id": "recover_restoration",
+        "title": "Restoration and resilience"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "recover",
+        "subsection_id": "recover_improvement",
+        "title": "Recovery planning improvements"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "incident_and_recovery",
+        "subsection_id": "incident_and_recovery.contingency",
+        "title": "Contingency Planning and Maintenance"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "purpose_and_positioning",
+        "subsection_id": "purpose_and_positioning.priority"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "subsection_id": "grade_2018_artifacts.main_set"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "subsection_id": "grade_2018_artifacts.typical_models"
+      }
     ]
   },
   {
     "control_id": "SYS-13",
     "label": "監視と検知",
     "sections": [
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_2_site_wide_practices"},
-      {"doc_id": "ipa-nfr-grade", "section_id": "related_materials"},
-      {"doc_id": "nist-csf-2-0", "section_id": "detect"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "title": "第2章 ウェブサイトの安全性向上のための取り組み"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "differences_and_challenges",
+        "title": "機能要求と非機能要求の相違点と課題"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "related_materials",
+        "title": "周辺資料と関連情報"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "detect",
+        "title": "Detect Function"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "title": "Audit and Configuration Families"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "title": "Data and System Protection Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_2_site_wide_practices", "subsection_id": "chapter_2_site_wide_practices.server_ops"},
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_2_site_wide_practices", "subsection_id": "chapter_2_site_wide_practices.logging_monitoring"},
-      {"doc_id": "ipa-nfr-grade", "section_id": "related_materials", "subsection_id": "related_materials.training"},
-      {"doc_id": "nist-csf-2-0", "section_id": "detect", "subsection_id": "detect_monitoring"},
-      {"doc_id": "nist-csf-2-0", "section_id": "detect", "subsection_id": "detect_process"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "subsection_id": "audit_and_configuration.audit"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "subsection_id": "audit_and_configuration.assessment_monitoring"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "subsection_id": "chapter_2_site_wide_practices.server_ops",
+        "title": "ウェブサーバ運用と公開面管理"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "subsection_id": "chapter_2_site_wide_practices.logging_monitoring",
+        "title": "ログと監視に展開する観点"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "differences_and_challenges",
+        "subsection_id": "differences_and_challenges.complexity",
+        "title": "大規模化 複雑化 利用拡大への対応"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "related_materials",
+        "subsection_id": "related_materials.training",
+        "title": "研修教材"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "detect",
+        "subsection_id": "detect_monitoring",
+        "title": "Monitoring and anomalies"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "detect",
+        "subsection_id": "detect_process",
+        "title": "Detection processes"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "subsection_id": "audit_and_configuration.audit",
+        "title": "Audit and Accountability"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "subsection_id": "audit_and_configuration.assessment_monitoring",
+        "title": "Assessment Authorization and Monitoring"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "subsection_id": "data_and_system_protection.integrity",
+        "title": "System and Information Integrity"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "subsection_id": "chapter_2_site_wide_practices.server_ops"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "subsection_id": "chapter_2_site_wide_practices.logging_monitoring"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "differences_and_challenges",
+        "subsection_id": "differences_and_challenges.complexity"
+      }
     ]
   },
   {
     "control_id": "GOV-01",
     "label": "セキュリティ方針",
     "sections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "overview"},
-      {"doc_id": "nist-csf-2-0", "section_id": "govern"}
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "purpose_and_positioning",
+        "title": "目的と位置付け"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "overview",
+        "title": "概要"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "handbook",
+        "title": "別冊 活用の手引き"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "supplemental_notes",
+        "title": "要求項目への補足説明"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "overview_and_components",
+        "title": "Overview and Components"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "govern",
+        "title": "Govern Function"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "profiles_and_tiers",
+        "title": "Profiles and Tiers"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "overview",
+        "title": "Overview"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "overview", "subsection_id": "overview.goal"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "handbook", "subsection_id": "handbook.adoption"},
-      {"doc_id": "nist-csf-2-0", "section_id": "govern", "subsection_id": "govern.strategy_and_policy"}
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "purpose_and_positioning",
+        "subsection_id": "purpose_and_positioning.consensus",
+        "title": "利用者と開発者の認識差を減らす目的"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "overview",
+        "subsection_id": "overview.goal",
+        "title": "ガイドの目的"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "handbook",
+        "subsection_id": "handbook.adoption",
+        "title": "導入効果の説明"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "supplemental_notes",
+        "subsection_id": "supplemental_notes.follow_up",
+        "title": "継続的な補足共有"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "overview_and_components",
+        "subsection_id": "overview_and_components.framework_purpose",
+        "title": "Framework purpose"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "govern",
+        "subsection_id": "govern.strategy_and_policy",
+        "title": "Strategy and policy"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "profiles_and_tiers",
+        "subsection_id": "profiles_and_tiers.tiers",
+        "title": "Tiers"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "overview",
+        "subsection_id": "overview.catalog",
+        "title": "Flexible control catalog"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "purpose_and_positioning",
+        "subsection_id": "purpose_and_positioning.consensus"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "overview",
+        "subsection_id": "overview.goal"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "handbook",
+        "subsection_id": "handbook.adoption"
+      }
     ]
   },
   {
     "control_id": "GOV-02",
     "label": "資産管理",
     "sections": [
-      {"doc_id": "nist-csf-2-0", "section_id": "identify"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics"}
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_1_system_characteristics",
+        "title": "ステップ1 システムの特性評価"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "identify",
+        "title": "Identify Function"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics", "subsection_id": "step_1_system_characteristics.nine_axes"},
-      {"doc_id": "nist-csf-2-0", "section_id": "identify", "subsection_id": "identify_assets"}
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_1_system_characteristics",
+        "subsection_id": "step_1_system_characteristics.nine_axes",
+        "title": "9つの評価項目"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "identify",
+        "subsection_id": "identify_assets",
+        "title": "Assets and business context"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_1_system_characteristics",
+        "subsection_id": "step_1_system_characteristics.nine_axes"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "identify",
+        "subsection_id": "identify_assets"
+      }
     ]
   },
   {
     "control_id": "GOV-03",
     "label": "権限管理",
     "sections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
-      {"doc_id": "nist-csf-2-0", "section_id": "protect"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "title": "第2章 ウェブサイトの安全性向上のための取り組み"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "title": "ステップ3 必要な対策の選定"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "title": "Protect Function"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "access_and_identity",
+        "title": "Access and Identity Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.tree_mapping"},
-      {"doc_id": "nist-csf-2-0", "section_id": "protect", "subsection_id": "protect_identity"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "access_and_identity", "subsection_id": "access_and_identity.access_control"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "subsection_id": "chapter_2_site_wide_practices.password_and_accounts",
+        "title": "パスワードとアカウントの取扱い"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.tree_mapping",
+        "title": "樹形図から対策への対応付け"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "subsection_id": "protect_identity",
+        "title": "Identity and access"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "access_and_identity",
+        "subsection_id": "access_and_identity.access_control",
+        "title": "Access Control family"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "access_and_identity",
+        "subsection_id": "access_and_identity.identification_authentication",
+        "title": "Identification and Authentication family"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "subsection_id": "chapter_2_site_wide_practices.password_and_accounts"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.tree_mapping"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "subsection_id": "protect_identity"
+      }
     ]
   },
   {
     "control_id": "GOV-04",
     "label": "変更管理",
     "sections": [
-      {"doc_id": "ipa-nfr-grade", "section_id": "procedure"},
-      {"doc_id": "nist-csf-2-0", "section_id": "govern"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration"}
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "differences_and_challenges",
+        "title": "機能要求と非機能要求の相違点と課題"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "title": "非機能要求グレード 2018 の構成物"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "procedure",
+        "title": "利用手順"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "govern",
+        "title": "Govern Function"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "title": "Audit and Configuration Families"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "acquisition_and_supply_chain",
+        "title": "Acquisition and Supply Chain Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-nfr-grade", "section_id": "procedure", "subsection_id": "procedure.selection"},
-      {"doc_id": "ipa-nfr-grade", "section_id": "procedure", "subsection_id": "procedure.remaining_items"},
-      {"doc_id": "nist-csf-2-0", "section_id": "govern", "subsection_id": "govern.strategy_and_policy"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "subsection_id": "audit_and_configuration.configuration"}
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "differences_and_challenges",
+        "subsection_id": "differences_and_challenges.upstream",
+        "title": "上流工程での明確化"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "subsection_id": "grade_2018_artifacts.project_customization",
+        "title": "プロジェクト向け活用"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "procedure",
+        "subsection_id": "procedure.selection",
+        "title": "モデル選定と優先順位付け"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "procedure",
+        "subsection_id": "procedure.remaining_items",
+        "title": "残り項目のレベル決定"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "govern",
+        "subsection_id": "govern.strategy_and_policy",
+        "title": "Strategy and policy"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "subsection_id": "audit_and_configuration.configuration",
+        "title": "Configuration Management"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "acquisition_and_supply_chain",
+        "subsection_id": "acquisition_and_supply_chain.procurement",
+        "title": "System and Services Acquisition"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "differences_and_challenges",
+        "subsection_id": "differences_and_challenges.upstream"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "subsection_id": "grade_2018_artifacts.project_customization"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "procedure",
+        "subsection_id": "procedure.selection"
+      }
     ]
   },
   {
     "control_id": "GOV-05",
     "label": "インシデント対応",
     "sections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
-      {"doc_id": "nist-csf-2-0", "section_id": "respond"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "incident_and_recovery"}
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "title": "ステップ3 必要な対策の選定"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "respond",
+        "title": "Respond Function"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "incident_and_recovery",
+        "title": "Incident and Recovery Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.incident_and_secret"},
-      {"doc_id": "nist-csf-2-0", "section_id": "respond", "subsection_id": "respond_analysis"},
-      {"doc_id": "nist-csf-2-0", "section_id": "respond", "subsection_id": "respond_mitigation"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "incident_and_recovery", "subsection_id": "incident_and_recovery.incident"}
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.tree_mapping",
+        "title": "樹形図から対策への対応付け"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.incident_and_secret",
+        "title": "シークレット ログ インシデントへの展開"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "respond",
+        "subsection_id": "respond_analysis",
+        "title": "Analysis and communications"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "respond",
+        "subsection_id": "respond_mitigation",
+        "title": "Mitigation and improvements"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "incident_and_recovery",
+        "subsection_id": "incident_and_recovery.incident",
+        "title": "Incident Response"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.tree_mapping"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.incident_and_secret"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "respond",
+        "subsection_id": "respond_analysis"
+      }
     ]
   },
   {
     "control_id": "GOV-06",
     "label": "復旧と事業継続",
     "sections": [
-      {"doc_id": "ipa-nfr-grade", "section_id": "grade_2018_artifacts"},
-      {"doc_id": "nist-csf-2-0", "section_id": "recover"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "incident_and_recovery"}
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "purpose_and_positioning",
+        "title": "目的と位置付け"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "title": "非機能要求グレード 2018 の構成物"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "recover",
+        "title": "Recover Function"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "incident_and_recovery",
+        "title": "Incident and Recovery Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-nfr-grade", "section_id": "grade_2018_artifacts", "subsection_id": "grade_2018_artifacts.typical_models"},
-      {"doc_id": "nist-csf-2-0", "section_id": "recover", "subsection_id": "recover_restoration"},
-      {"doc_id": "nist-csf-2-0", "section_id": "recover", "subsection_id": "recover_improvement"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "incident_and_recovery", "subsection_id": "incident_and_recovery.contingency"}
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "purpose_and_positioning",
+        "subsection_id": "purpose_and_positioning.priority",
+        "title": "重要項目から決める方針"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "subsection_id": "grade_2018_artifacts.main_set",
+        "title": "本体資料の内訳"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "subsection_id": "grade_2018_artifacts.typical_models",
+        "title": "典型モデルシステムと要求レベル"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "recover",
+        "subsection_id": "recover_restoration",
+        "title": "Restoration and resilience"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "recover",
+        "subsection_id": "recover_improvement",
+        "title": "Recovery planning improvements"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "incident_and_recovery",
+        "subsection_id": "incident_and_recovery.contingency",
+        "title": "Contingency Planning and Maintenance"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "purpose_and_positioning",
+        "subsection_id": "purpose_and_positioning.priority"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "subsection_id": "grade_2018_artifacts.main_set"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "subsection_id": "grade_2018_artifacts.typical_models"
+      }
     ]
   },
   {
     "control_id": "GOV-07",
     "label": "ログ保存方針",
     "sections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
-      {"doc_id": "nist-csf-2-0", "section_id": "govern"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "title": "第2章 ウェブサイトの安全性向上のための取り組み"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "title": "ステップ3 必要な対策の選定"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "detect",
+        "title": "Detect Function"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "title": "Audit and Configuration Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.requirement_items"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.incident_and_secret"},
-      {"doc_id": "nist-csf-2-0", "section_id": "govern", "subsection_id": "govern.strategy_and_policy"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "subsection_id": "audit_and_configuration.audit"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "subsection_id": "chapter_2_site_wide_practices.logging_monitoring",
+        "title": "ログと監視に展開する観点"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.requirement_items",
+        "title": "要求項目一覧"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.incident_and_secret",
+        "title": "シークレット ログ インシデントへの展開"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "detect",
+        "subsection_id": "detect_monitoring",
+        "title": "Monitoring and anomalies"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "subsection_id": "audit_and_configuration.audit",
+        "title": "Audit and Accountability"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_2_site_wide_practices",
+        "subsection_id": "chapter_2_site_wide_practices.logging_monitoring"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.requirement_items"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.incident_and_secret"
+      }
     ]
   },
   {
     "control_id": "GOV-08",
     "label": "委託先管理",
     "sections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability"},
-      {"doc_id": "nist-csf-2-0", "section_id": "govern"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "acquisition_and_supply_chain"}
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "expected_effects",
+        "title": "期待される効果"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_2_risk_and_usability",
+        "title": "ステップ2 問題 リスク 利便性要素の選定"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "govern",
+        "title": "Govern Function"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "reference_tool_and_quick_starts",
+        "title": "Reference Tool and Quick Start Resources"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "acquisition_and_supply_chain",
+        "title": "Acquisition and Supply Chain Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability", "subsection_id": "step_2_risk_and_usability.third_party_and_boundary"},
-      {"doc_id": "nist-csf-2-0", "section_id": "govern", "subsection_id": "govern_supply_chain"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "acquisition_and_supply_chain", "subsection_id": "acquisition_and_supply_chain.procurement"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "acquisition_and_supply_chain", "subsection_id": "acquisition_and_supply_chain.scrm"}
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "expected_effects",
+        "subsection_id": "expected_effects.accountability",
+        "title": "費用説明と責任分界"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_2_risk_and_usability",
+        "subsection_id": "step_2_risk_and_usability.problem_risk_tree",
+        "title": "問題とリスクの樹形図"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_2_risk_and_usability",
+        "subsection_id": "step_2_risk_and_usability.third_party_and_boundary",
+        "title": "外部接続と責任分界に展開する観点"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "govern",
+        "subsection_id": "govern_supply_chain",
+        "title": "Supply chain expectations"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "reference_tool_and_quick_starts",
+        "subsection_id": "reference_tool_and_quick_starts.quick_start",
+        "title": "Quick Start Guides"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "acquisition_and_supply_chain",
+        "subsection_id": "acquisition_and_supply_chain.procurement",
+        "title": "System and Services Acquisition"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "acquisition_and_supply_chain",
+        "subsection_id": "acquisition_and_supply_chain.scrm",
+        "title": "Supply Chain Risk Management"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "expected_effects",
+        "subsection_id": "expected_effects.accountability"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_2_risk_and_usability",
+        "subsection_id": "step_2_risk_and_usability.problem_risk_tree"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_2_risk_and_usability",
+        "subsection_id": "step_2_risk_and_usability.third_party_and_boundary"
+      }
     ]
   },
   {
     "control_id": "GOV-09",
     "label": "教育と訓練",
     "sections": [
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_3_failure_examples"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "handbook"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "risk_and_people"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "purpose_scope",
+        "title": "目的と適用範囲"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_3_failure_examples",
+        "title": "第3章 失敗例と修正例"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "supplement_safe_sql",
+        "title": "別冊 安全な SQL の呼び出し方"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "related_materials",
+        "title": "周辺資料と関連情報"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "handbook",
+        "title": "別冊 活用の手引き"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "title": "Protect Function"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "reference_tool_and_quick_starts",
+        "title": "Reference Tool and Quick Start Resources"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "risk_and_people",
+        "title": "Risk and People Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_3_failure_examples", "subsection_id": "chapter_3_failure_examples.training_usage"},
-      {"doc_id": "ipa-safe-website", "section_id": "chapter_3_failure_examples", "subsection_id": "chapter_3_failure_examples.code_examples"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "handbook", "subsection_id": "handbook.communication"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "risk_and_people", "subsection_id": "risk_and_people.people"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "purpose_scope",
+        "subsection_id": "purpose_scope.structure",
+        "title": "本編と別冊の構成"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_3_failure_examples",
+        "subsection_id": "chapter_3_failure_examples.code_examples",
+        "title": "脆弱性を作り込んだコード例"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_3_failure_examples",
+        "subsection_id": "chapter_3_failure_examples.training_usage",
+        "title": "教育とレビューへの利用"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "supplement_safe_sql",
+        "subsection_id": "supplement_safe_sql.language_db_examples",
+        "title": "言語とデータベース組み合わせ別の実装例"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "related_materials",
+        "subsection_id": "related_materials.booklet",
+        "title": "小冊子と平易な解説"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "related_materials",
+        "subsection_id": "related_materials.training",
+        "title": "研修教材"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "handbook",
+        "subsection_id": "handbook.communication",
+        "title": "関係者説明"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "subsection_id": "protect_training",
+        "title": "Training and safeguards"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "reference_tool_and_quick_starts",
+        "subsection_id": "reference_tool_and_quick_starts.quick_start",
+        "title": "Quick Start Guides"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "risk_and_people",
+        "subsection_id": "risk_and_people.people",
+        "title": "Awareness and people process"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "purpose_scope",
+        "subsection_id": "purpose_scope.structure"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_3_failure_examples",
+        "subsection_id": "chapter_3_failure_examples.code_examples"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_3_failure_examples",
+        "subsection_id": "chapter_3_failure_examples.training_usage"
+      }
     ]
   },
   {
     "control_id": "GOV-10",
     "label": "リスク評価",
     "sections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability"},
-      {"doc_id": "nist-csf-2-0", "section_id": "identify"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "risk_and_people"}
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "purpose_and_positioning",
+        "title": "目的と位置付け"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "differences_and_challenges",
+        "title": "機能要求と非機能要求の相違点と課題"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "overview",
+        "title": "概要"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_1_system_characteristics",
+        "title": "ステップ1 システムの特性評価"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_2_risk_and_usability",
+        "title": "ステップ2 問題 リスク 利便性要素の選定"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "supplemental_notes",
+        "title": "要求項目への補足説明"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "overview_and_components",
+        "title": "Overview and Components"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "govern",
+        "title": "Govern Function"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "identify",
+        "title": "Identify Function"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "respond",
+        "title": "Respond Function"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "profiles_and_tiers",
+        "title": "Profiles and Tiers"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "overview",
+        "title": "Overview"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "risk_and_people",
+        "title": "Risk and People Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability", "subsection_id": "step_2_risk_and_usability.problem_risk_tree"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_2_risk_and_usability", "subsection_id": "step_2_risk_and_usability.usability_factors"},
-      {"doc_id": "nist-csf-2-0", "section_id": "identify", "subsection_id": "identify_risk"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "risk_and_people", "subsection_id": "risk_and_people.risk"}
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "purpose_and_positioning",
+        "subsection_id": "purpose_and_positioning.consensus",
+        "title": "利用者と開発者の認識差を減らす目的"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "differences_and_challenges",
+        "subsection_id": "differences_and_challenges.upstream",
+        "title": "上流工程での明確化"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "overview",
+        "subsection_id": "overview.autonomy_usability",
+        "title": "自律性と利便性の両立"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_1_system_characteristics",
+        "subsection_id": "step_1_system_characteristics.nine_axes",
+        "title": "9つの評価項目"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_2_risk_and_usability",
+        "subsection_id": "step_2_risk_and_usability.problem_risk_tree",
+        "title": "問題とリスクの樹形図"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_2_risk_and_usability",
+        "subsection_id": "step_2_risk_and_usability.usability_factors",
+        "title": "利便性要素との両立"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "supplemental_notes",
+        "subsection_id": "supplemental_notes.evolving_items",
+        "title": "発展途上の要求項目"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "overview_and_components",
+        "subsection_id": "overview_and_components.framework_purpose",
+        "title": "Framework purpose"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "overview_and_components",
+        "subsection_id": "overview_and_components.components",
+        "title": "Core Profiles Tiers"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "govern",
+        "subsection_id": "govern.strategy_and_policy",
+        "title": "Strategy and policy"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "identify",
+        "subsection_id": "identify_assets",
+        "title": "Assets and business context"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "identify",
+        "subsection_id": "identify_risk",
+        "title": "Risk prioritization"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "respond",
+        "subsection_id": "respond_mitigation",
+        "title": "Mitigation and improvements"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "profiles_and_tiers",
+        "subsection_id": "profiles_and_tiers.profiles",
+        "title": "Current and target profiles"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "overview",
+        "subsection_id": "overview.catalog",
+        "title": "Flexible control catalog"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "overview",
+        "subsection_id": "overview.assurance",
+        "title": "Assurance and organization-wide use"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "risk_and_people",
+        "subsection_id": "risk_and_people.risk",
+        "title": "Risk Assessment"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "purpose_and_positioning",
+        "subsection_id": "purpose_and_positioning.consensus"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "differences_and_challenges",
+        "subsection_id": "differences_and_challenges.upstream"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "overview",
+        "subsection_id": "overview.autonomy_usability"
+      }
     ]
   },
   {
     "control_id": "GOV-11",
     "label": "データ管理",
     "sections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "overview"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics"},
-      {"doc_id": "nist-csf-2-0", "section_id": "protect"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection"}
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "overview",
+        "title": "概要"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_1_system_characteristics",
+        "title": "ステップ1 システムの特性評価"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "title": "ステップ3 必要な対策の選定"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "title": "Data and System Protection Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-requirements-guide", "section_id": "overview", "subsection_id": "overview.goal"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_1_system_characteristics", "subsection_id": "step_1_system_characteristics.cia_priority"},
-      {"doc_id": "nist-csf-2-0", "section_id": "protect", "subsection_id": "protect_data_and_platform"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "data_and_system_protection", "subsection_id": "data_and_system_protection.media"}
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "overview",
+        "subsection_id": "overview.goal",
+        "title": "ガイドの目的"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "overview",
+        "subsection_id": "overview.autonomy_usability",
+        "title": "自律性と利便性の両立"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_1_system_characteristics",
+        "subsection_id": "step_1_system_characteristics.nine_axes",
+        "title": "9つの評価項目"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_1_system_characteristics",
+        "subsection_id": "step_1_system_characteristics.cia_priority",
+        "title": "機密性 完全性 可用性の優先"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.requirement_items",
+        "title": "要求項目一覧"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "data_and_system_protection",
+        "subsection_id": "data_and_system_protection.media",
+        "title": "Media Protection"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "overview",
+        "subsection_id": "overview.goal"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "overview",
+        "subsection_id": "overview.autonomy_usability"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_1_system_characteristics",
+        "subsection_id": "step_1_system_characteristics.nine_axes"
+      }
     ]
   },
   {
     "control_id": "GOV-12",
     "label": "監査可能性",
     "sections": [
-      {"doc_id": "ipa-nfr-grade", "section_id": "expected_effects"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls"},
-      {"doc_id": "nist-csf-2-0", "section_id": "profiles_and_tiers"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_3_failure_examples",
+        "title": "第3章 失敗例と修正例"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "supplement_web_health_check",
+        "title": "別冊 ウェブ健康診断仕様"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "title": "非機能要求グレード 2018 の構成物"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "procedure",
+        "title": "利用手順"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "expected_effects",
+        "title": "期待される効果"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "related_materials",
+        "title": "周辺資料と関連情報"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "title": "ステップ3 必要な対策の選定"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "handbook",
+        "title": "別冊 活用の手引き"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "supplemental_notes",
+        "title": "要求項目への補足説明"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "overview_and_components",
+        "title": "Overview and Components"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "govern",
+        "title": "Govern Function"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "identify",
+        "title": "Identify Function"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "title": "Protect Function"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "detect",
+        "title": "Detect Function"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "respond",
+        "title": "Respond Function"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "profiles_and_tiers",
+        "title": "Profiles and Tiers"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "reference_tool_and_quick_starts",
+        "title": "Reference Tool and Quick Start Resources"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "overview",
+        "title": "Overview"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "title": "Audit and Configuration Families"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "risk_and_people",
+        "title": "Risk and People Families"
+      }
     ],
     "subsections": [
-      {"doc_id": "ipa-nfr-grade", "section_id": "expected_effects", "subsection_id": "expected_effects.accountability"},
-      {"doc_id": "ipa-nfr-grade", "section_id": "expected_effects", "subsection_id": "expected_effects.rework"},
-      {"doc_id": "ipa-requirements-guide", "section_id": "step_3_controls", "subsection_id": "step_3_controls.requirement_items"},
-      {"doc_id": "nist-csf-2-0", "section_id": "profiles_and_tiers", "subsection_id": "profiles_and_tiers.profiles"},
-      {"doc_id": "nist-csf-2-0", "section_id": "profiles_and_tiers", "subsection_id": "profiles_and_tiers.tiers"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "subsection_id": "audit_and_configuration.audit"},
-      {"doc_id": "nist-sp-800-53-r5", "section_id": "audit_and_configuration", "subsection_id": "audit_and_configuration.assessment_monitoring"}
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_3_failure_examples",
+        "subsection_id": "chapter_3_failure_examples.training_usage",
+        "title": "教育とレビューへの利用"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "supplement_web_health_check",
+        "subsection_id": "supplement_web_health_check.limitations",
+        "title": "診断の限界と追加対策"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "subsection_id": "grade_2018_artifacts.project_customization",
+        "title": "プロジェクト向け活用"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "procedure",
+        "subsection_id": "procedure.remaining_items",
+        "title": "残り項目のレベル決定"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "expected_effects",
+        "subsection_id": "expected_effects.rework",
+        "title": "手戻り削減とトラブル低減"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "expected_effects",
+        "subsection_id": "expected_effects.accountability",
+        "title": "費用説明と責任分界"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "related_materials",
+        "subsection_id": "related_materials.booklet",
+        "title": "小冊子と平易な解説"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "step_3_controls",
+        "subsection_id": "step_3_controls.requirement_items",
+        "title": "要求項目一覧"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "handbook",
+        "subsection_id": "handbook.adoption",
+        "title": "導入効果の説明"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "handbook",
+        "subsection_id": "handbook.communication",
+        "title": "関係者説明"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "supplemental_notes",
+        "subsection_id": "supplemental_notes.evolving_items",
+        "title": "発展途上の要求項目"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "supplemental_notes",
+        "subsection_id": "supplemental_notes.follow_up",
+        "title": "継続的な補足共有"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "overview_and_components",
+        "subsection_id": "overview_and_components.components",
+        "title": "Core Profiles Tiers"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "govern",
+        "subsection_id": "govern.strategy_and_policy",
+        "title": "Strategy and policy"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "identify",
+        "subsection_id": "identify_risk",
+        "title": "Risk prioritization"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "protect",
+        "subsection_id": "protect_training",
+        "title": "Training and safeguards"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "detect",
+        "subsection_id": "detect_process",
+        "title": "Detection processes"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "respond",
+        "subsection_id": "respond_analysis",
+        "title": "Analysis and communications"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "profiles_and_tiers",
+        "subsection_id": "profiles_and_tiers.profiles",
+        "title": "Current and target profiles"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "profiles_and_tiers",
+        "subsection_id": "profiles_and_tiers.tiers",
+        "title": "Tiers"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "reference_tool_and_quick_starts",
+        "subsection_id": "reference_tool_and_quick_starts.reference_tool",
+        "title": "Reference Tool"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "overview",
+        "subsection_id": "overview.assurance",
+        "title": "Assurance and organization-wide use"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "subsection_id": "audit_and_configuration.audit",
+        "title": "Audit and Accountability"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "audit_and_configuration",
+        "subsection_id": "audit_and_configuration.assessment_monitoring",
+        "title": "Assessment Authorization and Monitoring"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "risk_and_people",
+        "subsection_id": "risk_and_people.risk",
+        "title": "Risk Assessment"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "risk_and_people",
+        "subsection_id": "risk_and_people.people",
+        "title": "Awareness and people process"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "chapter_3_failure_examples",
+        "subsection_id": "chapter_3_failure_examples.training_usage"
+      },
+      {
+        "doc_id": "ipa-safe-website",
+        "section_id": "supplement_web_health_check",
+        "subsection_id": "supplement_web_health_check.limitations"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "subsection_id": "grade_2018_artifacts.project_customization"
+      }
     ]
   }
 ]

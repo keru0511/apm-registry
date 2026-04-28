@@ -164,52 +164,67 @@
       "GOV-06"
     ],
     "documents": [
+      "ipa-nfr-grade",
       "nist-csf-2-0",
-      "nist-sp-800-53-r5",
-      "ipa-requirements-guide"
+      "nist-sp-800-53-r5"
     ],
     "subsections": [
       {
-        "doc_id": "nist-csf-2-0",
-        "section_id": "respond",
-        "subsection_id": "respond_analysis"
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "purpose_and_positioning",
+        "subsection_id": "purpose_and_positioning.priority"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "subsection_id": "grade_2018_artifacts.main_set"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "subsection_id": "grade_2018_artifacts.typical_models"
       },
       {
         "doc_id": "nist-csf-2-0",
-        "section_id": "respond",
-        "subsection_id": "respond_mitigation"
+        "section_id": "recover",
+        "subsection_id": "recover_restoration"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "recover",
+        "subsection_id": "recover_improvement"
       },
       {
         "doc_id": "nist-sp-800-53-r5",
         "section_id": "incident_and_recovery",
-        "subsection_id": "incident_and_recovery.incident"
-      },
-      {
-        "doc_id": "ipa-requirements-guide",
-        "section_id": "step_3_controls",
-        "subsection_id": "step_3_controls.incident_and_secret"
+        "subsection_id": "incident_and_recovery.contingency"
       }
     ],
     "preferred_subsections": [
       {
-        "doc_id": "nist-csf-2-0",
-        "section_id": "respond",
-        "subsection_id": "respond_analysis"
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "purpose_and_positioning",
+        "subsection_id": "purpose_and_positioning.priority"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "subsection_id": "grade_2018_artifacts.main_set"
+      },
+      {
+        "doc_id": "ipa-nfr-grade",
+        "section_id": "grade_2018_artifacts",
+        "subsection_id": "grade_2018_artifacts.typical_models"
       },
       {
         "doc_id": "nist-csf-2-0",
-        "section_id": "respond",
-        "subsection_id": "respond_mitigation"
+        "section_id": "recover",
+        "subsection_id": "recover_restoration"
       },
       {
-        "doc_id": "nist-sp-800-53-r5",
-        "section_id": "incident_and_recovery",
-        "subsection_id": "incident_and_recovery.incident"
-      },
-      {
-        "doc_id": "ipa-requirements-guide",
-        "section_id": "step_3_controls",
-        "subsection_id": "step_3_controls.incident_and_secret"
+        "doc_id": "nist-csf-2-0",
+        "section_id": "recover",
+        "subsection_id": "recover_improvement"
       }
     ],
     "max_results": 5,
@@ -296,9 +311,55 @@
       "GOV-04",
       "GOV-10"
     ],
-    "documents": [],
-    "subsections": [],
-    "preferred_subsections": [],
+    "documents": [
+      "nist-csf-2-0",
+      "ipa-requirements-guide",
+      "nist-sp-800-53-r5"
+    ],
+    "subsections": [
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "overview_and_components",
+        "subsection_id": "overview_and_components.framework_purpose"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "govern",
+        "subsection_id": "govern.strategy_and_policy"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "overview",
+        "subsection_id": "overview.goal"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "overview",
+        "subsection_id": "overview.catalog"
+      }
+    ],
+    "preferred_subsections": [
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "overview_and_components",
+        "subsection_id": "overview_and_components.framework_purpose"
+      },
+      {
+        "doc_id": "nist-csf-2-0",
+        "section_id": "govern",
+        "subsection_id": "govern.strategy_and_policy"
+      },
+      {
+        "doc_id": "ipa-requirements-guide",
+        "section_id": "overview",
+        "subsection_id": "overview.goal"
+      },
+      {
+        "doc_id": "nist-sp-800-53-r5",
+        "section_id": "overview",
+        "subsection_id": "overview.catalog"
+      }
+    ],
     "max_results": 4,
     "search_hints": "まず governance 方針と責任分界の根拠を見て、要件定義資料は補助的に使う。"
   }

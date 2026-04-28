@@ -139,11 +139,15 @@
       "nist-sp-800-53-r5",
       "ipa-requirements-guide"
     ],
-    "must_have_topics": [
-      "backup_recovery",
-      "incident_response"
+    "must_have_controls": [
+      "SYS-12",
+      "GOV-06"
     ],
     "excluded_subsections": [
+      "nist-csf-2-0.respond.respond_analysis",
+      "nist-csf-2-0.respond.respond_mitigation",
+      "nist-sp-800-53-r5.incident_and_recovery.incident_and_recovery.incident",
+      "ipa-requirements-guide.step_3_controls.step_3_controls.incident_and_secret",
       "ipa-requirements-guide.handbook.handbook.adoption",
       "ipa-requirements-guide.handbook.handbook.communication",
       "ipa-requirements-guide.supplemental_notes.supplemental_notes.evolving_items",
@@ -202,13 +206,18 @@
     "preferred_documents": [
       "nist-csf-2-0",
       "ipa-requirements-guide",
+      "nist-sp-800-53-r5",
       "ipa-nfr-grade"
     ],
-    "must_have_topics": [
-      "security_governance"
+    "must_have_controls": [
+      "GOV-01"
     ],
     "excluded_subsections": [
-      "ipa-nfr-grade.differences_and_challenges.differences_and_challenges.upstream"
+      "ipa-nfr-grade.differences_and_challenges.differences_and_challenges.upstream",
+      "ipa-nfr-grade.purpose_and_positioning.purpose_and_positioning.consensus",
+      "ipa-requirements-guide.handbook.handbook.adoption",
+      "ipa-requirements-guide.supplemental_notes.supplemental_notes.follow_up",
+      "nist-csf-2-0.profiles_and_tiers.profiles_and_tiers.tiers"
     ],
     "max_results": 4,
     "notes": "まず governance 方針と責任分界の根拠を見て、要件定義資料は補助的に使う。"

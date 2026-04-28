@@ -1,0 +1,501 @@
+{
+  "doc_id": "ipa-nfr-grade",
+  "publisher": "IPA",
+  "version": "2018",
+  "publication_date": "2018-06-29",
+  "profiles": [
+    "system",
+    "governance"
+  ],
+  "sections": [
+    {
+      "section_id": "purpose_and_positioning",
+      "source_section_ids": [
+        "purpose_and_positioning",
+        "grade_2018_artifacts"
+      ],
+      "section_number": "intro",
+      "title": "目的と位置付け",
+      "source_heading": "システム構築の上流工程強化 非機能要求グレード",
+      "topics": [
+        "non_functional_requirements",
+        "requirements_definition",
+        "stakeholder_alignment",
+        "availability",
+        "operability"
+      ],
+      "text": "非機能要求の認識差を減らし、上流工程で要求レベルを段階的に決めるための共通フレームワークとしての位置付けを説明する導入部。",
+      "subsections": [
+        {
+          "subsection_id": "purpose_and_positioning.consensus",
+          "source_heading": "利用者と開発者の認識差を減らす目的",
+          "topics": [
+            "non_functional_requirements",
+            "stakeholder_alignment",
+            "requirements_definition",
+            "governance"
+          ],
+          "controls": [
+            "GOV-01",
+            "GOV-10"
+          ],
+          "key_points": [
+            "非機能要求に関する認識差を減らし、上流工程で共通理解を作ることが狙いである。",
+            "技術的な詳細だけでなく説明責任や合意形成に効く資料として使われる。",
+            "監査では要求定義プロセスの成熟度を見る補助資料になる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "purpose_and_positioning.consensus.p1",
+              "text": "利用者と開発者の認識の違いを調整するための共通フレームワークとして紹介されている。",
+              "source_locator": "紹介ページの主旨",
+              "canonical_url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html"
+            },
+            {
+              "passage_id": "purpose_and_positioning.consensus.p2",
+              "text": "システム構築の上流工程強化が中心テーマになっている。",
+              "source_locator": "紹介ページの主旨",
+              "canonical_url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html"
+            }
+          ]
+        },
+        {
+          "subsection_id": "purpose_and_positioning.priority",
+          "source_heading": "重要項目から決める方針",
+          "topics": [
+            "prioritization",
+            "availability",
+            "operability",
+            "requirements_workshop"
+          ],
+          "controls": [
+            "SYS-12",
+            "GOV-06"
+          ],
+          "key_points": [
+            "すべてを同じ密度で決めるのではなく、重要項目から要求レベルを決める。",
+            "可用性、監視、復旧などの観点を段階的に具体化するのに向く。",
+            "監査では復旧や継続性の要求が曖昧な場合の補強資料になる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "purpose_and_positioning.priority.p1",
+              "text": "非機能要求を重要なものから順に整理する前提で使われる資料である。",
+              "source_locator": "紹介ページの位置付け",
+              "canonical_url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "differences_and_challenges",
+      "source_section_ids": [
+        "differences_and_challenges"
+      ],
+      "section_number": "challenge",
+      "title": "機能要求と非機能要求の相違点と課題",
+      "source_heading": "背景と課題",
+      "topics": [
+        "requirements_risk",
+        "system_complexity",
+        "service_stability",
+        "upstream_design"
+      ],
+      "text": "システムの大規模化、複雑化、利用拡大を背景に、安定稼働や運用性を上流工程で明確にする必要性を説明する。",
+      "subsections": [
+        {
+          "subsection_id": "differences_and_challenges.complexity",
+          "source_heading": "大規模化 複雑化 利用拡大への対応",
+          "topics": [
+            "system_complexity",
+            "service_stability",
+            "operability",
+            "availability"
+          ],
+          "controls": [
+            "SYS-08",
+            "SYS-13"
+          ],
+          "key_points": [
+            "システムの複雑化により、非機能要求を後追いで決めると品質事故につながりやすい。",
+            "安定運用や監視の要求を設計初期から定義する必要がある。",
+            "監査では環境差分管理や監視設計の不備に接続しやすい。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "differences_and_challenges.complexity.p1",
+              "text": "システムの大規模化や複雑化への対応が背景課題として示されている。",
+              "source_locator": "紹介ページの背景説明",
+              "canonical_url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html"
+            }
+          ]
+        },
+        {
+          "subsection_id": "differences_and_challenges.upstream",
+          "source_heading": "上流工程での明確化",
+          "topics": [
+            "upstream_design",
+            "requirements_definition",
+            "accountability",
+            "risk_reduction"
+          ],
+          "controls": [
+            "GOV-04",
+            "GOV-10"
+          ],
+          "key_points": [
+            "非機能要求を上流で決めることが、手戻り削減と説明責任の明確化に効く。",
+            "後工程での運用問題を前倒しで扱う枠組みとして使える。",
+            "監査では変更管理や要求トレーサビリティの弱さを補足できる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "differences_and_challenges.upstream.p1",
+              "text": "上流工程強化が資料全体の中心メッセージである。",
+              "source_locator": "紹介ページの主題",
+              "canonical_url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "grade_2018_artifacts",
+      "source_section_ids": [
+        "grade_2018_artifacts"
+      ],
+      "section_number": "artifacts",
+      "title": "非機能要求グレード 2018 の構成物",
+      "source_heading": "非機能要求グレード2018",
+      "topics": [
+        "guides",
+        "grade_tables",
+        "item_catalogs",
+        "tree_models",
+        "customization",
+        "project_templates"
+      ],
+      "text": "利用ガイド、グレード表、項目一覧、樹系図、活用シートなどの構成物を説明し、どの資料で何を決めるかを整理する section。",
+      "subsections": [
+        {
+          "subsection_id": "grade_2018_artifacts.main_set",
+          "source_heading": "本体資料の内訳",
+          "topics": [
+            "guides",
+            "grade_tables",
+            "item_catalogs",
+            "tree_models",
+            "customization"
+          ],
+          "controls": [
+            "SYS-12",
+            "GOV-06"
+          ],
+          "key_points": [
+            "利用ガイド、グレード表、項目一覧、樹系図、活用シート、活用編が本体構成に含まれる。",
+            "要求水準を決めるだけでなく、プロジェクト向けにカスタマイズする前提がある。",
+            "監査ではバックアップや監視の要求レベルがどこで定義されたかを辿れる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "grade_2018_artifacts.main_set.p1",
+              "text": "本体資料として利用ガイド、グレード表、項目一覧、樹系図、活用シートが列挙されている。",
+              "source_locator": "非機能要求グレード2018",
+              "canonical_url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html"
+            },
+            {
+              "passage_id": "grade_2018_artifacts.main_set.p2",
+              "text": "活用シートはプロジェクトに応じてカスタマイズ可能と説明されている。",
+              "source_locator": "非機能要求グレード2018",
+              "canonical_url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html"
+            }
+          ]
+        },
+        {
+          "subsection_id": "grade_2018_artifacts.typical_models",
+          "source_heading": "典型モデルシステムと要求レベル",
+          "topics": [
+            "model_selection",
+            "availability",
+            "service_level",
+            "baseline_definition"
+          ],
+          "controls": [
+            "SYS-12",
+            "GOV-06"
+          ],
+          "key_points": [
+            "グレード表は典型モデルシステムごとの主な非機能要求項目と要求レベルを示す。",
+            "要件の一律適用ではなく、対象システムに合わせたレベル設定を支援する。",
+            "監査では RPO/RTO や監視レベルの妥当性確認に使いやすい。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "grade_2018_artifacts.typical_models.p1",
+              "text": "グレード表は典型モデルシステムと主な非機能要求項目の要求レベルを示すと説明されている。",
+              "source_locator": "非機能要求グレード2018",
+              "canonical_url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html"
+            }
+          ]
+        },
+        {
+          "subsection_id": "grade_2018_artifacts.project_customization",
+          "source_heading": "プロジェクト向け活用",
+          "topics": [
+            "project_templates",
+            "customization",
+            "requirements_workshop",
+            "documentation"
+          ],
+          "controls": [
+            "GOV-04",
+            "GOV-12"
+          ],
+          "key_points": [
+            "活用シートと利用ガイド活用編は、具体的なプロジェクトでの落とし込みを支援する。",
+            "文書証跡や要求決定過程を残しやすい。",
+            "監査可能性の観点からも useful である。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "grade_2018_artifacts.project_customization.p1",
+              "text": "活用シートと活用編により、利用シーンに応じた使い方を示している。",
+              "source_locator": "非機能要求グレード2018",
+              "canonical_url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "procedure",
+      "source_section_ids": [
+        "procedure"
+      ],
+      "section_number": "procedure",
+      "title": "利用手順",
+      "source_heading": "利用方法",
+      "topics": [
+        "model_selection",
+        "prioritization",
+        "level_setting",
+        "requirements_workshop",
+        "decision_flow"
+      ],
+      "text": "モデルシステム選定、重要項目のレベル決定、残り項目のレベル決定といった段階的な利用手順を示す section。",
+      "subsections": [
+        {
+          "subsection_id": "procedure.selection",
+          "source_heading": "モデル選定と優先順位付け",
+          "topics": [
+            "model_selection",
+            "prioritization",
+            "requirements_workshop",
+            "decision_flow"
+          ],
+          "controls": [
+            "SYS-08",
+            "SYS-09",
+            "GOV-04"
+          ],
+          "key_points": [
+            "まず対象システムに近いモデルを選び、重要項目から先に要求レベルを定める。",
+            "構成管理や CI/CD 管理も、どのレベルまで厳格化するかの判断に使える。",
+            "要求決定順序が明確なので、変更時の再評価にも向く。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "procedure.selection.p1",
+              "text": "モデルシステム選定と重要項目のレベル決定が利用手順の中心になっている。",
+              "source_locator": "利用ガイド説明",
+              "canonical_url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html"
+            }
+          ]
+        },
+        {
+          "subsection_id": "procedure.remaining_items",
+          "source_heading": "残り項目のレベル決定",
+          "topics": [
+            "level_setting",
+            "coverage",
+            "consistency",
+            "traceability"
+          ],
+          "controls": [
+            "GOV-04",
+            "GOV-12"
+          ],
+          "key_points": [
+            "重要項目決定後に残り項目を決めるため、全体整合を崩しにくい。",
+            "監査時には、決定していない要求が残っていないかを見る基準になる。",
+            "変更の影響範囲を追跡する説明責任にも役立つ。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "procedure.remaining_items.p1",
+              "text": "重要項目の後に残り項目のレベルを決める段階的手順である。",
+              "source_locator": "利用手順説明",
+              "canonical_url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "expected_effects",
+      "source_section_ids": [
+        "expected_effects"
+      ],
+      "section_number": "effects",
+      "title": "期待される効果",
+      "source_heading": "効果",
+      "topics": [
+        "cost_explanation",
+        "rework_reduction",
+        "operational_stability",
+        "accountability",
+        "governance"
+      ],
+      "text": "発注者、受注者、社会全体に対する効果として、手戻り削減、トラブル低減、費用説明、責任分界整理などを示す section。",
+      "subsections": [
+        {
+          "subsection_id": "expected_effects.rework",
+          "source_heading": "手戻り削減とトラブル低減",
+          "topics": [
+            "rework_reduction",
+            "operational_stability",
+            "service_quality",
+            "risk_reduction"
+          ],
+          "controls": [
+            "SYS-08",
+            "GOV-12"
+          ],
+          "key_points": [
+            "非機能要求の明確化により、後工程での手戻りと運用トラブルを減らす効果を見込む。",
+            "監査では、要求不足が原因の継続運用リスクを説明する際に引用しやすい。",
+            "単なる品質向上ではなく運用安定化まで射程に入っている。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "expected_effects.rework.p1",
+              "text": "手戻り削減やトラブル低減が期待効果として位置付けられている。",
+              "source_locator": "効果説明",
+              "canonical_url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html"
+            }
+          ]
+        },
+        {
+          "subsection_id": "expected_effects.accountability",
+          "source_heading": "費用説明と責任分界",
+          "topics": [
+            "accountability",
+            "contracting",
+            "responsibility_split",
+            "governance"
+          ],
+          "controls": [
+            "GOV-08",
+            "GOV-12"
+          ],
+          "key_points": [
+            "費用の説明可能性や責任分界の整理に役立つ。",
+            "委託先管理や監査可能性の弱さを補足する文脈で使いやすい。",
+            "governance 側の総評で参照価値が高い。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "expected_effects.accountability.p1",
+              "text": "費用説明の明確化や責任分界整理が期待効果に含まれる。",
+              "source_locator": "効果説明",
+              "canonical_url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "related_materials",
+      "source_section_ids": [
+        "grade_2018_artifacts",
+        "initial_release",
+        "training_materials",
+        "executive_reader",
+        "seminar_materials",
+        "english_release",
+        "chinese_release",
+        "casebook",
+        "related_information"
+      ],
+      "section_number": "related",
+      "title": "周辺資料と関連情報",
+      "source_heading": "周辺資料",
+      "topics": [
+        "training_materials",
+        "case_studies",
+        "architecture_guidance",
+        "maintenance",
+        "continuity"
+      ],
+      "text": "小冊子や研修教材などの周辺資料を案内し、教育、運用改善、継続的利用の材料を示す section。",
+      "subsections": [
+        {
+          "subsection_id": "related_materials.booklet",
+          "source_heading": "小冊子と平易な解説",
+          "topics": [
+            "communication",
+            "stakeholder_alignment",
+            "education",
+            "requirements_definition"
+          ],
+          "controls": [
+            "GOV-09",
+            "GOV-12"
+          ],
+          "key_points": [
+            "非機能要求の用語を分かりやすく置き換える小冊子があり、関係者説明に向く。",
+            "専門用語の壁を下げることで、要求決定への参加者を広げやすい。",
+            "監査では教育や周知の evidence として利用できる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "related_materials.booklet.p1",
+              "text": "非機能要求の用語を易しい言葉に置き換えて解説する小冊子が周辺資料に含まれる。",
+              "source_locator": "周辺資料",
+              "canonical_url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html"
+            }
+          ]
+        },
+        {
+          "subsection_id": "related_materials.training",
+          "source_heading": "研修教材",
+          "topics": [
+            "training_materials",
+            "exercise",
+            "maintenance",
+            "continuous_improvement"
+          ],
+          "controls": [
+            "SYS-07",
+            "SYS-13",
+            "GOV-09"
+          ],
+          "key_points": [
+            "演習付きの研修教材があり、具体的な利用方法を体得できる。",
+            "脆弱性管理、監視、運用改善の教育材料としても展開しやすい。",
+            "組織的な訓練 evidence を補う資料として使える。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "related_materials.training.p1",
+              "text": "具体的な利用方法が体得できる演習付き教材が案内されている。",
+              "source_locator": "周辺資料",
+              "canonical_url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

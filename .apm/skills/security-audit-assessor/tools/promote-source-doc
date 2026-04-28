@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [ "$#" -ne 1 ]; then
+  echo "usage: $0 <doc_id>" >&2
+  exit 2
+fi
+
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+"$script_dir/build-audit-corpus" --doc-id "$1"
+"$script_dir/build-audit-index"
+"$script_dir/validate-security-corpus"

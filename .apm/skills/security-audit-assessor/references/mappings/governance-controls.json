@@ -9,22 +9,41 @@
       "責任者と例外承認が定義されているか",
       "定期見直しの仕組みがあるか"
     ],
-    "related_documents": ["ipa-requirements-guide", "nist-csf-2-0"],
+    "reference_map": {
+      "ipa": [
+        "運用統制"
+      ],
+      "nist_csf": [
+        "GV.OV"
+      ],
+      "nist_sp_800_53": []
+    },
+    "related_documents": [
+      "ipa-nfr-grade",
+      "ipa-requirements-guide",
+      "nist-csf-2-0",
+      "nist-sp-800-53-r5"
+    ],
     "related_sections": [
+      "ipa-nfr-grade.purpose_and_positioning",
       "ipa-requirements-guide.overview",
       "ipa-requirements-guide.handbook",
-      "nist-csf-2-0.govern"
+      "ipa-requirements-guide.supplemental_notes",
+      "nist-csf-2-0.overview_and_components",
+      "nist-csf-2-0.govern",
+      "nist-csf-2-0.profiles_and_tiers",
+      "nist-sp-800-53-r5.overview"
     ],
     "related_subsections": [
+      "ipa-nfr-grade.purpose_and_positioning.purpose_and_positioning.consensus",
       "ipa-requirements-guide.overview.overview.goal",
       "ipa-requirements-guide.handbook.handbook.adoption",
-      "nist-csf-2-0.govern.govern.strategy_and_policy"
-    ],
-    "reference_map": {
-      "ipa": ["運用統制"],
-      "nist_csf": ["GV.OV"],
-      "nist_sp_800_53": []
-    }
+      "ipa-requirements-guide.supplemental_notes.supplemental_notes.follow_up",
+      "nist-csf-2-0.overview_and_components.overview_and_components.framework_purpose",
+      "nist-csf-2-0.govern.govern.strategy_and_policy",
+      "nist-csf-2-0.profiles_and_tiers.profiles_and_tiers.tiers",
+      "nist-sp-800-53-r5.overview.overview.catalog"
+    ]
   },
   {
     "control_id": "GOV-02",
@@ -36,7 +55,19 @@
       "責任者が割り当てられているか",
       "更新や廃止の反映手順があるか"
     ],
-    "related_documents": ["ipa-requirements-guide", "nist-csf-2-0"],
+    "reference_map": {
+      "ipa": [
+        "資産管理"
+      ],
+      "nist_csf": [
+        "ID.AM"
+      ],
+      "nist_sp_800_53": []
+    },
+    "related_documents": [
+      "ipa-requirements-guide",
+      "nist-csf-2-0"
+    ],
     "related_sections": [
       "ipa-requirements-guide.step_1_system_characteristics",
       "nist-csf-2-0.identify"
@@ -44,12 +75,7 @@
     "related_subsections": [
       "ipa-requirements-guide.step_1_system_characteristics.step_1_system_characteristics.nine_axes",
       "nist-csf-2-0.identify.identify_assets"
-    ],
-    "reference_map": {
-      "ipa": ["資産管理"],
-      "nist_csf": ["ID.AM"],
-      "nist_sp_800_53": []
-    }
+    ]
   },
   {
     "control_id": "GOV-03",
@@ -61,22 +87,36 @@
       "定期棚卸や特権ID統制があるか",
       "承認証跡が残るか"
     ],
-    "related_documents": ["ipa-requirements-guide", "nist-sp-800-53-r5", "nist-csf-2-0"],
+    "reference_map": {
+      "ipa": [
+        "権限管理"
+      ],
+      "nist_csf": [
+        "PR.AA"
+      ],
+      "nist_sp_800_53": [
+        "Access Control"
+      ]
+    },
+    "related_documents": [
+      "ipa-safe-website",
+      "ipa-requirements-guide",
+      "nist-csf-2-0",
+      "nist-sp-800-53-r5"
+    ],
     "related_sections": [
+      "ipa-safe-website.chapter_2_site_wide_practices",
       "ipa-requirements-guide.step_3_controls",
       "nist-csf-2-0.protect",
       "nist-sp-800-53-r5.access_and_identity"
     ],
     "related_subsections": [
+      "ipa-safe-website.chapter_2_site_wide_practices.chapter_2_site_wide_practices.password_and_accounts",
       "ipa-requirements-guide.step_3_controls.step_3_controls.tree_mapping",
       "nist-csf-2-0.protect.protect_identity",
-      "nist-sp-800-53-r5.access_and_identity.access_and_identity.access_control"
-    ],
-    "reference_map": {
-      "ipa": ["権限管理"],
-      "nist_csf": ["PR.AA"],
-      "nist_sp_800_53": ["Access Control"]
-    }
+      "nist-sp-800-53-r5.access_and_identity.access_and_identity.access_control",
+      "nist-sp-800-53-r5.access_and_identity.access_and_identity.identification_authentication"
+    ]
   },
   {
     "control_id": "GOV-04",
@@ -88,23 +128,37 @@
       "ロールバック計画があるか",
       "変更履歴とレビュー証跡が残るか"
     ],
-    "related_documents": ["ipa-nfr-grade", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": [
+        "運用性"
+      ],
+      "nist_csf": [],
+      "nist_sp_800_53": [
+        "Configuration Management"
+      ]
+    },
+    "related_documents": [
+      "ipa-nfr-grade",
+      "nist-csf-2-0",
+      "nist-sp-800-53-r5"
+    ],
     "related_sections": [
+      "ipa-nfr-grade.differences_and_challenges",
+      "ipa-nfr-grade.grade_2018_artifacts",
       "ipa-nfr-grade.procedure",
       "nist-csf-2-0.govern",
-      "nist-sp-800-53-r5.audit_and_configuration"
+      "nist-sp-800-53-r5.audit_and_configuration",
+      "nist-sp-800-53-r5.acquisition_and_supply_chain"
     ],
     "related_subsections": [
+      "ipa-nfr-grade.differences_and_challenges.differences_and_challenges.upstream",
+      "ipa-nfr-grade.grade_2018_artifacts.grade_2018_artifacts.project_customization",
       "ipa-nfr-grade.procedure.procedure.selection",
       "ipa-nfr-grade.procedure.procedure.remaining_items",
       "nist-csf-2-0.govern.govern.strategy_and_policy",
-      "nist-sp-800-53-r5.audit_and_configuration.audit_and_configuration.configuration"
-    ],
-    "reference_map": {
-      "ipa": ["運用性"],
-      "nist_csf": [],
-      "nist_sp_800_53": ["Configuration Management"]
-    }
+      "nist-sp-800-53-r5.audit_and_configuration.audit_and_configuration.configuration",
+      "nist-sp-800-53-r5.acquisition_and_supply_chain.acquisition_and_supply_chain.procurement"
+    ]
   },
   {
     "control_id": "GOV-05",
@@ -116,23 +170,34 @@
       "連絡先とエスカレーション経路があるか",
       "再発防止の振り返りが組み込まれているか"
     ],
-    "related_documents": ["ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": [
+        "運用統制"
+      ],
+      "nist_csf": [
+        "RS.CO"
+      ],
+      "nist_sp_800_53": [
+        "Incident Response"
+      ]
+    },
+    "related_documents": [
+      "ipa-requirements-guide",
+      "nist-csf-2-0",
+      "nist-sp-800-53-r5"
+    ],
     "related_sections": [
       "ipa-requirements-guide.step_3_controls",
       "nist-csf-2-0.respond",
       "nist-sp-800-53-r5.incident_and_recovery"
     ],
     "related_subsections": [
+      "ipa-requirements-guide.step_3_controls.step_3_controls.tree_mapping",
       "ipa-requirements-guide.step_3_controls.step_3_controls.incident_and_secret",
       "nist-csf-2-0.respond.respond_analysis",
       "nist-csf-2-0.respond.respond_mitigation",
       "nist-sp-800-53-r5.incident_and_recovery.incident_and_recovery.incident"
-    ],
-    "reference_map": {
-      "ipa": ["運用統制"],
-      "nist_csf": ["RS.CO"],
-      "nist_sp_800_53": ["Incident Response"]
-    }
+    ]
   },
   {
     "control_id": "GOV-06",
@@ -144,23 +209,36 @@
       "代替手段や訓練計画があるか",
       "復旧要件が関係者に共有されているか"
     ],
-    "related_documents": ["ipa-nfr-grade", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": [
+        "バックアップ/復旧"
+      ],
+      "nist_csf": [
+        "RC.RP"
+      ],
+      "nist_sp_800_53": [
+        "Contingency Planning"
+      ]
+    },
+    "related_documents": [
+      "ipa-nfr-grade",
+      "nist-csf-2-0",
+      "nist-sp-800-53-r5"
+    ],
     "related_sections": [
+      "ipa-nfr-grade.purpose_and_positioning",
       "ipa-nfr-grade.grade_2018_artifacts",
       "nist-csf-2-0.recover",
       "nist-sp-800-53-r5.incident_and_recovery"
     ],
     "related_subsections": [
+      "ipa-nfr-grade.purpose_and_positioning.purpose_and_positioning.priority",
+      "ipa-nfr-grade.grade_2018_artifacts.grade_2018_artifacts.main_set",
       "ipa-nfr-grade.grade_2018_artifacts.grade_2018_artifacts.typical_models",
       "nist-csf-2-0.recover.recover_restoration",
       "nist-csf-2-0.recover.recover_improvement",
       "nist-sp-800-53-r5.incident_and_recovery.incident_and_recovery.contingency"
-    ],
-    "reference_map": {
-      "ipa": ["バックアップ/復旧"],
-      "nist_csf": ["RC.RP"],
-      "nist_sp_800_53": ["Contingency Planning"]
-    }
+    ]
   },
   {
     "control_id": "GOV-07",
@@ -172,23 +250,36 @@
       "参照権限とレビュー責任が明確か",
       "監査要件を満たす証跡保全ができるか"
     ],
-    "related_documents": ["ipa-requirements-guide", "nist-sp-800-53-r5", "nist-csf-2-0"],
+    "reference_map": {
+      "ipa": [
+        "ログと追跡性"
+      ],
+      "nist_csf": [
+        "DE.CM"
+      ],
+      "nist_sp_800_53": [
+        "Audit and Accountability"
+      ]
+    },
+    "related_documents": [
+      "ipa-safe-website",
+      "ipa-requirements-guide",
+      "nist-csf-2-0",
+      "nist-sp-800-53-r5"
+    ],
     "related_sections": [
+      "ipa-safe-website.chapter_2_site_wide_practices",
       "ipa-requirements-guide.step_3_controls",
-      "nist-csf-2-0.govern",
+      "nist-csf-2-0.detect",
       "nist-sp-800-53-r5.audit_and_configuration"
     ],
     "related_subsections": [
+      "ipa-safe-website.chapter_2_site_wide_practices.chapter_2_site_wide_practices.logging_monitoring",
       "ipa-requirements-guide.step_3_controls.step_3_controls.requirement_items",
       "ipa-requirements-guide.step_3_controls.step_3_controls.incident_and_secret",
-      "nist-csf-2-0.govern.govern.strategy_and_policy",
+      "nist-csf-2-0.detect.detect_monitoring",
       "nist-sp-800-53-r5.audit_and_configuration.audit_and_configuration.audit"
-    ],
-    "reference_map": {
-      "ipa": ["ログと追跡性"],
-      "nist_csf": ["DE.CM"],
-      "nist_sp_800_53": ["Audit and Accountability"]
-    }
+    ]
   },
   {
     "control_id": "GOV-08",
@@ -200,23 +291,37 @@
       "報告義務や監査権が整理されているか",
       "責任分界が曖昧でないか"
     ],
-    "related_documents": ["ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": [
+        "運用統制"
+      ],
+      "nist_csf": [
+        "GV.SC"
+      ],
+      "nist_sp_800_53": []
+    },
+    "related_documents": [
+      "ipa-nfr-grade",
+      "ipa-requirements-guide",
+      "nist-csf-2-0",
+      "nist-sp-800-53-r5"
+    ],
     "related_sections": [
+      "ipa-nfr-grade.expected_effects",
       "ipa-requirements-guide.step_2_risk_and_usability",
       "nist-csf-2-0.govern",
+      "nist-csf-2-0.reference_tool_and_quick_starts",
       "nist-sp-800-53-r5.acquisition_and_supply_chain"
     ],
     "related_subsections": [
+      "ipa-nfr-grade.expected_effects.expected_effects.accountability",
+      "ipa-requirements-guide.step_2_risk_and_usability.step_2_risk_and_usability.problem_risk_tree",
       "ipa-requirements-guide.step_2_risk_and_usability.step_2_risk_and_usability.third_party_and_boundary",
       "nist-csf-2-0.govern.govern_supply_chain",
+      "nist-csf-2-0.reference_tool_and_quick_starts.reference_tool_and_quick_starts.quick_start",
       "nist-sp-800-53-r5.acquisition_and_supply_chain.acquisition_and_supply_chain.procurement",
       "nist-sp-800-53-r5.acquisition_and_supply_chain.acquisition_and_supply_chain.scrm"
-    ],
-    "reference_map": {
-      "ipa": ["運用統制"],
-      "nist_csf": ["GV.SC"],
-      "nist_sp_800_53": []
-    }
+    ]
   },
   {
     "control_id": "GOV-09",
@@ -228,23 +333,44 @@
       "特権者や運用者向けの追加教育があるか",
       "実施記録が残るか"
     ],
-    "related_documents": ["ipa-safe-website", "ipa-requirements-guide", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": [
+        "運用統制"
+      ],
+      "nist_csf": [],
+      "nist_sp_800_53": [
+        "Awareness and Training"
+      ]
+    },
+    "related_documents": [
+      "ipa-safe-website",
+      "ipa-nfr-grade",
+      "ipa-requirements-guide",
+      "nist-csf-2-0",
+      "nist-sp-800-53-r5"
+    ],
     "related_sections": [
+      "ipa-safe-website.purpose_scope",
       "ipa-safe-website.chapter_3_failure_examples",
+      "ipa-safe-website.supplement_safe_sql",
+      "ipa-nfr-grade.related_materials",
       "ipa-requirements-guide.handbook",
+      "nist-csf-2-0.protect",
+      "nist-csf-2-0.reference_tool_and_quick_starts",
       "nist-sp-800-53-r5.risk_and_people"
     ],
     "related_subsections": [
-      "ipa-safe-website.chapter_3_failure_examples.chapter_3_failure_examples.training_usage",
+      "ipa-safe-website.purpose_scope.purpose_scope.structure",
       "ipa-safe-website.chapter_3_failure_examples.chapter_3_failure_examples.code_examples",
+      "ipa-safe-website.chapter_3_failure_examples.chapter_3_failure_examples.training_usage",
+      "ipa-safe-website.supplement_safe_sql.supplement_safe_sql.language_db_examples",
+      "ipa-nfr-grade.related_materials.related_materials.booklet",
+      "ipa-nfr-grade.related_materials.related_materials.training",
       "ipa-requirements-guide.handbook.handbook.communication",
+      "nist-csf-2-0.protect.protect_training",
+      "nist-csf-2-0.reference_tool_and_quick_starts.reference_tool_and_quick_starts.quick_start",
       "nist-sp-800-53-r5.risk_and_people.risk_and_people.people"
-    ],
-    "reference_map": {
-      "ipa": ["運用統制"],
-      "nist_csf": [],
-      "nist_sp_800_53": ["Awareness and Training"]
-    }
+    ]
   },
   {
     "control_id": "GOV-10",
@@ -256,23 +382,57 @@
       "見直し頻度が定義されているか",
       "結果が施策や例外承認に反映されるか"
     ],
-    "related_documents": ["ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": [
+        "運用統制"
+      ],
+      "nist_csf": [
+        "GV.RM"
+      ],
+      "nist_sp_800_53": [
+        "Risk Assessment"
+      ]
+    },
+    "related_documents": [
+      "ipa-nfr-grade",
+      "ipa-requirements-guide",
+      "nist-csf-2-0",
+      "nist-sp-800-53-r5"
+    ],
     "related_sections": [
+      "ipa-nfr-grade.purpose_and_positioning",
+      "ipa-nfr-grade.differences_and_challenges",
+      "ipa-requirements-guide.overview",
+      "ipa-requirements-guide.step_1_system_characteristics",
       "ipa-requirements-guide.step_2_risk_and_usability",
+      "ipa-requirements-guide.supplemental_notes",
+      "nist-csf-2-0.overview_and_components",
+      "nist-csf-2-0.govern",
       "nist-csf-2-0.identify",
+      "nist-csf-2-0.respond",
+      "nist-csf-2-0.profiles_and_tiers",
+      "nist-sp-800-53-r5.overview",
       "nist-sp-800-53-r5.risk_and_people"
     ],
     "related_subsections": [
+      "ipa-nfr-grade.purpose_and_positioning.purpose_and_positioning.consensus",
+      "ipa-nfr-grade.differences_and_challenges.differences_and_challenges.upstream",
+      "ipa-requirements-guide.overview.overview.autonomy_usability",
+      "ipa-requirements-guide.step_1_system_characteristics.step_1_system_characteristics.nine_axes",
       "ipa-requirements-guide.step_2_risk_and_usability.step_2_risk_and_usability.problem_risk_tree",
       "ipa-requirements-guide.step_2_risk_and_usability.step_2_risk_and_usability.usability_factors",
+      "ipa-requirements-guide.supplemental_notes.supplemental_notes.evolving_items",
+      "nist-csf-2-0.overview_and_components.overview_and_components.framework_purpose",
+      "nist-csf-2-0.overview_and_components.overview_and_components.components",
+      "nist-csf-2-0.govern.govern.strategy_and_policy",
+      "nist-csf-2-0.identify.identify_assets",
       "nist-csf-2-0.identify.identify_risk",
+      "nist-csf-2-0.respond.respond_mitigation",
+      "nist-csf-2-0.profiles_and_tiers.profiles_and_tiers.profiles",
+      "nist-sp-800-53-r5.overview.overview.catalog",
+      "nist-sp-800-53-r5.overview.overview.assurance",
       "nist-sp-800-53-r5.risk_and_people.risk_and_people.risk"
-    ],
-    "reference_map": {
-      "ipa": ["運用統制"],
-      "nist_csf": ["GV.RM"],
-      "nist_sp_800_53": ["Risk Assessment"]
-    }
+    ]
   },
   {
     "control_id": "GOV-11",
@@ -284,24 +444,36 @@
       "削除や持ち出し管理があるか",
       "法令や契約要件と整合しているか"
     ],
-    "related_documents": ["ipa-requirements-guide", "nist-sp-800-53-r5", "nist-csf-2-0"],
+    "reference_map": {
+      "ipa": [
+        "データ保護"
+      ],
+      "nist_csf": [
+        "PR.DS"
+      ],
+      "nist_sp_800_53": [
+        "Media Protection",
+        "System and Communications Protection"
+      ]
+    },
+    "related_documents": [
+      "ipa-requirements-guide",
+      "nist-sp-800-53-r5"
+    ],
     "related_sections": [
       "ipa-requirements-guide.overview",
       "ipa-requirements-guide.step_1_system_characteristics",
-      "nist-csf-2-0.protect",
+      "ipa-requirements-guide.step_3_controls",
       "nist-sp-800-53-r5.data_and_system_protection"
     ],
     "related_subsections": [
       "ipa-requirements-guide.overview.overview.goal",
+      "ipa-requirements-guide.overview.overview.autonomy_usability",
+      "ipa-requirements-guide.step_1_system_characteristics.step_1_system_characteristics.nine_axes",
       "ipa-requirements-guide.step_1_system_characteristics.step_1_system_characteristics.cia_priority",
-      "nist-csf-2-0.protect.protect_data_and_platform",
+      "ipa-requirements-guide.step_3_controls.step_3_controls.requirement_items",
       "nist-sp-800-53-r5.data_and_system_protection.data_and_system_protection.media"
-    ],
-    "reference_map": {
-      "ipa": ["データ保護"],
-      "nist_csf": ["PR.DS"],
-      "nist_sp_800_53": ["Media Protection", "System and Communications Protection"]
-    }
+    ]
   },
   {
     "control_id": "GOV-12",
@@ -313,26 +485,75 @@
       "監査窓口や手順があるか",
       "再現可能な説明責任が果たせるか"
     ],
-    "related_documents": ["ipa-nfr-grade", "ipa-requirements-guide", "nist-csf-2-0", "nist-sp-800-53-r5"],
+    "reference_map": {
+      "ipa": [
+        "保守性",
+        "ログと追跡性"
+      ],
+      "nist_csf": [
+        "GV.OV",
+        "DE.CM"
+      ],
+      "nist_sp_800_53": [
+        "Audit and Accountability"
+      ]
+    },
+    "related_documents": [
+      "ipa-safe-website",
+      "ipa-nfr-grade",
+      "ipa-requirements-guide",
+      "nist-csf-2-0",
+      "nist-sp-800-53-r5"
+    ],
     "related_sections": [
+      "ipa-safe-website.chapter_3_failure_examples",
+      "ipa-safe-website.supplement_web_health_check",
+      "ipa-nfr-grade.grade_2018_artifacts",
+      "ipa-nfr-grade.procedure",
       "ipa-nfr-grade.expected_effects",
+      "ipa-nfr-grade.related_materials",
       "ipa-requirements-guide.step_3_controls",
+      "ipa-requirements-guide.handbook",
+      "ipa-requirements-guide.supplemental_notes",
+      "nist-csf-2-0.overview_and_components",
+      "nist-csf-2-0.govern",
+      "nist-csf-2-0.identify",
+      "nist-csf-2-0.protect",
+      "nist-csf-2-0.detect",
+      "nist-csf-2-0.respond",
       "nist-csf-2-0.profiles_and_tiers",
-      "nist-sp-800-53-r5.audit_and_configuration"
+      "nist-csf-2-0.reference_tool_and_quick_starts",
+      "nist-sp-800-53-r5.overview",
+      "nist-sp-800-53-r5.audit_and_configuration",
+      "nist-sp-800-53-r5.risk_and_people"
     ],
     "related_subsections": [
-      "ipa-nfr-grade.expected_effects.expected_effects.accountability",
+      "ipa-safe-website.chapter_3_failure_examples.chapter_3_failure_examples.training_usage",
+      "ipa-safe-website.supplement_web_health_check.supplement_web_health_check.limitations",
+      "ipa-nfr-grade.grade_2018_artifacts.grade_2018_artifacts.project_customization",
+      "ipa-nfr-grade.procedure.procedure.remaining_items",
       "ipa-nfr-grade.expected_effects.expected_effects.rework",
+      "ipa-nfr-grade.expected_effects.expected_effects.accountability",
+      "ipa-nfr-grade.related_materials.related_materials.booklet",
       "ipa-requirements-guide.step_3_controls.step_3_controls.requirement_items",
+      "ipa-requirements-guide.handbook.handbook.adoption",
+      "ipa-requirements-guide.handbook.handbook.communication",
+      "ipa-requirements-guide.supplemental_notes.supplemental_notes.evolving_items",
+      "ipa-requirements-guide.supplemental_notes.supplemental_notes.follow_up",
+      "nist-csf-2-0.overview_and_components.overview_and_components.components",
+      "nist-csf-2-0.govern.govern.strategy_and_policy",
+      "nist-csf-2-0.identify.identify_risk",
+      "nist-csf-2-0.protect.protect_training",
+      "nist-csf-2-0.detect.detect_process",
+      "nist-csf-2-0.respond.respond_analysis",
       "nist-csf-2-0.profiles_and_tiers.profiles_and_tiers.profiles",
       "nist-csf-2-0.profiles_and_tiers.profiles_and_tiers.tiers",
+      "nist-csf-2-0.reference_tool_and_quick_starts.reference_tool_and_quick_starts.reference_tool",
+      "nist-sp-800-53-r5.overview.overview.assurance",
       "nist-sp-800-53-r5.audit_and_configuration.audit_and_configuration.audit",
-      "nist-sp-800-53-r5.audit_and_configuration.audit_and_configuration.assessment_monitoring"
-    ],
-    "reference_map": {
-      "ipa": ["保守性", "ログと追跡性"],
-      "nist_csf": ["GV.OV", "DE.CM"],
-      "nist_sp_800_53": ["Audit and Accountability"]
-    }
+      "nist-sp-800-53-r5.audit_and_configuration.audit_and_configuration.assessment_monitoring",
+      "nist-sp-800-53-r5.risk_and_people.risk_and_people.risk",
+      "nist-sp-800-53-r5.risk_and_people.risk_and_people.people"
+    ]
   }
 ]

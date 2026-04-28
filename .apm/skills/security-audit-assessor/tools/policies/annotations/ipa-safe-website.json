@@ -1,0 +1,708 @@
+{
+  "doc_id": "ipa-safe-website",
+  "publisher": "IPA",
+  "version": "改訂第7版第4刷",
+  "publication_date": "2021-03-31",
+  "profiles": [
+    "system"
+  ],
+  "sections": [
+    {
+      "section_id": "purpose_scope",
+      "source_section_ids": [
+        "purpose_scope"
+      ],
+      "section_number": "intro",
+      "title": "目的と適用範囲",
+      "source_heading": "安全なウェブサイトの作り方 改訂第7版の位置付け",
+      "topics": [
+        "web_security",
+        "application_security",
+        "developer_guidance",
+        "risk_reduction"
+      ],
+      "text": "届出件数や影響度の高い脆弱性を中心に、開発者と運営者が安全なウェブサイトを設計、構築、運用するための基本資料として整理した導入部。",
+      "subsections": [
+        {
+          "subsection_id": "purpose_scope.audience",
+          "source_heading": "資料の対象読者と狙い",
+          "topics": [
+            "web_security",
+            "developer_guidance",
+            "site_operations",
+            "risk_reduction"
+          ],
+          "controls": [
+            "SYS-03",
+            "SYS-10"
+          ],
+          "key_points": [
+            "届出ベースで影響の大きい脆弱性を優先し、設計と運用の両面から参照できるようにしている。",
+            "ウェブサイト開発者だけでなく運営者も対象に含め、実装後の運用判断にも使う想定である。",
+            "監査では、本資料を安全対策の網羅確認用カタログとして使いやすい。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "purpose_scope.audience.p1",
+              "text": "届出件数の多い脆弱性と影響の大きい脆弱性を重点対象にしていることが資料の前提に置かれている。",
+              "source_locator": "導入説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            },
+            {
+              "passage_id": "purpose_scope.audience.p2",
+              "text": "開発者と運営者が適切なセキュリティを考慮したウェブサイトを作成するための資料として位置付けられている。",
+              "source_locator": "導入説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            }
+          ]
+        },
+        {
+          "subsection_id": "purpose_scope.structure",
+          "source_heading": "本編と別冊の構成",
+          "topics": [
+            "structure",
+            "checklist",
+            "diagnostics",
+            "secure_coding"
+          ],
+          "controls": [
+            "SYS-03",
+            "SYS-07",
+            "GOV-09"
+          ],
+          "key_points": [
+            "本編は脆弱性解説、運用向上策、失敗例、チェックリストで構成される。",
+            "別冊として安全な SQL の呼び出し方とウェブ健康診断仕様があり、実装と診断を補完する。",
+            "ローカル corpus では本編と別冊を section として分けて持つ方が逆引きしやすい。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "purpose_scope.structure.p1",
+              "text": "第1章から第3章に加えて巻末チェックリストが本編の骨格である。",
+              "source_locator": "改訂第7版の内容",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            },
+            {
+              "passage_id": "purpose_scope.structure.p2",
+              "text": "SQL 呼び出しと健康診断仕様の別冊が補助資料として案内されている。",
+              "source_locator": "別冊の内容",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "chapter_1_security_implementation",
+      "source_section_ids": [
+        "purpose_scope",
+        "chapter_1_excerpt"
+      ],
+      "section_number": "chapter_1",
+      "title": "第1章 ウェブアプリケーションのセキュリティ実装",
+      "source_heading": "ウェブアプリケーションのセキュリティ実装",
+      "topics": [
+        "input_validation",
+        "authentication_authorization",
+        "session_management",
+        "output_encoding",
+        "application_security",
+        "web_vulnerability_mitigation"
+      ],
+      "text": "主要なウェブアプリケーション脆弱性を取り上げ、脅威、注意すべきサイト特性、原因、根本対策、影響低減策を整理する本編の中心章。",
+      "subsections": [
+        {
+          "subsection_id": "chapter_1_security_implementation.vulnerability_set",
+          "source_heading": "対象脆弱性の範囲",
+          "topics": [
+            "input_validation",
+            "application_security",
+            "threat_modeling",
+            "attack_surface",
+            "web_vulnerability_mitigation"
+          ],
+          "controls": [
+            "SYS-03",
+            "SYS-10"
+          ],
+          "key_points": [
+            "SQL インジェクション、OS コマンドインジェクション、クロスサイトスクリプティングなど 11 種類の脆弱性を対象にしている。",
+            "脆弱性ごとに発生しうる脅威と注意が必要なウェブサイトの特徴を示している。",
+            "監査では入力処理と出力処理の確認観点を広く洗い出す出発点として使える。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "chapter_1_security_implementation.vulnerability_set.p1",
+              "text": "11 種類の脆弱性を取り上げていることが章の説明で明示されている。",
+              "source_locator": "第1章説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            },
+            {
+              "passage_id": "chapter_1_security_implementation.vulnerability_set.p2",
+              "text": "脅威と注意すべきウェブサイトの特徴を併せて解説する構成になっている。",
+              "source_locator": "第1章説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            }
+          ]
+        },
+        {
+          "subsection_id": "chapter_1_security_implementation.root_cause_controls",
+          "source_heading": "根本対策と影響低減策",
+          "topics": [
+            "secure_design",
+            "root_cause_analysis",
+            "mitigation",
+            "defense_in_depth",
+            "implementation_review"
+          ],
+          "controls": [
+            "SYS-01",
+            "SYS-02",
+            "SYS-03",
+            "SYS-05"
+          ],
+          "key_points": [
+            "脆弱性の原因そのものをなくす対策を優先し、追加で影響低減策を並べる考え方で整理されている。",
+            "単一のガードレールだけではなく、設計段階と実装段階の複数対策を重ねる前提で読める。",
+            "監査では根本対策が無いまま影響低減策だけで済ませていないかを見る材料になる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "chapter_1_security_implementation.root_cause_controls.p1",
+              "text": "原因そのものをなくす根本的な解決策が明示されている。",
+              "source_locator": "第1章説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            },
+            {
+              "passage_id": "chapter_1_security_implementation.root_cause_controls.p2",
+              "text": "攻撃による影響の低減を期待できる対策も併記されている。",
+              "source_locator": "第1章説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            }
+          ]
+        },
+        {
+          "subsection_id": "chapter_1_security_implementation.auth_and_session",
+          "source_heading": "認証認可とセッション管理に使う観点",
+          "topics": [
+            "authentication_authorization",
+            "session_management",
+            "password_management",
+            "privilege_control",
+            "logout_timeout"
+          ],
+          "controls": [
+            "SYS-01",
+            "SYS-02"
+          ],
+          "key_points": [
+            "本章は入力検証だけでなく、認証やセッション管理の不備も横断的に確認する入口になる。",
+            "特権操作、ログアウト後の再利用防止、期限管理などの観点に展開しやすい。",
+            "監査では実装コードと認証設定を照合する起点として扱う。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "chapter_1_security_implementation.auth_and_session.p1",
+              "text": "セキュリティ実装章はウェブアプリケーション全体の脆弱性対策をまとめて確認する章として扱える。",
+              "source_locator": "第1章説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            },
+            {
+              "passage_id": "chapter_1_security_implementation.auth_and_session.p2",
+              "text": "章の構成上、個別脆弱性ごとの原因と対策を認証認可やセッション管理にも応用できる。",
+              "source_locator": "第1章説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "chapter_2_site_wide_practices",
+      "source_section_ids": [
+        "purpose_scope"
+      ],
+      "section_number": "chapter_2",
+      "title": "第2章 ウェブサイトの安全性向上のための取り組み",
+      "source_heading": "ウェブサイトの安全性向上のための取り組み",
+      "topics": [
+        "operational_security",
+        "password_management",
+        "server_hardening",
+        "monitoring",
+        "logging",
+        "site_operations"
+      ],
+      "text": "ウェブサーバ運用、パスワード取扱い、公開運用など、サイト全体の安全性を高める運用面の方策を扱う章。",
+      "subsections": [
+        {
+          "subsection_id": "chapter_2_site_wide_practices.server_ops",
+          "source_heading": "ウェブサーバ運用と公開面管理",
+          "topics": [
+            "server_hardening",
+            "network_boundary",
+            "public_exposure",
+            "maintenance",
+            "site_operations"
+          ],
+          "controls": [
+            "SYS-10",
+            "SYS-13"
+          ],
+          "key_points": [
+            "サイト全体の安全性向上策として、公開運用時の基本的な運用管理が重視されている。",
+            "実装コードだけでは拾えない公開設定、運用ルール、サーバ管理の不足を補える。",
+            "監査ではネットワーク境界や保守運用の evidence と結び付ける。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "chapter_2_site_wide_practices.server_ops.p1",
+              "text": "ウェブサーバの運用に関する対策が第2章の中心項目の一つとして示されている。",
+              "source_locator": "第2章説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            },
+            {
+              "passage_id": "chapter_2_site_wide_practices.server_ops.p2",
+              "text": "主に運用面からウェブサイト全体の安全性を向上させる方策が示されている。",
+              "source_locator": "第2章説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            }
+          ]
+        },
+        {
+          "subsection_id": "chapter_2_site_wide_practices.password_and_accounts",
+          "source_heading": "パスワードとアカウントの取扱い",
+          "topics": [
+            "password_management",
+            "authentication_authorization",
+            "credential_policy",
+            "account_hygiene"
+          ],
+          "controls": [
+            "SYS-01",
+            "GOV-03"
+          ],
+          "key_points": [
+            "パスワードの取扱いは運用面でも重要で、認証実装だけではなく発行、保管、変更の管理を伴う。",
+            "実装で安全でも運用ルールが弱ければ認証統制は成立しない。",
+            "system 監査と governance 監査の橋渡しに使いやすい section である。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "chapter_2_site_wide_practices.password_and_accounts.p1",
+              "text": "ウェブサイトにおけるパスワードの取扱いに関する対策が章の対象に含まれている。",
+              "source_locator": "第2章説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            },
+            {
+              "passage_id": "chapter_2_site_wide_practices.password_and_accounts.p2",
+              "text": "運用面から全体の安全性を高めるための方策として配置されている。",
+              "source_locator": "第2章説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            }
+          ]
+        },
+        {
+          "subsection_id": "chapter_2_site_wide_practices.logging_monitoring",
+          "source_heading": "ログと監視に展開する観点",
+          "topics": [
+            "logging",
+            "monitoring",
+            "detection",
+            "operational_security"
+          ],
+          "controls": [
+            "SYS-06",
+            "SYS-13",
+            "GOV-07"
+          ],
+          "key_points": [
+            "第2章はログ、監視、アラートの明示的な設定資料が別にあるかを確認する補助観点になる。",
+            "サイト全体を守るには脆弱性対策だけでなく検知と運用改善が必要だと読み取れる。",
+            "監査ではログ保護、監視責任、レビュー頻度へ展開する。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "chapter_2_site_wide_practices.logging_monitoring.p1",
+              "text": "サイト全体の安全性向上策という位置付けは監視と運用レビューの必要性に接続しやすい。",
+              "source_locator": "第2章説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            },
+            {
+              "passage_id": "chapter_2_site_wide_practices.logging_monitoring.p2",
+              "text": "主に運用面の対策を扱うため、監視やログ管理の evidence 収集対象として利用できる。",
+              "source_locator": "第2章説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "chapter_3_failure_examples",
+      "source_section_ids": [
+        "purpose_scope"
+      ],
+      "section_number": "chapter_3",
+      "title": "第3章 失敗例と修正例",
+      "source_heading": "失敗例",
+      "topics": [
+        "secure_coding",
+        "anti_patterns",
+        "code_review",
+        "developer_training"
+      ],
+      "text": "代表的な脆弱性の失敗例、解説、修正例を並べることで、レビュー観点と教育材料を提供する章。",
+      "subsections": [
+        {
+          "subsection_id": "chapter_3_failure_examples.code_examples",
+          "source_heading": "脆弱性を作り込んだコード例",
+          "topics": [
+            "secure_coding",
+            "anti_patterns",
+            "input_validation",
+            "code_review"
+          ],
+          "controls": [
+            "SYS-03",
+            "GOV-09"
+          ],
+          "key_points": [
+            "脆弱性を含んだコードとその説明を対比することで、レビュー時の観点を具体化している。",
+            "失敗の再現例があるため、実装レビューや教育に転用しやすい。",
+            "監査では安全実装の証跡がない場合に、教育不足やレビュー不足の補足根拠として使える。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "chapter_3_failure_examples.code_examples.p1",
+              "text": "8 種類の脆弱性について、脆弱性を作り込んだソースコードが示されている。",
+              "source_locator": "第3章説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            },
+            {
+              "passage_id": "chapter_3_failure_examples.code_examples.p2",
+              "text": "解説と修正例が並ぶため、何が問題かをレビュー観点に落とし込みやすい。",
+              "source_locator": "第3章説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            }
+          ]
+        },
+        {
+          "subsection_id": "chapter_3_failure_examples.training_usage",
+          "source_heading": "教育とレビューへの利用",
+          "topics": [
+            "developer_training",
+            "secure_review",
+            "knowledge_transfer",
+            "remediation"
+          ],
+          "controls": [
+            "GOV-09",
+            "GOV-12"
+          ],
+          "key_points": [
+            "失敗例集は教育と訓練の evidence 候補になり、単なる参考資料以上の役割を持つ。",
+            "修正例と対にすることで、改善後のあるべき実装像を共有できる。",
+            "監査では教育記録やレビュー手順と併せて読むと効果的である。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "chapter_3_failure_examples.training_usage.p1",
+              "text": "失敗例と修正例の対比は教育やレビュー手順の題材として使いやすい。",
+              "source_locator": "第3章説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            },
+            {
+              "passage_id": "chapter_3_failure_examples.training_usage.p2",
+              "text": "章の構造自体が再発防止の教材化を意識したものになっている。",
+              "source_locator": "第3章説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "appendix_checklist",
+      "source_section_ids": [
+        "purpose_scope",
+        "resource_downloads"
+      ],
+      "section_number": "appendix",
+      "title": "巻末チェックリスト",
+      "source_heading": "セキュリティ実装 チェックリスト",
+      "topics": [
+        "checklist",
+        "implementation_review",
+        "assessment",
+        "evidence_collection"
+      ],
+      "text": "セキュリティ実装の実施状況を確認するためのチェックリスト。監査時の確認項目と証跡整理に向く。",
+      "subsections": [
+        {
+          "subsection_id": "appendix_checklist.assessment_usage",
+          "source_heading": "実施状況確認への利用",
+          "topics": [
+            "checklist",
+            "assessment",
+            "evidence_collection",
+            "implementation_review"
+          ],
+          "controls": [
+            "SYS-01",
+            "SYS-03",
+            "SYS-06"
+          ],
+          "key_points": [
+            "チェックリストは実装済みか未実施かを確認するための監査補助資料になる。",
+            "各 control の実装 evidence を整理する際の漏れ防止に使える。",
+            "リポジトリだけで断定できない場合の確認質問設計にもつながる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "appendix_checklist.assessment_usage.p1",
+              "text": "ウェブアプリケーションのセキュリティ実装の実施状況を確認するためのチェックリストが付属している。",
+              "source_locator": "巻末説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            },
+            {
+              "passage_id": "appendix_checklist.assessment_usage.p2",
+              "text": "監査では確認観点と証跡収集の整理表として転用しやすい。",
+              "source_locator": "巻末説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            }
+          ]
+        },
+        {
+          "subsection_id": "appendix_checklist.audit_mapping",
+          "source_heading": "control へのマッピング",
+          "topics": [
+            "control_mapping",
+            "review_process",
+            "assessment_coverage",
+            "traceability"
+          ],
+          "controls": [
+            "SYS-01",
+            "SYS-02",
+            "SYS-03",
+            "SYS-10"
+          ],
+          "key_points": [
+            "認証、入力、境界防御など複数 control の一次チェックに使える。",
+            "index と組み合わせることで、checklist 起点の逆引きがしやすくなる。",
+            "監査結果一覧の根拠列を整える際にも利用価値が高い。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "appendix_checklist.audit_mapping.p1",
+              "text": "実装の実施状況確認用であるため、control ベースの監査項目と重ねて使える。",
+              "source_locator": "巻末説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "supplement_safe_sql",
+      "source_section_ids": [
+        "purpose_scope",
+        "resource_downloads"
+      ],
+      "section_number": "supplement_sql",
+      "title": "別冊 安全な SQL の呼び出し方",
+      "source_heading": "安全な SQL の呼び出し方",
+      "topics": [
+        "sql_injection",
+        "database_access",
+        "parameterization",
+        "secure_querying"
+      ],
+      "text": "SQL インジェクションの原因、安全な SQL 生成、安全な実装例を言語と DB の組み合わせごとに解説する別冊。",
+      "subsections": [
+        {
+          "subsection_id": "supplement_safe_sql.cause_and_building",
+          "source_heading": "原因と SQL 組み立て方式",
+          "topics": [
+            "sql_injection",
+            "database_access",
+            "query_building",
+            "input_validation"
+          ],
+          "controls": [
+            "SYS-03"
+          ],
+          "key_points": [
+            "SQL インジェクションの原因と、アプリケーションが SQL 文を組み立てる方法の違いを説明している。",
+            "文字列連結や安全でない組み立て方を避けるための前提理解に使える。",
+            "監査では ORM やクエリビルダ利用時も、基礎原理の確認に使える。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "supplement_safe_sql.cause_and_building.p1",
+              "text": "第2章で SQL インジェクションが発生する原因を説明している。",
+              "source_locator": "別冊説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            },
+            {
+              "passage_id": "supplement_safe_sql.cause_and_building.p2",
+              "text": "第3章でアプリケーションが SQL 文を組み立てる方法を説明している。",
+              "source_locator": "別冊説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            }
+          ]
+        },
+        {
+          "subsection_id": "supplement_safe_sql.safe_requirements",
+          "source_heading": "安全な SQL 呼び出しの要件",
+          "topics": [
+            "parameterization",
+            "secure_querying",
+            "prepared_statements",
+            "database_access"
+          ],
+          "controls": [
+            "SYS-03"
+          ],
+          "key_points": [
+            "安全な SQL 呼び出しに必要な条件を整理し、入力検証とクエリ構築の両方を見ている。",
+            "プレースホルダや安全なバインドを使う設計確認に向く。",
+            "監査では DB ドライバやフレームワーク設定の確認に接続しやすい。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "supplement_safe_sql.safe_requirements.p1",
+              "text": "第4章で安全な SQL 呼び出しのために必要なことを説明している。",
+              "source_locator": "別冊説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            },
+            {
+              "passage_id": "supplement_safe_sql.safe_requirements.p2",
+              "text": "原因説明だけでなく安全な呼び出し条件に踏み込んでいる。",
+              "source_locator": "別冊説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            }
+          ]
+        },
+        {
+          "subsection_id": "supplement_safe_sql.language_db_examples",
+          "source_heading": "言語とデータベース組み合わせ別の実装例",
+          "topics": [
+            "secure_coding",
+            "language_specific_guidance",
+            "database_access",
+            "parameterization"
+          ],
+          "controls": [
+            "SYS-03",
+            "GOV-09"
+          ],
+          "key_points": [
+            "Java、PHP、Perl、ASP.NET などの組み合わせ別に安全な書き方を示している。",
+            "実装例があるため、教育教材とレビュー観点の両方に使える。",
+            "プロジェクトの技術スタックに近い例を優先参照すると有効である。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "supplement_safe_sql.language_db_examples.p1",
+              "text": "5 種類の言語とデータベースの組み合わせごとに安全な実装方法を解説している。",
+              "source_locator": "別冊説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            },
+            {
+              "passage_id": "supplement_safe_sql.language_db_examples.p2",
+              "text": "安全なソースコードの書き方を具体的に示す構成になっている。",
+              "source_locator": "別冊説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "supplement_web_health_check",
+      "source_section_ids": [
+        "purpose_scope",
+        "resource_downloads"
+      ],
+      "section_number": "supplement_diagnostic",
+      "title": "別冊 ウェブ健康診断仕様",
+      "source_heading": "ウェブ健康診断仕様",
+      "topics": [
+        "vulnerability_assessment",
+        "diagnostic_patterns",
+        "verification",
+        "follow_up_testing"
+      ],
+      "text": "危険度の高い脆弱性など 13 項目について、検出パターンと脆弱性有無の判定基準を示す別冊。",
+      "subsections": [
+        {
+          "subsection_id": "supplement_web_health_check.diagnostic_items",
+          "source_heading": "診断項目と検出パターン",
+          "topics": [
+            "vulnerability_assessment",
+            "diagnostic_patterns",
+            "verification",
+            "attack_patterns"
+          ],
+          "controls": [
+            "SYS-07"
+          ],
+          "key_points": [
+            "危険度の高い脆弱性を対象に、検出パターンと判定基準を示している。",
+            "診断項目を決め打ちするため、脆弱性管理の最低限チェックに向く。",
+            "監査では脆弱性診断の実施有無だけでなく、診断範囲の妥当性確認にも使える。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "supplement_web_health_check.diagnostic_items.p1",
+              "text": "13 の診断項目に対して検出パターンと判定基準が記載されている。",
+              "source_locator": "別冊説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            },
+            {
+              "passage_id": "supplement_web_health_check.diagnostic_items.p2",
+              "text": "危険度の高い脆弱性を中心とした診断仕様である。",
+              "source_locator": "別冊説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            }
+          ]
+        },
+        {
+          "subsection_id": "supplement_web_health_check.limitations",
+          "source_heading": "診断の限界と追加対策",
+          "topics": [
+            "limitations",
+            "follow_up_testing",
+            "assurance",
+            "gap_analysis"
+          ],
+          "controls": [
+            "SYS-07",
+            "GOV-12"
+          ],
+          "key_points": [
+            "検査パターンを絞り込んだ診断であり、検出されなかったことは安全宣言を意味しない。",
+            "結果確認後に詳細診断や実装対策を続ける前提で使うべきとされている。",
+            "監査では診断結果だけで適合判定にしないための歯止めとして重要である。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "supplement_web_health_check.limitations.p1",
+              "text": "脆弱性が検出されなかった場合でも安全宣言にはつながらないと明記されている。",
+              "source_locator": "別冊説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            },
+            {
+              "passage_id": "supplement_web_health_check.limitations.p2",
+              "text": "詳細診断や対策実装を推奨する補足が付いている。",
+              "source_locator": "別冊説明",
+              "canonical_url": "https://www.ipa.go.jp/security/vuln/websecurity/about.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

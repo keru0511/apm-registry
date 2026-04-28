@@ -1,0 +1,596 @@
+{
+  "doc_id": "nist-sp-800-53-r5",
+  "publisher": "NIST",
+  "version": "SP 800-53 Rev. 5 Update 1",
+  "publication_date": "2020-09",
+  "profiles": [
+    "system",
+    "governance"
+  ],
+  "sections": [
+    {
+      "section_id": "overview",
+      "source_section_ids": [
+        "overview"
+      ],
+      "section_number": "overview",
+      "title": "Overview",
+      "source_heading": "Overview",
+      "topics": [
+        "control_catalog",
+        "risk_management",
+        "security_controls",
+        "privacy_controls",
+        "assurance",
+        "tailoring"
+      ],
+      "text": "SP 800-53 は security and privacy control catalog を組織横断の risk management process で tailoring して使う前提の文書である。",
+      "subsections": [
+        {
+          "subsection_id": "overview.catalog",
+          "source_heading": "Flexible control catalog",
+          "topics": [
+            "control_catalog",
+            "security_controls",
+            "privacy_controls",
+            "tailoring"
+          ],
+          "controls": [
+            "GOV-01",
+            "GOV-10"
+          ],
+          "key_points": [
+            "固定 checklist ではなく柔軟に tailoring する control catalog である。",
+            "system と governance の双方にまたがる control family を扱える。",
+            "監査で control family 名を根拠に使う土台になる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "overview.catalog.p1",
+              "text": "flexible catalog of security and privacy controls と説明されている。",
+              "source_locator": "Overview",
+              "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+            },
+            {
+              "passage_id": "overview.catalog.p2",
+              "text": "organization-wide risk management process の中で tailoring する前提である。",
+              "source_locator": "Overview",
+              "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "overview.assurance",
+          "source_heading": "Assurance and organization-wide use",
+          "topics": [
+            "assurance",
+            "risk_management",
+            "organizational_controls",
+            "governance"
+          ],
+          "controls": [
+            "GOV-12",
+            "GOV-10"
+          ],
+          "key_points": [
+            "control の存在だけでなく assurance の考え方を伴う。",
+            "組織横断で使う前提のため、実装だけの監査にはとどまらない。",
+            "combined 監査での共通根拠に向く。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "overview.assurance.p1",
+              "text": "organization と systems の双方を対象にした control catalog として位置付けられている。",
+              "source_locator": "Overview",
+              "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "access_and_identity",
+      "source_section_ids": [
+        "access_and_identity"
+      ],
+      "section_number": "access_identity",
+      "title": "Access and Identity Families",
+      "source_heading": "Access Control and Identification and Authentication",
+      "topics": [
+        "access_control",
+        "identification_authentication",
+        "least_privilege",
+        "account_management",
+        "mfa"
+      ],
+      "text": "Access Control と Identification and Authentication families を軸に、権限、アカウント管理、認証強度を扱う section。",
+      "subsections": [
+        {
+          "subsection_id": "access_and_identity.access_control",
+          "source_heading": "Access Control family",
+          "topics": [
+            "access_control",
+            "least_privilege",
+            "privileged_access",
+            "account_management"
+          ],
+          "controls": [
+            "SYS-01",
+            "GOV-03",
+            "SYS-02"
+          ],
+          "key_points": [
+            "least privilege、privileged access、account management の整理に使える。",
+            "権限棚卸や剥奪手順の governance control と自然に接続する。",
+            "認証認可の最重要根拠 family である。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "access_and_identity.access_control.p1",
+              "text": "Control Families に Access Control が含まれる。",
+              "source_locator": "Control Families",
+              "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "access_and_identity.identification_authentication",
+          "source_heading": "Identification and Authentication family",
+          "topics": [
+            "identification_authentication",
+            "mfa",
+            "session_management",
+            "credential_assurance"
+          ],
+          "controls": [
+            "SYS-01",
+            "SYS-02",
+            "GOV-03"
+          ],
+          "key_points": [
+            "認証強度や credential assurance の検討に使える。",
+            "MFA やセッション管理の妥当性確認にもつながる。",
+            "実装設定と運用手順の両面を見る基礎になる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "access_and_identity.identification_authentication.p1",
+              "text": "Control Families に Identification and Authentication が含まれる。",
+              "source_locator": "Control Families",
+              "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "audit_and_configuration",
+      "source_section_ids": [
+        "audit_and_configuration"
+      ],
+      "section_number": "audit_configuration",
+      "title": "Audit and Configuration Families",
+      "source_heading": "Audit and Accountability Configuration Management Assessment Authorization and Monitoring",
+      "topics": [
+        "audit_and_accountability",
+        "configuration_management",
+        "assessment_monitoring",
+        "change_control",
+        "traceability"
+      ],
+      "text": "logging、evidence preservation、baseline control、change oversight を支える family 群をまとめた section。",
+      "subsections": [
+        {
+          "subsection_id": "audit_and_configuration.audit",
+          "source_heading": "Audit and Accountability",
+          "topics": [
+            "audit_and_accountability",
+            "logging_auditability",
+            "traceability",
+            "evidence_preservation"
+          ],
+          "controls": [
+            "SYS-06",
+            "GOV-07",
+            "GOV-12",
+            "SYS-13"
+          ],
+          "key_points": [
+            "Audit and Accountability はログ保存、証跡保全、レビュー責任の根拠になる。",
+            "監査可能性とログ保存方針の主要 family である。",
+            "detection だけでなく説明責任にもつながる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "audit_and_configuration.audit.p1",
+              "text": "Control Families に Audit and Accountability が含まれる。",
+              "source_locator": "Control Families",
+              "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "audit_and_configuration.configuration",
+          "source_heading": "Configuration Management",
+          "topics": [
+            "configuration_management",
+            "change_control",
+            "baseline_control",
+            "iac"
+          ],
+          "controls": [
+            "SYS-08",
+            "SYS-09",
+            "GOV-04"
+          ],
+          "key_points": [
+            "baseline control と change oversight の family として configuration management を使える。",
+            "IaC や CI/CD の変更統制にも広げやすい。",
+            "review と approval の要求整理に使える。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "audit_and_configuration.configuration.p1",
+              "text": "Control Families に Configuration Management が含まれる。",
+              "source_locator": "Control Families",
+              "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "audit_and_configuration.assessment_monitoring",
+          "source_heading": "Assessment Authorization and Monitoring",
+          "topics": [
+            "assessment_monitoring",
+            "continuous_monitoring",
+            "authorization",
+            "assurance"
+          ],
+          "controls": [
+            "GOV-12",
+            "SYS-13"
+          ],
+          "key_points": [
+            "継続的 monitoring と authorization の考え方を補う。",
+            "単なる設定静止点ではなく継続確認が必要だと示せる。",
+            "auditability と monitoring をつなぐ family として useful である。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "audit_and_configuration.assessment_monitoring.p1",
+              "text": "Control Families に Assessment, Authorization and Monitoring が含まれる。",
+              "source_locator": "Control Families",
+              "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "incident_and_recovery",
+      "source_section_ids": [
+        "incident_and_recovery"
+      ],
+      "section_number": "incident_recovery",
+      "title": "Incident and Recovery Families",
+      "source_heading": "Incident Response Contingency Planning Maintenance",
+      "topics": [
+        "incident_response",
+        "contingency_planning",
+        "maintenance",
+        "recovery_testing",
+        "continuity"
+      ],
+      "text": "Incident Response、Contingency Planning、Maintenance を通じて準備、対応、復旧、運用継続を扱う section。",
+      "subsections": [
+        {
+          "subsection_id": "incident_and_recovery.incident",
+          "source_heading": "Incident Response",
+          "topics": [
+            "incident_response",
+            "communications",
+            "analysis",
+            "containment"
+          ],
+          "controls": [
+            "GOV-05",
+            "SYS-06"
+          ],
+          "key_points": [
+            "初動、分析、連絡、封じ込めの governance を支える family である。",
+            "incident response plan の存在と実効性確認に使える。",
+            "Respond function を control family で補強する。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "incident_and_recovery.incident.p1",
+              "text": "Control Families に Incident Response が含まれる。",
+              "source_locator": "Control Families",
+              "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "incident_and_recovery.contingency",
+          "source_heading": "Contingency Planning and Maintenance",
+          "topics": [
+            "contingency_planning",
+            "recovery_testing",
+            "continuity",
+            "maintenance"
+          ],
+          "controls": [
+            "SYS-12",
+            "GOV-06"
+          ],
+          "key_points": [
+            "復旧計画、試験、継続運用の family をまとめて参照できる。",
+            "backup だけでなく plan と test を監査対象にできる。",
+            "business continuity の主要根拠である。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "incident_and_recovery.contingency.p1",
+              "text": "Control Families に Contingency Planning と Maintenance が含まれる。",
+              "source_locator": "Control Families",
+              "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "data_and_system_protection",
+      "source_section_ids": [
+        "data_and_system_protection"
+      ],
+      "section_number": "data_system_protection",
+      "title": "Data and System Protection Families",
+      "source_heading": "Media Protection System and Communications Protection System and Information Integrity",
+      "topics": [
+        "media_protection",
+        "system_communications_protection",
+        "system_information_integrity",
+        "confidentiality",
+        "integrity",
+        "availability"
+      ],
+      "text": "データ保護、通信保護、ハードニング、integrity safeguards を扱う family 群。",
+      "subsections": [
+        {
+          "subsection_id": "data_and_system_protection.media",
+          "source_heading": "Media Protection",
+          "topics": [
+            "media_protection",
+            "data_protection",
+            "retention",
+            "deletion"
+          ],
+          "controls": [
+            "SYS-11",
+            "GOV-11"
+          ],
+          "key_points": [
+            "データ分類、保管、保持、削除の論点に接続しやすい。",
+            "governance の data management とも重なる。",
+            "ローカル media だけでなく broader data handling の根拠として使える。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "data_and_system_protection.media.p1",
+              "text": "Control Families に Media Protection が含まれる。",
+              "source_locator": "Control Families",
+              "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "data_and_system_protection.communications",
+          "source_heading": "System and Communications Protection",
+          "topics": [
+            "system_communications_protection",
+            "encryption",
+            "network_boundary",
+            "secret_management"
+          ],
+          "controls": [
+            "SYS-04",
+            "SYS-05",
+            "SYS-10",
+            "SYS-11"
+          ],
+          "key_points": [
+            "暗号化、通信保護、境界防御の主要 family である。",
+            "秘密情報保護や保存データ保護とも接続しやすい。",
+            "system mode の critical control を広く支える。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "data_and_system_protection.communications.p1",
+              "text": "Control Families に System and Communications Protection が含まれる。",
+              "source_locator": "Control Families",
+              "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "data_and_system_protection.integrity",
+          "source_heading": "System and Information Integrity",
+          "topics": [
+            "system_information_integrity",
+            "vulnerability_management",
+            "input_validation",
+            "monitoring_detection"
+          ],
+          "controls": [
+            "SYS-03",
+            "SYS-07",
+            "SYS-13"
+          ],
+          "key_points": [
+            "integrity family は脆弱性管理、入力検証、改ざん検知の補強に使える。",
+            "detect と protect を横断する family として useful である。",
+            "依存性管理や既知脆弱性放置の指摘にも接続する。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "data_and_system_protection.integrity.p1",
+              "text": "Control Families に System and Information Integrity が含まれる。",
+              "source_locator": "Control Families",
+              "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "acquisition_and_supply_chain",
+      "source_section_ids": [
+        "acquisition_and_supply_chain"
+      ],
+      "section_number": "acquisition_supply_chain",
+      "title": "Acquisition and Supply Chain Families",
+      "source_heading": "System and Services Acquisition Planning Program Management Supply Chain Risk Management",
+      "topics": [
+        "system_services_acquisition",
+        "supply_chain",
+        "third_party_risk",
+        "planning",
+        "program_management"
+      ],
+      "text": "secure procurement、supplier controls、program governance を扱う family 群。",
+      "subsections": [
+        {
+          "subsection_id": "acquisition_and_supply_chain.procurement",
+          "source_heading": "System and Services Acquisition",
+          "topics": [
+            "system_services_acquisition",
+            "planning",
+            "program_management",
+            "change_control"
+          ],
+          "controls": [
+            "SYS-09",
+            "GOV-04",
+            "GOV-08"
+          ],
+          "key_points": [
+            "調達、サービス取得、プログラム管理を secure procurement の観点で扱える。",
+            "CI/CD や外部サービスの取得統制にも接続しやすい。",
+            "変更管理と委託先管理の補強根拠になる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "acquisition_and_supply_chain.procurement.p1",
+              "text": "Control Families に System and Services Acquisition、Planning、Program Management が含まれる。",
+              "source_locator": "Control Families",
+              "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "acquisition_and_supply_chain.scrm",
+          "source_heading": "Supply Chain Risk Management",
+          "topics": [
+            "supply_chain",
+            "third_party_risk",
+            "oversight",
+            "contracting"
+          ],
+          "controls": [
+            "GOV-08",
+            "SYS-09"
+          ],
+          "key_points": [
+            "サプライチェーンリスク管理 family が明示されている。",
+            "委託先管理や SBOM、外部依存統制へ展開しやすい。",
+            "third-party risk の direct な根拠になる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "acquisition_and_supply_chain.scrm.p1",
+              "text": "Control Families に Supply Chain Risk Management が含まれる。",
+              "source_locator": "Control Families",
+              "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "risk_and_people",
+      "source_section_ids": [
+        "risk_and_people"
+      ],
+      "section_number": "risk_people",
+      "title": "Risk and People Families",
+      "source_heading": "Risk Assessment Awareness and Training Personnel Security Physical and Environmental Protection",
+      "topics": [
+        "risk_assessment",
+        "awareness_training",
+        "personnel_security",
+        "physical_environmental_protection",
+        "privacy",
+        "organizational_controls"
+      ],
+      "text": "risk analysis と people process を支える family 群。",
+      "subsections": [
+        {
+          "subsection_id": "risk_and_people.risk",
+          "source_heading": "Risk Assessment",
+          "topics": [
+            "risk_assessment",
+            "prioritization",
+            "vulnerability_management",
+            "governance"
+          ],
+          "controls": [
+            "SYS-07",
+            "GOV-10",
+            "GOV-12"
+          ],
+          "key_points": [
+            "リスク評価 family は脆弱性管理と governance をつなぐ。",
+            "何を優先対応すべきかの根拠になる。",
+            "リスク評価手順の有無を判定する土台になる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "risk_and_people.risk.p1",
+              "text": "Control Families に Risk Assessment が含まれる。",
+              "source_locator": "Control Families",
+              "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+            }
+          ]
+        },
+        {
+          "subsection_id": "risk_and_people.people",
+          "source_heading": "Awareness and people process",
+          "topics": [
+            "awareness_training",
+            "personnel_security",
+            "physical_environmental_protection",
+            "training"
+          ],
+          "controls": [
+            "GOV-09",
+            "GOV-12"
+          ],
+          "key_points": [
+            "Awareness and Training は教育統制の主要 family である。",
+            "personnel と physical/environmental 論点も governance の背景として使える。",
+            "人に関する control を技術 control から独立して見られる。"
+          ],
+          "source_passages": [
+            {
+              "passage_id": "risk_and_people.people.p1",
+              "text": "Control Families に Awareness and Training、Personnel Security、Physical and Environmental Protection が含まれる。",
+              "source_locator": "Control Families",
+              "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+skill_root="$(cd "$script_dir/.." && pwd)"
+
+python3 "$script_dir/lib/audit_corpus_builder.py" --skill-root "$skill_root" "$@"
