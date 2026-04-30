@@ -26,6 +26,27 @@ apm compile
 apm pack
 ```
 
+This package also tracks the Linear remote MCP server in `apm.yml`:
+
+```bash
+apm install
+```
+
+On APM CLI `0.9.2`, remote MCP definitions are recorded correctly, but Codex runtime
+installation is skipped for remote servers. In practice that means APM manages the
+project-level definition, while each Codex user still registers and authenticates the
+server locally.
+
+For Codex, complete setup with:
+
+```bash
+codex mcp add linear --url https://mcp.linear.app/mcp
+codex mcp login linear
+```
+
+If your Codex build requires the remote MCP client flag, enable it in
+`~/.codex/config.toml` before logging in.
+
 ## Nix dev shell
 
 For a reproducible local toolchain, this repository provides a `flake.nix`.

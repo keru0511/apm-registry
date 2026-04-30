@@ -15,4 +15,8 @@ scripts:
 # Add upstream packages and MCP servers here as this package grows.
 dependencies:
   apm: []
-  mcp: []
+  mcp:
+    - name: linear
+      registry: false
+      transport: streamable-http
+      url: https://mcp.linear.app/mcp
