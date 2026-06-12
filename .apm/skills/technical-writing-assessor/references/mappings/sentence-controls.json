@@ -1,0 +1,86 @@
+[
+  {
+    "control_id": "TW-SEN-01",
+    "label": "主語と行為者の明示",
+    "weight": 16,
+    "priority": "high",
+    "overlap_group": "explicit-actor",
+    "checkpoints": [
+      "誰が何をするかが文から読めるか",
+      "無主語のまま責任主体が曖昧になっていないか",
+      "受け身や名詞化で行為者が隠れていないか"
+    ],
+    "reference_map": {
+      "official": ["公用文の分かりやすい文"],
+      "standard": ["Reader action clarity"],
+      "style_guide": ["Active voice", "Clear actor"]
+    },
+    "related_documents": ["bunka-koyubun-guidance", "iso-24495-1", "google-dev-style"],
+    "related_sections": [
+      "bunka-koyubun-guidance.sentence_and_expression",
+      "iso-24495-1.expression_and_usability",
+      "google-dev-style.sentence_structure"
+    ],
+    "related_subsections": [
+      "bunka-koyubun-guidance.sentence_and_expression.sentence_and_expression.explicit_actor",
+      "iso-24495-1.expression_and_usability.expression_and_usability.reader_action",
+      "google-dev-style.sentence_structure.sentence_structure.active_clear_actor"
+    ]
+  },
+  {
+    "control_id": "TW-SEN-02",
+    "label": "1文1義と文分割",
+    "weight": 18,
+    "priority": "high",
+    "overlap_group": "sentence-length-and-split",
+    "checkpoints": [
+      "1文に複数の論点を詰め込みすぎていないか",
+      "条件、例外、結果が過剰に連結されていないか",
+      "長文は分割または箇条書き化されているか"
+    ],
+    "reference_map": {
+      "official": ["公用文の簡潔な文"],
+      "standard": [],
+      "style_guide": ["Short sentences", "Be concise"]
+    },
+    "related_documents": ["bunka-koyubun-guidance", "google-dev-style", "microsoft-writing-style"],
+    "related_sections": [
+      "bunka-koyubun-guidance.sentence_and_expression",
+      "google-dev-style.sentence_structure",
+      "microsoft-writing-style.clarity_and_conciseness"
+    ],
+    "related_subsections": [
+      "bunka-koyubun-guidance.sentence_and_expression.sentence_and_expression.one_sentence_one_point",
+      "google-dev-style.sentence_structure.sentence_structure.short_direct",
+      "microsoft-writing-style.clarity_and_conciseness.clarity_and_conciseness.short_sentences"
+    ]
+  },
+  {
+    "control_id": "TW-SEN-03",
+    "label": "曖昧表現と冗長表現の抑制",
+    "weight": 10,
+    "priority": "medium",
+    "overlap_group": "ambiguity-redundancy",
+    "checkpoints": [
+      "〜となる、〜させていただく、〜することが可能です 等の冗長表現が多すぎないか",
+      "指示語やぼかし表現が解釈を割らないか",
+      "必要以上の敬語で意味が見えにくくなっていないか"
+    ],
+    "reference_map": {
+      "official": ["簡潔で直接的な表現"],
+      "standard": ["Usable expression"],
+      "style_guide": ["Warm and relaxed, crisp and clear"]
+    },
+    "related_documents": ["bunka-koyubun-guidance", "iso-24495-1", "microsoft-writing-style"],
+    "related_sections": [
+      "bunka-koyubun-guidance.sentence_and_expression",
+      "iso-24495-1.expression_and_usability",
+      "microsoft-writing-style.clarity_and_conciseness"
+    ],
+    "related_subsections": [
+      "bunka-koyubun-guidance.sentence_and_expression.sentence_and_expression.avoid_ambiguity",
+      "iso-24495-1.expression_and_usability.expression_and_usability.direct_expression",
+      "microsoft-writing-style.clarity_and_conciseness.clarity_and_conciseness.trim_words"
+    ]
+  }
+]

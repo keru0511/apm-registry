@@ -1,0 +1,62 @@
+[
+  {
+    "query": "主語",
+    "topics": ["explicit_subject"],
+    "rules": ["TW-SEN-01"],
+    "documents": ["bunka-koyubun-guidance", "google-dev-style"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.explicit_actor"},
+      {"doc_id": "google-dev-style", "section_id": "sentence_structure", "subsection_id": "sentence_structure.active_clear_actor"}
+    ],
+    "max_results": 3,
+    "search_hints": "主語省略だけでなく、行為者が見えない受け身や無主語文も含めて見る。"
+  },
+  {
+    "query": "二行",
+    "topics": ["sentence_split"],
+    "rules": ["TW-SEN-02"],
+    "documents": ["bunka-koyubun-guidance", "microsoft-writing-style"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.one_sentence_one_point"},
+      {"doc_id": "microsoft-writing-style", "section_id": "clarity_and_conciseness", "subsection_id": "clarity_and_conciseness.short_sentences"}
+    ],
+    "max_results": 3,
+    "search_hints": "固定の文字数規則は house-rule 扱い。一次ソース側では短く直接的に書く原則を見る。"
+  },
+  {
+    "query": "送り仮名",
+    "topics": ["okurigana"],
+    "rules": ["TW-NOT-01"],
+    "documents": ["cabinet-okurigana"],
+    "preferred_subsections": [
+      {"doc_id": "cabinet-okurigana", "section_id": "basic_policy", "subsection_id": "basic_policy.core_rule"},
+      {"doc_id": "cabinet-okurigana", "section_id": "conventional_exceptions", "subsection_id": "conventional_exceptions.accepted_forms"}
+    ],
+    "max_results": 3,
+    "search_hints": "慣用表記が許される語か、単なる表記ゆれかを分けて判断する。"
+  },
+  {
+    "query": "ユーザー",
+    "topics": ["loanword_long_vowel"],
+    "rules": ["TW-NOT-02"],
+    "documents": ["bunka-gairaigo"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-gairaigo", "section_id": "long_vowel_rules", "subsection_id": "long_vowel_rules.default_use"},
+      {"doc_id": "bunka-gairaigo", "section_id": "notation_examples", "subsection_id": "notation_examples.domain_exceptions"}
+    ],
+    "max_results": 3,
+    "search_hints": "長音符号を既定としつつ、分野慣用を house-rule として切り分ける。"
+  },
+  {
+    "query": "禁則",
+    "topics": ["punctuation_and_kinsoku"],
+    "rules": ["TW-LAY-01"],
+    "documents": ["jis-x-4051"],
+    "preferred_subsections": [
+      {"doc_id": "jis-x-4051", "section_id": "line_break_rules", "subsection_id": "line_break_rules.kinsoku_basics"},
+      {"doc_id": "jis-x-4051", "section_id": "punctuation_spacing", "subsection_id": "punctuation_spacing.punctuation_spacing"}
+    ],
+    "max_results": 3,
+    "search_hints": "行頭禁則、行末禁則、句読点の前後関係を優先する。"
+  }
+]

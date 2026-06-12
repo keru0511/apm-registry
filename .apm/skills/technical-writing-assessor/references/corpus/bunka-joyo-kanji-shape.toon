@@ -1,0 +1,45 @@
+doc_id: bunka-joyo-kanji-shape
+title: 常用漢字表の字体・字形に関する指針
+publisher: 文化庁
+version: 現行公開版
+publication_date: 2016
+canonical_url: "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+profiles[1]: notation
+sections[2]:
+  - section_id: scope_and_purpose
+    section_number: 1
+    title: 目的と適用範囲
+    source_heading: 字体字形の考え方
+    topics[3]: kanji_shape_tolerance,notation,review_process
+    text: 字体字形の差をどこまで誤りとみなすかを整理する。
+    subsections[1]:
+      - subsection_id: scope_and_purpose.review_boundary
+        source_heading: 評価の境界
+        topics[3]: kanji_shape_tolerance,review_process,error_boundary
+        rules[1]: TW-NOT-03
+        key_points[3]: 字体差と誤字脱字は別問題である。,字体だけで直ちに誤りと断定しない。,評価では実害のある不統一かどうかを見る。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          scope_and_purpose.review_boundary.p1,字体字形の差の扱いには許容範囲がある。,適用範囲,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+  - section_id: shape_tolerance
+    section_number: 2
+    title: 字体字形の許容範囲
+    source_heading: 形だけで誤りとしない
+    topics[3]: kanji_shape_tolerance,consistency,notation
+    text: 字体・字形の違いをどう扱うかの実務上の軸を持つ。
+    subsections[2]:
+      - subsection_id: shape_tolerance.not_error_by_shape_only
+        source_heading: 形だけで誤りとしない
+        topics[3]: kanji_shape_tolerance,error_boundary,review_process
+        rules[1]: TW-NOT-03
+        key_points[3]: 字体字形の差だけで誤り扱いしない考え方がある。,本質的な誤記との区別が必要である。,レビューでは優先度を上げすぎない。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          shape_tolerance.not_error_by_shape_only.p1,字体字形の差の中には許容されるものがある。,許容範囲,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+          shape_tolerance.not_error_by_shape_only.p2,形だけで即座に誤りとしない姿勢が示されている。,評価姿勢,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+      - subsection_id: shape_tolerance.preferred_consistency
+        source_heading: 文書内一貫性
+        topics[3]: consistency,notation,kanji_shape_tolerance
+        rules[1]: TW-NOT-03
+        key_points[3]: 許容範囲があっても文書内ではそろえた方がよい。,同じ語で形がぶれると読者にノイズになる。,ハウススタイルがあるならそれに従う。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          shape_tolerance.preferred_consistency.p1,許容範囲と統一運用は両立させるべきである。,運用上の示唆,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+          shape_tolerance.preferred_consistency.p2,文書内の一貫性は読みやすさに寄与する。,統一の価値,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"

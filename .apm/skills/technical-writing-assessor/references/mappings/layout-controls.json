@@ -1,0 +1,83 @@
+[
+  {
+    "control_id": "TW-LAY-01",
+    "label": "句読点の打ち方",
+    "weight": 10,
+    "priority": "medium",
+    "overlap_group": "punctuation-usage",
+    "checkpoints": [
+      "読点が意味の切れ目に置かれているか",
+      "句点やコロン、括弧の使い方が一貫しているか",
+      "読点過多で読みにくくなっていないか"
+    ],
+    "reference_map": {
+      "official": ["公用文作成の考え方", "JIS X 4051"],
+      "standard": [],
+      "style_guide": []
+    },
+    "related_documents": ["bunka-koyubun-guidance", "jis-x-4051"],
+    "related_sections": [
+      "bunka-koyubun-guidance.notation_and_punctuation",
+      "jis-x-4051.punctuation_spacing"
+    ],
+    "related_subsections": [
+      "bunka-koyubun-guidance.notation_and_punctuation.notation_and_punctuation.comma_period_usage",
+      "jis-x-4051.punctuation_spacing.punctuation_spacing.punctuation_spacing"
+    ]
+  },
+  {
+    "control_id": "TW-LAY-02",
+    "label": "禁則処理と記号配置",
+    "weight": 10,
+    "priority": "medium",
+    "overlap_group": "line-break-rules",
+    "checkpoints": [
+      "閉じ括弧や句読点が不適切に行頭へ出ていないか",
+      "開き括弧が不適切に行末へ残っていないか",
+      "小書き文字、長音符、中点などの扱いが崩れていないか"
+    ],
+    "reference_map": {
+      "official": ["JIS X 4051"],
+      "standard": [],
+      "style_guide": []
+    },
+    "related_documents": ["jis-x-4051"],
+    "related_sections": [
+      "jis-x-4051.line_break_rules",
+      "jis-x-4051.punctuation_spacing"
+    ],
+    "related_subsections": [
+      "jis-x-4051.line_break_rules.line_break_rules.kinsoku_basics",
+      "jis-x-4051.line_break_rules.line_break_rules.prohibited_line_start",
+      "jis-x-4051.line_break_rules.line_break_rules.prohibited_line_end"
+    ]
+  },
+  {
+    "control_id": "TW-LAY-03",
+    "label": "箇条書きと参照しやすい配置",
+    "weight": 12,
+    "priority": "medium",
+    "overlap_group": "list-readability",
+    "checkpoints": [
+      "列挙情報が無理に長文へ押し込まれていないか",
+      "手順、条件、例外が箇条書きや表で分離されているか",
+      "見出し直下に必要情報がまとまっているか"
+    ],
+    "reference_map": {
+      "official": [],
+      "standard": ["Findability"],
+      "style_guide": ["Lists and procedures", "Scannable content"]
+    },
+    "related_documents": ["iso-24495-1", "google-dev-style", "microsoft-writing-style"],
+    "related_sections": [
+      "iso-24495-1.structure_and_navigation",
+      "google-dev-style.lists_and_procedures",
+      "microsoft-writing-style.procedural_writing"
+    ],
+    "related_subsections": [
+      "iso-24495-1.structure_and_navigation.structure_and_navigation.findability",
+      "google-dev-style.lists_and_procedures.lists_and_procedures.headings_and_lists",
+      "microsoft-writing-style.procedural_writing.procedural_writing.task_steps"
+    ]
+  }
+]

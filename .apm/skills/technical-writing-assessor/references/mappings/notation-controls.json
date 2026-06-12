@@ -1,0 +1,84 @@
+[
+  {
+    "control_id": "TW-NOT-01",
+    "label": "送り仮名の一貫性",
+    "weight": 16,
+    "priority": "high",
+    "overlap_group": "okurigana-consistency",
+    "checkpoints": [
+      "活用語尾を中心に送り仮名が付いているか",
+      "同じ語で表記が揺れていないか",
+      "慣用表記を採るなら文書内で統一されているか"
+    ],
+    "reference_map": {
+      "official": ["送り仮名の付け方"],
+      "standard": [],
+      "style_guide": []
+    },
+    "related_documents": ["cabinet-okurigana"],
+    "related_sections": [
+      "cabinet-okurigana.basic_policy",
+      "cabinet-okurigana.inflection_rules",
+      "cabinet-okurigana.conventional_exceptions"
+    ],
+    "related_subsections": [
+      "cabinet-okurigana.basic_policy.basic_policy.core_rule",
+      "cabinet-okurigana.inflection_rules.inflection_rules.derived_words",
+      "cabinet-okurigana.conventional_exceptions.conventional_exceptions.accepted_forms"
+    ]
+  },
+  {
+    "control_id": "TW-NOT-02",
+    "label": "外来語と長音の表記",
+    "weight": 16,
+    "priority": "high",
+    "overlap_group": "loanword-notation",
+    "checkpoints": [
+      "ユーザー / ユーザ のような長音表記が混在していないか",
+      "専門分野の慣用を採る場合にルール化されているか",
+      "同種語で表記方針が揃っているか"
+    ],
+    "reference_map": {
+      "official": ["外来語の表記"],
+      "standard": [],
+      "style_guide": []
+    },
+    "related_documents": ["bunka-gairaigo"],
+    "related_sections": [
+      "bunka-gairaigo.basic_policy",
+      "bunka-gairaigo.long_vowel_rules",
+      "bunka-gairaigo.notation_examples"
+    ],
+    "related_subsections": [
+      "bunka-gairaigo.basic_policy.basic_policy.katakana_principle",
+      "bunka-gairaigo.long_vowel_rules.long_vowel_rules.default_use",
+      "bunka-gairaigo.notation_examples.notation_examples.domain_exceptions"
+    ]
+  },
+  {
+    "control_id": "TW-NOT-03",
+    "label": "字体字形の扱いと統一",
+    "weight": 8,
+    "priority": "medium",
+    "overlap_group": "kanji-shape-consistency",
+    "checkpoints": [
+      "字体字形の差だけで過剰に誤り扱いしていないか",
+      "同一文書内では字形が不必要に揺れていないか",
+      "本質的な誤記と字体差を区別しているか"
+    ],
+    "reference_map": {
+      "official": ["常用漢字表の字体・字形に関する指針"],
+      "standard": [],
+      "style_guide": []
+    },
+    "related_documents": ["bunka-joyo-kanji-shape"],
+    "related_sections": [
+      "bunka-joyo-kanji-shape.scope_and_purpose",
+      "bunka-joyo-kanji-shape.shape_tolerance"
+    ],
+    "related_subsections": [
+      "bunka-joyo-kanji-shape.shape_tolerance.shape_tolerance.not_error_by_shape_only",
+      "bunka-joyo-kanji-shape.shape_tolerance.shape_tolerance.preferred_consistency"
+    ]
+  }
+]

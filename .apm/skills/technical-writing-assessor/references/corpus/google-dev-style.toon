@@ -1,0 +1,82 @@
+doc_id: google-dev-style
+title: Google developer documentation style guide
+publisher: Google
+version: current
+publication_date: current
+canonical_url: "https://developers.google.com/style"
+profiles[2]: structure,sentence
+sections[3]:
+  - section_id: audience_and_voice
+    section_number: 1
+    title: 読者と語り口
+    source_heading: audience and voice
+    topics[3]: audience_and_actionability,reader_fit,voice
+    text: 開発者文書では、読者のニーズに合わせて直接的に書くことを重視する。
+    subsections[2]:
+      - subsection_id: audience_and_voice.address_user_needs
+        source_heading: 読者ニーズに合わせる
+        topics[3]: audience_and_actionability,reader_fit,purpose
+        rules[1]: TW-STR-01
+        key_points[3]: 読者が知りたいことから書く。,前提をそろえ、不要な説明を増やしすぎない。,読者のタスクに直結する情報を優先する。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          audience_and_voice.address_user_needs.p1,読者ニーズに焦点を当てることが案内されている。,guide overview,"https://developers.google.com/style"
+          audience_and_voice.address_user_needs.p2,開発者文書は task oriented であるべきだと読める。,audience guidance,"https://developers.google.com/style"
+      - subsection_id: audience_and_voice.conversational_not_chatty
+        source_heading: 直接的だが過剰にくだけない
+        topics[2]: voice,conciseness
+        rules[1]: TW-SEN-03
+        key_points[3]: 直接的に書くが雑談調にはしない。,余計な前置きより情報を優先する。,丁寧さと簡潔さを両立する。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          audience_and_voice.conversational_not_chatty.p1,会話調すぎず直接的に伝える姿勢がある。,voice guidance,"https://developers.google.com/style"
+  - section_id: sentence_structure
+    section_number: 2
+    title: 文構造
+    source_heading: sentence structure
+    topics[4]: explicit_subject,sentence_split,active_expression,conciseness
+    text: 主語、能動態、短く直接的な文を重点に置く。
+    subsections[3]:
+      - subsection_id: sentence_structure.active_clear_actor
+        source_heading: 行為者が見える文
+        topics[3]: explicit_subject,active_expression,responsibility
+        rules[1]: TW-SEN-01
+        key_points[3]: 能動態は誰が何をするか見えやすい。,行為者が読めない文は手順や責任分界で不利である。,主語を補えるなら省略しない方がよい。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          sentence_structure.active_clear_actor.p1,能動態を優先する guidance がある。,sentence structure,"https://developers.google.com/style/sentence-structure"
+          sentence_structure.active_clear_actor.p2,行為者が明確な文は理解しやすい。,active voice,"https://developers.google.com/style/sentence-structure"
+      - subsection_id: sentence_structure.short_direct
+        source_heading: 短く直接的な文
+        topics[3]: sentence_split,conciseness,direct_expression
+        rules[1]: TW-SEN-02
+        key_points[3]: 一文を短く保つと誤読が減る。,複雑な条件は分割するかリスト化する。,説明と手順を一文へ詰め込まない。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          sentence_structure.short_direct.p1,短く直接的に書く guidance がある。,sentence structure,"https://developers.google.com/style/sentence-structure"
+          sentence_structure.short_direct.p2,複雑な情報は分割して提示した方がよい。,clarity,"https://developers.google.com/style/sentence-structure"
+      - subsection_id: sentence_structure.put_conditions_first
+        source_heading: 条件を先に置く
+        topics[2]: conditional_logic,structure
+        rules[1]: TW-SEN-02
+        key_points[3]: 手順や条件の文では条件を先に置くと追いやすい。,例外条件は独立させる方がよい。,読み手の判断順に書く。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          sentence_structure.put_conditions_first.p1,条件と結果の順序を明確にする guidance がある。,sentence structure,"https://developers.google.com/style/sentence-structure"
+  - section_id: lists_and_procedures
+    section_number: 3
+    title: リストと手順
+    source_heading: lists and procedures
+    topics[4]: lists,structure,procedure,findability
+    text: 箇条書きと手順の配置を、検索性と理解容易性の観点で整理する。
+    subsections[2]:
+      - subsection_id: lists_and_procedures.headings_and_lists
+        source_heading: 見出しと箇条書き
+        topics[3]: lists,findability,structure
+        rules[2]: TW-STR-02,TW-LAY-03
+        key_points[3]: 見出しは情報探索のために具体的に付ける。,列挙情報はリスト化した方が追いやすい。,手順書では番号付きリストが有効である。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          lists_and_procedures.headings_and_lists.p1,見出しとリストの使い方が guide に整理されている。,style overview,"https://developers.google.com/style"
+          lists_and_procedures.headings_and_lists.p2,スキャンしやすい構成が重視される。,scannability,"https://developers.google.com/style"
+      - subsection_id: lists_and_procedures.task_order
+        source_heading: 手順順に並べる
+        topics[2]: procedure,structure
+        rules[2]: TW-STR-02,TW-LAY-03
+        key_points[3]: 手順は実行順に並べる。,期待結果や補足を手順本文へ混ぜすぎない。,前提条件を手順の前に置く。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          lists_and_procedures.task_order.p1,task oriented な手順構成が推奨される。,procedure guidance,"https://developers.google.com/style"

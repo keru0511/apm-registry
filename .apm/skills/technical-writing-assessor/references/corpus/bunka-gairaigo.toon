@@ -1,0 +1,74 @@
+doc_id: bunka-gairaigo
+title: 外来語の表記
+publisher: 文化庁
+version: 現行公開版
+publication_date: 1991
+canonical_url: "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/gairaigo/"
+profiles[1]: notation
+sections[3]:
+  - section_id: basic_policy
+    section_number: 1
+    title: 基本方針
+    source_heading: 外来語表記の原則
+    topics[3]: loanword_long_vowel,notation,consistency
+    text: 外来語のカタカナ表記を統一的に扱うための基礎方針を持つ。
+    subsections[2]:
+      - subsection_id: basic_policy.katakana_principle
+        source_heading: カタカナ表記の原則
+        topics[3]: loanword_long_vowel,katakana,consistency
+        rules[1]: TW-NOT-02
+        key_points[3]: 外来語はカタカナで一定の原則に沿って表記する。,個別の表記慣用があっても文書内の統一を優先する。,発音の写し取りだけでなく既存の基準形を参照する。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          basic_policy.katakana_principle.p1,外来語表記には統一的な扱いが必要である。,表記原則,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/gairaigo/"
+          basic_policy.katakana_principle.p2,文書内で同種語をそろえることが読みやすさに寄与する。,統一の考え方,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/gairaigo/"
+      - subsection_id: basic_policy.readability_vs_custom
+        source_heading: 基準と慣用の分離
+        topics[2]: house_rule,loanword_long_vowel
+        rules[1]: TW-NOT-02
+        key_points[3]: 分野慣用がある場合はハウスルールとして明示する。,一次基準と慣用を混同しない。,例外を作るなら一覧化した方がよい。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          basic_policy.readability_vs_custom.p1,一般基準と専門分野の慣用は分けて管理すると運用しやすい。,運用への展開,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/gairaigo/"
+  - section_id: long_vowel_rules
+    section_number: 2
+    title: 長音の扱い
+    source_heading: 長音符号
+    topics[3]: loanword_long_vowel,long_vowel,consistency
+    text: ユーザー / ユーザ のような長音表記の扱いを判断する中心部。
+    subsections[2]:
+      - subsection_id: long_vowel_rules.default_use
+        source_heading: 長音符号を用いる既定
+        topics[3]: long_vowel,loanword_long_vowel,notation
+        rules[1]: TW-NOT-02
+        key_points[3]: 一般には長音符号を用いる既定がある。,長音を省く分野慣用があるなら例外として明示する。,混在すると読み手にノイズを与える。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          long_vowel_rules.default_use.p1,外来語の長音には既定となる扱いがある。,長音規則,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/gairaigo/"
+          long_vowel_rules.default_use.p2,既定から外れるときは理由と範囲を決める方がよい。,例外運用,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/gairaigo/"
+      - subsection_id: long_vowel_rules.related_words
+        source_heading: 同種語のそろえ方
+        topics[2]: consistency,notation
+        rules[1]: TW-NOT-02
+        key_points[3]: ユーザーとサーバーのような同種語を別方針で混在させない。,製品名など固有名詞は別扱いにする。,一般名詞と固有名詞の境界を先に決める。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          long_vowel_rules.related_words.p1,同じ系列の語の表記をそろえると可読性が上がる。,統一の実務,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/gairaigo/"
+  - section_id: notation_examples
+    section_number: 3
+    title: 表記例と慣用
+    source_heading: 例示
+    topics[3]: examples,loanword_long_vowel,house_rule
+    text: 実際の例から、一般形と慣用形の切り分けを行う。
+    subsections[2]:
+      - subsection_id: notation_examples.domain_exceptions
+        source_heading: 分野別の慣用
+        topics[3]: domain_convention,house_rule,loanword_long_vowel
+        rules[1]: TW-NOT-02
+        key_points[3]: 分野ごとに長音省略などの慣用が残る場合がある。,その場合は組織ルールとして定義した方がよい。,レビューでは基準違反か社内慣用かを切り分ける。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          notation_examples.domain_exceptions.p1,慣用がある場合でも一貫運用が重要である。,慣用の扱い,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/gairaigo/"
+          notation_examples.domain_exceptions.p2,例外は暗黙運用にせず明文化した方がよい。,運用への示唆,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/gairaigo/"
+      - subsection_id: notation_examples.review_usage
+        source_heading: レビュー時の見方
+        topics[2]: review_process,notation
+        rules[1]: TW-NOT-02
+        key_points[3]: 一語単位ではなく系列語のそろい方で見る。,固有名詞は無理に一般ルールへ寄せない。,ルール未定義なら既定形を提案する。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          notation_examples.review_usage.p1,実務では例外と一般則の境界管理が重要である。,評価への展開,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/gairaigo/"

@@ -1,0 +1,75 @@
+doc_id: jis-x-4051
+title: JIS X 4051 日本語文書の組版方法
+publisher: JIS
+version: 2004
+publication_date: 2004
+canonical_url: "https://kikakurui.com/x4/X4051-2004-01.html"
+profiles[1]: layout
+sections[3]:
+  - section_id: line_break_rules
+    section_number: 1
+    title: 禁則処理
+    source_heading: 行頭行末の禁則
+    topics[3]: punctuation_and_kinsoku,line_break,layout
+    text: 日本語文書で禁則処理をどう扱うかの基本を持つ。
+    subsections[3]:
+      - subsection_id: line_break_rules.kinsoku_basics
+        source_heading: 禁則処理の基本
+        topics[3]: punctuation_and_kinsoku,line_break,layout
+        rules[1]: TW-LAY-02
+        key_points[3]: 行頭と行末に置くべきでない文字の扱いがある。,禁則を守ると読みにくい崩れを減らせる。,自動改行任せでも確認が必要な場合がある。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          line_break_rules.kinsoku_basics.p1,日本語組版では禁則処理が基本要件である。,禁則処理の総論,"https://kikakurui.com/x4/X4051-2004-01.html"
+          line_break_rules.kinsoku_basics.p2,読みやすさと見栄えの両方に関わる。,組版上の意義,"https://kikakurui.com/x4/X4051-2004-01.html"
+      - subsection_id: line_break_rules.prohibited_line_start
+        source_heading: 行頭禁則
+        topics[2]: line_break,punctuation_and_kinsoku
+        rules[1]: TW-LAY-02
+        key_points[3]: 句読点や閉じ括弧などは行頭に出さない。,小書き文字や長音符も扱いに注意する。,機械改行後に崩れていないか確認する。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          line_break_rules.prohibited_line_start.p1,行頭に置かない文字種が定義される。,行頭禁則,"https://kikakurui.com/x4/X4051-2004-01.html"
+          line_break_rules.prohibited_line_start.p2,記号や小書き文字の扱いが重要である。,対象文字,"https://kikakurui.com/x4/X4051-2004-01.html"
+      - subsection_id: line_break_rules.prohibited_line_end
+        source_heading: 行末禁則
+        topics[2]: line_break,punctuation_and_kinsoku
+        rules[1]: TW-LAY-02
+        key_points[3]: 開き括弧などは行末に残さない。,不自然な分割は読みの流れを妨げる。,表組みや narrow 幅のUIでは崩れやすい。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          line_break_rules.prohibited_line_end.p1,行末に置かない文字種が定義される。,行末禁則,"https://kikakurui.com/x4/X4051-2004-01.html"
+          line_break_rules.prohibited_line_end.p2,括弧類の不自然な残りを避ける必要がある。,対象文字,"https://kikakurui.com/x4/X4051-2004-01.html"
+  - section_id: punctuation_spacing
+    section_number: 2
+    title: 句読点と字間
+    source_heading: 約物の扱い
+    topics[3]: punctuation_and_kinsoku,punctuation,spacing
+    text: 句読点や括弧の周辺をどう扱うかを確認する。
+    subsections[2]:
+      - subsection_id: punctuation_spacing.punctuation_spacing
+        source_heading: 句読点と空き
+        topics[3]: punctuation,spacing,consistency
+        rules[1]: TW-LAY-01
+        key_points[3]: 句読点と括弧の扱いは統一した方がよい。,空きや記号配置は読みのリズムに影響する。,文種が変わっても基準を揃える。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          punctuation_spacing.punctuation_spacing.p1,約物の配置と空きには一定の組版規則がある。,句読点配置,"https://kikakurui.com/x4/X4051-2004-01.html"
+          punctuation_spacing.punctuation_spacing.p2,不統一な記号配置は可読性を落とす。,統一の必要,"https://kikakurui.com/x4/X4051-2004-01.html"
+      - subsection_id: punctuation_spacing.katakana_marks
+        source_heading: 中点と長音符
+        topics[2]: notation,loanword_long_vowel
+        rules[2]: TW-LAY-02,TW-NOT-02
+        key_points[3]: 中点や長音符の視覚的崩れにも注意する。,外来語表記ルールと組版ルールは併せて見る。,小さな記号でも行分割で崩れやすい。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          punctuation_spacing.katakana_marks.p1,記号類の扱いは表記と組版の両面に関わる。,記号配置の実務,"https://kikakurui.com/x4/X4051-2004-01.html"
+  - section_id: list_and_reference_layout
+    section_number: 3
+    title: 列挙と参照の配置
+    source_heading: 参照しやすい配置
+    topics[3]: lists,reference_layout,structure
+    text: 箇条書きや参照表示を読みやすく置く観点を持つ。
+    subsections[1]:
+      - subsection_id: list_and_reference_layout.list_usage
+        source_heading: 列挙情報の整理
+        topics[3]: lists,reference_layout,readability
+        rules[1]: TW-LAY-03
+        key_points[3]: 列挙情報は見分けやすく配置する。,本文へ押し込まず箇条書き化すると参照しやすい。,参照ラベルと本文の対応を明確にする。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          list_and_reference_layout.list_usage.p1,列挙情報の配置は参照性に影響する。,列挙と参照,"https://kikakurui.com/x4/X4051-2004-01.html"

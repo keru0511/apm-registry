@@ -1,0 +1,90 @@
+doc_id: bunka-koyubun-guidance
+title: 公用文作成の考え方
+publisher: 文化庁
+version: 現行公開版
+publication_date: 2022
+canonical_url: "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/"
+profiles[3]: structure,sentence,notation
+sections[3]:
+  - section_id: purpose_and_reader
+    section_number: 1
+    title: 目的と読み手
+    source_heading: 分かりやすい公用文の前提
+    topics[3]: audience_and_actionability,structure,reader_fit
+    text: 公用文は正確さだけでなく、読み手が迷わず理解できることを重視する前提資料として使う。
+    subsections[2]:
+      - subsection_id: purpose_and_reader.structure_for_reader
+        source_heading: 読み手が追いやすい構成
+        topics[3]: structure,navigation,reader_fit
+        rules[2]: TW-STR-01,TW-STR-02
+        key_points[3]: 文書は読み手の目的から逆算して構成する。,必要情報へ短時間で到達できる見出しと順序が必要である。,前提、本文、補足を混ぜない方が理解しやすい。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          purpose_and_reader.structure_for_reader.p1,公用文では読み手に分かりやすい順序と構成が求められる。,構成に関する考え方,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/"
+          purpose_and_reader.structure_for_reader.p2,用件と必要情報を探しやすく整理する発想が基本にある。,分かりやすさの基本,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/"
+      - subsection_id: purpose_and_reader.purpose_disclosure
+        source_heading: 目的を冒頭で示す
+        topics[3]: purpose,audience_and_actionability,summary
+        rules[1]: TW-STR-01
+        key_points[3]: 文書の目的と用件は冒頭で明示した方がよい。,読み手が自分に関係ある文書か早く判断できる必要がある。,結論や依頼事項を後ろへ回しすぎない。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          purpose_and_reader.purpose_disclosure.p1,読み手が何の文書かを早く理解できる書き方が推奨される。,文書冒頭の考え方,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/"
+  - section_id: sentence_and_expression
+    section_number: 2
+    title: 文の組み立てと表現
+    source_heading: 分かりやすい文
+    topics[5]: explicit_subject,sentence_split,ambiguity,active_expression,conciseness
+    text: 主語や述語の対応、文の長さ、曖昧さの抑制など、読み手が解釈を迷わない文の作り方を扱う。
+    subsections[4]:
+      - subsection_id: sentence_and_expression.explicit_actor
+        source_heading: 主体と行為者を明確にする
+        topics[3]: explicit_subject,active_expression,responsibility
+        rules[1]: TW-SEN-01
+        key_points[3]: 誰が何をするかが見える文は誤解が少ない。,主語省略が続くと責任主体が曖昧になる。,受け身や名詞化だけに頼ると行為者が見えにくい。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          sentence_and_expression.explicit_actor.p1,主体や関係が読み取りやすい書き方が分かりやすさに直結する。,文の明確さ,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/"
+          sentence_and_expression.explicit_actor.p2,行為者が読めない文は誤解を招きやすい。,表現上の注意,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/"
+      - subsection_id: sentence_and_expression.one_sentence_one_point
+        source_heading: 1文1義と分割
+        topics[3]: sentence_split,conciseness,lists
+        rules[1]: TW-SEN-02
+        key_points[3]: 1文に論点を詰め込みすぎない方が理解しやすい。,長い条件列や例外は文を分けるか箇条書きにする。,読点でつなぎ続けるより、文や段落を分けた方がよい。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          sentence_and_expression.one_sentence_one_point.p1,長過ぎる文は理解負荷を上げるため簡潔に分ける考え方が示される。,簡潔な文,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/"
+          sentence_and_expression.one_sentence_one_point.p2,列挙情報は箇条書きへ逃がすと読みやすい。,分割と整理,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/"
+      - subsection_id: sentence_and_expression.avoid_ambiguity
+        source_heading: 曖昧表現を避ける
+        topics[3]: ambiguity,conciseness,reader_fit
+        rules[1]: TW-SEN-03
+        key_points[3]: 指示語やぼかし表現が多いと解釈が割れやすい。,冗長な敬語や回りくどい言い回しは意味を見えにくくする。,直接的で簡潔な表現を優先する。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          sentence_and_expression.avoid_ambiguity.p1,曖昧さの少ない表現が望ましい。,分かりやすい表現,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/"
+          sentence_and_expression.avoid_ambiguity.p2,回りくどさを減らし要点を直接示す発想がある。,簡潔性,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/"
+      - subsection_id: sentence_and_expression.reader_action
+        source_heading: 読み手が判断できる表現
+        topics[3]: actionability,decision_support,reader_fit
+        rules[1]: TW-STR-01
+        key_points[3]: 読み手が何を判断し何を実行するか見える文がよい。,条件と結果が対応している必要がある。,曖昧な依頼や責任分界不明の表現は避ける。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          sentence_and_expression.reader_action.p1,読み手が行動できる書き方を意識する必要がある。,行動につながる表現,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/"
+  - section_id: notation_and_punctuation
+    section_number: 3
+    title: 表記と句読点
+    source_heading: 表記の統一
+    topics[4]: punctuation_and_kinsoku,notation,consistency,readability
+    text: 表記の統一、句読点、記号の扱いなど、読みにくさを生みやすい表面仕様を扱う。
+    subsections[2]:
+      - subsection_id: notation_and_punctuation.comma_period_usage
+        source_heading: 句読点の使い方
+        topics[3]: punctuation_and_kinsoku,punctuation,consistency
+        rules[1]: TW-LAY-01
+        key_points[3]: 句読点は意味の切れ目に合わせて用いる。,読点が多すぎると関係が読みにくくなる。,句点や括弧の扱いは文書内で統一する。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          notation_and_punctuation.comma_period_usage.p1,句読点は読みやすさに直接影響するため一貫した扱いが必要である。,句読点の考え方,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/"
+          notation_and_punctuation.comma_period_usage.p2,読点の打ち過ぎは理解を助けるとは限らない。,表記上の注意,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/"
+      - subsection_id: notation_and_punctuation.consistent_surface
+        source_heading: 表記の統一
+        topics[3]: notation,consistency,house_rule
+        rules[2]: TW-NOT-01,TW-NOT-02
+        key_points[3]: 同じ語や同じ型の語で表記を統一する。,表面上の揺れは読み手の負荷になる。,公的基準と組織ルールを分けて定義すると運用しやすい。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          notation_and_punctuation.consistent_surface.p1,表記のゆれを減らすことが分かりやすさにつながる。,表記統一,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/"

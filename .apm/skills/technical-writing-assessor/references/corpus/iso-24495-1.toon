@@ -1,0 +1,75 @@
+doc_id: iso-24495-1
+title: ISO 24495-1 Plain language
+publisher: ISO
+version: 2023
+publication_date: 2023
+canonical_url: "https://www.iso.org/standard/78907.html"
+profiles[2]: structure,sentence
+sections[3]:
+  - section_id: audience_and_purpose
+    section_number: 1
+    title: 読者と目的
+    source_heading: audience and purpose
+    topics[3]: audience_and_actionability,purpose,reader_fit
+    text: 読者が必要な情報を必要な時に理解し使えることを重視する。
+    subsections[2]:
+      - subsection_id: audience_and_purpose.reader_tasks
+        source_heading: 読者の目的起点
+        topics[3]: audience_and_actionability,purpose,reader_fit
+        rules[1]: TW-STR-01
+        key_points[3]: 文書は書き手都合ではなく読者の仕事から組み立てる。,読者が何を知り何をするかを先に定義する。,対象読者を想定しない文書は平易になりにくい。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          audience_and_purpose.reader_tasks.p1,plain language は読者が必要な情報を見つけ理解し使えることを目標にする。,概要,"https://www.iso.org/standard/78907.html"
+          audience_and_purpose.reader_tasks.p2,読者の目的と文書の目的を対応づける発想が中心にある。,目的適合,"https://www.iso.org/standard/78907.html"
+      - subsection_id: audience_and_purpose.purpose_disclosure
+        source_heading: 目的の開示
+        topics[2]: purpose,summary
+        rules[1]: TW-STR-01
+        key_points[3]: 文書の目的は早い段階で分かる方がよい。,結論や依頼は後ろへ回しすぎない。,読者が自分に関係ある文書か判断しやすくする。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          audience_and_purpose.purpose_disclosure.p1,文書目的を見えやすくすることは usability に直結する。,目的提示,"https://www.iso.org/standard/78907.html"
+  - section_id: structure_and_navigation
+    section_number: 2
+    title: 構造とナビゲーション
+    source_heading: structure and navigation
+    topics[3]: structure,navigation,findability
+    text: 探しやすく追いやすい構造を plain language の一部として扱う。
+    subsections[2]:
+      - subsection_id: structure_and_navigation.findability
+        source_heading: 情報の探しやすさ
+        topics[3]: structure,findability,navigation
+        rules[2]: TW-STR-02,TW-LAY-03
+        key_points[3]: 情報は見つけやすく配置する必要がある。,見出し、段落、リストで探索コストを下げる。,読者が再読しなくても必要箇所へ戻れる構造がよい。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          structure_and_navigation.findability.p1,plain language は findability を含む。,構造原則,"https://www.iso.org/standard/78907.html"
+          structure_and_navigation.findability.p2,情報配置は内容そのものと同じくらい重要である。,ナビゲーション,"https://www.iso.org/standard/78907.html"
+      - subsection_id: structure_and_navigation.chunking
+        source_heading: 情報の小分け
+        topics[2]: lists,chunking
+        rules[2]: TW-LAY-03,TW-SEN-02
+        key_points[3]: 長い説明は小分けした方が理解しやすい。,手順、条件、例外は分けて示す。,視覚的なまとまりは理解を助ける。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          structure_and_navigation.chunking.p1,情報を適切な単位に分けることが利用しやすさを高める。,情報設計,"https://www.iso.org/standard/78907.html"
+  - section_id: expression_and_usability
+    section_number: 3
+    title: 表現と利用しやすさ
+    source_heading: expression and usability
+    topics[4]: explicit_subject,ambiguity,direct_expression,actionability
+    text: 文の表現は、理解できるだけでなく使えることまで含めて評価する。
+    subsections[2]:
+      - subsection_id: expression_and_usability.reader_action
+        source_heading: 読み手が行動できる表現
+        topics[3]: explicit_subject,actionability,reader_fit
+        rules[1]: TW-SEN-01
+        key_points[3]: 読み手が何をすべきか判断できる文がよい。,行為者と行動が見えない文は usable でない。,責任主体を曖昧にしない。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          expression_and_usability.reader_action.p1,読者が情報を使えることが plain language の条件である。,usable expression,"https://www.iso.org/standard/78907.html"
+          expression_and_usability.reader_action.p2,行動につながる明確さが必要である。,利用可能性,"https://www.iso.org/standard/78907.html"
+      - subsection_id: expression_and_usability.direct_expression
+        source_heading: 直接的な表現
+        topics[3]: ambiguity,conciseness,direct_expression
+        rules[1]: TW-SEN-03
+        key_points[3]: 回りくどさを減らし直接的に書く。,曖昧な修飾や冗長表現を避ける。,複雑な文より明確な短文を優先する。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          expression_and_usability.direct_expression.p1,plain language は明確で直接的な表現を求める。,表現原則,"https://www.iso.org/standard/78907.html"
+          expression_and_usability.direct_expression.p2,読者が誤解しにくい表現が必要である。,明確性,"https://www.iso.org/standard/78907.html"

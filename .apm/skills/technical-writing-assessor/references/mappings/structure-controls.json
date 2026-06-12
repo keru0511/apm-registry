@@ -1,0 +1,61 @@
+[
+  {
+    "control_id": "TW-STR-01",
+    "label": "目的と対象読者の明示",
+    "weight": 18,
+    "priority": "high",
+    "overlap_group": "audience-purpose",
+    "checkpoints": [
+      "文書の目的が冒頭で分かるか",
+      "対象読者と前提知識が読み取れるか",
+      "読後に取るべき行動が分かるか"
+    ],
+    "reference_map": {
+      "official": [],
+      "standard": ["Plain language"],
+      "style_guide": ["Audience first", "Address user needs"]
+    },
+    "related_documents": ["iso-24495-1", "google-dev-style", "microsoft-writing-style"],
+    "related_sections": [
+      "iso-24495-1.audience_and_purpose",
+      "google-dev-style.audience_and_voice",
+      "microsoft-writing-style.top_principles"
+    ],
+    "related_subsections": [
+      "iso-24495-1.audience_and_purpose.audience_and_purpose.reader_tasks",
+      "iso-24495-1.audience_and_purpose.audience_and_purpose.purpose_disclosure",
+      "google-dev-style.audience_and_voice.audience_and_voice.address_user_needs",
+      "microsoft-writing-style.top_principles.top_principles.put_needs_first"
+    ]
+  },
+  {
+    "control_id": "TW-STR-02",
+    "label": "見出しと構成の検索性",
+    "weight": 12,
+    "priority": "medium",
+    "overlap_group": "navigation-structure",
+    "checkpoints": [
+      "見出しから内容を推測できるか",
+      "前提、手順、結果、補足が分離されているか",
+      "必要箇所に短時間で辿り着けるか"
+    ],
+    "reference_map": {
+      "official": ["公用文の分かりやすい構成"],
+      "standard": ["Structure and navigation"],
+      "style_guide": ["Scannable headings", "Procedure organization"]
+    },
+    "related_documents": ["bunka-koyubun-guidance", "iso-24495-1", "google-dev-style", "microsoft-writing-style"],
+    "related_sections": [
+      "bunka-koyubun-guidance.purpose_and_reader",
+      "iso-24495-1.structure_and_navigation",
+      "google-dev-style.lists_and_procedures",
+      "microsoft-writing-style.procedural_writing"
+    ],
+    "related_subsections": [
+      "bunka-koyubun-guidance.purpose_and_reader.purpose_and_reader.structure_for_reader",
+      "iso-24495-1.structure_and_navigation.structure_and_navigation.findability",
+      "google-dev-style.lists_and_procedures.lists_and_procedures.headings_and_lists",
+      "microsoft-writing-style.procedural_writing.procedural_writing.task_steps"
+    ]
+  }
+]

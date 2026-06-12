@@ -1,0 +1,123 @@
+[
+  {
+    "topic": "explicit_subject",
+    "aliases": ["主語", "誰が", "主語省略", "主体"],
+    "sections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "title": "文の組み立てと表現"},
+      {"doc_id": "iso-24495-1", "section_id": "expression_and_usability", "title": "表現と利用しやすさ"},
+      {"doc_id": "google-dev-style", "section_id": "sentence_structure", "title": "文構造"}
+    ],
+    "subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.explicit_actor", "title": "主体と行為者を明確にする"},
+      {"doc_id": "iso-24495-1", "section_id": "expression_and_usability", "subsection_id": "expression_and_usability.reader_action", "title": "読み手が行動できる表現"},
+      {"doc_id": "google-dev-style", "section_id": "sentence_structure", "subsection_id": "sentence_structure.active_clear_actor", "title": "行為者が見える文"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.explicit_actor"},
+      {"doc_id": "google-dev-style", "section_id": "sentence_structure", "subsection_id": "sentence_structure.active_clear_actor"}
+    ]
+  },
+  {
+    "topic": "sentence_split",
+    "aliases": ["長文", "文分割", "1文1義", "二行", "1文が長い"],
+    "sections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "title": "文の組み立てと表現"},
+      {"doc_id": "microsoft-writing-style", "section_id": "clarity_and_conciseness", "title": "明確さと簡潔さ"},
+      {"doc_id": "google-dev-style", "section_id": "sentence_structure", "title": "文構造"}
+    ],
+    "subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.one_sentence_one_point", "title": "1文1義と分割"},
+      {"doc_id": "microsoft-writing-style", "section_id": "clarity_and_conciseness", "subsection_id": "clarity_and_conciseness.short_sentences", "title": "短い文で書く"},
+      {"doc_id": "google-dev-style", "section_id": "sentence_structure", "subsection_id": "sentence_structure.short_direct", "title": "短く直接的な文"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.one_sentence_one_point"},
+      {"doc_id": "microsoft-writing-style", "section_id": "clarity_and_conciseness", "subsection_id": "clarity_and_conciseness.short_sentences"}
+    ]
+  },
+  {
+    "topic": "okurigana",
+    "aliases": ["送り仮名", "送りがな", "漢字かな", "表記ゆれ"],
+    "sections": [
+      {"doc_id": "cabinet-okurigana", "section_id": "basic_policy", "title": "基本方針"},
+      {"doc_id": "cabinet-okurigana", "section_id": "inflection_rules", "title": "活用語尾の規則"}
+    ],
+    "subsections": [
+      {"doc_id": "cabinet-okurigana", "section_id": "basic_policy", "subsection_id": "basic_policy.core_rule", "title": "活用語尾中心の基本原則"},
+      {"doc_id": "cabinet-okurigana", "section_id": "inflection_rules", "subsection_id": "inflection_rules.derived_words", "title": "派生語と複合語"},
+      {"doc_id": "cabinet-okurigana", "section_id": "conventional_exceptions", "subsection_id": "conventional_exceptions.accepted_forms", "title": "許容される慣用"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "cabinet-okurigana", "section_id": "basic_policy", "subsection_id": "basic_policy.core_rule"},
+      {"doc_id": "cabinet-okurigana", "section_id": "conventional_exceptions", "subsection_id": "conventional_exceptions.accepted_forms"}
+    ]
+  },
+  {
+    "topic": "loanword_long_vowel",
+    "aliases": ["外来語", "長音", "ユーザー", "ユーザ", "サーバ", "サーバー"],
+    "sections": [
+      {"doc_id": "bunka-gairaigo", "section_id": "basic_policy", "title": "基本方針"},
+      {"doc_id": "bunka-gairaigo", "section_id": "long_vowel_rules", "title": "長音の扱い"}
+    ],
+    "subsections": [
+      {"doc_id": "bunka-gairaigo", "section_id": "basic_policy", "subsection_id": "basic_policy.katakana_principle", "title": "カタカナ表記の原則"},
+      {"doc_id": "bunka-gairaigo", "section_id": "long_vowel_rules", "subsection_id": "long_vowel_rules.default_use", "title": "長音符号を用いる既定"},
+      {"doc_id": "bunka-gairaigo", "section_id": "notation_examples", "subsection_id": "notation_examples.domain_exceptions", "title": "分野別の慣用"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "bunka-gairaigo", "section_id": "long_vowel_rules", "subsection_id": "long_vowel_rules.default_use"},
+      {"doc_id": "bunka-gairaigo", "section_id": "notation_examples", "subsection_id": "notation_examples.domain_exceptions"}
+    ]
+  },
+  {
+    "topic": "punctuation_and_kinsoku",
+    "aliases": ["句読点", "読点", "禁則", "行頭", "行末", "約物"],
+    "sections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "notation_and_punctuation", "title": "表記と句読点"},
+      {"doc_id": "jis-x-4051", "section_id": "line_break_rules", "title": "禁則処理"},
+      {"doc_id": "jis-x-4051", "section_id": "punctuation_spacing", "title": "句読点と字間"}
+    ],
+    "subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "notation_and_punctuation", "subsection_id": "notation_and_punctuation.comma_period_usage", "title": "句読点の使い方"},
+      {"doc_id": "jis-x-4051", "section_id": "line_break_rules", "subsection_id": "line_break_rules.kinsoku_basics", "title": "禁則処理の基本"},
+      {"doc_id": "jis-x-4051", "section_id": "punctuation_spacing", "subsection_id": "punctuation_spacing.punctuation_spacing", "title": "句読点と空き"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "jis-x-4051", "section_id": "line_break_rules", "subsection_id": "line_break_rules.kinsoku_basics"},
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "notation_and_punctuation", "subsection_id": "notation_and_punctuation.comma_period_usage"}
+    ]
+  },
+  {
+    "topic": "kanji_shape_tolerance",
+    "aliases": ["字体", "字形", "漢字の形", "誤字扱い"],
+    "sections": [
+      {"doc_id": "bunka-joyo-kanji-shape", "section_id": "scope_and_purpose", "title": "目的と適用範囲"},
+      {"doc_id": "bunka-joyo-kanji-shape", "section_id": "shape_tolerance", "title": "字体字形の許容範囲"}
+    ],
+    "subsections": [
+      {"doc_id": "bunka-joyo-kanji-shape", "section_id": "shape_tolerance", "subsection_id": "shape_tolerance.not_error_by_shape_only", "title": "形だけで誤りとしない"},
+      {"doc_id": "bunka-joyo-kanji-shape", "section_id": "shape_tolerance", "subsection_id": "shape_tolerance.preferred_consistency", "title": "文書内一貫性"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "bunka-joyo-kanji-shape", "section_id": "shape_tolerance", "subsection_id": "shape_tolerance.preferred_consistency"}
+    ]
+  },
+  {
+    "topic": "audience_and_actionability",
+    "aliases": ["対象読者", "読者", "行動できる", "目的", "用途"],
+    "sections": [
+      {"doc_id": "iso-24495-1", "section_id": "audience_and_purpose", "title": "読者と目的"},
+      {"doc_id": "google-dev-style", "section_id": "audience_and_voice", "title": "読者と語り口"},
+      {"doc_id": "microsoft-writing-style", "section_id": "top_principles", "title": "基本原則"}
+    ],
+    "subsections": [
+      {"doc_id": "iso-24495-1", "section_id": "audience_and_purpose", "subsection_id": "audience_and_purpose.reader_tasks", "title": "読者の目的起点"},
+      {"doc_id": "google-dev-style", "section_id": "audience_and_voice", "subsection_id": "audience_and_voice.address_user_needs", "title": "読者ニーズに合わせる"},
+      {"doc_id": "microsoft-writing-style", "section_id": "top_principles", "subsection_id": "top_principles.put_needs_first", "title": "読者の必要を先に置く"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "iso-24495-1", "section_id": "audience_and_purpose", "subsection_id": "audience_and_purpose.reader_tasks"},
+      {"doc_id": "microsoft-writing-style", "section_id": "top_principles", "subsection_id": "top_principles.put_needs_first"}
+    ]
+  }
+]

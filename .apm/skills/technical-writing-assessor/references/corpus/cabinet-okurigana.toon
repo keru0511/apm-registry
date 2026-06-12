@@ -1,0 +1,74 @@
+doc_id: cabinet-okurigana
+title: 送り仮名の付け方
+publisher: 内閣告示 / 文化庁案内
+version: 現行告示
+publication_date: 1973
+canonical_url: "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+profiles[1]: notation
+sections[3]:
+  - section_id: basic_policy
+    section_number: 1
+    title: 基本方針
+    source_heading: 送り仮名の原則
+    topics[3]: okurigana,notation,consistency
+    text: 活用語尾を中心に送り仮名を付ける原則を確認する。
+    subsections[2]:
+      - subsection_id: basic_policy.core_rule
+        source_heading: 活用語尾中心の基本原則
+        topics[3]: okurigana,inflection,notation
+        rules[1]: TW-NOT-01
+        key_points[3]: 送り仮名は活用語尾を示す役割を持つ。,語幹と活用語尾の境目を意識して付ける。,送り仮名の有無は可読性と意味の切り分けに関わる。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          basic_policy.core_rule.p1,活用のある語では活用語尾を中心に送り仮名を付ける原則が示されている。,通則,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+          basic_policy.core_rule.p2,送り仮名は意味と読みの両方を支える。,送り仮名の役割,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+      - subsection_id: basic_policy.readability_balance
+        source_heading: 読みやすさとの両立
+        topics[2]: okurigana,readability
+        rules[1]: TW-NOT-01
+        key_points[3]: 表記は機械的な規則適用だけでなく慣用も考慮する。,ただし同一文書内で揺らさない方がよい。,読み手が迷う場合は既定形に寄せる。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          basic_policy.readability_balance.p1,実際の表記運用では読みやすさと慣用を併せて判断する。,運用上の考え方,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+  - section_id: inflection_rules
+    section_number: 2
+    title: 活用語尾の規則
+    source_heading: 用言と派生語
+    topics[3]: okurigana,derived_words,compound_words
+    text: 動詞、形容詞、派生語、複合語での送り仮名の考え方を扱う。
+    subsections[2]:
+      - subsection_id: inflection_rules.derived_words
+        source_heading: 派生語と複合語
+        topics[3]: derived_words,compound_words,okurigana
+        rules[1]: TW-NOT-01
+        key_points[3]: 派生語は原語の送り仮名との関係で判断する。,複合語では慣用表記との兼ね合いが生じる。,同じ文書内で複数形を混在させない。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          inflection_rules.derived_words.p1,派生語と複合語には原則と慣用の両面がある。,語形別の扱い,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+          inflection_rules.derived_words.p2,表記選択時は元の語との対応を意識する。,派生語の考え方,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+      - subsection_id: inflection_rules.adjective_patterns
+        source_heading: 形容詞等の型
+        topics[2]: adjective,okurigana
+        rules[1]: TW-NOT-01
+        key_points[3]: 活用語尾の位置は語の品詞や型に依存する。,同音でも語種によって送り仮名が異なる場合がある。,誤った簡略化は意味の切り分けを弱める。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          inflection_rules.adjective_patterns.p1,語の型ごとに送り仮名の付け方が整理されている。,語形別規則,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+  - section_id: conventional_exceptions
+    section_number: 3
+    title: 慣用と許容
+    source_heading: 許容される表記
+    topics[3]: okurigana,exceptions,notation
+    text: 慣用が定着した語では許容範囲があるが、文書内統一は依然重要である。
+    subsections[2]:
+      - subsection_id: conventional_exceptions.accepted_forms
+        source_heading: 許容される慣用
+        topics[3]: okurigana,exceptions,consistency
+        rules[1]: TW-NOT-01
+        key_points[3]: 慣用上認められる形がある。,許容されることと混在してよいことは別である。,既定形を採るか慣用形を採るかを先に決めて統一する。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          conventional_exceptions.accepted_forms.p1,一部の語には慣用表記の許容がある。,許容例,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+          conventional_exceptions.accepted_forms.p2,運用では統一して使うことが望ましい。,運用上の注意,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+      - subsection_id: conventional_exceptions.review_usage
+        source_heading: レビュー時の見方
+        topics[2]: review_process,okurigana
+        rules[1]: TW-NOT-01
+        key_points[3]: 送り仮名の差を見たときは単純な誤りか慣用かを分ける。,文書全体での統一性を優先的に見る。,用語集があるならそれに従う。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          conventional_exceptions.review_usage.p1,許容範囲を踏まえても文書内一貫性は重要である。,評価への展開,"https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"

@@ -1,0 +1,75 @@
+doc_id: microsoft-writing-style
+title: Microsoft Writing Style Guide
+publisher: Microsoft
+version: current
+publication_date: current
+canonical_url: "https://learn.microsoft.com/en-us/style-guide/welcome/"
+profiles[2]: structure,sentence
+sections[3]:
+  - section_id: top_principles
+    section_number: 1
+    title: 基本原則
+    source_heading: top principles
+    topics[3]: audience_and_actionability,clarity,conciseness
+    text: 読者の必要を先に置き、要点を明確に伝えることを重視する。
+    subsections[2]:
+      - subsection_id: top_principles.put_needs_first
+        source_heading: 読者の必要を先に置く
+        topics[3]: audience_and_actionability,reader_fit,purpose
+        rules[1]: TW-STR-01
+        key_points[3]: 書き手都合の説明より読者の疑問に先に答える。,要点は早めに出す。,必要情報へ最短で辿り着けることが重要である。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          top_principles.put_needs_first.p1,読者の必要を先に考えることが top tips に含まれる。,top 10 tips,"https://learn.microsoft.com/en-us/style-guide/top-10-tips-style-voice"
+          top_principles.put_needs_first.p2,必要情報を先に置く姿勢が guide 全体に通底する。,welcome,"https://learn.microsoft.com/en-us/style-guide/welcome/"
+      - subsection_id: top_principles.scannable_layout
+        source_heading: ざっと読める配置
+        topics[2]: structure,findability
+        rules[2]: TW-STR-02,TW-LAY-03
+        key_points[3]: スキャンしやすい配置を優先する。,長い段落を避け、見出しとリストで整理する。,重要情報を埋もれさせない。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          top_principles.scannable_layout.p1,scannable content が推奨される。,top 10 tips,"https://learn.microsoft.com/en-us/style-guide/top-10-tips-style-voice"
+  - section_id: clarity_and_conciseness
+    section_number: 2
+    title: 明確さと簡潔さ
+    source_heading: clarity and conciseness
+    topics[4]: sentence_split,ambiguity,conciseness,direct_expression
+    text: 短く明確な文を優先し、不要語や回りくどさを削る。
+    subsections[2]:
+      - subsection_id: clarity_and_conciseness.short_sentences
+        source_heading: 短い文で書く
+        topics[3]: sentence_split,conciseness,clarity
+        rules[1]: TW-SEN-02
+        key_points[3]: 短い文は理解しやすい。,複数の従属節を避ける。,長い説明は複数文かリストへ分ける。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          clarity_and_conciseness.short_sentences.p1,短い文で書くことが推奨される。,top 10 tips,"https://learn.microsoft.com/en-us/style-guide/top-10-tips-style-voice"
+          clarity_and_conciseness.short_sentences.p2,簡潔な文はスキャンしやすい。,clarity guidance,"https://learn.microsoft.com/en-us/style-guide/welcome/"
+      - subsection_id: clarity_and_conciseness.trim_words
+        source_heading: 不要語を削る
+        topics[3]: ambiguity,conciseness,direct_expression
+        rules[1]: TW-SEN-03
+        key_points[3]: 回りくどい補助語を減らす。,意味が同じなら短い形を選ぶ。,婉曲表現より直接的な表現を優先する。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          clarity_and_conciseness.trim_words.p1,余分な語を削ることが簡潔さにつながる。,top 10 tips,"https://learn.microsoft.com/en-us/style-guide/top-10-tips-style-voice"
+          clarity_and_conciseness.trim_words.p2,crisp and clear な文を目指す方針がある。,style and voice,"https://learn.microsoft.com/en-us/style-guide/top-10-tips-style-voice"
+  - section_id: procedural_writing
+    section_number: 3
+    title: 手順文の書き方
+    source_heading: procedures
+    topics[3]: procedure,lists,structure
+    text: 手順は実行しやすく並べ、前提と結果を分離する。
+    subsections[2]:
+      - subsection_id: procedural_writing.task_steps
+        source_heading: 実行順の手順
+        topics[3]: procedure,lists,structure
+        rules[2]: TW-STR-02,TW-LAY-03
+        key_points[3]: 手順は実行順に短く並べる。,1ステップ1アクションを意識する。,補足は必要最小限に分離する。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          procedural_writing.task_steps.p1,手順文では action centered な書き方が求められる。,procedural guidance,"https://learn.microsoft.com/en-us/style-guide/welcome/"
+          procedural_writing.task_steps.p2,スキャンしやすく実行順が明確な構成が望ましい。,style principles,"https://learn.microsoft.com/en-us/style-guide/top-10-tips-style-voice"
+      - subsection_id: procedural_writing.expected_results
+        source_heading: 結果と補足の分離
+        topics[2]: procedure,actionability
+        rules[1]: TW-LAY-03
+        key_points[3]: 結果確認は手順本体と区別して示す。,例外条件は別に置く。,読者が実行中に迷わない構成を保つ。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          procedural_writing.expected_results.p1,手順と補足の分離は理解と実行を助ける。,procedural guidance,"https://learn.microsoft.com/en-us/style-guide/welcome/"
