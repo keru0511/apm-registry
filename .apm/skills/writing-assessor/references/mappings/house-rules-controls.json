@@ -104,6 +104,32 @@
     ]
   },
   {
+    "control_id": "HR-PAR-03",
+    "label": "空行による段落分割",
+    "weight": 10,
+    "priority": "medium",
+    "overlap_group": "house-paragraph-break",
+    "checkpoints": [
+      "Markdown で意味の塊ごとに空行が入っているか",
+      "短文が連続していても同一段落に詰め込まれていないか",
+      "文分割ではなく段落分割が必要な箇所を拾えているか"
+    ],
+    "reference_map": {
+      "official": [],
+      "standard": [],
+      "framework": [],
+      "style_guide": [],
+      "house_rule": ["空行による段落分割"]
+    },
+    "related_documents": ["internal-writing-rules"],
+    "related_sections": [
+      "internal-writing-rules.paragraph_and_structure"
+    ],
+    "related_subsections": [
+      "internal-writing-rules.paragraph_and_structure.paragraph_and_structure.blank_line_segmentation"
+    ]
+  },
+  {
     "control_id": "HR-LAY-01",
     "label": "箇条書きは3-5項目目安",
     "weight": 6,
@@ -127,6 +153,32 @@
     ],
     "related_subsections": [
       "internal-writing-rules.paragraph_and_structure.paragraph_and_structure.list_item_range"
+    ]
+  },
+  {
+    "control_id": "HR-LAY-02",
+    "label": "1画面あたりの情報密度",
+    "weight": 8,
+    "priority": "low",
+    "overlap_group": "house-screen-density",
+    "checkpoints": [
+      "1画面で見える範囲に説明、列挙、表が過密に集まっていないか",
+      "スクロール前提でも視線の停止点があるか",
+      "見出し、空行、短段落で密度を下げられる箇所が分かるか"
+    ],
+    "reference_map": {
+      "official": [],
+      "standard": [],
+      "framework": [],
+      "style_guide": [],
+      "house_rule": ["1画面あたりの情報密度"]
+    },
+    "related_documents": ["internal-writing-rules"],
+    "related_sections": [
+      "internal-writing-rules.paragraph_and_structure"
+    ],
+    "related_subsections": [
+      "internal-writing-rules.paragraph_and_structure.paragraph_and_structure.screen_density"
     ]
   },
   {

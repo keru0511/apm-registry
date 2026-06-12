@@ -33,9 +33,9 @@ sections[4]:
     section_number: 2
     title: 段落と構成
     source_heading: 段落設計
-    topics[4]: paragraph_length_house_rule,enumeration_house_rule,narrative_support,house_rule
-    text: 段落の長さ、topic sentence、箇条書きの項目数など、読みやすさの運用目安を定義する。
-    subsections[3]:
+    topics[6]: paragraph_length_house_rule,enumeration_house_rule,narrative_support,blank_line_segmentation,screen_density,house_rule
+    text: 段落の長さ、topic sentence、空行による分割、画面密度、箇条書きの項目数など、読みやすさの運用目安を定義する。
+    subsections[5]:
       - subsection_id: paragraph_and_structure.three_sentence_guideline
         source_heading: 段落は3-4文目安
         topics[3]: paragraph_length_house_rule,paragraph_flow,house_rule
@@ -52,6 +52,14 @@ sections[4]:
         source_passages[2]{passage_id,text,source_locator,canonical_url}:
           paragraph_and_structure.topic_sentence.p1,段落冒頭で要点を見せることを既定とする。,社内運用目安,
           paragraph_and_structure.topic_sentence.p2,topic sentence が置けない段落は役割再検討の対象とする。,社内運用目安,
+      - subsection_id: paragraph_and_structure.blank_line_segmentation
+        source_heading: 空行による段落分割
+        topics[4]: blank_line_segmentation,paragraph_flow,screen_density,house_rule
+        rules[1]: HR-PAR-03
+        key_points[3]: Markdown 文書では意味の塊ごとに空行を入れる。,短文が続いても同一段落なら視線が滑るため段落分割を優先して検討する。,文分割と段落分割は別の改善手段として扱う。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          paragraph_and_structure.blank_line_segmentation.p1,空行は視線の停止点を作るための基本手段として使う。,社内運用目安,
+          paragraph_and_structure.blank_line_segmentation.p2,文単位ではなく意味の塊単位で段落を分ける。,社内運用目安,
       - subsection_id: paragraph_and_structure.list_item_range
         source_heading: 箇条書きは3-5項目目安
         topics[3]: enumeration_house_rule,layout,house_rule
@@ -60,6 +68,14 @@ sections[4]:
         source_passages[2]{passage_id,text,source_locator,canonical_url}:
           paragraph_and_structure.list_item_range.p1,箇条書きが長い場合は分割して負荷を下げる。,社内運用目安,
           paragraph_and_structure.list_item_range.p2,項目数の目安は読みやすさの調整に使う。,社内運用目安,
+      - subsection_id: paragraph_and_structure.screen_density
+        source_heading: 1画面あたりの情報密度
+        topics[4]: screen_density,blank_line_segmentation,layout,house_rule
+        rules[1]: HR-LAY-02
+        key_points[3]: 1画面内に長段落、長い列挙、表を詰め込みすぎない。,見出し、空行、短段落で視線停止点を作る。,スクロール前提でも意味の塊が追える密度にする。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          paragraph_and_structure.screen_density.p1,1画面で読み切れない情報塊が続く場合は分割候補とする。,社内運用目安,
+          paragraph_and_structure.screen_density.p2,密度評価は文字数ではなく視線の止まりやすさで判断する。,社内運用目安,
   - section_id: mail_rules
     section_number: 3
     title: メール細則

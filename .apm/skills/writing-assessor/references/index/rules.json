@@ -264,6 +264,28 @@
     ]
   },
   {
+    "rule_id": "WR-EXP-04",
+    "label": "段落内の視線停止点",
+    "topics": ["paragraph_flow", "blank_line_segmentation", "screen_density"],
+    "documents": ["bunka-koyubun-guidance", "iso-24495-1", "github-docs-style-guide"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.paragraph_flow"},
+      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "subsection_id": "structure_and_navigation.chunking"},
+      {"doc_id": "github-docs-style-guide", "section_id": "style_principles", "subsection_id": "style_principles.flow_of_information"}
+    ]
+  },
+  {
+    "rule_id": "WR-EXP-05",
+    "label": "スクロール前提の密度過多",
+    "topics": ["screen_density", "blank_line_segmentation", "explanation_order"],
+    "documents": ["iso-24495-1", "github-docs-style-guide", "internal-writing-rules"],
+    "preferred_subsections": [
+      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "subsection_id": "structure_and_navigation.chunking"},
+      {"doc_id": "github-docs-style-guide", "section_id": "style_principles", "subsection_id": "style_principles.flow_of_information"},
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.screen_density"}
+    ]
+  },
+  {
     "rule_id": "HR-SEN-01",
     "label": "1文60字目安",
     "topics": ["sentence_length_house_rule"],
@@ -300,12 +322,30 @@
     ]
   },
   {
+    "rule_id": "HR-PAR-03",
+    "label": "空行による段落分割",
+    "topics": ["blank_line_segmentation"],
+    "documents": ["internal-writing-rules"],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.blank_line_segmentation"}
+    ]
+  },
+  {
     "rule_id": "HR-LAY-01",
     "label": "箇条書きは3-5項目目安",
     "topics": ["enumeration_house_rule"],
     "documents": ["internal-writing-rules"],
     "preferred_subsections": [
       {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.list_item_range"}
+    ]
+  },
+  {
+    "rule_id": "HR-LAY-02",
+    "label": "1画面あたりの情報密度",
+    "topics": ["screen_density"],
+    "documents": ["internal-writing-rules"],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.screen_density"}
     ]
   },
   {

@@ -252,6 +252,38 @@
     ]
   },
   {
+    "topic": "blank_line_segmentation",
+    "aliases": ["空行", "段落分割", "段落を分ける", "Markdown 改行"],
+    "sections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "title": "段落と構成"},
+      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "title": "構造とナビゲーション"}
+    ],
+    "subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.blank_line_segmentation", "title": "空行による段落分割"},
+      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "subsection_id": "structure_and_navigation.chunking", "title": "情報の分割"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.blank_line_segmentation"},
+      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "subsection_id": "structure_and_navigation.chunking"}
+    ]
+  },
+  {
+    "topic": "screen_density",
+    "aliases": ["密度", "情報密度", "1画面", "スクロール圧"],
+    "sections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "title": "段落と構成"},
+      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "title": "構造とナビゲーション"}
+    ],
+    "subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.screen_density", "title": "1画面あたりの情報密度"},
+      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "subsection_id": "structure_and_navigation.chunking", "title": "情報の分割"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.screen_density"},
+      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "subsection_id": "structure_and_navigation.chunking"}
+    ]
+  },
+  {
     "topic": "sentence_length_house_rule",
     "aliases": ["60字", "1文60字", "一文が長い", "長すぎる文"],
     "sections": [

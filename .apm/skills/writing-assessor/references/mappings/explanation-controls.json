@@ -83,6 +83,63 @@
     ]
   },
   {
+    "control_id": "WR-EXP-04",
+    "label": "段落内の視線停止点",
+    "weight": 14,
+    "priority": "high",
+    "overlap_group": "paragraph-visual-break",
+    "checkpoints": [
+      "文は短くても、同一段落で連続しすぎて視線が止まらない状態になっていないか",
+      "段落内に要点、補足、転換の切れ目が見えるか",
+      "文分割ではなく段落分割で直すべき箇所を区別できるか"
+    ],
+    "reference_map": {
+      "official": ["公用文作成の考え方"],
+      "standard": ["Plain language"],
+      "framework": [],
+      "style_guide": ["GitHub Docs Style Guide"]
+    },
+    "related_documents": ["bunka-koyubun-guidance", "iso-24495-1", "github-docs-style-guide"],
+    "related_sections": [
+      "bunka-koyubun-guidance.sentence_and_expression",
+      "iso-24495-1.structure_and_navigation",
+      "github-docs-style-guide.style_principles"
+    ],
+    "related_subsections": [
+      "bunka-koyubun-guidance.sentence_and_expression.sentence_and_expression.paragraph_flow",
+      "iso-24495-1.structure_and_navigation.structure_and_navigation.chunking",
+      "github-docs-style-guide.style_principles.style_principles.flow_of_information"
+    ]
+  },
+  {
+    "control_id": "WR-EXP-05",
+    "label": "スクロール前提の密度過多",
+    "weight": 12,
+    "priority": "medium",
+    "overlap_group": "scroll-density",
+    "checkpoints": [
+      "Markdown 原文で空行や区切りが不足し、1画面あたりの情報密度が高くなりすぎていないか",
+      "読者がスクロールしながら意味の塊を見失わない構成になっているか",
+      "箇条書き、短段落、見出しのどれで密度を下げるべきか判断できるか"
+    ],
+    "reference_map": {
+      "official": [],
+      "standard": ["Structure and navigation", "Plain language"],
+      "framework": [],
+      "style_guide": ["GitHub Docs Style Guide"]
+    },
+    "related_documents": ["iso-24495-1", "github-docs-style-guide"],
+    "related_sections": [
+      "iso-24495-1.structure_and_navigation",
+      "github-docs-style-guide.style_principles"
+    ],
+    "related_subsections": [
+      "iso-24495-1.structure_and_navigation.structure_and_navigation.chunking",
+      "iso-24495-1.structure_and_navigation.structure_and_navigation.explanation_order",
+      "github-docs-style-guide.style_principles.style_principles.flow_of_information"
+    ]
+  },
+  {
     "control_id": "WR-TYP-01",
     "label": "文書の主目的一貫性",
     "weight": 14,

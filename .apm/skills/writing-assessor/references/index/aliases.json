@@ -73,15 +73,16 @@
   },
   {
     "query": "文字が滑る",
-    "topics": ["paragraph_flow", "explanation_order"],
-    "rules": ["WR-EXP-01", "WR-EXP-02", "WR-SEN-05"],
-    "documents": ["bunka-koyubun-guidance", "github-docs-style-guide", "iso-24495-1"],
+    "topics": ["paragraph_flow", "explanation_order", "blank_line_segmentation", "screen_density"],
+    "rules": ["WR-EXP-01", "WR-EXP-02", "WR-EXP-04", "WR-EXP-05", "HR-PAR-03"],
+    "documents": ["bunka-koyubun-guidance", "github-docs-style-guide", "iso-24495-1", "internal-writing-rules"],
     "preferred_subsections": [
       {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.paragraph_flow"},
-      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "subsection_id": "structure_and_navigation.explanation_order"}
+      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "subsection_id": "structure_and_navigation.chunking"},
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.blank_line_segmentation"}
     ],
     "max_results": 4,
-    "search_hints": "段落の接続不足と説明順の逆転を優先して確認する。"
+    "search_hints": "段落の接続不足、空行不足、画面密度の高さを優先して確認する。"
   },
   {
     "query": "説明になっていない",
@@ -173,5 +174,52 @@
     ],
     "max_results": 2,
     "search_hints": "長い段落を機械的に切るのではなく、主張単位の分割目安として使う。"
+  },
+  {
+    "query": "空行",
+    "topics": ["blank_line_segmentation"],
+    "rules": ["HR-PAR-03", "WR-EXP-04"],
+    "documents": ["internal-writing-rules", "iso-24495-1"],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.blank_line_segmentation"},
+      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "subsection_id": "structure_and_navigation.chunking"}
+    ],
+    "max_results": 3,
+    "search_hints": "Markdown の空行は見た目ではなく意味の塊を分けるための段落境界として扱う。"
+  },
+  {
+    "query": "段落分割",
+    "topics": ["blank_line_segmentation", "paragraph_flow"],
+    "rules": ["HR-PAR-03", "WR-EXP-04", "WR-EXP-01"],
+    "documents": ["internal-writing-rules", "bunka-koyubun-guidance", "iso-24495-1"],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.blank_line_segmentation"},
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.paragraph_flow"}
+    ],
+    "max_results": 4,
+    "search_hints": "文分割ではなく段落境界の追加で直すべき箇所を優先して見る。"
+  },
+  {
+    "query": "スクロール圧",
+    "topics": ["screen_density"],
+    "rules": ["WR-EXP-05", "HR-LAY-02"],
+    "documents": ["internal-writing-rules", "iso-24495-1"],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.screen_density"},
+      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "subsection_id": "structure_and_navigation.chunking"}
+    ],
+    "max_results": 3,
+    "search_hints": "1画面内の過密さと、スクロールしても意味の塊が追えるかを分けて診断する。"
+  },
+  {
+    "query": "1画面",
+    "topics": ["screen_density"],
+    "rules": ["HR-LAY-02", "WR-EXP-05"],
+    "documents": ["internal-writing-rules", "iso-24495-1"],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.screen_density"}
+    ],
+    "max_results": 2,
+    "search_hints": "文字数ではなく視線停止点と情報塊の大きさを基準にする。"
   }
 ]
