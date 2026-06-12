@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [[ $# -lt 1 || $# -gt 2 ]]; then
+  cat <<'EOF'
+Usage:
+  ./scripts/install-codex-skill <skill-name> [git-ref]
+
+Examples:
+  ./scripts/install-codex-skill writing-assessor
+  ./scripts/install-codex-skill security-audit-assessor main
+EOF
+  exit 1
+fi
+
+skill_name="$1"
+git_ref="${2:-main}"
+codex_home="${CODEX_HOME:-$HOME/.codex}"
+installer="$codex_home/skills/.system/skill-installer/scripts/install-skill-from-github.py"
+
+if [[ ! -x "$installer" ]]; then
+  echo "skill-installer script not found: $installer" >&2
+  echo "Ensure Codex is installed and the system skill 'skill-installer' is available." >&2
+  exit 1
+fi
+
+exec "$installer" \
+  --repo keru0511/apm-registry \
+  --ref "$git_ref" \
+  --path ".apm/skills/$skill_name"

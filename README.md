@@ -1,90 +1,116 @@
 # apm-registry
 
-This repository is an APM package source.
+このリポジトリは、APM 形式で配布する instructions / prompts / skills / hooks / MCP 定義の公開元です。
 
-## Structure
+## 構成
 
-- `apm.yml`: package manifest
-- `.apm/instructions/`: instruction primitives (`*.instructions.md`)
-- `.apm/prompts/`: prompt primitives (`*.prompt.md`)
-- `.apm/skills/`: skills (`SKILL.md`)
-- `.apm/agents/`: agent definitions (`*.agent.md`)
-- `.apm/hooks/`: hook definitions (`*.json`)
-- `scripts/agent-orchestrator`: shared command for provider execution and post-stop checks
-- `.apm/skills/security-audit-assessor/tools/`: security audit reference maintenance tools
+- `apm.yml`: パッケージ定義
+- `.apm/instructions/`: instruction primitives
+- `.apm/prompts/`: prompt primitives
+- `.apm/skills/`: 配布する skill 本体
+- `.apm/agents/`: agent 定義
+- `.apm/hooks/`: hook 定義
+- `scripts/agent-orchestrator`: 共通レビュー実行コマンド
+- `scripts/install-codex-skill`: Codex 用 skill の個別インストーラ
 
-## Basic workflow
+## 基本コマンド
 
 ```bash
-# validate/install dependencies for this package
+# 依存関係を解決
 apm install
 
-# compile for tools that consume compiled instruction files
+# 配布用にコンパイル
 apm compile
 
-# produce distributable artifact
+# バンドル作成
 apm pack
+
+# 利用可能なスクリプト一覧
+apm list
 ```
 
-This package also tracks the Linear remote MCP server in `apm.yml`:
+## APM パッケージとして導入する
+
+このリポジトリ全体を APM パッケージとして導入する場合:
 
 ```bash
-apm install
+apm install keru0511/apm-registry
 ```
 
-On APM CLI `0.9.2`, remote MCP definitions are recorded correctly, but Codex runtime
-installation is skipped for remote servers. In practice that means APM manages the
-project-level definition, while each Codex user still registers and authenticates the
-server locally.
+既定では、導入先は `apm install` を実行した **現在のプロジェクト** です。  
+グローバル導入したい場合は `-g` を使います。
 
-For Codex, complete setup with:
+```bash
+apm install -g keru0511/apm-registry
+```
+
+グローバル導入時の配置先は:
+
+```text
+~/.apm/
+```
+
+このパッケージは `apm.yml` 内で `linear` の remote MCP も配布します。Codex 側では別途ローカル登録が必要です。
 
 ```bash
 codex mcp add linear --url https://mcp.linear.app/mcp
 codex mcp login linear
 ```
 
-If your Codex build requires the remote MCP client flag, enable it in
-`~/.codex/config.toml` before logging in.
+## 配布中の Codex skills
 
-## Nix dev shell
+- `comparison-proposal-builder`: 比較提案資料、評価軸、重み付きスコアリング、推奨案整理
+- `empirical-prompt-tuning`: skill やプロンプトを実行評価ベースで反復改善
+- `review-orchestrator`: `scripts/agent-orchestrator` を使った構造化コードレビュー
+- `security-audit-assessor`: IPA + NIST 観点の静的セキュリティ監査
+- `writing-assessor`: 主語、省略、文分割、送り仮名、外来語、句読点、禁則処理を含む文書評価
 
-For a reproducible local toolchain, this repository provides a `flake.nix`.
+## Codex skill を1つだけ入れる
+
+Codex には `skill-installer` という system skill が同梱されています。  
+このリポジトリでは、その内部スクリプトを直接意識しなくてよいように、薄いラッパー `scripts/install-codex-skill` を用意しています。
+
+使い方:
 
 ```bash
-# enter the development shell
+./scripts/install-codex-skill <skill-name> [git-ref]
+```
+
+例:
+
+```bash
+./scripts/install-codex-skill writing-assessor
+./scripts/install-codex-skill security-audit-assessor
+./scripts/install-codex-skill review-orchestrator main
+```
+
+このコマンドは `keru0511/apm-registry/.apm/skills/<skill-name>` を取得し、次へインストールします。
+
+```text
+~/.codex/skills/<skill-name>
+```
+
+インストール後は Codex を再起動してください。
+
+## Nix 開発シェル
+
+再現性のあるローカル環境が必要な場合は `flake.nix` を使えます。
+
+```bash
 nix develop
 
-# validate security audit references
+# security-audit-assessor の参照データ検証
 .apm/skills/security-audit-assessor/tools/validate-security-corpus
 
-# rebuild generated security audit indexes and mappings
+# index / mapping の再生成
 .apm/skills/security-audit-assessor/tools/sync-security-references
-
-# promote a single source corpus into references/corpus, then rebuild indexes
-.apm/skills/security-audit-assessor/tools/promote-source-doc ipa-safe-website
 ```
 
-The dev shell includes the basic CLI utilities used in this repo and a pinned `toon`
-wrapper backed by `@toon-format/cli@2.0.1`. The first `toon` invocation may populate
-the local npm cache.
-
-The root `scripts/` directory is reserved for repo-wide entrypoints. Skill-specific
-reference maintenance commands live under the owning skill, such as
-`.apm/skills/security-audit-assessor/tools/`. A compatibility wrapper remains at
-`scripts/validate-security-corpus`.
-
-## Publish and consume
-
-After pushing this repo to a git host, consumers can install via:
-
-```bash
-apm install <host>/<org>/<repo>
-```
+`toon` は `@toon-format/cli@2.0.1` に固定されています。初回実行時は npm キャッシュを作ることがあります。
 
 ## Shared Orchestration
 
-The repository includes a common execution command that can be called from both skills and hooks:
+レビュー系 skill / hook から共通で使うコマンドです。
 
 ```bash
 ./scripts/agent-orchestrator review --provider codex
@@ -93,13 +119,8 @@ The repository includes a common execution command that can be called from both 
 ./scripts/agent-orchestrator post-stop
 ```
 
-Artifacts are always written to:
+実行成果物は常に次へ出力されます。
 
 ```text
 .apm/runs/<run-id>/
 ```
-
-This keeps invocation paths consistent across:
-
-- skill execution (`.apm/skills/review-orchestrator/SKILL.md`)
-- hook execution (`.apm/hooks/stop-local-ci.hook.json`)
