@@ -262,5 +262,68 @@
       {"doc_id": "github-docs-style-guide", "section_id": "lists_and_tables", "subsection_id": "lists_and_tables.tables_need_context"},
       {"doc_id": "jis-x-4051", "section_id": "list_and_reference_layout", "subsection_id": "list_and_reference_layout.table_narrative"}
     ]
+  },
+  {
+    "rule_id": "HR-SEN-01",
+    "label": "1文60字目安",
+    "topics": ["sentence_length_house_rule"],
+    "documents": ["internal-writing-rules"],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "sentence_length", "subsection_id": "sentence_length.sixty_char_target"}
+    ]
+  },
+  {
+    "rule_id": "HR-SEN-02",
+    "label": "2行超なら文分割",
+    "topics": ["sentence_length_house_rule"],
+    "documents": ["internal-writing-rules"],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "sentence_length", "subsection_id": "sentence_length.two_line_split"}
+    ]
+  },
+  {
+    "rule_id": "HR-PAR-01",
+    "label": "段落は3-4文目安",
+    "topics": ["paragraph_length_house_rule"],
+    "documents": ["internal-writing-rules"],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.three_sentence_guideline"}
+    ]
+  },
+  {
+    "rule_id": "HR-PAR-02",
+    "label": "段落冒頭に要点を置く",
+    "topics": ["paragraph_length_house_rule"],
+    "documents": ["internal-writing-rules"],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.topic_sentence"}
+    ]
+  },
+  {
+    "rule_id": "HR-LAY-01",
+    "label": "箇条書きは3-5項目目安",
+    "topics": ["enumeration_house_rule"],
+    "documents": ["internal-writing-rules"],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.list_item_range"}
+    ]
+  },
+  {
+    "rule_id": "HR-MAIL-01",
+    "label": "件名は20-30字目安",
+    "topics": ["mail_subject_and_opening"],
+    "documents": ["internal-writing-rules"],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "mail_rules", "subsection_id": "mail_rules.subject_length"}
+    ]
+  },
+  {
+    "rule_id": "HR-MAIL-02",
+    "label": "要件は冒頭3行以内",
+    "topics": ["mail_subject_and_opening"],
+    "documents": ["internal-writing-rules"],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "mail_rules", "subsection_id": "mail_rules.opening_first_three_lines"}
+    ]
   }
 ]

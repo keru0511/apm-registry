@@ -158,5 +158,21 @@
     "section_ids": ["style_principles", "content_types", "lists_and_tables"],
     "keywords": ["clarity", "flow of information", "tables", "lists", "content model"],
     "aliases": ["GitHub Docs", "GitHub style guide", "content model"]
+  },
+  {
+    "doc_id": "internal-writing-rules",
+    "title": "社内文書向けライティング運用細則",
+    "publisher": "apm-registry",
+    "version": "v1",
+    "publication_date": "2026-06-12",
+    "profiles": ["house-rules", "sentence", "explanation", "layout"],
+    "source_type": "house-rule",
+    "canonical_url": "",
+    "corpus_file": "../corpus/internal-writing-rules.toon",
+    "section_count": 4,
+    "subsection_count": 10,
+    "section_ids": ["sentence_length", "paragraph_and_structure", "mail_rules", "notation_policy"],
+    "keywords": ["1文60字", "2行", "段落", "件名", "メール"],
+    "aliases": ["社内ルール", "運用細則", "メールルール", "文字数ルール"]
   }
 ]

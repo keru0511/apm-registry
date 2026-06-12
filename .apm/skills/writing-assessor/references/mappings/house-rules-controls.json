@@ -1,0 +1,184 @@
+[
+  {
+    "control_id": "HR-SEN-01",
+    "label": "1文60字目安",
+    "weight": 8,
+    "priority": "medium",
+    "overlap_group": "house-sentence-length",
+    "checkpoints": [
+      "1文が60字を大きく超え続けていないか",
+      "長文が連続して読み手の負荷を上げていないか",
+      "公的違反ではなく運用目安として扱っているか"
+    ],
+    "reference_map": {
+      "official": [],
+      "standard": [],
+      "framework": [],
+      "style_guide": [],
+      "house_rule": ["1文60字目安"]
+    },
+    "related_documents": ["internal-writing-rules"],
+    "related_sections": [
+      "internal-writing-rules.sentence_length"
+    ],
+    "related_subsections": [
+      "internal-writing-rules.sentence_length.sentence_length.sixty_char_target"
+    ]
+  },
+  {
+    "control_id": "HR-SEN-02",
+    "label": "2行超なら文分割",
+    "weight": 6,
+    "priority": "low",
+    "overlap_group": "house-line-break",
+    "checkpoints": [
+      "2行を大きく超える文が続いていないか",
+      "画面幅依存のため厳密ルールではなく目安として使っているか",
+      "分割や箇条書き化で改善できる箇所が見えているか"
+    ],
+    "reference_map": {
+      "official": [],
+      "standard": [],
+      "framework": [],
+      "style_guide": [],
+      "house_rule": ["2行超なら分割"]
+    },
+    "related_documents": ["internal-writing-rules"],
+    "related_sections": [
+      "internal-writing-rules.sentence_length"
+    ],
+    "related_subsections": [
+      "internal-writing-rules.sentence_length.sentence_length.two_line_split"
+    ]
+  },
+  {
+    "control_id": "HR-PAR-01",
+    "label": "段落は3-4文目安",
+    "weight": 8,
+    "priority": "medium",
+    "overlap_group": "house-paragraph-length",
+    "checkpoints": [
+      "段落が長くなりすぎていないか",
+      "複数主張を1段落に押し込んでいないか",
+      "分割の目安として3-4文を使えるか"
+    ],
+    "reference_map": {
+      "official": [],
+      "standard": [],
+      "framework": [],
+      "style_guide": [],
+      "house_rule": ["段落は3-4文目安"]
+    },
+    "related_documents": ["internal-writing-rules"],
+    "related_sections": [
+      "internal-writing-rules.paragraph_and_structure"
+    ],
+    "related_subsections": [
+      "internal-writing-rules.paragraph_and_structure.paragraph_and_structure.three_sentence_guideline"
+    ]
+  },
+  {
+    "control_id": "HR-PAR-02",
+    "label": "段落冒頭に要点を置く",
+    "weight": 10,
+    "priority": "medium",
+    "overlap_group": "house-topic-sentence",
+    "checkpoints": [
+      "段落の最初で要点が見えるか",
+      "補足や例だけで段落が始まっていないか",
+      "topic sentence の目安として使えるか"
+    ],
+    "reference_map": {
+      "official": [],
+      "standard": [],
+      "framework": [],
+      "style_guide": [],
+      "house_rule": ["段落冒頭に要点"]
+    },
+    "related_documents": ["internal-writing-rules"],
+    "related_sections": [
+      "internal-writing-rules.paragraph_and_structure"
+    ],
+    "related_subsections": [
+      "internal-writing-rules.paragraph_and_structure.paragraph_and_structure.topic_sentence"
+    ]
+  },
+  {
+    "control_id": "HR-LAY-01",
+    "label": "箇条書きは3-5項目目安",
+    "weight": 6,
+    "priority": "low",
+    "overlap_group": "house-list-range",
+    "checkpoints": [
+      "箇条書きが長くなりすぎていないか",
+      "一覧を分割した方がよい箇所が分かるか",
+      "列挙数の目安を読みやすさ改善に使えているか"
+    ],
+    "reference_map": {
+      "official": [],
+      "standard": [],
+      "framework": [],
+      "style_guide": [],
+      "house_rule": ["箇条書きは3-5項目目安"]
+    },
+    "related_documents": ["internal-writing-rules"],
+    "related_sections": [
+      "internal-writing-rules.paragraph_and_structure"
+    ],
+    "related_subsections": [
+      "internal-writing-rules.paragraph_and_structure.paragraph_and_structure.list_item_range"
+    ]
+  },
+  {
+    "control_id": "HR-MAIL-01",
+    "label": "件名は20-30字目安",
+    "weight": 8,
+    "priority": "medium",
+    "overlap_group": "house-mail-subject",
+    "checkpoints": [
+      "件名が長すぎて要件が埋もれていないか",
+      "件名だけで用件の骨子が分かるか",
+      "20-30字は目安として使っているか"
+    ],
+    "reference_map": {
+      "official": [],
+      "standard": [],
+      "framework": [],
+      "style_guide": [],
+      "house_rule": ["件名は20-30字目安"]
+    },
+    "related_documents": ["internal-writing-rules"],
+    "related_sections": [
+      "internal-writing-rules.mail_rules"
+    ],
+    "related_subsections": [
+      "internal-writing-rules.mail_rules.mail_rules.subject_length"
+    ]
+  },
+  {
+    "control_id": "HR-MAIL-02",
+    "label": "要件は冒頭3行以内",
+    "weight": 12,
+    "priority": "high",
+    "overlap_group": "house-mail-opening",
+    "checkpoints": [
+      "冒頭3行以内で要件が掴めるか",
+      "背景だけで始まって要件が遅れていないか",
+      "メールやチャットで先に結論を示せているか"
+    ],
+    "reference_map": {
+      "official": [],
+      "standard": [],
+      "framework": [],
+      "style_guide": [],
+      "house_rule": ["要件は冒頭3行以内"]
+    },
+    "related_documents": ["internal-writing-rules"],
+    "related_sections": [
+      "internal-writing-rules.mail_rules"
+    ],
+    "related_subsections": [
+      "internal-writing-rules.mail_rules.mail_rules.opening_first_three_lines"
+    ]
+  }
+]

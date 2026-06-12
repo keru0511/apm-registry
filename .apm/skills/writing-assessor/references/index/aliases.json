@@ -118,5 +118,60 @@
     ],
     "max_results": 4,
     "search_hints": "接続不足、主張不在、説明順の逆転を順に確認する。"
+  },
+  {
+    "query": "60字",
+    "topics": ["sentence_length_house_rule"],
+    "rules": ["HR-SEN-01"],
+    "documents": ["internal-writing-rules"],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "sentence_length", "subsection_id": "sentence_length.sixty_char_target"}
+    ],
+    "max_results": 2,
+    "search_hints": "固定値は house-rule として扱い、公的違反とは分けて表示する。"
+  },
+  {
+    "query": "2行",
+    "topics": ["sentence_length_house_rule"],
+    "rules": ["HR-SEN-02"],
+    "documents": ["internal-writing-rules"],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "sentence_length", "subsection_id": "sentence_length.two_line_split"}
+    ],
+    "max_results": 2,
+    "search_hints": "画面幅やレンダリング差があるため厳密値ではなく目安として扱う。"
+  },
+  {
+    "query": "件名",
+    "topics": ["mail_subject_and_opening"],
+    "rules": ["HR-MAIL-01"],
+    "documents": ["internal-writing-rules"],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "mail_rules", "subsection_id": "mail_rules.subject_length"}
+    ],
+    "max_results": 2,
+    "search_hints": "メール運用専用の house-rule として使う。"
+  },
+  {
+    "query": "3行以内",
+    "topics": ["mail_subject_and_opening"],
+    "rules": ["HR-MAIL-02"],
+    "documents": ["internal-writing-rules"],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "mail_rules", "subsection_id": "mail_rules.opening_first_three_lines"}
+    ],
+    "max_results": 2,
+    "search_hints": "冒頭で要件を掴めるかを見る。メール・チャット向け。"
+  },
+  {
+    "query": "3文",
+    "topics": ["paragraph_length_house_rule"],
+    "rules": ["HR-PAR-01"],
+    "documents": ["internal-writing-rules"],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.three_sentence_guideline"}
+    ],
+    "max_results": 2,
+    "search_hints": "長い段落を機械的に切るのではなく、主張単位の分割目安として使う。"
   }
 ]

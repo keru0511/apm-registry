@@ -250,5 +250,63 @@
       {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "subsection_id": "purpose_and_reader.chapter_role"},
       {"doc_id": "github-docs-style-guide", "section_id": "lists_and_tables", "subsection_id": "lists_and_tables.tables_need_context"}
     ]
+  },
+  {
+    "topic": "sentence_length_house_rule",
+    "aliases": ["60字", "1文60字", "一文が長い", "長すぎる文"],
+    "sections": [
+      {"doc_id": "internal-writing-rules", "section_id": "sentence_length", "title": "文長ルール"}
+    ],
+    "subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "sentence_length", "subsection_id": "sentence_length.sixty_char_target", "title": "1文60字目安"},
+      {"doc_id": "internal-writing-rules", "section_id": "sentence_length", "subsection_id": "sentence_length.two_line_split", "title": "2行超の分割"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "sentence_length", "subsection_id": "sentence_length.sixty_char_target"},
+      {"doc_id": "internal-writing-rules", "section_id": "sentence_length", "subsection_id": "sentence_length.two_line_split"}
+    ]
+  },
+  {
+    "topic": "paragraph_length_house_rule",
+    "aliases": ["段落長", "3文まで", "4文まで", "長い段落"],
+    "sections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "title": "段落と構成"}
+    ],
+    "subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.three_sentence_guideline", "title": "段落は3-4文目安"},
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.topic_sentence", "title": "段落冒頭に要点"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.three_sentence_guideline"},
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.topic_sentence"}
+    ]
+  },
+  {
+    "topic": "mail_subject_and_opening",
+    "aliases": ["件名", "メール冒頭", "要件先出し", "3行以内"],
+    "sections": [
+      {"doc_id": "internal-writing-rules", "section_id": "mail_rules", "title": "メール細則"}
+    ],
+    "subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "mail_rules", "subsection_id": "mail_rules.subject_length", "title": "件名は20-30字目安"},
+      {"doc_id": "internal-writing-rules", "section_id": "mail_rules", "subsection_id": "mail_rules.opening_first_three_lines", "title": "要件は冒頭3行以内"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "mail_rules", "subsection_id": "mail_rules.subject_length"},
+      {"doc_id": "internal-writing-rules", "section_id": "mail_rules", "subsection_id": "mail_rules.opening_first_three_lines"}
+    ]
+  },
+  {
+    "topic": "enumeration_house_rule",
+    "aliases": ["箇条書き3個", "5項目", "箇条書き数", "列挙数"],
+    "sections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "title": "段落と構成"}
+    ],
+    "subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.list_item_range", "title": "箇条書きは3-5項目目安"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "internal-writing-rules", "section_id": "paragraph_and_structure", "subsection_id": "paragraph_and_structure.list_item_range"}
+    ]
   }
 ]

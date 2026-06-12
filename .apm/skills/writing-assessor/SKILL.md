@@ -17,6 +17,7 @@ description: 作成済みの文書をテクニカルライティング観点で�
    - `references/mappings/sentence-controls.json`
    - `references/mappings/notation-controls.json`
    - `references/mappings/layout-controls.json`
+   - `references/mappings/house-rules-controls.json`
 4. 必要に応じて次を追加
    - `references/index/topics.json`
    - `references/index/rules.json`
@@ -36,6 +37,7 @@ description: 作成済みの文書をテクニカルライティング観点で�
 - `standard`: ISO
 - `framework`: Divio
 - `style-guide`: Google、Microsoft、GitHub Docs
+- `house-rule`: チームや組織で運用する数値目安やメール細則
 
 `1文60字目安` や `2行超なら分割` のような社内運用ルールは、この skill では一次ソース由来の観点と分けて `house-rule` 扱いにする。社内細則が無い場合は、style-guide を補助根拠として使う。
 
@@ -48,9 +50,10 @@ description: 作成済みの文書をテクニカルライティング観点で�
 - `sentence`: 主語、省略、1文1義、文分割、曖昧表現、受け身の多用を重点確認する
 - `notation`: 漢字かな、送り仮名、外来語、表記ゆれ、用語統一を見る
 - `layout`: 句読点、記号、箇条書き化、禁則処理、参照しやすい配置を見る
-- `full`: 上の5つを順に実施し、重複指摘を統合する
+- `house-rules`: 1文の長さ目安、段落長、件名、メール要件先出しなどの運用細則を見る
+- `full`: 上の6つを順に実施し、重複指摘を統合する
 
-ユーザー指定がなければ、メール・レビューコメント起点の依頼は `explanation + sentence`、文書レビュー全体は `full` を既定とする。
+ユーザー指定がなければ、メール・レビューコメント起点の依頼は `explanation + sentence + house-rules`、文書レビュー全体は `full` を既定とする。
 
 ## 実行手順
 
@@ -82,6 +85,7 @@ description: 作成済みの文書をテクニカルライティング観点で�
 - 指摘は必ず修正可能な粒度にする
 - 公的基準、規格、style-guide、house-rule を混同しない
 - `文字が滑る` のような感覚的違和感は、段落流れ、説明順序、文書型混在、説明不足へ分解して評価する
+- `house-rule` は既定では減点理由に使えるが、公的違反とは別枠で表示する
 
 ## 出力要件
 
@@ -107,7 +111,7 @@ description: 作成済みの文書をテクニカルライティング観点で�
 ## 品質チェック
 
 - 評価モードと文書タイプが合っている
-- 出典が `official / standard / style-guide / house-rule` のどれか明確
+- 出典が `official / standard / framework / style-guide / house-rule` のどれか明確
 - `N/A` の理由が妥当
 - 点数とコメントが矛盾しない
 - 重要度と改善順が一致している
