@@ -1,0 +1,167 @@
+[
+  {
+    "control_id": "WR-EXP-01",
+    "label": "段落流れ",
+    "weight": 16,
+    "priority": "high",
+    "overlap_group": "paragraph-flow",
+    "checkpoints": [
+      "段落が主張、補足、接続の順で読めるか",
+      "読者が頭の中で飛躍を補完しなくてよいか",
+      "文ごとの情報が自然につながるか"
+    ],
+    "reference_map": {
+      "official": ["公用文作成の考え方"],
+      "standard": [],
+      "framework": [],
+      "style_guide": ["GitHub Docs Style Guide"]
+    },
+    "related_documents": ["bunka-koyubun-guidance", "github-docs-style-guide"],
+    "related_sections": [
+      "bunka-koyubun-guidance.sentence_and_expression",
+      "github-docs-style-guide.style_principles"
+    ],
+    "related_subsections": [
+      "bunka-koyubun-guidance.sentence_and_expression.sentence_and_expression.paragraph_flow",
+      "github-docs-style-guide.style_principles.style_principles.flow_of_information"
+    ]
+  },
+  {
+    "control_id": "WR-EXP-02",
+    "label": "説明順序",
+    "weight": 16,
+    "priority": "high",
+    "overlap_group": "explanation-order",
+    "checkpoints": [
+      "全体像、詳細、注意点の順が自然か",
+      "未確定事項や例外が早すぎず遅すぎない位置にあるか",
+      "読者が知りたい順と文書の順序が合っているか"
+    ],
+    "reference_map": {
+      "official": ["公用文作成の考え方"],
+      "standard": ["Structure and navigation"],
+      "framework": [],
+      "style_guide": []
+    },
+    "related_documents": ["bunka-koyubun-guidance", "iso-24495-1"],
+    "related_sections": [
+      "bunka-koyubun-guidance.purpose_and_reader",
+      "iso-24495-1.structure_and_navigation"
+    ],
+    "related_subsections": [
+      "bunka-koyubun-guidance.purpose_and_reader.purpose_and_reader.explanation_order",
+      "iso-24495-1.structure_and_navigation.structure_and_navigation.explanation_order"
+    ]
+  },
+  {
+    "control_id": "WR-EXP-03",
+    "label": "文章支援の有無",
+    "weight": 14,
+    "priority": "high",
+    "overlap_group": "narrative-support",
+    "checkpoints": [
+      "箇条書きや表の前後に説明文があるか",
+      "章の役割や読み方が文で補われているか",
+      "項目羅列で終わらず、理解を助ける文章があるか"
+    ],
+    "reference_map": {
+      "official": ["公用文作成の考え方", "JIS X 4051"],
+      "standard": [],
+      "framework": [],
+      "style_guide": ["GitHub Docs Style Guide"]
+    },
+    "related_documents": ["bunka-koyubun-guidance", "jis-x-4051", "github-docs-style-guide"],
+    "related_sections": [
+      "bunka-koyubun-guidance.purpose_and_reader",
+      "jis-x-4051.list_and_reference_layout",
+      "github-docs-style-guide.lists_and_tables"
+    ],
+    "related_subsections": [
+      "bunka-koyubun-guidance.purpose_and_reader.purpose_and_reader.chapter_role",
+      "jis-x-4051.list_and_reference_layout.list_and_reference_layout.table_narrative",
+      "github-docs-style-guide.lists_and_tables.lists_and_tables.tables_need_context"
+    ]
+  },
+  {
+    "control_id": "WR-TYP-01",
+    "label": "文書の主目的一貫性",
+    "weight": 14,
+    "priority": "high",
+    "overlap_group": "document-type-fit",
+    "checkpoints": [
+      "説明文、仕様、参照、依頼の役割が混線していないか",
+      "文書全体に主目的があるか",
+      "読む人がこの文書をどう使うかが一貫しているか"
+    ],
+    "reference_map": {
+      "official": [],
+      "standard": [],
+      "framework": ["Divio Documentation System"],
+      "style_guide": ["GitHub Docs content model"]
+    },
+    "related_documents": ["divio-documentation-system", "github-docs-style-guide"],
+    "related_sections": [
+      "divio-documentation-system.four_modes",
+      "github-docs-style-guide.content_types"
+    ],
+    "related_subsections": [
+      "divio-documentation-system.four_modes.four_modes.core_types",
+      "divio-documentation-system.type_selection.type_selection.mixing_types",
+      "github-docs-style-guide.content_types.content_types.select_content_type"
+    ]
+  },
+  {
+    "control_id": "WR-TYP-02",
+    "label": "章ごとの型の整合",
+    "weight": 12,
+    "priority": "high",
+    "overlap_group": "section-type-consistency",
+    "checkpoints": [
+      "説明章なのに項目一覧だけで終わっていないか",
+      "参照章なのに散文だけで探しにくくなっていないか",
+      "章ごとに期待される型と実際の構造が合っているか"
+    ],
+    "reference_map": {
+      "official": [],
+      "standard": [],
+      "framework": ["Divio Documentation System"],
+      "style_guide": ["GitHub Docs content model"]
+    },
+    "related_documents": ["divio-documentation-system", "github-docs-style-guide"],
+    "related_sections": [
+      "divio-documentation-system.type_selection",
+      "github-docs-style-guide.content_types"
+    ],
+    "related_subsections": [
+      "divio-documentation-system.type_selection.type_selection.section_consistency",
+      "github-docs-style-guide.content_types.content_types.select_content_type"
+    ]
+  },
+  {
+    "control_id": "WR-TYP-03",
+    "label": "読者行動との一致",
+    "weight": 12,
+    "priority": "medium",
+    "overlap_group": "reader-goal-match",
+    "checkpoints": [
+      "読み手が知りたい順と文書の並びが合っているか",
+      "読み手が取る行動に対して必要情報が前にあるか",
+      "知識獲得、参照、実行、判断の目的が混線していないか"
+    ],
+    "reference_map": {
+      "official": [],
+      "standard": ["Plain language"],
+      "framework": ["Divio Documentation System"],
+      "style_guide": []
+    },
+    "related_documents": ["iso-24495-1", "divio-documentation-system"],
+    "related_sections": [
+      "iso-24495-1.audience_and_purpose",
+      "divio-documentation-system.type_selection"
+    ],
+    "related_subsections": [
+      "iso-24495-1.audience_and_purpose.audience_and_purpose.reader_tasks",
+      "divio-documentation-system.type_selection.type_selection.reader_need_match"
+    ]
+  }
+]

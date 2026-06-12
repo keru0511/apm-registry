@@ -119,5 +119,136 @@
       {"doc_id": "iso-24495-1", "section_id": "audience_and_purpose", "subsection_id": "audience_and_purpose.reader_tasks"},
       {"doc_id": "microsoft-writing-style", "section_id": "top_principles", "subsection_id": "top_principles.put_needs_first"}
     ]
+  },
+  {
+    "topic": "purpose_disclosure",
+    "aliases": ["目的先出し", "冒頭でわかる", "何の文書か", "用件"],
+    "sections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "title": "目的と読み手"},
+      {"doc_id": "iso-24495-1", "section_id": "audience_and_purpose", "title": "読者と目的"}
+    ],
+    "subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "subsection_id": "purpose_and_reader.purpose_disclosure", "title": "目的を冒頭で示す"},
+      {"doc_id": "iso-24495-1", "section_id": "audience_and_purpose", "subsection_id": "audience_and_purpose.purpose_disclosure", "title": "目的の開示"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "subsection_id": "purpose_and_reader.purpose_disclosure"},
+      {"doc_id": "iso-24495-1", "section_id": "audience_and_purpose", "subsection_id": "audience_and_purpose.purpose_disclosure"}
+    ]
+  },
+  {
+    "topic": "reader_orientation",
+    "aliases": ["読み手前提", "誰向け", "読者前提", "対象読者"],
+    "sections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "title": "目的と読み手"},
+      {"doc_id": "iso-24495-1", "section_id": "audience_and_purpose", "title": "読者と目的"}
+    ],
+    "subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "subsection_id": "purpose_and_reader.reader_orientation", "title": "読み手前提の明示"},
+      {"doc_id": "iso-24495-1", "section_id": "audience_and_purpose", "subsection_id": "audience_and_purpose.reader_tasks", "title": "読者の目的起点"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "subsection_id": "purpose_and_reader.reader_orientation"},
+      {"doc_id": "iso-24495-1", "section_id": "audience_and_purpose", "subsection_id": "audience_and_purpose.reader_tasks"}
+    ]
+  },
+  {
+    "topic": "paragraph_flow",
+    "aliases": ["段落の流れ", "つながり", "意味がつながらない", "文字が滑る"],
+    "sections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "title": "文の組み立てと表現"},
+      {"doc_id": "github-docs-style-guide", "section_id": "style_principles", "title": "スタイル原則"}
+    ],
+    "subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.paragraph_claim", "title": "段落主張の明示"},
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.paragraph_flow", "title": "段落内のつながり"},
+      {"doc_id": "github-docs-style-guide", "section_id": "style_principles", "subsection_id": "style_principles.flow_of_information", "title": "情報の流れ"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.paragraph_flow"},
+      {"doc_id": "github-docs-style-guide", "section_id": "style_principles", "subsection_id": "style_principles.flow_of_information"}
+    ]
+  },
+  {
+    "topic": "explanation_order",
+    "aliases": ["説明順序", "全体像から詳細", "先に概要", "読みたい順"],
+    "sections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "title": "目的と読み手"},
+      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "title": "構造とナビゲーション"}
+    ],
+    "subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "subsection_id": "purpose_and_reader.explanation_order", "title": "全体像から詳細への順序"},
+      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "subsection_id": "structure_and_navigation.explanation_order", "title": "説明順序と段階化"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "subsection_id": "purpose_and_reader.explanation_order"},
+      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "subsection_id": "structure_and_navigation.explanation_order"}
+    ]
+  },
+  {
+    "topic": "list_overuse",
+    "aliases": ["箇条書きが多い", "箇条書き過多", "羅列", "表が多い"],
+    "sections": [
+      {"doc_id": "jis-x-4051", "section_id": "list_and_reference_layout", "title": "列挙と参照の配置"},
+      {"doc_id": "github-docs-style-guide", "section_id": "lists_and_tables", "title": "リストと表"}
+    ],
+    "subsections": [
+      {"doc_id": "jis-x-4051", "section_id": "list_and_reference_layout", "subsection_id": "list_and_reference_layout.list_usage", "title": "列挙情報の整理"},
+      {"doc_id": "github-docs-style-guide", "section_id": "lists_and_tables", "subsection_id": "lists_and_tables.list_sparing", "title": "リストの使い過ぎを避ける"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "jis-x-4051", "section_id": "list_and_reference_layout", "subsection_id": "list_and_reference_layout.list_usage"},
+      {"doc_id": "github-docs-style-guide", "section_id": "lists_and_tables", "subsection_id": "lists_and_tables.list_sparing"}
+    ]
+  },
+  {
+    "topic": "table_without_narrative",
+    "aliases": ["表だけ", "表の前後説明", "表と本文", "説明がない表"],
+    "sections": [
+      {"doc_id": "jis-x-4051", "section_id": "list_and_reference_layout", "title": "列挙と参照の配置"},
+      {"doc_id": "github-docs-style-guide", "section_id": "lists_and_tables", "title": "リストと表"}
+    ],
+    "subsections": [
+      {"doc_id": "jis-x-4051", "section_id": "list_and_reference_layout", "subsection_id": "list_and_reference_layout.table_narrative", "title": "表と本文の関係"},
+      {"doc_id": "github-docs-style-guide", "section_id": "lists_and_tables", "subsection_id": "lists_and_tables.tables_need_context", "title": "表に文脈を付ける"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "jis-x-4051", "section_id": "list_and_reference_layout", "subsection_id": "list_and_reference_layout.table_narrative"},
+      {"doc_id": "github-docs-style-guide", "section_id": "lists_and_tables", "subsection_id": "lists_and_tables.tables_need_context"}
+    ]
+  },
+  {
+    "topic": "document_type_fit",
+    "aliases": ["文書タイプ", "型が混ざる", "説明になってない", "何の文書か"],
+    "sections": [
+      {"doc_id": "divio-documentation-system", "section_id": "four_modes", "title": "4つの文書型"},
+      {"doc_id": "github-docs-style-guide", "section_id": "content_types", "title": "コンテンツタイプ"}
+    ],
+    "subsections": [
+      {"doc_id": "divio-documentation-system", "section_id": "four_modes", "subsection_id": "four_modes.core_types", "title": "4類型の目的"},
+      {"doc_id": "divio-documentation-system", "section_id": "type_selection", "subsection_id": "type_selection.mixing_types", "title": "型の混在は避ける"},
+      {"doc_id": "github-docs-style-guide", "section_id": "content_types", "subsection_id": "content_types.select_content_type", "title": "コンテンツ型の選択"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "divio-documentation-system", "section_id": "four_modes", "subsection_id": "four_modes.core_types"},
+      {"doc_id": "divio-documentation-system", "section_id": "type_selection", "subsection_id": "type_selection.mixing_types"}
+    ]
+  },
+  {
+    "topic": "narrative_support",
+    "aliases": ["文章性", "文章がない", "説明文が足りない", "章の役割"],
+    "sections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "title": "目的と読み手"},
+      {"doc_id": "github-docs-style-guide", "section_id": "style_principles", "title": "スタイル原則"}
+    ],
+    "subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "subsection_id": "purpose_and_reader.chapter_role", "title": "章の役割の明示"},
+      {"doc_id": "github-docs-style-guide", "section_id": "style_principles", "subsection_id": "style_principles.clarity_over_rules", "title": "明確さを優先する"},
+      {"doc_id": "github-docs-style-guide", "section_id": "lists_and_tables", "subsection_id": "lists_and_tables.tables_need_context", "title": "表に文脈を付ける"}
+    ],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "subsection_id": "purpose_and_reader.chapter_role"},
+      {"doc_id": "github-docs-style-guide", "section_id": "lists_and_tables", "subsection_id": "lists_and_tables.tables_need_context"}
+    ]
   }
 ]

@@ -80,5 +80,59 @@
       "bunka-joyo-kanji-shape.shape_tolerance.shape_tolerance.not_error_by_shape_only",
       "bunka-joyo-kanji-shape.shape_tolerance.shape_tolerance.preferred_consistency"
     ]
+  },
+  {
+    "control_id": "WR-NOT-04",
+    "label": "用語表記の系列統一",
+    "weight": 10,
+    "priority": "medium",
+    "overlap_group": "term-series-consistency",
+    "checkpoints": [
+      "同種語で表記ルールが揃っているか",
+      "一般名詞と固有名詞の扱いが整理されているか",
+      "同じ文書内で系列語が混在していないか"
+    ],
+    "reference_map": {
+      "official": ["送り仮名の付け方", "外来語の表記", "公用文作成の考え方"],
+      "standard": [],
+      "style_guide": []
+    },
+    "related_documents": ["bunka-gairaigo", "cabinet-okurigana", "bunka-koyubun-guidance"],
+    "related_sections": [
+      "bunka-gairaigo.long_vowel_rules",
+      "cabinet-okurigana.conventional_exceptions",
+      "bunka-koyubun-guidance.notation_and_punctuation"
+    ],
+    "related_subsections": [
+      "bunka-gairaigo.long_vowel_rules.long_vowel_rules.related_words",
+      "cabinet-okurigana.conventional_exceptions.conventional_exceptions.review_usage",
+      "bunka-koyubun-guidance.notation_and_punctuation.notation_and_punctuation.consistent_surface"
+    ]
+  },
+  {
+    "control_id": "WR-NOT-05",
+    "label": "慣用と基準の分離",
+    "weight": 8,
+    "priority": "medium",
+    "overlap_group": "convention-vs-standard",
+    "checkpoints": [
+      "慣用表記を使う場合に意識的な理由があるか",
+      "基準形と慣用形の混在が放置されていないか",
+      "社内ルールと公的基準の区別が見えるか"
+    ],
+    "reference_map": {
+      "official": ["送り仮名の付け方", "外来語の表記"],
+      "standard": [],
+      "style_guide": []
+    },
+    "related_documents": ["bunka-gairaigo", "cabinet-okurigana"],
+    "related_sections": [
+      "bunka-gairaigo.notation_examples",
+      "cabinet-okurigana.conventional_exceptions"
+    ],
+    "related_subsections": [
+      "bunka-gairaigo.notation_examples.notation_examples.domain_exceptions",
+      "cabinet-okurigana.conventional_exceptions.conventional_exceptions.accepted_forms"
+    ]
   }
 ]

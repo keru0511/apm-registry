@@ -79,5 +79,85 @@
       "google-dev-style.lists_and_procedures.lists_and_procedures.headings_and_lists",
       "microsoft-writing-style.procedural_writing.procedural_writing.task_steps"
     ]
+  },
+  {
+    "control_id": "WR-LAY-04",
+    "label": "文と箇条書きの切り分け",
+    "weight": 10,
+    "priority": "medium",
+    "overlap_group": "list-boundary",
+    "checkpoints": [
+      "列挙情報を無理に文章へ押し込んでいないか",
+      "箇条書きに逃がした方がよい情報が散文に埋もれていないか",
+      "箇条書きにすることで理解が速くなる箇所を見逃していないか"
+    ],
+    "reference_map": {
+      "official": ["JIS X 4051"],
+      "standard": ["Information chunking"],
+      "style_guide": ["GitHub Docs Style Guide"]
+    },
+    "related_documents": ["jis-x-4051", "iso-24495-1", "github-docs-style-guide"],
+    "related_sections": [
+      "jis-x-4051.list_and_reference_layout",
+      "iso-24495-1.structure_and_navigation",
+      "github-docs-style-guide.lists_and_tables"
+    ],
+    "related_subsections": [
+      "jis-x-4051.list_and_reference_layout.list_and_reference_layout.list_usage",
+      "iso-24495-1.structure_and_navigation.structure_and_navigation.chunking",
+      "github-docs-style-guide.lists_and_tables.lists_and_tables.list_sparing"
+    ]
+  },
+  {
+    "control_id": "WR-LAY-05",
+    "label": "表と本文の関係明示",
+    "weight": 12,
+    "priority": "high",
+    "overlap_group": "table-context",
+    "checkpoints": [
+      "表の前後に説明文があるか",
+      "表だけで論点説明を終えていないか",
+      "表を読む目的や見方が本文から分かるか"
+    ],
+    "reference_map": {
+      "official": ["JIS X 4051"],
+      "standard": [],
+      "style_guide": ["GitHub Docs Style Guide"]
+    },
+    "related_documents": ["jis-x-4051", "github-docs-style-guide"],
+    "related_sections": [
+      "jis-x-4051.list_and_reference_layout",
+      "github-docs-style-guide.lists_and_tables"
+    ],
+    "related_subsections": [
+      "jis-x-4051.list_and_reference_layout.list_and_reference_layout.table_narrative",
+      "github-docs-style-guide.lists_and_tables.lists_and_tables.tables_need_context"
+    ]
+  },
+  {
+    "control_id": "WR-LAY-06",
+    "label": "記号の連続利用抑制",
+    "weight": 8,
+    "priority": "medium",
+    "overlap_group": "symbol-density",
+    "checkpoints": [
+      "括弧、中点、コロンなどが連続して読みにくさを増やしていないか",
+      "記号に頼りすぎて文の意味が見えなくなっていないか",
+      "約物の多用が段落の流れを壊していないか"
+    ],
+    "reference_map": {
+      "official": ["公用文作成の考え方", "JIS X 4051"],
+      "standard": [],
+      "style_guide": []
+    },
+    "related_documents": ["bunka-koyubun-guidance", "jis-x-4051"],
+    "related_sections": [
+      "bunka-koyubun-guidance.notation_and_punctuation",
+      "jis-x-4051.punctuation_spacing"
+    ],
+    "related_subsections": [
+      "bunka-koyubun-guidance.notation_and_punctuation.notation_and_punctuation.symbol_density",
+      "jis-x-4051.punctuation_spacing.punctuation_spacing.katakana_marks"
+    ]
   }
 ]

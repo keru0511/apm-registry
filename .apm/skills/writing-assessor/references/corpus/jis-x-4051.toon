@@ -4,7 +4,7 @@ publisher: JIS
 version: 2004
 publication_date: 2004
 canonical_url: "https://kikakurui.com/x4/X4051-2004-01.html"
-profiles[1]: layout
+profiles[2]: layout,explanation
 sections[3]:
   - section_id: line_break_rules
     section_number: 1
@@ -65,11 +65,19 @@ sections[3]:
     source_heading: 参照しやすい配置
     topics[3]: lists,reference_layout,structure
     text: 箇条書きや参照表示を読みやすく置く観点を持つ。
-    subsections[1]:
+    subsections[2]:
       - subsection_id: list_and_reference_layout.list_usage
         source_heading: 列挙情報の整理
         topics[3]: lists,reference_layout,readability
-        rules[1]: TW-LAY-03
+        rules[2]: TW-LAY-03,WR-LAY-04
         key_points[3]: 列挙情報は見分けやすく配置する。,本文へ押し込まず箇条書き化すると参照しやすい。,参照ラベルと本文の対応を明確にする。
         source_passages[1]{passage_id,text,source_locator,canonical_url}:
           list_and_reference_layout.list_usage.p1,列挙情報の配置は参照性に影響する。,列挙と参照,"https://kikakurui.com/x4/X4051-2004-01.html"
+      - subsection_id: list_and_reference_layout.table_narrative
+        source_heading: 表と本文の関係
+        topics[3]: table_without_narrative,narrative_support,reference_layout
+        rules[2]: WR-LAY-05,WR-EXP-03
+        key_points[3]: 表は本文と切り離さず、前後の説明と結び付ける方が理解しやすい。,表の読み方や意図が見えないと参照負荷が高まる。,表だけで論点説明を終えない方がよい。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          list_and_reference_layout.table_narrative.p1,参照しやすい配置には本文との関係整理も含まれる。,参照配置,"https://kikakurui.com/x4/X4051-2004-01.html"
+          list_and_reference_layout.table_narrative.p2,表は周辺の説明と一体で理解される。,表と文脈,"https://kikakurui.com/x4/X4051-2004-01.html"

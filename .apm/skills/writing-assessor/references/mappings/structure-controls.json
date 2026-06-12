@@ -57,5 +57,109 @@
       "google-dev-style.lists_and_procedures.lists_and_procedures.headings_and_lists",
       "microsoft-writing-style.procedural_writing.procedural_writing.task_steps"
     ]
+  },
+  {
+    "control_id": "WR-STR-03",
+    "label": "目的の先出し",
+    "weight": 12,
+    "priority": "high",
+    "overlap_group": "purpose-disclosure",
+    "checkpoints": [
+      "冒頭で文書の用件が分かるか",
+      "読者が何の文書か早く判断できるか",
+      "結論や依頼事項が後ろへ回りすぎていないか"
+    ],
+    "reference_map": {
+      "official": ["公用文作成の考え方"],
+      "standard": ["Plain language"],
+      "style_guide": []
+    },
+    "related_documents": ["bunka-koyubun-guidance", "iso-24495-1"],
+    "related_sections": [
+      "bunka-koyubun-guidance.purpose_and_reader",
+      "iso-24495-1.audience_and_purpose"
+    ],
+    "related_subsections": [
+      "bunka-koyubun-guidance.purpose_and_reader.purpose_and_reader.purpose_disclosure",
+      "iso-24495-1.audience_and_purpose.audience_and_purpose.purpose_disclosure"
+    ]
+  },
+  {
+    "control_id": "WR-STR-04",
+    "label": "読み手前提の明示",
+    "weight": 10,
+    "priority": "high",
+    "overlap_group": "reader-orientation",
+    "checkpoints": [
+      "誰向けの文書か読み取れるか",
+      "読者の前提知識や利用場面が見えるか",
+      "書き手都合ではなく読み手の目的に沿っているか"
+    ],
+    "reference_map": {
+      "official": ["公用文作成の考え方"],
+      "standard": ["Plain language"],
+      "style_guide": []
+    },
+    "related_documents": ["bunka-koyubun-guidance", "iso-24495-1"],
+    "related_sections": [
+      "bunka-koyubun-guidance.purpose_and_reader",
+      "iso-24495-1.audience_and_purpose"
+    ],
+    "related_subsections": [
+      "bunka-koyubun-guidance.purpose_and_reader.purpose_and_reader.reader_orientation",
+      "iso-24495-1.audience_and_purpose.audience_and_purpose.reader_tasks"
+    ]
+  },
+  {
+    "control_id": "WR-STR-05",
+    "label": "全体像から詳細への順序",
+    "weight": 12,
+    "priority": "high",
+    "overlap_group": "explanation-order",
+    "checkpoints": [
+      "概要から詳細へ自然に降りていくか",
+      "注意点や未確定事項が適切な位置にあるか",
+      "読み手が知りたい順に説明が並んでいるか"
+    ],
+    "reference_map": {
+      "official": ["公用文作成の考え方"],
+      "standard": ["Structure and navigation"],
+      "style_guide": []
+    },
+    "related_documents": ["bunka-koyubun-guidance", "iso-24495-1"],
+    "related_sections": [
+      "bunka-koyubun-guidance.purpose_and_reader",
+      "iso-24495-1.structure_and_navigation"
+    ],
+    "related_subsections": [
+      "bunka-koyubun-guidance.purpose_and_reader.purpose_and_reader.explanation_order",
+      "iso-24495-1.structure_and_navigation.structure_and_navigation.explanation_order"
+    ]
+  },
+  {
+    "control_id": "WR-STR-06",
+    "label": "章の役割の明示",
+    "weight": 8,
+    "priority": "medium",
+    "overlap_group": "chapter-role",
+    "checkpoints": [
+      "各章が何のためにあるか分かるか",
+      "章頭で役割や読み方が見えるか",
+      "章がただ情報を並べるだけになっていないか"
+    ],
+    "reference_map": {
+      "official": ["公用文作成の考え方"],
+      "standard": [],
+      "style_guide": ["GitHub Docs Style Guide"]
+    },
+    "related_documents": ["bunka-koyubun-guidance", "github-docs-style-guide"],
+    "related_sections": [
+      "bunka-koyubun-guidance.purpose_and_reader",
+      "github-docs-style-guide.style_principles"
+    ],
+    "related_subsections": [
+      "bunka-koyubun-guidance.purpose_and_reader.purpose_and_reader.chapter_role",
+      "github-docs-style-guide.style_principles.style_principles.clarity_over_rules"
+    ]
   }
 ]

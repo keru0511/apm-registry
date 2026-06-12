@@ -82,5 +82,111 @@
       "iso-24495-1.expression_and_usability.expression_and_usability.direct_expression",
       "microsoft-writing-style.clarity_and_conciseness.clarity_and_conciseness.trim_words"
     ]
+  },
+  {
+    "control_id": "WR-SEN-04",
+    "label": "段落主張の明示",
+    "weight": 12,
+    "priority": "high",
+    "overlap_group": "paragraph-claim",
+    "checkpoints": [
+      "段落の最初で主張や要点が読めるか",
+      "段落の目的が読まないと分からない状態になっていないか",
+      "補足だけで段落が始まっていないか"
+    ],
+    "reference_map": {
+      "official": ["公用文作成の考え方"],
+      "standard": [],
+      "style_guide": ["GitHub Docs Style Guide"]
+    },
+    "related_documents": ["bunka-koyubun-guidance", "github-docs-style-guide"],
+    "related_sections": [
+      "bunka-koyubun-guidance.sentence_and_expression",
+      "github-docs-style-guide.style_principles"
+    ],
+    "related_subsections": [
+      "bunka-koyubun-guidance.sentence_and_expression.sentence_and_expression.paragraph_claim",
+      "github-docs-style-guide.style_principles.style_principles.flow_of_information"
+    ]
+  },
+  {
+    "control_id": "WR-SEN-05",
+    "label": "段落内のつながり",
+    "weight": 14,
+    "priority": "high",
+    "overlap_group": "paragraph-flow",
+    "checkpoints": [
+      "主張、補足、次文への接続があるか",
+      "文ごとの意味が飛んでいないか",
+      "読者が頭の中で補完しないと流れが繋がらない状態でないか"
+    ],
+    "reference_map": {
+      "official": ["公用文作成の考え方"],
+      "standard": [],
+      "style_guide": ["GitHub Docs Style Guide"]
+    },
+    "related_documents": ["bunka-koyubun-guidance", "github-docs-style-guide"],
+    "related_sections": [
+      "bunka-koyubun-guidance.sentence_and_expression",
+      "github-docs-style-guide.style_principles"
+    ],
+    "related_subsections": [
+      "bunka-koyubun-guidance.sentence_and_expression.sentence_and_expression.paragraph_flow",
+      "github-docs-style-guide.style_principles.style_principles.flow_of_information"
+    ]
+  },
+  {
+    "control_id": "WR-SEN-06",
+    "label": "条件と結果の対応",
+    "weight": 10,
+    "priority": "medium",
+    "overlap_group": "condition-result-alignment",
+    "checkpoints": [
+      "条件、例外、結果が混線していないか",
+      "条件に対する結果が追いやすいか",
+      "読み手の判断順と文の順序が一致しているか"
+    ],
+    "reference_map": {
+      "official": ["公用文作成の考え方"],
+      "standard": ["Usable expression"],
+      "style_guide": ["Sentence structure"]
+    },
+    "related_documents": ["bunka-koyubun-guidance", "iso-24495-1", "google-dev-style"],
+    "related_sections": [
+      "bunka-koyubun-guidance.sentence_and_expression",
+      "iso-24495-1.expression_and_usability",
+      "google-dev-style.sentence_structure"
+    ],
+    "related_subsections": [
+      "bunka-koyubun-guidance.sentence_and_expression.sentence_and_expression.condition_result_alignment",
+      "iso-24495-1.expression_and_usability.expression_and_usability.reader_action",
+      "google-dev-style.sentence_structure.sentence_structure.put_conditions_first"
+    ]
+  },
+  {
+    "control_id": "WR-SEN-07",
+    "label": "定義文の連打回避",
+    "weight": 8,
+    "priority": "medium",
+    "overlap_group": "definition-sentence-balance",
+    "checkpoints": [
+      "名詞句や定義文だけが続いていないか",
+      "説明や関係が補われず、項目の羅列になっていないか",
+      "文章として呼吸があるか"
+    ],
+    "reference_map": {
+      "official": ["公用文作成の考え方"],
+      "standard": [],
+      "style_guide": ["GitHub Docs Style Guide"]
+    },
+    "related_documents": ["bunka-koyubun-guidance", "github-docs-style-guide"],
+    "related_sections": [
+      "bunka-koyubun-guidance.sentence_and_expression",
+      "github-docs-style-guide.style_principles"
+    ],
+    "related_subsections": [
+      "bunka-koyubun-guidance.sentence_and_expression.sentence_and_expression.definition_sentence_balance",
+      "github-docs-style-guide.style_principles.style_principles.flow_of_information"
+    ]
   }
 ]

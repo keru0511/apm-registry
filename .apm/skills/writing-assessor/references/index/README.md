@@ -11,7 +11,8 @@
 4. 用語ゆれで探すときは `aliases.json` を先に見る。
 5. 観点から引くときは `topics.json`、control 単位で辿るときは `rules.json` を使う。
 6. `documents.json` で文書メタデータと `corpus_file` を確認する。
-7. 必要な `key_points` と `source_passages` だけ本文に降りる。
+7. 説明品質の診断では `official` と `standard` を優先し、不足時だけ `framework` と `style-guide` を使う。
+8. 必要な `key_points` と `source_passages` だけ本文に降りる。
 
 ## 出力時のルール
 

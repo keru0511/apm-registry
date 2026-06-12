@@ -1,0 +1,60 @@
+doc_id: divio-documentation-system
+title: The Documentation System
+publisher: Divio
+version: current
+publication_date: current
+canonical_url: "https://docs.divio.com/documentation-system/"
+profiles[1]: explanation
+sections[2]:
+  - section_id: four_modes
+    section_number: 1
+    title: 4つの文書型
+    source_heading: The Documentation System
+    topics[3]: document_type_fit,reader_orientation,narrative_support
+    text: documentation には tutorial、how-to、reference、explanation の4種類があり、それぞれ目的が異なるという枠組み。
+    subsections[2]:
+      - subsection_id: four_modes.core_types
+        source_heading: 4類型の目的
+        topics[3]: document_type_fit,reader_orientation,structure
+        rules[2]: WR-TYP-01,WR-TYP-03
+        key_points[3]: documentation は1種類ではなく4つの目的に分かれる。,各型は異なる読者要求と書き方を持つ。,主目的を決めない文書は混線しやすい。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          four_modes.core_types.p1,documentation には tutorials、how-to guides、technical reference、explanation の4つがあると説明されている。,overview,"https://docs.divio.com/documentation-system/"
+          four_modes.core_types.p2,4つは異なる目的とアプローチを必要とする。,about the system,"https://docs.divio.com/documentation-system/"
+      - subsection_id: four_modes.type_boundaries
+        source_heading: 型ごとに書き方が違う
+        topics[2]: document_type_fit,narrative_support
+        rules[1]: WR-TYP-01
+        key_points[3]: 同じ文書内で複数の型を無自覚に混ぜると読み手が迷う。,型が違えば期待される並びも違う。,型に応じて説明の粒度が変わる。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          four_modes.type_boundaries.p1,4類型は目的もアプローチも異なるため、混同しない方がよい。,type boundaries,"https://docs.divio.com/documentation-system/"
+  - section_id: type_selection
+    section_number: 2
+    title: 型の選択と混在
+    source_heading: About the structure
+    topics[3]: document_type_fit,reader_orientation,narrative_support
+    text: 文書ごとに主目的を選び、章ごとに型の不一致を抑える観点に使う。
+    subsections[3]:
+      - subsection_id: type_selection.mixing_types
+        source_heading: 型の混在は避ける
+        topics[3]: document_type_fit,narrative_support,reader_orientation
+        rules[2]: WR-TYP-01,WR-TYP-02
+        key_points[3]: 文書型を混在させると読み手が何を期待すべきか分からなくなる。,型ごとに成功条件が違う。,主目的を決めてから補助型を添える方がよい。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          type_selection.mixing_types.p1,4つの文書型は別の目的を持つため混線しやすい。,about the system,"https://docs.divio.com/documentation-system/"
+          type_selection.mixing_types.p2,目的ごとに異なるアプローチが必要だと説明される。,different approaches,"https://docs.divio.com/documentation-system/"
+      - subsection_id: type_selection.section_consistency
+        source_heading: 章ごとの型の整合
+        topics[3]: document_type_fit,narrative_support,structure
+        rules[1]: WR-TYP-02
+        key_points[3]: 章単位でも型の整合が必要である。,説明章なら説明文、参照章なら探しやすい構造が必要である。,章ごとに期待と構造がズレると滑る文章になる。
+        source_passages[1]{passage_id,text,source_locator,canonical_url}:
+          type_selection.section_consistency.p1,型ごとの目的を保つことが文書全体の有効性を高める。,structure implications,"https://docs.divio.com/documentation-system/"
+      - subsection_id: type_selection.reader_need_match
+        source_heading: 読者の必要との一致
+        topics[3]: reader_orientation,document_type_fit,structure
+        rules[1]: WR-TYP-03
+        key_points[3]: 文書型は読者が何をしたいかに合わせて選ぶべきである。,学ぶ、実行する、調べる、理解するは別の行為である。,読者行動と文書型が一致していないと伝わりにくい。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          type_selection.reader_need_match.p1,4類型は異なる読者目的に対応する。,four purposes,"https://docs.divio.com/documentation-system/"
+          type_selection.reader_need_match.p2,目的に応じた型選択が文書品質を大きく左右する。,reader need match,"https://docs.divio.com/documentation-system/"

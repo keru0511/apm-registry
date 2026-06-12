@@ -68,5 +68,199 @@
       {"doc_id": "jis-x-4051", "section_id": "line_break_rules", "subsection_id": "line_break_rules.kinsoku_basics"},
       {"doc_id": "bunka-koyubun-guidance", "section_id": "notation_and_punctuation", "subsection_id": "notation_and_punctuation.comma_period_usage"}
     ]
+  },
+  {
+    "rule_id": "WR-STR-03",
+    "label": "目的の先出し",
+    "topics": ["purpose_disclosure"],
+    "documents": ["bunka-koyubun-guidance", "iso-24495-1"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "subsection_id": "purpose_and_reader.purpose_disclosure"},
+      {"doc_id": "iso-24495-1", "section_id": "audience_and_purpose", "subsection_id": "audience_and_purpose.purpose_disclosure"}
+    ]
+  },
+  {
+    "rule_id": "WR-STR-04",
+    "label": "読み手前提の明示",
+    "topics": ["reader_orientation"],
+    "documents": ["bunka-koyubun-guidance", "iso-24495-1"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "subsection_id": "purpose_and_reader.reader_orientation"},
+      {"doc_id": "iso-24495-1", "section_id": "audience_and_purpose", "subsection_id": "audience_and_purpose.reader_tasks"}
+    ]
+  },
+  {
+    "rule_id": "WR-STR-05",
+    "label": "全体像から詳細への順序",
+    "topics": ["explanation_order"],
+    "documents": ["bunka-koyubun-guidance", "iso-24495-1"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "subsection_id": "purpose_and_reader.explanation_order"},
+      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "subsection_id": "structure_and_navigation.explanation_order"}
+    ]
+  },
+  {
+    "rule_id": "WR-STR-06",
+    "label": "章の役割の明示",
+    "topics": ["narrative_support"],
+    "documents": ["bunka-koyubun-guidance", "github-docs-style-guide"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "subsection_id": "purpose_and_reader.chapter_role"},
+      {"doc_id": "github-docs-style-guide", "section_id": "style_principles", "subsection_id": "style_principles.clarity_over_rules"}
+    ]
+  },
+  {
+    "rule_id": "WR-SEN-04",
+    "label": "段落主張の明示",
+    "topics": ["paragraph_flow"],
+    "documents": ["bunka-koyubun-guidance", "github-docs-style-guide"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.paragraph_claim"},
+      {"doc_id": "github-docs-style-guide", "section_id": "style_principles", "subsection_id": "style_principles.flow_of_information"}
+    ]
+  },
+  {
+    "rule_id": "WR-SEN-05",
+    "label": "段落内のつながり",
+    "topics": ["paragraph_flow"],
+    "documents": ["bunka-koyubun-guidance", "github-docs-style-guide"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.paragraph_flow"},
+      {"doc_id": "github-docs-style-guide", "section_id": "style_principles", "subsection_id": "style_principles.flow_of_information"}
+    ]
+  },
+  {
+    "rule_id": "WR-SEN-06",
+    "label": "条件と結果の対応",
+    "topics": ["paragraph_flow"],
+    "documents": ["bunka-koyubun-guidance", "iso-24495-1", "google-dev-style"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.condition_result_alignment"},
+      {"doc_id": "iso-24495-1", "section_id": "expression_and_usability", "subsection_id": "expression_and_usability.reader_action"},
+      {"doc_id": "google-dev-style", "section_id": "sentence_structure", "subsection_id": "sentence_structure.put_conditions_first"}
+    ]
+  },
+  {
+    "rule_id": "WR-SEN-07",
+    "label": "定義文の連打回避",
+    "topics": ["paragraph_flow", "narrative_support"],
+    "documents": ["bunka-koyubun-guidance", "github-docs-style-guide"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.definition_sentence_balance"},
+      {"doc_id": "github-docs-style-guide", "section_id": "style_principles", "subsection_id": "style_principles.flow_of_information"}
+    ]
+  },
+  {
+    "rule_id": "WR-NOT-04",
+    "label": "用語表記の系列統一",
+    "topics": ["loanword_long_vowel", "okurigana"],
+    "documents": ["bunka-gairaigo", "cabinet-okurigana", "bunka-koyubun-guidance"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-gairaigo", "section_id": "long_vowel_rules", "subsection_id": "long_vowel_rules.related_words"},
+      {"doc_id": "cabinet-okurigana", "section_id": "conventional_exceptions", "subsection_id": "conventional_exceptions.review_usage"},
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "notation_and_punctuation", "subsection_id": "notation_and_punctuation.consistent_surface"}
+    ]
+  },
+  {
+    "rule_id": "WR-NOT-05",
+    "label": "慣用と基準の分離",
+    "topics": ["loanword_long_vowel", "okurigana"],
+    "documents": ["bunka-gairaigo", "cabinet-okurigana"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-gairaigo", "section_id": "notation_examples", "subsection_id": "notation_examples.domain_exceptions"},
+      {"doc_id": "cabinet-okurigana", "section_id": "conventional_exceptions", "subsection_id": "conventional_exceptions.accepted_forms"}
+    ]
+  },
+  {
+    "rule_id": "WR-LAY-04",
+    "label": "文と箇条書きの切り分け",
+    "topics": ["list_overuse"],
+    "documents": ["jis-x-4051", "github-docs-style-guide", "iso-24495-1"],
+    "preferred_subsections": [
+      {"doc_id": "jis-x-4051", "section_id": "list_and_reference_layout", "subsection_id": "list_and_reference_layout.list_usage"},
+      {"doc_id": "github-docs-style-guide", "section_id": "lists_and_tables", "subsection_id": "lists_and_tables.list_sparing"},
+      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "subsection_id": "structure_and_navigation.chunking"}
+    ]
+  },
+  {
+    "rule_id": "WR-LAY-05",
+    "label": "表と本文の関係明示",
+    "topics": ["table_without_narrative", "narrative_support"],
+    "documents": ["jis-x-4051", "github-docs-style-guide"],
+    "preferred_subsections": [
+      {"doc_id": "jis-x-4051", "section_id": "list_and_reference_layout", "subsection_id": "list_and_reference_layout.table_narrative"},
+      {"doc_id": "github-docs-style-guide", "section_id": "lists_and_tables", "subsection_id": "lists_and_tables.tables_need_context"}
+    ]
+  },
+  {
+    "rule_id": "WR-LAY-06",
+    "label": "記号の連続利用抑制",
+    "topics": ["punctuation_and_kinsoku"],
+    "documents": ["bunka-koyubun-guidance", "jis-x-4051"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "notation_and_punctuation", "subsection_id": "notation_and_punctuation.symbol_density"},
+      {"doc_id": "jis-x-4051", "section_id": "punctuation_spacing", "subsection_id": "punctuation_spacing.katakana_marks"}
+    ]
+  },
+  {
+    "rule_id": "WR-TYP-01",
+    "label": "文書の主目的一貫性",
+    "topics": ["document_type_fit"],
+    "documents": ["divio-documentation-system", "github-docs-style-guide"],
+    "preferred_subsections": [
+      {"doc_id": "divio-documentation-system", "section_id": "four_modes", "subsection_id": "four_modes.core_types"},
+      {"doc_id": "divio-documentation-system", "section_id": "type_selection", "subsection_id": "type_selection.mixing_types"}
+    ]
+  },
+  {
+    "rule_id": "WR-TYP-02",
+    "label": "章ごとの型の整合",
+    "topics": ["document_type_fit", "narrative_support"],
+    "documents": ["divio-documentation-system", "github-docs-style-guide"],
+    "preferred_subsections": [
+      {"doc_id": "divio-documentation-system", "section_id": "type_selection", "subsection_id": "type_selection.section_consistency"},
+      {"doc_id": "github-docs-style-guide", "section_id": "content_types", "subsection_id": "content_types.select_content_type"}
+    ]
+  },
+  {
+    "rule_id": "WR-TYP-03",
+    "label": "読者行動との一致",
+    "topics": ["document_type_fit", "reader_orientation"],
+    "documents": ["iso-24495-1", "divio-documentation-system"],
+    "preferred_subsections": [
+      {"doc_id": "iso-24495-1", "section_id": "audience_and_purpose", "subsection_id": "audience_and_purpose.reader_tasks"},
+      {"doc_id": "divio-documentation-system", "section_id": "type_selection", "subsection_id": "type_selection.reader_need_match"}
+    ]
+  },
+  {
+    "rule_id": "WR-EXP-01",
+    "label": "段落流れ",
+    "topics": ["paragraph_flow", "narrative_support"],
+    "documents": ["bunka-koyubun-guidance", "github-docs-style-guide"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.paragraph_flow"},
+      {"doc_id": "github-docs-style-guide", "section_id": "style_principles", "subsection_id": "style_principles.flow_of_information"}
+    ]
+  },
+  {
+    "rule_id": "WR-EXP-02",
+    "label": "説明順序",
+    "topics": ["explanation_order"],
+    "documents": ["bunka-koyubun-guidance", "iso-24495-1"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "subsection_id": "purpose_and_reader.explanation_order"},
+      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "subsection_id": "structure_and_navigation.explanation_order"}
+    ]
+  },
+  {
+    "rule_id": "WR-EXP-03",
+    "label": "文章支援の有無",
+    "topics": ["narrative_support", "table_without_narrative", "list_overuse"],
+    "documents": ["bunka-koyubun-guidance", "github-docs-style-guide", "jis-x-4051"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "purpose_and_reader", "subsection_id": "purpose_and_reader.chapter_role"},
+      {"doc_id": "github-docs-style-guide", "section_id": "lists_and_tables", "subsection_id": "lists_and_tables.tables_need_context"},
+      {"doc_id": "jis-x-4051", "section_id": "list_and_reference_layout", "subsection_id": "list_and_reference_layout.table_narrative"}
+    ]
   }
 ]

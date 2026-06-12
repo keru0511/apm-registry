@@ -58,5 +58,65 @@
     ],
     "max_results": 3,
     "search_hints": "行頭禁則、行末禁則、句読点の前後関係を優先する。"
+  },
+  {
+    "query": "読み味",
+    "topics": ["paragraph_flow", "narrative_support"],
+    "rules": ["WR-EXP-01", "WR-EXP-03"],
+    "documents": ["bunka-koyubun-guidance", "github-docs-style-guide"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.paragraph_flow"},
+      {"doc_id": "github-docs-style-guide", "section_id": "style_principles", "subsection_id": "style_principles.flow_of_information"}
+    ],
+    "max_results": 4,
+    "search_hints": "感覚的な違和感は段落のつながりと説明文不足へ分解して見る。"
+  },
+  {
+    "query": "文字が滑る",
+    "topics": ["paragraph_flow", "explanation_order"],
+    "rules": ["WR-EXP-01", "WR-EXP-02", "WR-SEN-05"],
+    "documents": ["bunka-koyubun-guidance", "github-docs-style-guide", "iso-24495-1"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.paragraph_flow"},
+      {"doc_id": "iso-24495-1", "section_id": "structure_and_navigation", "subsection_id": "structure_and_navigation.explanation_order"}
+    ],
+    "max_results": 4,
+    "search_hints": "段落の接続不足と説明順の逆転を優先して確認する。"
+  },
+  {
+    "query": "説明になっていない",
+    "topics": ["document_type_fit", "narrative_support"],
+    "rules": ["WR-TYP-01", "WR-TYP-02", "WR-EXP-03"],
+    "documents": ["divio-documentation-system", "github-docs-style-guide", "bunka-koyubun-guidance"],
+    "preferred_subsections": [
+      {"doc_id": "divio-documentation-system", "section_id": "type_selection", "subsection_id": "type_selection.mixing_types"},
+      {"doc_id": "github-docs-style-guide", "section_id": "lists_and_tables", "subsection_id": "lists_and_tables.tables_need_context"}
+    ],
+    "max_results": 4,
+    "search_hints": "型の混在と、表や箇条書きの前後に説明がない状態を疑う。"
+  },
+  {
+    "query": "表が多い",
+    "topics": ["list_overuse", "table_without_narrative"],
+    "rules": ["WR-LAY-04", "WR-LAY-05", "WR-EXP-03"],
+    "documents": ["jis-x-4051", "github-docs-style-guide"],
+    "preferred_subsections": [
+      {"doc_id": "jis-x-4051", "section_id": "list_and_reference_layout", "subsection_id": "list_and_reference_layout.table_narrative"},
+      {"doc_id": "github-docs-style-guide", "section_id": "lists_and_tables", "subsection_id": "lists_and_tables.tables_need_context"}
+    ],
+    "max_results": 4,
+    "search_hints": "表の削減そのものより、表だけで説明を終えていないかを見る。"
+  },
+  {
+    "query": "意味がつながらない",
+    "topics": ["paragraph_flow", "explanation_order"],
+    "rules": ["WR-SEN-05", "WR-EXP-01", "WR-EXP-02"],
+    "documents": ["bunka-koyubun-guidance", "iso-24495-1", "github-docs-style-guide"],
+    "preferred_subsections": [
+      {"doc_id": "bunka-koyubun-guidance", "section_id": "sentence_and_expression", "subsection_id": "sentence_and_expression.paragraph_flow"},
+      {"doc_id": "github-docs-style-guide", "section_id": "style_principles", "subsection_id": "style_principles.flow_of_information"}
+    ],
+    "max_results": 4,
+    "search_hints": "接続不足、主張不在、説明順の逆転を順に確認する。"
   }
 ]

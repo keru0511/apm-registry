@@ -4,7 +4,7 @@ publisher: ISO
 version: 2023
 publication_date: 2023
 canonical_url: "https://www.iso.org/standard/78907.html"
-profiles[2]: structure,sentence
+profiles[3]: structure,explanation,sentence
 sections[3]:
   - section_id: audience_and_purpose
     section_number: 1
@@ -12,7 +12,7 @@ sections[3]:
     source_heading: audience and purpose
     topics[3]: audience_and_actionability,purpose,reader_fit
     text: 読者が必要な情報を必要な時に理解し使えることを重視する。
-    subsections[2]:
+    subsections[3]:
       - subsection_id: audience_and_purpose.reader_tasks
         source_heading: 読者の目的起点
         topics[3]: audience_and_actionability,purpose,reader_fit
@@ -28,13 +28,21 @@ sections[3]:
         key_points[3]: 文書の目的は早い段階で分かる方がよい。,結論や依頼は後ろへ回しすぎない。,読者が自分に関係ある文書か判断しやすくする。
         source_passages[1]{passage_id,text,source_locator,canonical_url}:
           audience_and_purpose.purpose_disclosure.p1,文書目的を見えやすくすることは usability に直結する。,目的提示,"https://www.iso.org/standard/78907.html"
+      - subsection_id: audience_and_purpose.reader_orientation
+        source_heading: 読者の仕事と前提
+        topics[3]: reader_orientation,audience_and_actionability,reader_fit
+        rules[2]: WR-STR-04,WR-TYP-03
+        key_points[3]: 読者が何を達成したいかを先に考える。,読み手の状況や前提を外すと文書型がぶれやすい。,読者行動に沿う構成が必要である。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          audience_and_purpose.reader_orientation.p1,読者の必要とタスクに合わせることが plain language の中心である。,audience,"https://www.iso.org/standard/78907.html"
+          audience_and_purpose.reader_orientation.p2,文書は読者の利用文脈に適合している必要がある。,reader context,"https://www.iso.org/standard/78907.html"
   - section_id: structure_and_navigation
     section_number: 2
     title: 構造とナビゲーション
     source_heading: structure and navigation
-    topics[3]: structure,navigation,findability
+    topics[4]: structure,navigation,findability,explanation_order
     text: 探しやすく追いやすい構造を plain language の一部として扱う。
-    subsections[2]:
+    subsections[3]:
       - subsection_id: structure_and_navigation.findability
         source_heading: 情報の探しやすさ
         topics[3]: structure,findability,navigation
@@ -50,6 +58,14 @@ sections[3]:
         key_points[3]: 長い説明は小分けした方が理解しやすい。,手順、条件、例外は分けて示す。,視覚的なまとまりは理解を助ける。
         source_passages[1]{passage_id,text,source_locator,canonical_url}:
           structure_and_navigation.chunking.p1,情報を適切な単位に分けることが利用しやすさを高める。,情報設計,"https://www.iso.org/standard/78907.html"
+      - subsection_id: structure_and_navigation.explanation_order
+        source_heading: 説明順序と段階化
+        topics[3]: explanation_order,structure,findability
+        rules[2]: WR-STR-05,WR-EXP-02
+        key_points[3]: 読者は全体像を先に知ると詳細を理解しやすい。,説明は段階的に深める方が使いやすい。,探しやすさと説明順序は切り離せない。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          structure_and_navigation.explanation_order.p1,情報は読者が追いやすい順序で並べる必要がある。,navigation order,"https://www.iso.org/standard/78907.html"
+          structure_and_navigation.explanation_order.p2,構造化は理解と利用の両方を支える。,staged explanation,"https://www.iso.org/standard/78907.html"
   - section_id: expression_and_usability
     section_number: 3
     title: 表現と利用しやすさ

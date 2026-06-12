@@ -1,0 +1,69 @@
+doc_id: github-docs-style-guide
+title: GitHub Docs Style Guide
+publisher: GitHub
+version: current
+publication_date: current
+canonical_url: "https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide"
+profiles[2]: explanation,layout
+sections[3]:
+  - section_id: style_principles
+    section_number: 1
+    title: スタイル原則
+    source_heading: The GitHub Docs approach to style
+    topics[3]: paragraph_flow,narrative_support,reader_orientation
+    text: ルールそのものより、読者にとっての明確さと意味を優先する実務的な原則。
+    subsections[2]:
+      - subsection_id: style_principles.clarity_over_rules
+        source_heading: 明確さと意味を優先する
+        topics[3]: narrative_support,reader_orientation,structure
+        rules[2]: WR-STR-06,WR-EXP-03
+        key_points[3]: 文法規則より明確さと意味を重視する。,構造判断は情報の流れと文脈で決める。,読者に伝わることを優先する。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          style_principles.clarity_over_rules.p1,consistency や grammar より clarity と meaning を優先すると明示されている。,style principles,"https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide"
+          style_principles.clarity_over_rules.p2,style や structure の判断では情報の流れと文脈を考慮するとされている。,flow and context,"https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide"
+      - subsection_id: style_principles.flow_of_information
+        source_heading: 情報の流れ
+        topics[3]: paragraph_flow,narrative_support,structure
+        rules[4]: WR-SEN-04,WR-SEN-05,WR-SEN-07,WR-EXP-01
+        key_points[3]: 情報の流れを単位ごとに考えるべきである。,読者が追いやすい流れを崩す構成は避ける。,高インパクトな場面へ重点的にルール適用する。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          style_principles.flow_of_information.p1,flow of information within the unit of content を考慮すると書かれている。,flow of information,"https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide"
+          style_principles.flow_of_information.p2,明確さと意味を軸に構造判断を行う姿勢がある。,context of information,"https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide"
+  - section_id: content_types
+    section_number: 2
+    title: コンテンツタイプ
+    source_heading: Style guide and content model
+    topics[3]: document_type_fit,reader_orientation,structure
+    text: content model により、記事の型を選び分ける必要がある。
+    subsections[1]:
+      - subsection_id: content_types.select_content_type
+        source_heading: コンテンツ型の選択
+        topics[3]: document_type_fit,reader_orientation,structure
+        rules[3]: WR-TYP-01,WR-TYP-02,WR-TYP-03
+        key_points[3]: content type ごとに期待される構造が異なる。,記事は用途に合う型を選ぶべきである。,複数型を混ぜる場合も意識的に行う必要がある。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          content_types.select_content_type.p1,GitHub Docs では concepts、reference、how-to、tutorial などの content type を分けている。,content model,"https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide"
+          content_types.select_content_type.p2,型選択は記事構造と読者期待に関わる。,content type choices,"https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide"
+  - section_id: lists_and_tables
+    section_number: 3
+    title: リストと表
+    source_heading: Lists and tables
+    topics[3]: list_overuse,table_without_narrative,narrative_support
+    text: リストや表は使い所があり、流れを壊さないよう文脈と一緒に置くべきである。
+    subsections[2]:
+      - subsection_id: lists_and_tables.list_sparing
+        source_heading: リストの使い過ぎを避ける
+        topics[3]: list_overuse,layout,narrative_support
+        rules[2]: WR-LAY-04,WR-EXP-03
+        key_points[3]: リストは有効だが、何でもリスト化すればよいわけではない。,情報を支える説明文も必要である。,流れを切りすぎると読み味が悪くなる。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          lists_and_tables.list_sparing.p1,GitHub Docs は users can understand できる clear patterns を重視している。,clear patterns,"https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide"
+          lists_and_tables.list_sparing.p2,構造選択では情報の流れと文脈を考える必要がある。,flow and context,"https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide"
+      - subsection_id: lists_and_tables.tables_need_context
+        source_heading: 表に文脈を付ける
+        topics[3]: table_without_narrative,narrative_support,layout
+        rules[3]: WR-LAY-05,WR-EXP-03,WR-STR-06
+        key_points[3]: 表は前後の説明と一緒に置く方が理解しやすい。,表だけでは論点や使い方が見えないことがある。,本文の流れを壊さない配置が必要である。
+        source_passages[2]{passage_id,text,source_locator,canonical_url}:
+          lists_and_tables.tables_need_context.p1,情報の流れと文脈を考えて構造判断するとされている。,flow and context,"https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide"
+          lists_and_tables.tables_need_context.p2,users can understand clear patterns を提供することが目的とされている。,understandable patterns,"https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide"
