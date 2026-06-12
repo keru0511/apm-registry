@@ -1,6 +1,6 @@
 # apm-registry
 
-このリポジトリは、APM 形式で配布する instructions / prompts / skills / hooks / MCP 定義の公開元です。
+instructions / prompts / skills / hooks / MCP 定義をAPMで配布します。
 
 ## 構成
 
@@ -13,21 +13,19 @@
 - `scripts/agent-orchestrator`: 共通レビュー実行コマンド
 - `scripts/install-codex-skill`: Codex 用 skill の個別インストーラ
 
-## 基本コマンド
+## 配布対象一覧
 
-```bash
-# 依存関係を解決
-apm install
+このパッケージでは、APM で配布する定義を次の単位で管理しています。
 
-# 配布用にコンパイル
-apm compile
+| 種類 | 名前 | 用途 | 配置 |
+|---|---|---|---|
+| `instruction` | `base.instructions.md` | 共通の基本指示を配布する | `.apm/instructions/` |
+| `prompt` | `orchestrated-review.prompt.md`, `release-check.prompt.md` | レビューやリリース確認に使う prompt を配布する | `.apm/prompts/` |
+| `skill` | `comparison-proposal-builder`, `empirical-prompt-tuning`, `review-orchestrator`, `security-audit-assessor`, `writing-assessor` | Codex / Claude / Copilot から利用する skill を配布する | `.apm/skills/` |
+| `hook` | `stop-local-ci.hook.json` | セッション終了時の確認処理を配布する | `.apm/hooks/` |
+| `MCP 定義` | `linear` | APM パッケージに含める remote MCP 定義を配布する | `apm.yml` |
 
-# バンドル作成
-apm pack
-
-# 利用可能なスクリプト一覧
-apm list
-```
+現時点では、`.apm/agents/` に配布中の agent 定義はありません。実際の定義値は `apm.yml` と `.apm/` 配下を参照してください。
 
 ## APM パッケージとして導入する
 
@@ -50,25 +48,10 @@ apm install -g keru0511/apm-registry
 ~/.apm/
 ```
 
-このパッケージは `apm.yml` 内で `linear` の remote MCP も配布します。Codex 側では別途ローカル登録が必要です。
+## Codex で skill を入れる
 
-```bash
-codex mcp add linear --url https://mcp.linear.app/mcp
-codex mcp login linear
-```
-
-## 配布中の Codex skills
-
-- `comparison-proposal-builder`: 比較提案資料、評価軸、重み付きスコアリング、推奨案整理
-- `empirical-prompt-tuning`: skill やプロンプトを実行評価ベースで反復改善
-- `review-orchestrator`: `scripts/agent-orchestrator` を使った構造化コードレビュー
-- `security-audit-assessor`: IPA + NIST 観点の静的セキュリティ監査
-- `writing-assessor`: 主語、省略、文分割、送り仮名、外来語、句読点、禁則処理を含む文書評価
-
-## Codex skill を1つだけ入れる
-
-Codex には `skill-installer` という system skill が同梱されています。  
-このリポジトリでは、その内部スクリプトを直接意識しなくてよいように、薄いラッパー `scripts/install-codex-skill` を用意しています。
+このパッケージの skill は APM としてまとめて配布していますが、Codex 側では別途 skill 単位でローカル導入します。  
+このリポジトリでは、そのためのラッパー `scripts/install-codex-skill` を用意しています。
 
 使い方:
 
@@ -84,6 +67,8 @@ Codex には `skill-installer` という system skill が同梱されていま�
 ./scripts/install-codex-skill review-orchestrator main
 ```
 
+指定できる `skill-name` は、上の `配布対象一覧` の `skill` 行にある名前です。
+
 このコマンドは `keru0511/apm-registry/.apm/skills/<skill-name>` を取得し、次へインストールします。
 
 ```text
@@ -93,6 +78,8 @@ Codex には `skill-installer` という system skill が同梱されていま�
 インストール後は Codex を再起動してください。
 
 ## Nix 開発シェル
+
+この節以降は、主にこのリポジトリを保守する開発者向けの補足です。APM 自体の基本操作は、この README では扱いません。必要な場合は [APM 公式ドキュメント](https://microsoft.github.io/apm/) と [公式リポジトリ](https://github.com/microsoft/apm) を参照してください。
 
 再現性のあるローカル環境が必要な場合は `flake.nix` を使えます。
 
