@@ -50,32 +50,9 @@ apm install -g keru0511/apm-registry
 
 ## Codex で skill を入れる
 
-このパッケージの skill は APM としてまとめて配布していますが、Codex 側では別途 skill 単位でローカル導入します。  
-このリポジトリでは、そのためのラッパー `scripts/install-codex-skill` を用意しています。
-
-使い方:
-
-```bash
-./scripts/install-codex-skill <skill-name> [git-ref]
-```
-
-例:
-
-```bash
-./scripts/install-codex-skill writing-assessor
-./scripts/install-codex-skill security-audit-assessor
-./scripts/install-codex-skill review-orchestrator main
-```
-
-指定できる `skill-name` は、上の `配布対象一覧` の `skill` 行にある名前です。
-
-このコマンドは `keru0511/apm-registry/.apm/skills/<skill-name>` を取得し、次へインストールします。
-
-```text
-~/.codex/skills/<skill-name>
-```
-
-インストール後は Codex を再起動してください。
+このパッケージの skill は APM としてまとめて配布していますが、Codex は skill インストールskillがあるのでそれ使ってください。
+リポジトリでインストールのためのラッパー `scripts/install-codex-skill` を用意してますが、
+もう使ってないので公式のスキルでgitのURL指定とかでインストールしてください。
 
 ## Nix 開発シェル
 
