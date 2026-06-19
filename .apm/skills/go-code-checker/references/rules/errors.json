@@ -1,0 +1,39 @@
+[
+  {
+    "rule_id": "error-wrap-preserved",
+    "summary": "上位へ返す error は必要に応じて wrap し、原因追跡可能性を残す",
+    "severity_hint": "medium",
+    "signals": [
+      "fmt.Errorf で %w を使わず原因を捨てている",
+      "呼び出し元で errors.Is/As したいのに連鎖が切れている"
+    ],
+    "source_refs": [
+      "go-code-review-comments"
+    ]
+  },
+  {
+    "rule_id": "error-not-swallowed",
+    "summary": "error を握りつぶさず、失敗時の意味が伝わるように扱う",
+    "severity_hint": "high",
+    "signals": [
+      "err を無視して処理を継続する",
+      "ログだけ出して呼び出し元に失敗を返さない",
+      "部分失敗なのに成功扱いになる"
+    ],
+    "source_refs": [
+      "go-code-review-comments"
+    ]
+  },
+  {
+    "rule_id": "error-string-style",
+    "summary": "error 文字列は文脈に埋め込みやすい形を保つ",
+    "severity_hint": "low",
+    "signals": [
+      "先頭大文字や末尾句読点で error string が不自然",
+      "同じ層の error message style が不統一"
+    ],
+    "source_refs": [
+      "go-code-review-comments"
+    ]
+  }
+]

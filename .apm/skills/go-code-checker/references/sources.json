@@ -1,0 +1,112 @@
+[
+  {
+    "doc_id": "go-code-review-comments",
+    "title": "Go Wiki: Go Code Review Comments",
+    "canonical_url": "https://go.dev/wiki/CodeReviewComments",
+    "authority": "official",
+    "kind": "review-guide",
+    "stability": "medium",
+    "when_to_use": [
+      "Goらしいレビュー観点を確認したいとき",
+      "context, comments, errors, goroutine lifetime, imports などの慣用を根拠づけたいとき"
+    ],
+    "notes": "レビュー観点の主軸。言語仕様ではなくレビューガイド。"
+  },
+  {
+    "doc_id": "pkg-context",
+    "title": "context package",
+    "canonical_url": "https://pkg.go.dev/context",
+    "authority": "official",
+    "kind": "package-doc",
+    "stability": "high",
+    "when_to_use": [
+      "Context の伝搬、CancelFunc、WithValue の扱いを確認したいとき"
+    ],
+    "notes": "context 誤用の一次根拠。"
+  },
+  {
+    "doc_id": "pkg-testing",
+    "title": "testing package",
+    "canonical_url": "https://pkg.go.dev/testing",
+    "authority": "official",
+    "kind": "package-doc",
+    "stability": "high",
+    "when_to_use": [
+      "unit test, subtest, parallel test, fuzz の使い方を確認したいとき"
+    ],
+    "notes": "テスト観点の一次根拠。"
+  },
+  {
+    "doc_id": "cmd-vet",
+    "title": "vet command",
+    "canonical_url": "https://pkg.go.dev/cmd/vet",
+    "authority": "official",
+    "kind": "tool-doc",
+    "stability": "high",
+    "when_to_use": [
+      "go vet で拾える典型不具合を観点に落としたいとき",
+      "lostcancel, loopclosure, copylocks, waitgroup などを確認したいとき"
+    ],
+    "notes": "heuristic なので絶対判定には使わない。"
+  },
+  {
+    "doc_id": "go-modules-layout",
+    "title": "Organizing a Go module",
+    "canonical_url": "https://go.dev/doc/modules/layout",
+    "authority": "official",
+    "kind": "guide",
+    "stability": "medium",
+    "when_to_use": [
+      "package 構成、module 配置、internal package を確認したいとき"
+    ],
+    "notes": "設計レビュー補助。"
+  },
+  {
+    "doc_id": "go-doc-comments",
+    "title": "Go Doc Comments",
+    "canonical_url": "https://go.dev/doc/comment",
+    "authority": "official",
+    "kind": "guide",
+    "stability": "high",
+    "when_to_use": [
+      "package comment や exported symbol の doc comment を確認したいとき"
+    ],
+    "notes": "ドキュメント品質の一次根拠。"
+  },
+  {
+    "doc_id": "go-memory-model",
+    "title": "The Go Memory Model",
+    "canonical_url": "https://go.dev/ref/mem",
+    "authority": "official",
+    "kind": "language-reference",
+    "stability": "high",
+    "when_to_use": [
+      "並行性や data race の根拠補強が必要なとき"
+    ],
+    "notes": "普段は必要箇所だけ見る。"
+  },
+  {
+    "doc_id": "go-fuzzing",
+    "title": "Go Fuzzing",
+    "canonical_url": "https://go.dev/doc/tutorial/fuzz",
+    "authority": "official",
+    "kind": "guide",
+    "stability": "medium",
+    "when_to_use": [
+      "パーサ、変換処理、入力検証で fuzz 導入可否を判断したいとき"
+    ],
+    "notes": "テスト補強の補助資料。"
+  },
+  {
+    "doc_id": "effective-go",
+    "title": "Effective Go",
+    "canonical_url": "https://go.dev/doc/effective_go",
+    "authority": "official",
+    "kind": "guide",
+    "stability": "low",
+    "when_to_use": [
+      "補助的に古典的な Go 慣用を確認したいとき"
+    ],
+    "notes": "2009年ベースで actively updated ではない。主軸にしない。"
+  }
+]

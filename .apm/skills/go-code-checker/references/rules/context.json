@@ -1,0 +1,55 @@
+[
+  {
+    "rule_id": "context-propagation",
+    "summary": "server 起点の Context が下流の API 呼び出しまで伝搬しているか確認する",
+    "severity_hint": "high",
+    "signals": [
+      "context.Background() を途中で作り直している",
+      "ctx を受け取るべき関数が受け取っていない",
+      "request 単位の処理なのに context を無視している"
+    ],
+    "source_refs": [
+      "pkg-context",
+      "go-code-review-comments"
+    ]
+  },
+  {
+    "rule_id": "cancel-func-used",
+    "summary": "WithCancel/WithTimeout/WithDeadline の CancelFunc が全経路で解放されているか確認する",
+    "severity_hint": "high",
+    "signals": [
+      "cancel が defer されていない",
+      "分岐によって cancel されない経路がある",
+      "timeout context を作るが終了処理がない"
+    ],
+    "source_refs": [
+      "pkg-context",
+      "cmd-vet"
+    ]
+  },
+  {
+    "rule_id": "no-nil-context",
+    "summary": "nil Context を渡さず、必要なら context.TODO を使う",
+    "severity_hint": "medium",
+    "signals": [
+      "nil を context 引数に渡している",
+      "context が optional parameter のように扱われている"
+    ],
+    "source_refs": [
+      "pkg-context",
+      "go-code-review-comments"
+    ]
+  },
+  {
+    "rule_id": "with-value-scope",
+    "summary": "context.Value は request-scoped data に限定し、任意パラメータの受け渡しに使わない",
+    "severity_hint": "medium",
+    "signals": [
+      "設定値やフラグを context.Value で受け渡している",
+      "関数の必須入力が context から暗黙に読まれている"
+    ],
+    "source_refs": [
+      "pkg-context"
+    ]
+  }
+]
