@@ -1,0 +1,44 @@
+[
+  {
+    "rule_id": "goroutine-lifetime-bounded",
+    "summary": "開始した goroutine が終了条件を持ち、呼び出し元の寿命から孤立しないか確認する",
+    "severity_hint": "high",
+    "signals": [
+      "goroutine が channel/read loop で待ち続ける",
+      "context cancel や close に反応しない",
+      "background goroutine の停止責務が曖昧"
+    ],
+    "source_refs": [
+      "go-code-review-comments",
+      "go-memory-model"
+    ]
+  },
+  {
+    "rule_id": "shared-state-synchronized",
+    "summary": "複数 goroutine から読む/書く状態は明示的に同期されているか確認する",
+    "severity_hint": "high",
+    "signals": [
+      "mutex なしで map や field を共有更新している",
+      "sync/atomic の前提を満たさずに使っている",
+      "読みだけ安全だと誤認している"
+    ],
+    "source_refs": [
+      "go-memory-model",
+      "cmd-vet"
+    ]
+  },
+  {
+    "rule_id": "loop-variable-capture",
+    "summary": "Go 1.21 以前では、loop 変数の closure capture やアドレス取得で意図しない共有がないか確認する",
+    "severity_hint": "medium",
+    "signals": [
+      "go.mod または build constraint 上 Go 1.21 以前を対象にしている",
+      "for/range 変数を goroutine が直接参照する",
+      "range 変数のアドレスを slice に詰める"
+    ],
+    "source_refs": [
+      "cmd-vet"
+    ],
+    "notes": "Go 1.22 以降は各 iteration で新しい loop 変数が作られるため、この観点はそのまま当てない。"
+  }
+]

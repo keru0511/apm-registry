@@ -1,0 +1,54 @@
+[
+  {
+    "rule_id": "regression-test-for-bug",
+    "summary": "不具合修正には再発防止の回帰テストを伴わせる",
+    "severity_hint": "high",
+    "signals": [
+      "バグ修正なのにテスト追加がない",
+      "失敗条件を再現するケースが存在しない"
+    ],
+    "source_refs": [
+      "pkg-testing",
+      "go-fuzzing"
+    ]
+  },
+  {
+    "rule_id": "subtests-for-case-separation",
+    "summary": "複数ケースを持つテストは subtest や table-driven test で分離する",
+    "severity_hint": "medium",
+    "signals": [
+      "大量のケースを単一テストで直列評価している",
+      "どのケースが落ちたか判別しにくい"
+    ],
+    "source_refs": [
+      "pkg-testing"
+    ]
+  },
+  {
+    "rule_id": "parallel-test-safety",
+    "summary": "t.Parallel を使うテストは共有状態や後始末を壊していないか確認する",
+    "severity_hint": "medium",
+    "signals": [
+      "parallel test がグローバル状態を書き換える",
+      "subtest の teardown が競合する",
+      "goroutine 内で testing.T の危険な利用がある"
+    ],
+    "source_refs": [
+      "pkg-testing",
+      "cmd-vet"
+    ]
+  },
+  {
+    "rule_id": "fuzz-candidate",
+    "summary": "入力依存の分岐が多い処理は fuzz の候補か検討する",
+    "severity_hint": "low",
+    "signals": [
+      "parser, decoder, validator, converter なのに境界入力テストが薄い",
+      "panic しうる入力処理がある"
+    ],
+    "source_refs": [
+      "go-fuzzing",
+      "pkg-testing"
+    ]
+  }
+]

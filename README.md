@@ -21,7 +21,7 @@ instructions / prompts / skills / hooks / MCP 定義をAPMで配布します。
 |---|---|---|---|
 | `instruction` | `base.instructions.md` | 共通の基本指示を配布する | `.apm/instructions/` |
 | `prompt` | `orchestrated-review.prompt.md`, `release-check.prompt.md` | レビューやリリース確認に使う prompt を配布する | `.apm/prompts/` |
-| `skill` | `comparison-proposal-builder`, `empirical-prompt-tuning`, `review-orchestrator`, `security-audit-assessor`, `writing-assessor` | Codex / Claude / Copilot から利用する skill を配布する | `.apm/skills/` |
+| `skill` | `comparison-proposal-builder`, `empirical-prompt-tuning`, `go-code-checker`, `review-orchestrator`, `security-audit-assessor`, `writing-assessor` | Codex / Claude / Copilot から利用する skill を配布する | `.apm/skills/` |
 | `hook` | `stop-local-ci.hook.json` | セッション終了時の確認処理を配布する | `.apm/hooks/` |
 | `MCP 定義` | `linear` | APM パッケージに含める remote MCP 定義を配布する | `apm.yml` |
 

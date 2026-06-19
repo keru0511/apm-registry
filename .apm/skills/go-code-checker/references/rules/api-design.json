@@ -1,0 +1,55 @@
+[
+  {
+    "rule_id": "small-interfaces",
+    "summary": "interface は利用側の必要最小限に留め、実装側都合で肥大化させない",
+    "severity_hint": "medium",
+    "signals": [
+      "1実装のためだけに大きな interface を公開している",
+      "テスト容易化だけのために本番 API を歪めている"
+    ],
+    "source_refs": [
+      "go-code-review-comments",
+      "effective-go"
+    ]
+  },
+  {
+    "rule_id": "zero-value-useful",
+    "summary": "公開型は可能ならゼロ値で意味ある状態を持ち、そうでなければ明記する",
+    "severity_hint": "medium",
+    "signals": [
+      "ゼロ値だと即 panic するが説明がない",
+      "初期化必須なのに constructor 契約が曖昧"
+    ],
+    "source_refs": [
+      "go-doc-comments",
+      "effective-go"
+    ]
+  },
+  {
+    "rule_id": "package-boundary-clear",
+    "summary": "package 分割と internal 利用が責務境界を明確にしているか確認する",
+    "severity_hint": "medium",
+    "signals": [
+      "循環回避のためだけの不自然な分割",
+      "外部公開不要な API が公開 package に漏れている",
+      "internal に置くべき実装が公開 package に露出している"
+    ],
+    "source_refs": [
+      "go-modules-layout"
+    ]
+  },
+  {
+    "rule_id": "names-idiomatic",
+    "summary": "公開名、package 名、getter 名、boolean 系コメントが Go の慣用に沿っているか確認する",
+    "severity_hint": "low",
+    "signals": [
+      "GetXxx の乱用",
+      "snake_case package 名",
+      "bool を返す関数説明が曖昧"
+    ],
+    "source_refs": [
+      "go-doc-comments",
+      "effective-go"
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "rule_id": "exported-symbol-docs",
+    "summary": "package comment と、exported な type, func, var, const などの公開シンボルに doc comment があるか確認する",
+    "severity_hint": "medium",
+    "signals": [
+      "公開 API にコメントがない",
+      "公開型の利用条件がコード外にしか書かれていない"
+    ],
+    "source_refs": [
+      "go-doc-comments",
+      "go-code-review-comments"
+    ]
+  },
+  {
+    "rule_id": "concurrency-guarantee-documented",
+    "summary": "複数 goroutine から安全に使える型や、逆に unsafe な前提はコメントで明示する",
+    "severity_hint": "medium",
+    "signals": [
+      "concurrent safe か不明な公開型",
+      "設定系メソッドだけ unsafe だが説明がない"
+    ],
+    "source_refs": [
+      "go-doc-comments"
+    ]
+  },
+  {
+    "rule_id": "package-comment-present",
+    "summary": "package comment が package 全体の役割と期待値を示しているか確認する",
+    "severity_hint": "low",
+    "signals": [
+      "大きい package なのに package comment がない",
+      "command/package の冒頭説明がない"
+    ],
+    "source_refs": [
+      "go-doc-comments",
+      "go-code-review-comments"
+    ]
+  }
+]
