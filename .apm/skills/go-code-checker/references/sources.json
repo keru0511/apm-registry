@@ -88,7 +88,7 @@
   {
     "doc_id": "go-fuzzing",
     "title": "Go Fuzzing",
-    "canonical_url": "https://go.dev/doc/security/fuzz/",
+    "canonical_url": "https://go.dev/doc/tutorial/fuzz",
     "authority": "official",
     "kind": "guide",
     "stability": "medium",
